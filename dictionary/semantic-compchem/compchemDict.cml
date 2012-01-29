@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml xmlns="http://www.xml-cml.org/schema">
+    <dictionary xmlns:cmlx="http://www.xml-cml.org/schema/cmlx"
+                namespace="http://www.xml-cml.org/dict/compchem"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <!-- Begin Superclasses -->
+        <entry id="qm"
+            term="QM parameters and methods"
+            definition="Methods, parameters which descriobe and determine the QM aspects of the calculations"
+            description="">
+        </entry>
+    
+        <entry id="cmd"
+            term="command"
+            definition="A user-controlled program operation"
+            description="The main oparations that the user wishes to carry out. Most commands will produce output, but the management of output is not normally a command. Many operations are represented by keywords in conventional input. Commands can be qualified, usually by parameters.">
+        </entry>
+
+        <entry id="prog"
+            term="The program"
+            definition=""
+            description="">
+        </entry>
+
+        <entry id="md"
+            term="metadata"
+            definition=""
+            description="">
+        </entry>
+        <!-- End Superclasses -->
+
+        <!-- Begin Metadata -->
+        <entry id="md.subdate"
+            term="date of submission"
+            definition="the date on which the job was submitted for calculation"
+            description="This is not necessarily the date on which the job was run"
+            cmlx:superclass="md">
+            <!-- cmlx:type="xsd:date" -->
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+        </entry>
+        
+        <entry id="md.userid"
+            term="The id of the user"
+            definition="The id of the person of process that prepared or submitted the job"
+            description="User name. There is no controlled syntax or vocabulary."
+            cmlx:superclass="md">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+        </entry>
+        
+        <entry id="md.jobid"
+            term="Job Id"
+            definition="a unique id given to the job by the user or submission system"
+            description="Ideally the job id should be unique for each job (re-run jobs should have different ids). The job ID should, if possible, be recorded in the input (title)"
+            cmlx:superclass="md">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+        </entry>
+         
+        <entry id="md.maxmemory"
+            term="Maximum memory"
+            definition="maximum memory requested  to run the job"
+            description="this requires units"
+            cmlx:superclass="md">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="memory:unknown"/>
+            </cmlx:template>
+        </entry>
+        
+        <entry id="md.machineid"
+            term="Machine Id"
+            definition="a unique id given to the machine by the user or submission system"
+            description=""
+            cmlx:superclass="md">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+        </entry>
+        
+        <entry id="md.ncpu"
+            term="Number of CPUs"
+            cmlx:type="xsd:integer"
+            definition="number of CPUs requested"
+            description=""
+            cmlx:superclass="md">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:integer"/>
+            </cmlx:template>
+        </entry>
+        
+        <entry id="md.submitDate"
+            term="Submission date"
+            definition="date of submission"
+            description=""
+            cmlx:superclass="md">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+        </entry>
+        <!-- End Metadata -->
+
+        <!-- Begin QM -->
+        <entry id="qm.basis"
+            term="basis"
+            definition="The basis set without the method or diffuse function"
+            description="The basis set is required for for most calculation methods."
+            cmlx:superclass="qm">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="3-21g" id="qm.basis.321g" term="3-21g" />
+            <cmlx:enumeration value="4-31g" id="qm.basis.431g" term="4-31g" />
+            <cmlx:enumeration value="6-21g" id="qm.basis.621g" term="6-21g" />
+            <cmlx:enumeration value="6-31+g" id="qm.basis.631plusg" term="6-31+g*" />
+            <cmlx:enumeration value="6-311++g" id="qm.basis.6311plusplusg" term="6-311++g" />
+            <cmlx:enumeration value="6-311+g" id="qm.basis.6311plusg*" term="6-311+g*" />
+            <cmlx:enumeration value="6-311g" id="qm.basis.6311g" term="6-311g" />
+            <cmlx:enumeration value="6-31g" id="qm.basis.631g" term="6-31g" />
+            <cmlx:enumeration value="aug-cc-pvdz" id="qm.basis.aug-cc-pvdz" term="aug-cc-pvdz" />
+            <cmlx:enumeration value="cbsb7" id="qm.basis.cbsb7" term="cbsb7" />
+            <cmlx:enumeration value="cc-pvdz" id="qm.basis.cc-pvdz" term="cc-pvdz" />
+            <cmlx:enumeration value="cc-pvtz" id="qm.basis.cc-pvtz" term="cc-pvtz" />
+            <cmlx:enumeration value="cep-121g" id="qm.basis.cep-121g" term="cep-121g" />
+            <cmlx:enumeration value="cep-31g" id="qm.basis.cep-31g" term="cep-31g" />
+            <cmlx:enumeration value="d95" id="qm.basis.d95" term="d95" />
+            <cmlx:enumeration value="d95v" id="qm.basis.d95v" term="d95v" />
+            <cmlx:enumeration value="gen" id="qm.basis.gen" term="gen" />
+            <cmlx:enumeration value="genecp" id="qm.basis.genecp" term="genecp" />
+            <cmlx:enumeration value="gtlarge" id="qm.basis.gtlarge" term="gtlarge" />
+            <cmlx:enumeration value="gtmp2large" id="qm.basis.gtmp2large" term="gtmp2large" />
+            <cmlx:enumeration value="lanl2dz" id="qm.basis.lanl2dz" term="lanl2dz" />
+            <cmlx:enumeration value="lanl2dz:hf" id="qm.basis.lanl2dz:hf" term="lanl2dz:hf" />
+            <cmlx:enumeration value="lanl2mb" id="qm.basis.lanl2mb" term="lanl2mb" />
+            <cmlx:enumeration value="lp-31g" id="qm.basis.lp-31g" term="lp-31g" />
+            <cmlx:enumeration value="sec" id="qm.basis.sec" term="sec" />
+            <cmlx:enumeration value="sto-2g" id="qm.basis.sto2g" term="sto-2g" />
+            <cmlx:enumeration value="sto-3g" id="qm.basis.sto3g" term="sto-3g" />
+            <cmlx:enumeration value="sto-5g" id="qm.basis.sto5g" term="sto-5g" />
+            <cmlx:enumeration value="svp" id="qm.basis.svp" term="svp" />
+            <cmlx:enumeration value="tzv" id="qm.basis.tzv" term="tzv" />
+            <cmlx:enumeration value="zdo" id="qm.basis.zdo" term="zdo" />
+        </entry>
+        <entry id="qm.method"
+            term="method"
+            definition="Quantum calculation method or functional"
+            description="A quantum calculation method used for computation"
+            cmlx:superclass="qm">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="hf" id="qm.method.hf" term="hf" />
+            <cmlx:enumeration value="mp2" id="qm.method.mp2" term="mp2" />
+            <cmlx:enumeration value="b3lyp" id="qm.method.b3lyp" term="b3lyp" />
+            <cmlx:enumeration value="pm3" id="qm.method.pm3" term="pm3" />
+            <cmlx:enumeration value="am1" id="qm.method.am1" term="am1" />
+            <cmlx:enumeration value="amber" id="qm.method.amber" term="amber" />
+            <cmlx:enumeration value="b1lyp" id="qm.method.b1lyp" term="b1lyp" />
+            <cmlx:enumeration value="b3pw91" id="qm.method.b3pw91" term="b3pw91" />
+            <cmlx:enumeration value="becke3lyp" id="qm.method.becke3lyp" term="becke3lyp" />
+            <cmlx:enumeration value="bhandhlyp" id="qm.method.bhandhlyp" term="bhandhlyp" />
+            <cmlx:enumeration value="blyp" id="qm.method.blyp" term="blyp" />
+            <cmlx:enumeration value="bvp86" id="qm.method.bvp86" term="bvp86" />
+            <cmlx:enumeration value="cam-b3lyp" id="qm.method.cam-b3lyp" term="cam-b3lyp" />
+            <cmlx:enumeration value="casscf" id="qm.method.casscf" term="casscf" />
+            <cmlx:enumeration value="cc2" id="qm.method.cc2" term="cc2" />
+            <cmlx:enumeration value="cc3" id="qm.method.cc3" term="cc3" />
+            <cmlx:enumeration value="ccd" id="qm.method.ccd" term="ccd" />
+            <cmlx:enumeration value="ccsd" id="qm.method.ccsd" term="ccsd" />
+            <cmlx:enumeration value="ccsd(t)" id="qm.method.ccsd(t)" term="ccsd(t)" />
+            <cmlx:enumeration value="ccsd(t)-fc" id="qm.method.ccsd(t)-fc" term="ccsd(t)-fc" />
+            <cmlx:enumeration value="cid" id="qm.method.cid" term="cid" />
+            <cmlx:enumeration value="cis-fc" id="qm.method.cis-fc" term="cis-fc" />
+            <cmlx:enumeration value="cis=(direct)" id="qm.method.cis=(direct)" term="cis=(direct)" />
+            <cmlx:enumeration value="cisd" id="qm.method.cisd" term="cisd" />
+            <cmlx:enumeration value="cndo" id="qm.method.cndo" term="cndo" />
+            <cmlx:enumeration value="dreiding" id="qm.method.dreiding" term="dreiding" />
+            <cmlx:enumeration value="ept" id="qm.method.ept" term="ept" />
+            <cmlx:enumeration value="hcth" id="qm.method.hcth" term="hcth" />
+            <cmlx:enumeration value="hf" id="qm.method.hf" term="hf" />
+            <cmlx:enumeration value="lsda" id="qm.method.lsda" term="lsda" />
+            <cmlx:enumeration value="mp2" id="qm.method.mp2" term="mp2" />
+            <cmlx:enumeration value="mp2-fc" id="qm.method.mp2-fc" term="mp2-fc" />
+            <cmlx:enumeration value="mp2-fu" id="qm.method.mp2-fu" term="mp2-fu" />
+            <cmlx:enumeration value="mp4" id="qm.method.mp4" term="mp4" />
+            <cmlx:enumeration value="mp4sdtq" id="qm.method.mp4sdtq" term="mp4sdtq" />
+            <cmlx:enumeration value="mp5" id="qm.method.mp5" term="mp5" />
+            <cmlx:enumeration value="mpw1pw91" id="qm.method.mpw1pw91" term="mpw1pw91" />
+            <cmlx:enumeration value="oniom" id="qm.method.oniom" term="oniom" />
+            <cmlx:enumeration value="oss" id="qm.method.oss" term="oss" />
+            <cmlx:enumeration value="pbe1pbe" id="qm.method.pbe1pbe" term="pbe1pbe" />
+            <cmlx:enumeration value="pbepbe" id="qm.method.pbepbe" term="pbepbe" />
+            <cmlx:enumeration value="pw91pw91" id="qm.method.pw91pw91" term="pw91pw91" />
+            <cmlx:enumeration value="qcisd" id="qm.method.qcisd" term="qcisd" />
+            <cmlx:enumeration value="qcisd(t)" id="qm.method.qcisd(t)" term="qcisd(t)" />
+            <cmlx:enumeration value="ram1" id="qm.method.ram1" term="ram1" />
+            <cmlx:enumeration value="rb1lyp" id="qm.method.rb1lyp" term="rb1lyp" />
+            <cmlx:enumeration value="rb3lyp" id="qm.method.rb3lyp" term="rb3lyp" />
+            <cmlx:enumeration value="rb3pw91" id="qm.method.rb3pw91" term="rb3pw91" />
+            <cmlx:enumeration value="rbd" id="qm.method.rbd" term="rbd" />
+            <cmlx:enumeration value="rbd-fc" id="qm.method.rbd-fc" term="rbd-fc" />
+            <cmlx:enumeration value="rbhandhlyp" id="qm.method.rbhandhlyp" term="rbhandhlyp" />
+            <cmlx:enumeration value="rblyp" id="qm.method.rblyp" term="rblyp" />
+            <cmlx:enumeration value="rbpw91" id="qm.method.rbpw91" term="rbpw91" />
+            <cmlx:enumeration value="rbvwn5+p86" id="qm.method.rbvwn5+p86" term="rbvwn5+p86" />
+            <cmlx:enumeration value="rccd" id="qm.method.rccd" term="rccd" />
+            <cmlx:enumeration value="rccd-fc" id="qm.method.rccd-fc" term="rccd-fc" />
+            <cmlx:enumeration value="rccsd(t)-fc" id="qm.method.rccsd(t)-fc" term="rccsd(t)-fc" />
+            <cmlx:enumeration value="rccsd-fc" id="qm.method.rccsd-fc" term="rccsd-fc" />
+            <cmlx:enumeration value="rcid-fc" id="qm.method.rcid-fc" term="rcid-fc" />
+            <cmlx:enumeration value="rcid-fu" id="qm.method.rcid-fu" term="rcid-fu" />
+            <cmlx:enumeration value="rcis" id="qm.method.rcis" term="rcis" />
+            <cmlx:enumeration value="rcis-fc" id="qm.method.rcis-fc" term="rcis-fc" />
+            <cmlx:enumeration value="rcis-fu" id="qm.method.rcis-fu" term="rcis-fu" />
+            <cmlx:enumeration value="rcisd" id="qm.method.rcisd" term="rcisd" />
+            <cmlx:enumeration value="rcisd-fc" id="qm.method.rcisd-fc" term="rcisd-fc" />
+            <cmlx:enumeration value="rhcth407" id="qm.method.rhcth407" term="rhcth407" />
+            <cmlx:enumeration value="rhf" id="qm.method.rhf" term="rhf" />
+            <cmlx:enumeration value="rhfs" id="qm.method.rhfs" term="rhfs" />
+            <cmlx:enumeration value="rlsda" id="qm.method.rlsda" term="rlsda" />
+            <cmlx:enumeration value="rmp2" id="qm.method.rmp2" term="rmp2" />
+            <cmlx:enumeration value="rmp2-fc" id="qm.method.rmp2-fc" term="rmp2-fc" />
+            <cmlx:enumeration value="rmp2-fu" id="qm.method.rmp2-fu" term="rmp2-fu" />
+            <cmlx:enumeration value="rmp2-rw" id="qm.method.rmp2-rw" term="rmp2-rw" />
+            <cmlx:enumeration value="rmp3" id="qm.method.rmp3" term="rmp3" />
+            <cmlx:enumeration value="rmp3-fc" id="qm.method.rmp3-fc" term="rmp3-fc" />
+            <cmlx:enumeration value="rmp4" id="qm.method.rmp4" term="rmp4" />
+            <cmlx:enumeration value="rmp4dq" id="qm.method.rmp4dq" term="rmp4dq" />
+            <cmlx:enumeration value="rmp4dq-fc" id="qm.method.rmp4dq-fc" term="rmp4dq-fc" />
+            <cmlx:enumeration value="rmp4sdtq-fc" id="qm.method.rmp4sdtq-fc" term="rmp4sdtq-fc" />
+            <cmlx:enumeration value="rmpw1pw91" id="qm.method.rmpw1pw91" term="rmpw1pw91" />
+            <cmlx:enumeration value="rohf" id="qm.method.rohf" term="rohf" />
+            <cmlx:enumeration value="romp2" id="qm.method.romp2" term="romp2" />
+            <cmlx:enumeration value="romp2-fc" id="qm.method.romp2-fc" term="romp2-fc" />
+            <cmlx:enumeration value="rosacci" id="qm.method.rosacci" term="rosacci" />
+            <cmlx:enumeration value="rovgf" id="qm.method.rovgf" term="rovgf" />
+            <cmlx:enumeration value="rovgf-fc" id="qm.method.rovgf-fc" term="rovgf-fc" />
+            <cmlx:enumeration value="rpbe1pbe" id="qm.method.rpbe1pbe" term="rpbe1pbe" />
+            <cmlx:enumeration value="rpbepbe" id="qm.method.rpbepbe" term="rpbepbe" />
+            <cmlx:enumeration value="rpm3" id="qm.method.rpm3" term="rpm3" />
+            <cmlx:enumeration value="rpw91pw91" id="qm.method.rpw91pw91" term="rpw91pw91" />
+            <cmlx:enumeration value="rqcisd" id="qm.method.rqcisd" term="rqcisd" />
+            <cmlx:enumeration value="rqcisd(t)-fc" id="qm.method.rqcisd(t)-fc" term="rqcisd(t)-fc" />
+            <cmlx:enumeration value="rqcisd-fc" id="qm.method.rqcisd-fc" term="rqcisd-fc" />
+            <cmlx:enumeration value="rqcisd-fu" id="qm.method.rqcisd-fu" term="rqcisd-fu" />
+            <cmlx:enumeration value="rsacci" id="qm.method.rsacci" term="rsacci" />
+            <cmlx:enumeration value="rsvwn" id="qm.method.rsvwn" term="rsvwn" />
+            <cmlx:enumeration value="rtd-b3lyp-fc" id="qm.method.rtd-b3lyp-fc" term="rtd-b3lyp-fc" />
+            <cmlx:enumeration value="rtd-b3lyp-fu" id="qm.method.rtd-b3lyp-fu" term="rtd-b3lyp-fu" />
+            <cmlx:enumeration value="rtd-blyp-fc" id="qm.method.rtd-blyp-fc" term="rtd-blyp-fc" />
+            <cmlx:enumeration value="rtd-hf-fc" id="qm.method.rtd-hf-fc" term="rtd-hf-fc" />
+            <cmlx:enumeration value="rtd-hf-fu" id="qm.method.rtd-hf-fu" term="rtd-hf-fu" />
+            <cmlx:enumeration value="rtpsstpss" id="qm.method.rtpsstpss" term="rtpsstpss" />
+            <cmlx:enumeration value="rvsxc" id="qm.method.rvsxc" term="rvsxc" />
+            <cmlx:enumeration value="rzindo-rw" id="qm.method.rzindo-rw" term="rzindo-rw" />
+            <cmlx:enumeration value="sd-r,refcisd)" id="qm.method.sd-r,refcisd)" term="sd-r,refcisd)" />
+            <cmlx:enumeration value="svwn" id="qm.method.svwn" term="svwn" />
+            <cmlx:enumeration value="uam1" id="qm.method.uam1" term="uam1" />
+            <cmlx:enumeration value="ub3lyp" id="qm.method.ub3lyp" term="ub3lyp" />
+            <cmlx:enumeration value="ub3pw91" id="qm.method.ub3pw91" term="ub3pw91" />
+            <cmlx:enumeration value="ubb95" id="qm.method.ubb95" term="ubb95" />
+            <cmlx:enumeration value="ubd" id="qm.method.ubd" term="ubd" />
+            <cmlx:enumeration value="ubd(t)-fc" id="qm.method.ubd(t)-fc" term="ubd(t)-fc" />
+            <cmlx:enumeration value="ubd(tq)-fc" id="qm.method.ubd(tq)-fc" term="ubd(tq)-fc" />
+            <cmlx:enumeration value="ubd-fc" id="qm.method.ubd-fc" term="ubd-fc" />
+            <cmlx:enumeration value="ubecke3lyp" id="qm.method.ubecke3lyp" term="ubecke3lyp" />
+            <cmlx:enumeration value="ublyp" id="qm.method.ublyp" term="ublyp" />
+            <cmlx:enumeration value="uccd-fu" id="qm.method.uccd-fu" term="uccd-fu" />
+            <cmlx:enumeration value="uccsd(t)-fc" id="qm.method.uccsd(t)-fc" term="uccsd(t)-fc" />
+            <cmlx:enumeration value="uccsd-fc" id="qm.method.uccsd-fc" term="uccsd-fc" />
+            <cmlx:enumeration value="ucid" id="qm.method.ucid" term="ucid" />
+            <cmlx:enumeration value="ucid-fc" id="qm.method.ucid-fc" term="ucid-fc" />
+            <cmlx:enumeration value="ucis" id="qm.method.ucis" term="ucis" />
+            <cmlx:enumeration value="ucis-fc" id="qm.method.ucis-fc" term="ucis-fc" />
+            <cmlx:enumeration value="ucis-fu" id="qm.method.ucis-fu" term="ucis-fu" />
+            <cmlx:enumeration value="ucisd-fc" id="qm.method.ucisd-fc" term="ucisd-fc" />
+            <cmlx:enumeration value="ucisd-fu" id="qm.method.ucisd-fu" term="ucisd-fu" />
+            <cmlx:enumeration value="udreiding" id="qm.method.udreiding" term="udreiding" />
+            <cmlx:enumeration value="uff" id="qm.method.uff" term="uff" />
+            <cmlx:enumeration value="ug96pw91" id="qm.method.ug96pw91" term="ug96pw91" />
+            <cmlx:enumeration value="uhcth407" id="qm.method.uhcth407" term="uhcth407" />
+            <cmlx:enumeration value="uhf" id="qm.method.uhf" term="uhf" />
+            <cmlx:enumeration value="uhfs" id="qm.method.uhfs" term="uhfs" />
+            <cmlx:enumeration value="ulg1lyp" id="qm.method.ulg1lyp" term="ulg1lyp" />
+            <cmlx:enumeration value="ulsda" id="qm.method.ulsda" term="ulsda" />
+            <cmlx:enumeration value="ump2" id="qm.method.ump2" term="ump2" />
+            <cmlx:enumeration value="ump2-fc" id="qm.method.ump2-fc" term="ump2-fc" />
+            <cmlx:enumeration value="ump2-fu" id="qm.method.ump2-fu" term="ump2-fu" />
+            <cmlx:enumeration value="ump3" id="qm.method.ump3" term="ump3" />
+            <cmlx:enumeration value="ump3-fc" id="qm.method.ump3-fc" term="ump3-fc" />
+            <cmlx:enumeration value="ump4" id="qm.method.ump4" term="ump4" />
+            <cmlx:enumeration value="ump4dq-fu" id="qm.method.ump4dq-fu" term="ump4dq-fu" />
+            <cmlx:enumeration value="ump4sdq-fu" id="qm.method.ump4sdq-fu" term="ump4sdq-fu" />
+            <cmlx:enumeration value="ump4sdtq-fc" id="qm.method.ump4sdtq-fc" term="ump4sdtq-fc" />
+            <cmlx:enumeration value="ump4sdtq-fu" id="qm.method.ump4sdtq-fu" term="ump4sdtq-fu" />
+            <cmlx:enumeration value="ump5-fc" id="qm.method.ump5-fc" term="ump5-fc" />
+            <cmlx:enumeration value="umpw1pw91" id="qm.method.umpw1pw91" term="umpw1pw91" />
+            <cmlx:enumeration value="upbepbe" id="qm.method.upbepbe" term="upbepbe" />
+            <cmlx:enumeration value="upw91pw91" id="qm.method.upw91pw91" term="upw91pw91" />
+            <cmlx:enumeration value="uqcisd" id="qm.method.uqcisd" term="uqcisd" />
+            <cmlx:enumeration value="uqcisd(t)-fc" id="qm.method.uqcisd(t)-fc" term="uqcisd(t)-fc" />
+            <cmlx:enumeration value="uqcisd(tq)-fc" id="qm.method.uqcisd(tq)-fc" term="uqcisd(tq)-fc" />
+            <cmlx:enumeration value="uqcisd-fc" id="qm.method.uqcisd-fc" term="uqcisd-fc" />
+            <cmlx:enumeration value="uqcisd-fu" id="qm.method.uqcisd-fu" term="uqcisd-fu" />
+            <cmlx:enumeration value="usvwn" id="qm.method.usvwn" term="usvwn" />
+            <cmlx:enumeration value="utd-b3lyp-fc" id="qm.method.utd-b3lyp-fc" term="utd-b3lyp-fc" />
+            <cmlx:enumeration value="utd-blyp-fc" id="qm.method.utd-blyp-fc" term="utd-blyp-fc" />
+            <cmlx:enumeration value="utpsstpss" id="qm.method.utpsstpss" term="utpsstpss" />
+            <cmlx:enumeration value="uvsxc" id="qm.method.uvsxc" term="uvsxc" />
+        </entry>
+        
+        <entry id="qm.polar"
+            term="polarization function"
+            definition="Polarization function"
+            description=""
+            cmlx:superclass="qm">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="*" id="qm.polar.star"/>
+            <cmlx:enumeration value="**" id="qm.polar.starstar"/>
+            <cmlx:enumeration value="d,p" id="qm.polar.dp"/>
+            <cmlx:enumeration value="d" id="qm.polar.d"/>
+            <cmlx:enumeration value="\dd(\d[fgh]){0,3},\dp(\d[dfgh]){0,4}" id="qm.polar.dp"/>
+        </entry>
+        
+        <entry id="qm.integral"
+            term="integral"
+            definition="Integral grid type"
+            description="Modify and use the two-electron integrals and their derivatives"
+            cmlx:superclass="qm">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="ultrafinegrid" id="qm.integral.ultrafinegrid" term="UltraFineGrid" />
+            <cmlx:enumeration value="finegrid" id="qm.integral.finegrid" term="FineGrid" />
+            <cmlx:enumeration value="coarsegrid" id="qm.integral.coarsegrid" term="CoarseGrid" />
+        </entry>
+        <entry id="qm.integral.store"
+            term="integral.store"
+            definition="Integral grid type"
+            description="Integral storage strategy"
+            cmlx:superclass="qm">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="dsrys" id="qm.integral.dsrys" term="dsrys" />
+            <cmlx:enumeration value="rys1e" id="qm.integral.rys1e" term="rys1e" />
+            <cmlx:enumeration value="rys2e" id="qm.integral.rys2e" term="rys2e" />
+        </entry>
+        
+        <entry id="qm.symm"
+            term="symmetry of the wavefunction"
+            definition="symmetry of the wavefunction"
+            description=""
+            cmlx:superclass="qm">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="none" id="qm.symm.none"/>
+        </entry>
+        
+        <entry id="qm.pop"
+            term="population"
+            definition="population"
+            description=""
+            cmlx:superclass="qm">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="output" id="qm.pop.output" />
+        </entry>
+        
+ 
+        <!--  End QM -->
+
+		<!-- Begin Commands -->        
+        <entry id="cmd.freq"
+            term="frequency"
+            definition="Frequency analysis"
+            description="A frequency analysis job type."
+            cmlx:superclass="cmd">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="anal" id="cmd.freq.anal" term="anal" />
+            <cmlx:enumeration value="anharm" id="cmd.freq.anharm" term="anharm" />
+            <cmlx:enumeration value="anharmonic" id="cmd.freq.anharmonic" term="anharmonic" />
+            <cmlx:enumeration value="cubic" id="cmd.freq.cubic" term="cubic" />
+            <cmlx:enumeration value="enonly" id="cmd.freq.enonly" term="enonly" />
+            <cmlx:enumeration value="hindered" id="cmd.freq.hindered" term="hindered" />
+            <cmlx:enumeration value="noraman" id="cmd.freq.noraman" term="noraman" />
+            <cmlx:enumeration value="numer" id="cmd.freq.numer" term="numer" />
+            <cmlx:enumeration value="raman" id="cmd.freq.raman" term="raman" />
+            <cmlx:enumeration value="readanharm" id="cmd.freq.readanharm" term="readanharm" />
+            <cmlx:enumeration value="readiso" id="cmd.freq.readiso" term="readiso" />
+            <cmlx:enumeration value="roa" id="cmd.freq.roa" term="roa" />
+            <cmlx:enumeration value="vcd" id="cmd.freq.vcd" term="vcd" />
+            <cmlx:enumeration value="vibrot" id="cmd.freq.vibrot" term="vibrot" />
+        </entry>
+
+        <entry id="cmd.input.check"
+            term="input.chk"
+            definition="input method"
+            description="Strategy for reading checkpoint file."
+            cmlx:superclass="cmd">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="allcheck" id="cmd.geom.allcheck" term="allcheck" />
+            <cmlx:enumeration value="check" id="cmd.geom.check" term="check" />
+            <cmlx:enumeration value="checkpoint" id="cmd.geom.checkpoint" term="checkpoint" />
+        </entry>
+        <entry id="cmd.geom"
+            term="geom"
+            definition="Geometry optimization"
+            description="A geometry optimization job type."
+            cmlx:superclass="cmd">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="connectivity" id="cmd.geom.connectivity" term="connectivity" />
+            <cmlx:enumeration value="coord" id="cmd.geom.coord" term="coord" />
+            <cmlx:enumeration value="modela" id="cmd.geom.modela" term="modela" />
+            <cmlx:enumeration value="modred" id="cmd.geom.modred" term="modred" />
+        </entry>
+        <entry id="cmd.output.geom"
+            term="output.geom"
+            definition="output commands"
+            description="Output commands which do not modify the startegy of the calculation ."
+            cmlx:superclass="cmd">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="noang" id="cmd.geom.noang" term="noang" />
+            <cmlx:enumeration value="noangle" id="cmd.geom.noangle" term="noangle" />
+            <cmlx:enumeration value="nodihed" id="cmd.geom.nodihed" term="nodihed" />
+            <cmlx:enumeration value="nodist" id="cmd.geom.nodist" term="nodist" />
+            <cmlx:enumeration value="nodistance" id="cmd.geom.nodistance" term="nodistance" />
+            <cmlx:enumeration value="print" id="cmd.geom.print" term="print" />
+        </entry>
+        <entry id="cmd.maxcyc"
+            term="maxcycles"
+            definition="Maximum number of cycles"
+            description="Maximum number of cycles/step in the optimization."
+            cmlx:superclass="cmd">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:integer"/>
+            </cmlx:template>
+        </entry>
+        <entry id="cmd.maxstep"
+            term="maxstep"
+            definition="needs a definition"
+            description="needs a description"
+            cmlx:superclass="cmd">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:integer"/>
+            </cmlx:template>
+        </entry>
+        <entry id="cmd.population"
+            term="population"
+            definition="needs a definition"
+            description="needs a description"
+            cmlx:superclass="cmd">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="full" id="full" term="full" />
+        </entry>
+        <entry id="cmd.scf"
+            term="scf"
+            definition="needs a definition"
+            description="needs a description"
+            cmlx:superclass="cmd">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="conventional" id="cmd.scf.conventional" term="conventional" />
+            <cmlx:enumeration value="direct" id="cmd.scf.direct" term="direct" />
+            <cmlx:enumeration value="fermi" id="cmd.scf.fermi" term="fermi" />
+            <cmlx:enumeration value="incore" id="cmd.scf.incore" term="incore" />
+            <cmlx:enumeration value="noincore" id="cmd.scf.noincore" term="noincore" />
+            <cmlx:enumeration value="nosymm" id="cmd.scf.nosymm" term="nosymm" />
+            <cmlx:enumeration value="novaracc" id="cmd.scf.novaracc" term="novaracc" />
+            <cmlx:enumeration value="qc" id="cmd.scf.qc" term="qc" />
+            <cmlx:enumeration value="symm" id="cmd.scf.symm" term="symm" />
+            <cmlx:enumeration value="tight" id="cmd.scf.tight" term="tight" />
+            <cmlx:enumeration value="xqc" id="cmd.scf.xqc" term="xqc" />
+        </entry>
+        <entry id="cmd.scrf"
+            term="scrf"
+            definition="no idea"
+            description="needs a description"
+            cmlx:superclass="cmd">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="check" id="cmd.scrf.check" term="check" />
+            <cmlx:enumeration value="cosmo" id="cmd.scrf.cosmo" term="cosmo" />
+            <cmlx:enumeration value="cpcm" id="cmd.scrf.cpcm" term="cpcm" />
+            <cmlx:enumeration value="dipole" id="cmd.scrf.dipole" term="dipole" />
+            <cmlx:enumeration value="dpcm" id="cmd.scrf.dpcm" term="dpcm" />
+            <cmlx:enumeration value="gascavity" id="cmd.scrf.gascavity" term="gascavity" />
+            <cmlx:enumeration value="gradrho" id="cmd.scrf.gradrho" term="gradrho" />
+            <cmlx:enumeration value="hexadecapole" id="cmd.scrf.hexadecapole" term="hexadecapole" />
+            <cmlx:enumeration value="iefpcm" id="cmd.scrf.iefpcm" term="iefpcm" />
+            <cmlx:enumeration value="numer" id="cmd.scrf.numer" term="numer" />
+            <cmlx:enumeration value="read" id="cmd.scrf.read" term="read" />
+            <cmlx:enumeration value="scipcm" id="cmd.scrf.scipcm" term="scipcm" />
+            <cmlx:enumeration value="usemo" id="cmd.scrf.usemo" term="usemo" />
+        </entry>
+        <entry id="cmd.unknown"
+            term="unknownjob"
+            definition="no idea"
+            description="needs a description"
+            cmlx:superclass="cmd">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+        </entry>
+
+        <!-- End CMD Entries -->
+
+
+        <!-- Begin Program Entries -->
+        <entry id="prog.version"
+            term="version"
+            definition="Version of quantum chemistry program/software package. There is no controlled vocabulary. Some examples:"
+            cmlx:superclass="prog">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+                <cmlx:enumeration value="DEC-AXP-OSF/1-G03RevB.03" id="DEC-AXP-OSF/1-G03RevB.03" term="DEC-AXP-OSF/1-G03RevB.03" />
+                <cmlx:enumeration value="DEC-AXP-OSF/1-G98RevA.11.1" id="DEC-AXP-OSF/1-G98RevA.11.1" term="DEC-AXP-OSF/1-G98RevA.11.1" />
+                <cmlx:enumeration value="DEC-AXP-OSF/1-G98RevA.11.3" id="DEC-AXP-OSF/1-G98RevA.11.3" term="DEC-AXP-OSF/1-G98RevA.11.3" />
+                <cmlx:enumeration value="DEC-AXP-OSF/1-G98RevA.9" id="DEC-AXP-OSF/1-G98RevA.9" term="DEC-AXP-OSF/1-G98RevA.9" />
+                <cmlx:enumeration value="IA32L-G03RevC.01" id="IA32L-G03RevC.01" term="IA32L-G03RevC.01" />
+                <cmlx:enumeration value="IA32L-G03RevC.02" id="IA32L-G03RevC.02" term="IA32L-G03RevC.02" />
+                <cmlx:enumeration value="IA32L-GDVRevD.01+" id="IA32L-GDVRevD.01+" term="IA32L-GDVRevD.01+" />
+                <cmlx:enumeration value="IA64-Linux-G03RevB.04" id="IA64-Linux-G03RevB.04" term="IA64-Linux-G03RevB.04" />
+                <cmlx:enumeration value="IBM-RS6000-G98RevA.7" id="IBM-RS6000-G98RevA.7" term="IBM-RS6000-G98RevA.7" />
+                <cmlx:enumeration value="IBM64-RS6000-G98RevA.11.1" id="IBM64-RS6000-G98RevA.11.1" term="IBM64-RS6000-G98RevA.11.1" />
+                <cmlx:enumeration value="IBM64-G03RevC.02" id="IBM64-G03RevC.02" term="IBM64-G03RevC.02" />
+                <cmlx:enumeration value="MacOSX-G98RevA.11" id="MacOSX-G98RevA.11" term="MacOSX-G98RevA.11" />
+                <cmlx:enumeration value="SGI-G98RevA.6" id="SGI-G98RevA.6" term="SGI-G98RevA.6" />
+                <cmlx:enumeration value="SGI64-G98RevA.11.2" id="SGI64-G98RevA.11.2" term="SGI64-G98RevA.11.2" />
+                <cmlx:enumeration value="SGI64-G98RevA.9" id="SGI64-G98RevA.9" term="SGI64-G98RevA.9" />
+                <cmlx:enumeration value="SGI-G94RevD.4" id="SGI-G94RevD.4" term="SGI-G94RevD.4" />
+                <cmlx:enumeration value="SGI64-G98RevA.7" id="SGI64-G98RevA.7" term="SGI64-G98RevA.7" />
+                <cmlx:enumeration value="x86-Linux-G03RevB.05" id="x86-Linux-G03RevB.05" term="x86-Linux-G03RevB.05" />
+                <cmlx:enumeration value="x86-Linux-G98RevA.11.1" id="x86-Linux-G98RevA.11.1" term="x86-Linux-G98RevA.11.1" />
+                <cmlx:enumeration value="x86-Linux-G98RevA.11.4" id="x86-Linux-G98RevA.11.4" term="x86-Linux-G98RevA.11.4" />
+                <cmlx:enumeration value="x86-Linux-G98RevA.7" id="x86-Linux-G98RevA.7" term="x86-Linux-G98RevA.7" />
+                <cmlx:enumeration value="x86-Linux-G03RevB.04" id="x86-Linux-G03RevB.04" term="x86-Linux-G03RevB.04" />
+                <cmlx:enumeration value="x86-Linux-G98RevA.9" id="x86-Linux-G98RevA.9" term="x86-Linux-G98RevA.9" />
+        </entry>
+        <!--  End program -->
+        
+        <!--  units -->
+        <entry id="md.unit"
+            term="unit"
+            definition="unit"
+            description="description"
+            cmlx:superclass="md">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="bohr" id="md.unit.bohr" term="bohr" />
+            <cmlx:enumeration value="au" id="md.unit.au" term="au" />
+            <cmlx:enumeration value="deg" id="md.unit.deg" term="deg" />
+            <cmlx:enumeration value="K" id="md.unit.k" term="K" />
+        </entry>
+        <!-- units -->
+
+        <!-- Begin Miscellaneous Entries -->
+        <entry id="prog.guess"
+            term="prog.guess"
+            definition="HF initial guess method"
+            description="Controls the initial guess for the Hartree-Fock wavefunction."
+            cmlx:superclass="prog">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+            <cmlx:enumeration value="alter" id="alter" term="alter" />
+            <cmlx:enumeration value="always" id="always" term="always" />
+            <cmlx:enumeration value="cards" id="cards" term="cards" />
+            <cmlx:enumeration value="core" id="core" term="core" />
+            <cmlx:enumeration value="huckel" id="huckel" term="huckel" />
+            <cmlx:enumeration value="indo" id="indo" term="indo" />
+            <cmlx:enumeration value="lowsym" id="lowsym" term="lowsym" />
+            <cmlx:enumeration value="mix" id="mix" term="mix" />
+            <cmlx:enumeration value="read" id="read" term="read" />
+            <cmlx:enumeration value="only" id="only" term="only" />
+        </entry>
+        <!-- End Miscellaneous Entries -->
+    </dictionary>
+</cml>
+
+
+
+
+
+
+
+
+
+
+

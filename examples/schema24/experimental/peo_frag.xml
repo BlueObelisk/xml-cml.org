@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<molecule xmlns="http://www.xml-cml.org/schema"
+convention="CML-fragment1"
+formula="(R1-C1[H2]-%t1=120%"-C2[@@H1](-%aC3[H3])-%t2==112%O-R2)"/>

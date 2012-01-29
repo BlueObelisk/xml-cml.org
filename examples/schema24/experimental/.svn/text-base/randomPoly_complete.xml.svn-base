@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="randomPoly" convention="cml:PML-complete" xmlns:f="http://www.xml-cml.org/mols/frags" xmlns="http://www.xml-cml.org/schema">
+ <atomArray>
+  <atom elementType="C" hydrogenCount="2" id="po_1_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_1_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_1_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_1_a4"> </atom>
+  <atom elementType="R" id="po_1_r1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_2_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_2_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_2_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_2_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_3_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_3_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_3_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_3_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_4_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_4_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_4_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_4_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_5_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_5_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_5_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_5_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_6_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_6_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_6_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_6_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_7_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_7_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_7_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_7_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_8_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_8_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_8_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_8_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_9_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_9_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_9_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_9_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_10_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_10_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_10_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_10_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_11_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_11_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_11_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_11_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_12_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_12_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_12_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_13_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_13_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_13_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_14_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_14_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_14_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_15_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_15_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_15_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_16_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_16_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_16_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_17_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_17_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_17_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_18_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_18_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_18_a3"> </atom>
+  <atom elementType="R" id="eo_18_r2"> </atom>
+ </atomArray>
+ <bondArray>
+  <bond order="1" id="po_1_a1_po_1_a2" atomRefs2="po_1_a1 po_1_a2"> </bond>
+  <bond order="1" id="po_1_a2_po_1_a3" atomRefs2="po_1_a2 po_1_a3"> </bond>
+  <bond order="1" id="po_1_a2_po_1_a4" atomRefs2="po_1_a2 po_1_a4"> </bond>
+  <bond order="1" id="po_1_a1_po_1_r1" atomRefs2="po_1_a1 po_1_r1"> </bond>
+  <bond order="1" id="po_2_a1_po_2_a2" atomRefs2="po_2_a1 po_2_a2"> </bond>
+  <bond order="1" id="po_2_a2_po_2_a3" atomRefs2="po_2_a2 po_2_a3"> </bond>
+  <bond order="1" id="po_2_a2_po_2_a4" atomRefs2="po_2_a2 po_2_a4"> </bond>
+  <bond order="1" id="po_3_a1_po_3_a2" atomRefs2="po_3_a1 po_3_a2"> </bond>
+  <bond order="1" id="po_3_a2_po_3_a3" atomRefs2="po_3_a2 po_3_a3"> </bond>
+  <bond order="1" id="po_3_a2_po_3_a4" atomRefs2="po_3_a2 po_3_a4"> </bond>
+  <bond order="1" id="po_4_a1_po_4_a2" atomRefs2="po_4_a1 po_4_a2"> </bond>
+  <bond order="1" id="po_4_a2_po_4_a3" atomRefs2="po_4_a2 po_4_a3"> </bond>
+  <bond order="1" id="po_4_a2_po_4_a4" atomRefs2="po_4_a2 po_4_a4"> </bond>
+  <bond order="1" id="po_5_a1_po_5_a2" atomRefs2="po_5_a1 po_5_a2"> </bond>
+  <bond order="1" id="po_5_a2_po_5_a3" atomRefs2="po_5_a2 po_5_a3"> </bond>
+  <bond order="1" id="po_5_a2_po_5_a4" atomRefs2="po_5_a2 po_5_a4"> </bond>
+  <bond order="1" id="po_6_a1_po_6_a2" atomRefs2="po_6_a1 po_6_a2"> </bond>
+  <bond order="1" id="po_6_a2_po_6_a3" atomRefs2="po_6_a2 po_6_a3"> </bond>
+  <bond order="1" id="po_6_a2_po_6_a4" atomRefs2="po_6_a2 po_6_a4"> </bond>
+  <bond order="1" id="po_7_a1_po_7_a2" atomRefs2="po_7_a1 po_7_a2"> </bond>
+  <bond order="1" id="po_7_a2_po_7_a3" atomRefs2="po_7_a2 po_7_a3"> </bond>
+  <bond order="1" id="po_7_a2_po_7_a4" atomRefs2="po_7_a2 po_7_a4"> </bond>
+  <bond order="1" id="po_8_a1_po_8_a2" atomRefs2="po_8_a1 po_8_a2"> </bond>
+  <bond order="1" id="po_8_a2_po_8_a3" atomRefs2="po_8_a2 po_8_a3"> </bond>
+  <bond order="1" id="po_8_a2_po_8_a4" atomRefs2="po_8_a2 po_8_a4"> </bond>
+  <bond order="1" id="po_9_a1_po_9_a2" atomRefs2="po_9_a1 po_9_a2"> </bond>
+  <bond order="1" id="po_9_a2_po_9_a3" atomRefs2="po_9_a2 po_9_a3"> </bond>
+  <bond order="1" id="po_9_a2_po_9_a4" atomRefs2="po_9_a2 po_9_a4"> </bond>
+  <bond order="1" id="po_10_a1_po_10_a2" atomRefs2="po_10_a1 po_10_a2"> </bond>
+  <bond order="1" id="po_10_a2_po_10_a3" atomRefs2="po_10_a2 po_10_a3"> </bond>
+  <bond order="1" id="po_10_a2_po_10_a4" atomRefs2="po_10_a2 po_10_a4"> </bond>
+  <bond order="1" id="po_11_a1_po_11_a2" atomRefs2="po_11_a1 po_11_a2"> </bond>
+  <bond order="1" id="po_11_a2_po_11_a3" atomRefs2="po_11_a2 po_11_a3"> </bond>
+  <bond order="1" id="po_11_a2_po_11_a4" atomRefs2="po_11_a2 po_11_a4"> </bond>
+  <bond order="1" id="eo_12_a1_eo_12_a2" atomRefs2="eo_12_a1 eo_12_a2"> </bond>
+  <bond order="1" id="eo_12_a2_eo_12_a3" atomRefs2="eo_12_a2 eo_12_a3"> </bond>
+  <bond order="1" id="eo_13_a1_eo_13_a2" atomRefs2="eo_13_a1 eo_13_a2"> </bond>
+  <bond order="1" id="eo_13_a2_eo_13_a3" atomRefs2="eo_13_a2 eo_13_a3"> </bond>
+  <bond order="1" id="eo_14_a1_eo_14_a2" atomRefs2="eo_14_a1 eo_14_a2"> </bond>
+  <bond order="1" id="eo_14_a2_eo_14_a3" atomRefs2="eo_14_a2 eo_14_a3"> </bond>
+  <bond order="1" id="eo_15_a1_eo_15_a2" atomRefs2="eo_15_a1 eo_15_a2"> </bond>
+  <bond order="1" id="eo_15_a2_eo_15_a3" atomRefs2="eo_15_a2 eo_15_a3"> </bond>
+  <bond order="1" id="eo_16_a1_eo_16_a2" atomRefs2="eo_16_a1 eo_16_a2"> </bond>
+  <bond order="1" id="eo_16_a2_eo_16_a3" atomRefs2="eo_16_a2 eo_16_a3"> </bond>
+  <bond order="1" id="eo_17_a1_eo_17_a2" atomRefs2="eo_17_a1 eo_17_a2"> </bond>
+  <bond order="1" id="eo_17_a2_eo_17_a3" atomRefs2="eo_17_a2 eo_17_a3"> </bond>
+  <bond order="1" id="eo_18_a1_eo_18_a2" atomRefs2="eo_18_a1 eo_18_a2"> </bond>
+  <bond order="1" id="eo_18_a2_eo_18_a3" atomRefs2="eo_18_a2 eo_18_a3"> </bond>
+  <bond order="1" id="eo_18_a3_eo_18_r2" atomRefs2="eo_18_a3 eo_18_r2"> </bond>
+  <bond atomRefs2="po_1_a4 po_2_a1" id="f:po_1_r2_f:po_2_r1"/>
+  <bond atomRefs2="po_2_a4 po_3_a1" id="f:po_2_r2_f:po_3_r1"/>
+  <bond atomRefs2="po_3_a4 po_4_a1" id="f:po_3_r2_f:po_4_r1"/>
+  <bond atomRefs2="po_4_a4 po_5_a1" id="f:po_4_r2_f:po_5_r1"/>
+  <bond atomRefs2="po_5_a4 po_6_a1" id="f:po_5_r2_f:po_6_r1"/>
+  <bond atomRefs2="po_6_a4 po_7_a1" id="f:po_6_r2_f:po_7_r1"/>
+  <bond atomRefs2="po_7_a4 po_8_a1" id="f:po_7_r2_f:po_8_r1"/>
+  <bond atomRefs2="po_8_a4 po_9_a1" id="f:po_8_r2_f:po_9_r1"/>
+  <bond atomRefs2="po_9_a4 po_10_a1" id="f:po_9_r2_f:po_10_r1"/>
+  <bond atomRefs2="po_10_a4 po_11_a1" id="f:po_10_r2_f:po_11_r1"/>
+  <bond atomRefs2="po_11_a4 eo_12_a1" id="f:po_11_r2_f:eo_12_r1"/>
+  <bond atomRefs2="eo_12_a3 eo_13_a1" id="f:eo_12_r2_f:eo_13_r1"/>
+  <bond atomRefs2="eo_13_a3 eo_14_a1" id="f:eo_13_r2_f:eo_14_r1"/>
+  <bond atomRefs2="eo_14_a3 eo_15_a1" id="f:eo_14_r2_f:eo_15_r1"/>
+  <bond atomRefs2="eo_15_a3 eo_16_a1" id="f:eo_15_r2_f:eo_16_r1"/>
+  <bond atomRefs2="eo_16_a3 eo_17_a1" id="f:eo_16_r2_f:eo_17_r1"/>
+  <bond atomRefs2="eo_17_a3 eo_18_a1" id="f:eo_17_r2_f:eo_18_r1"/>
+ </bondArray>
+</molecule>

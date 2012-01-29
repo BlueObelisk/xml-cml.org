@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml xmlns="http://www.xml-cml.org/schema"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:conventions="http://www.xml-cml.org/convention/" convention="conventions:molecular"
+     xmlns:cmlDictionary="http://www.xml-cml.org/dictionary/">
+    <dc:title>test file for http://www.xml-cml.org/conventions/molecular convention</dc:title>
+    <dc:description>ok because the dictRef has been used to add further semantics to bond order "other"</dc:description>
+    <dc:author>J A Townsend</dc:author>
+    <dc:rights>Copyright J A Townsend jat45@cantab.net 2009.</dc:rights>
+    <dc:date>2009-04-05</dc:date>
+    <molecule id="m1">
+        <atomArray>
+            <atom id="a1" elementType="H"/>
+            <atom id="a2" elementType="He"/>
+        </atomArray>
+        <bondArray>
+            <bond id="b1" atomRefs2="a1 a2" order="other" dictRef="cmlDictionary:dummy"/>
+        </bondArray>
+    </molecule>
+</cml>

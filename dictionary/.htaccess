@@ -1,0 +1,11 @@
+RewriteEngine on 
+RewriteBase /dictionary/
+
+RewriteRule ^cif/$ cif/dictionary.cml
+
+RewriteRule ^dummy/$ dummy/index.php
+
+
+RewriteRule ^cmlcomp/$ cmlcomp/dictionary.cml
+RewriteRule ^compchem/$ compchem/dictionary.cml
+

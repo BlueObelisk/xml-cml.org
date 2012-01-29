@@ -1,0 +1,1061 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Chemical Markup Language - Molecular Convention</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+		<!-- meta http-equiv="refresh" content="30" /-->
+		<link rel="stylesheet" href="../style/W3C-PR.css" type="text/css"/>
+		<link rel="stylesheet" href="../style/cml-spec.css" type="text/css"/>
+		<link rel="shortcut icon" href="http://xml-cml.org/images/favicon.ico" type="image/x-icon"/>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-4391142-2']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+			'.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</head>
+
+	<body>
+		<div class="head">
+			<h1>Chemical Markup Language - Molecular Convention</h1>
+
+			<h2>28 August 2011</h2>
+
+			<dl>
+				<dt>
+					<a id="thisVersion" name="thisVersion">This version</a>:
+				</dt>
+				<dd>
+					<a href="http://www.xml-cml.org/convention/molecular-20110828">http://www.xml-cml.org/convention/molecular-20110828</a>
+				</dd>
+
+				<dt>Latest version:</dt>
+				<dd>
+					<a href="http://www.xml-cml.org/convention/molecular">http://www.xml-cml.org/convention/molecular</a>
+				</dd>
+
+				<dt>Authors:</dt>
+				<dd>See <a href="#acks">acknowledgments</a>.</dd>
+
+				<dt>Editors:</dt>
+				<dd>Sam Adams, University of Cambridge</dd>
+				<dd>Joe Townsend, University of Cambridge</dd>
+			</dl>
+
+			<h2 id="abstract">Abstract</h2>
+
+			<p>
+				This specification defines the requirements of the Chemical Markup Language Molecular convention.
+			</p>
+
+			<p>
+				This document describes the concepts which are introduced in the molecular convention, explains how to
+				compose a document that conforms to the molecular convention and illustrates these with examples.
+			</p>
+
+			<hr/>
+		</div>
+
+		<h1  id="contents">Table of Contents</h1>
+
+        1. <a href="#introduction">Introduction</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1 <a href="#notational-conventions">Notational Conventions</a>
+<br/>2. <a href="#applying">Applying the molecular convention</a>
+<br/>3. <a href="#molecule-element">Molecule Element</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1 <a href="#molecule-id">Id</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.2 <a href="#molecule-count">Count</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.3 <a href="#molecule-atomArray">AtomArray</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.4 <a href="#molecule-bondArray">BondArray</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.5 <a href="#molecule-formula">Formula</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.6 <a href="#molecule-property">Property</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.7 <a href="#molecule-label">Label</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.8 <a href="#molecule-name">Name</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.9 <a href="#molecule-formalCharge">Formal Charge</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.10 <a href="#molecule-spinMultiplicity">Spin Multiplicity</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.11 <a href="#molecule-chirality">Chirality</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.12 <a href="#molecule-spectrum">Spectrum</a>
+<br/>4. <a href="#atomArray-element">AtomArray Element</a>
+<br/>5. <a href="#bondArray-element">BondArray Element</a>
+<br/>5. <a href="#formula-element">Formula Element</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;5.1 <a href="#formula-count">Count</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;5.2 <a href="#formula-atomArray">AtomArray</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;5.3 <a href="#formula-concise">Concise</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;5.4 <a href="#formula-inline">Inline</a>
+<br/>5. <a href="#property-element">Property Element</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;5.1 <a href="#property-scalar">Scalar</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;5.2 <a href="#property-dictRef">DictRef</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;5.3 <a href="#property-title">Title</a>
+<br/>6 <a href="#scalar-element">Scalar Element</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;6.1 <a href="#scalar-units">Unit</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;6.2 <a href="#scalar-dataType">DataType</a>
+<br/>7 <a href="#label-element">Label Element</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;7.1 <a href="#label-dictRef">DictRef</a>
+<br/>8 <a href="#name-element">Name Element</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;8.1 <a href="#name-dictRef">DictRef</a>
+<br/>9 <a href="#atom-element">Atom Element</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.1 <a href="#atom-elementType">ElementType</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.2 <a href="#atom-id">Id</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.3 <a href="#atom-x2">X2</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.4 <a href="#atom-y2">Y2</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.5 <a href="#atom-x3">X3</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.6 <a href="#atom-y3">Y3</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.7 <a href="#atom-z3">Z3</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.8 <a href="#atom-formalCharge">FormalCharge</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.9 <a href="#atom-isotopeNumber">IsotopeNumber</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.10 <a href="#atom-spinMultiplicity">Spin Multiplicity </a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.11 <a href="#atom-count">Count </a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.12 <a href="#atom-atomParity">AtomParity</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.13 <a href="#atom-label">Label</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;9.14 <a href="#atom-property">Property</a>
+<br/>10 <a href="#atomParity-element">AtomParity Element</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;10.1 <a href="#atomParity-atomRefs4">AtomRefs4</a>
+<br/>11 <a href="#bond-element">Bond Element</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;11.1 <a href="#bond-atomRefs2">AtomRefs2</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;11.2 <a href="#bond-order">Order</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;11.3 <a href="#bond-id">Id</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;11.4 <a href="#bond-bondStereo">BondStereo</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;11.5 <a href="#bond-label">Label</a>
+<br/>12 <a href="#bondStereo-element">BondStereo Element</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;12.1 <a href="#bondStereo-atomRefs2">AtomRefs2</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;12.2 <a href="#bondStereo-atomRefs4">AtomRefs4</a>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;12.3 <a href="#bondStereo-dictRef">DictRef</a>
+<br/>
+		<hr/>
+
+
+		<h1 id="introduction">1. Introduction</h1>
+
+		<p>
+			The molecular convention is used to specify chemistry relating to molecules; for example connection tables
+			formulae, names and properties. The molecules can also contain spectra though these will have their own conventions
+			depending on whether they are Infra Red, NMR <i>etc</i>.
+		</p>
+
+		<p>
+			Where the behaviour of an element or attribute is completely explained by the schema
+			it is not further elaborated on in this document; typically in these cases an entry will only
+			state whether the node is required, suggested or optional.
+		</p>
+
+		<p>
+			Except where they are expressly forbidden, the convention allows users
+			to optionally include both other cml elements and attributes, and foreign namespaced
+			elements and attributes. It is expected that in general tools will
+			silently ignore the extra information because they will not be able to understand it.
+		</p>
+
+		<h2 id="notational-conventions">1.1 Notational Conventions</h2>
+
+		<p>
+			The keywords &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+			&quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot;
+			in this document are to be interpreted as described in RFC 2119 [<cite>
+				<a href="#ref-RFC2119">IETF RFC 2119</a>
+			</cite>].
+		</p>
+
+		<p>
+			The terms &quot;element&quot;, &quot;attribute&quot;, &quot;child&quot; and &quot;parent&quot;
+			in this document are to be interpreted as described in the W3C Recommendation for Extensible Markup
+			Language (XML) [<cite>
+				<a href="#ref-XML">W3C XML</a>
+			</cite>].
+		</p>
+
+		<p>The use of fonts is as follows:</p>
+
+		<ul>
+			<li>Schema terms, including elements and attributes, are written in <code>this font</code>.</li>
+			<li>Reserved attribute values (e.g. of <code>dictRef</code>), are written in <code>this font</code>.</li>
+		</ul>
+
+		<h2>
+			<a name="namespaces">1.2</a> Namespaces</h2>
+
+		<p>This specification uses the following namespaces and prefixes to indicate those namespaces:</p>
+
+		<table class="namespace-table" summary="Namespaces table">
+			<tr>
+				<th>Prefix</th>
+				<th>Namespace URI</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>
+					<code>cml</code>
+				</td>
+				<td>
+					<code>http://www.xml-cml.org/schema</code>
+				</td>
+				<td>Chemical Markup Language elements</td>
+			</tr>
+			<tr>
+				<td>
+					<code>convention</code>
+				</td>
+				<td>
+					<code>http://www.xml-cml.org/convention/</code>
+				</td>
+				<td>Standard Chemical Markup Language convention namespace</td>
+			</tr>
+		</table>
+
+
+		<h1 id="applying">2. Applying the molecular convention</h1>
+
+		<p>
+			The molecular convention MUST be specified using the <code>convention</code> attribute
+			on a <code>molecular</code> element or a <code>cml</code> element. The value of the attribute
+			MUST be a QName that represents the molecular convention, <i>i</i>.<i>e</i>. <code>convention:molecular</code>.
+			If the molecular convention is specified on a <code>cml</code> element then that element
+			MUST have at least one child <code>molecule</code> element that either has no convention specified or
+            specifies the molecular convention.
+		</p>
+
+		<div class="good">
+			<pre>
+&lt;molecule xmlns="http://www.xml-cml.org/schema"
+xmlns:convention="http://www.xml-cml.org/convention/"
+convention="convention:molecular" id="m1"&gt;
+
+    &lt;!-- body is omitted. --&gt;
+
+&lt;/molecule&gt;</pre>
+		</div>
+
+		<br/>
+
+		<div class="good">
+			<pre>
+&lt;cml xmlns="http://www.xml-cml.org/schema"
+xmlns:convention="http://www.xml-cml.org/convention/"
+convention="convention:molecular"&gt;
+    &lt;molecule id="m1"&gt;
+
+        &lt;!-- body is omitted. --&gt;
+
+    &lt;/molecule id="m1"&gt;
+&lt;/cml&gt;</pre>
+		</div>
+
+		<br/>
+
+		<div class="bad">
+			<pre>
+&lt;cml xmlns="http://www.xml-cml.org/schema"
+xmlns:convention="http://www.xml-cml.org/convention/"
+convention="convention:molecular"&gt;
+
+&lt;/cml&gt;</pre>
+       </div>
+
+		<br/>
+
+		<div class="bad">
+			<pre>
+&lt;formula xmlns="http://www.xml-cml.org/schema"
+xmlns:convention="http://www.xml-cml.org/convention/"
+convention="convention:molecular"&gt;
+
+    &lt;!-- body is omitted. --&gt;
+
+&lt;/formula&gt;</pre>
+		</div>
+
+		<h1 id="molecule-element">3. Molecule Element</h1>
+
+		<p>
+			Within the <code>molecular</code> convention, a <code>molecule</code> is REQUIRED to be
+			a child of either <code>cml</code> or <code>molecule</code> elements.
+		</p>
+		<p>
+			A <code>molecule</code> in the molecular convention is used to hold any combination of:
+		</p>
+		<ol>
+			<li>
+				a string
+				representation of a molecule (be it a name held in a <code>name</code>, a label
+				held in a <code>label</code> or an inline representation in a <code>inline</code>
+				attribute on a <code>formula</code> element).
+			</li>
+			<li>
+				the chemical composition of a substance, for example using the <code>concise</code>
+				attribute on a <code>formula</code> element, or by specifically listing the
+				<code>atom</code>s in either an <code>atomArray</code> as a child of a <code>molecule</code>
+				or in an <code>atomArray</code> as  a child or a <code>formula</code>.
+			</li>
+			<li>
+				a connection table of <code>atom</code>s, connected by <code>bond</code>s. By definition
+				a molecule is a connected set, therefore hydrochloric acid (bonded) would be a single
+				molecule, whilst H<sup>+</sup> Cl<sup>-</sup> could be represented as a parent molecule
+				containing two child molecules (one containing H<sup>+</sup>, the other containing Cl<sup>-</sup>).
+			</li>
+		</ol>
+
+		<h2 id="molecule-id">3.1 Id</h2>
+
+		<p>
+			A <code>molecule</code> element MUST have an <code>id</code> attribute, the
+			value of which MUST be unique amongst the <code>molecule</code>s within the scope of the document.
+		</p>
+
+		<p>
+			The value of the <code>id</code> attribute MUST start with a letter, and
+			MUST only contain letters, numbers, dot, hyphen or underscore.
+		</p>
+
+		<table>
+			<tr>
+				<td>
+					<code>IdStartChar</code>
+				</td>
+				<td>::=</td>
+				<td>
+					<code>[A-Z] | [a-z]</code>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>IdChar</code>
+				</td>
+				<td>::=</td>
+				<td>
+					<code>IdStartChar | [0-9] | "." | "-" | "_"</code>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>Id</code>
+				</td>
+				<td>::=</td>
+				<td>
+					<code>IdStartChar (IdChar)*</code>
+				</td>
+			</tr>
+		</table>
+
+		<h2 id="molecule-count">3.2 Count</h2>
+
+		<p>
+			A <code>molecule</code> that is a child of another <code>molecule</code> MUST have a
+			<code>count</code> attribute specified. The value of this attribute MUST be a non-negative
+			number.
+		</p>
+
+		<div class="good">
+			<pre>
+&lt;cml:molecule convention="convention:molecular" id="parentMol"&gt;
+
+    &lt;cml:molecule id="childMol1" count="1"&gt;
+
+        &lt;!-- body is omitted. --&gt;
+
+    &lt;/cml:molecule&gt;
+
+    &lt;cml:molecule id="childMol2" count="0.5"&gt;
+
+        &lt;!-- body is omitted. --&gt;
+
+    &lt;/cml:molecule&gt;
+
+&lt;/cml:molecule&gt;</pre>
+		</div>
+
+		<br/>
+
+		<div class="bad">
+			<pre>
+&lt;cml:molecule convention="convention:molecular" id="parentMol"&gt;
+
+    &lt;cml:molecule id="childMol1"&gt;
+
+        &lt;!-- body is omitted. --&gt;
+
+    &lt;/cml:molecule&gt;
+
+&lt;/cml:molecule&gt;</pre>
+		</div>
+
+		<p>
+			A <code>molecule</code> that is not a child MUST NOT have a <code>count</code> specified.
+		</p>
+
+		<div class="bad">
+			<pre>
+&lt;cml:molecule convention="convention:molecular" id="parentMol" count="2"&gt;
+
+    &lt;!-- body is omitted. --&gt;
+
+&lt;/cml:molecule&gt;</pre>
+		</div>
+
+		<h2 id="molecule-atomArray">3.3 AtomArray</h2>
+
+		<p>
+			A <code>molecule</code> MAY contain a single <code>atomArray</code> child except when it
+			contains child molecules.
+		</p>
+
+		<div class="bad">
+			<pre>
+&lt;cml:molecule convention="convention:molecular" id="parentMol"&gt;
+
+    &lt;cml:molecule id="childMol1" count="1"&gt;
+
+        &lt;!-- body is omitted. --&gt;
+
+    &lt;/cml:molecule&gt;
+
+    &lt;cml:atomArray&gt;
+
+        &lt;!-- body is omitted. --&gt;
+
+    &lt;cml:atomArray&gt;
+
+&lt;/cml:molecule&gt;</pre>
+		</div>
+
+		<h2 id="molecule-bondArray">3.4 BondArray</h2>
+
+		<p>
+			A <code>molecule</code> MAY contain a single <code>bondyArray</code> child provided
+			that it does not contain child molecules.
+		</p>
+
+		<h2 id="molecule-formula">3.5 Formula</h2>
+
+		<p>
+			A <code>molecule</code> MAY contain any number of <code>formula</code> children.
+		</p>
+
+		<h2 id="molecule-property">3.6 Property</h2>
+
+		<p>
+			A <code>molecule</code> MAY contain any number of <code>property</code> children.
+		</p>
+
+		<h2 id="molecule-label">3.7 Label</h2>
+
+		<p>
+			A <code>molecule</code> MAY contain any number of <code>label</code> children.
+		</p>
+
+		<h2 id="molecule-name">3.8 Name</h2>
+
+		<p>
+			A <code>molecule</code> MAY contain any number of <code>name</code> children.
+		</p>
+
+		<h2 id="molecule-formalCharge">3.9 Formal Charge</h2>
+		<p>
+			A <code>molecule</code> SHOULD have a <code>formalCharge</code> attribute specified.
+			For <code>molecule</code>s that have child <code>molecule</code>s, the value of the <code>formalCharge</code>
+			SHOULD be equal to the sum of the <code>formalCharge</code>s of the child <code>molecule</code>s multiplied by the <code>count</code> value
+			of those <code>molecule</code>s.
+		</p>
+
+		<p>
+			The value of the <code>formalCharge</code> attribute on a <code>molecule</code> that does not
+			contain child <code>molecule</code>s is less well defined. In general its value is more
+			important than that of individual <code>atom</code>s (<i>i</i>.<i>e</i>. a cyclopentadienyl anion
+			would have <code>formalCharge="-1"</code> on the molecule but not necessarily have a <code>formalCharge</code>
+			attribute on any of the atoms).
+		</p>
+
+		<h2 id="molecule-spinMultiplicity">3.10 Spin Multiplicity</h2>
+		<p>
+			A <code>molecule</code> SHOULD have a <code>spinMultiplicity</code> attribute specified.
+		</p>
+
+		<h2 id="molecule-chirality">3.11 Chirality</h2>
+		<p>
+			A <code>molecule</code> MAY have a <code>chirality</code> attribute specified.
+		</p>
+
+		<h2 id="molecule-spectrum">3.12 Spectrum</h2>
+		<p>
+			A <code>molecule</code> MAY have child <code>spectrum</code> elements. Each <code>spectrum</code>
+			element MUST specify a convention using the <code>convention</code> attribute to which they
+			conform.
+		</p>
+
+		<h1 id="atomArray-element">4. AtomArray Element</h1>
+
+		<p>
+			An <code>atomArray</code> element MUST be a child of either a <code>molecule</code> or a
+			<code>formula</code> element. The <code>atomArray</code> is simply a container for <code>atom</code>s.
+		</p>
+
+		<p>
+			An <code>atomArray</code> element MUST contain at least one child <code>atom</code> element.
+		</p>
+
+		<h1 id="bondArray-element">5. BondArray Element</h1>
+
+		<p>
+			A <code>bondArray</code> element MUST be a child of a <code>molecule</code> element.
+			The <code>bondArray</code> is simply a container for <code>bond</code>s.
+		</p>
+
+		<p>
+			A <code>bondArray</code> element MUST contain at least one child <code>bond</code> element.
+		</p>
+
+		<h1 id="formula-element">5. Formula Element</h1>
+
+		<p>
+			A <code>formula</code> element MUST be the child of either <code>molecule</code> or
+			<code>formula</code> elements.
+		</p>
+
+		<p>
+			A <code>formula</code> MUST have at least one of an <code>atomArray</code> child, a <code>concise</code> attribute
+			and an <code>inline</code> attribute.
+		</p>
+		<h2 id="formula-count">5.1 Count</h2>
+
+		<p>
+			A <code>formula</code> that is a child of another <code>formula</code> MUST have a
+			<code>count</code> attribute specified. The value of this attribute MUST be a non-negative
+			number.
+		</p>
+
+		<div class="good">
+			<pre>
+&lt;cml:molecule convention="convention:molecular" id="ml"&gt;
+
+    &lt;cml:atomArray&gt;
+
+        &lt;cml:atomArray count="1"&gt;
+
+            &lt;!-- body is omitted. --&gt;
+
+        &lt;/cml:atomArray&gt;
+
+    &lt;/cml:atomArray&gt;
+
+&lt;/cml:molecule&gt;</pre>
+		</div>
+
+		<p>
+			A <code>formula</code> that is not a child of a <code>formula</code> element MUST NOT
+			have <code>count</code> specified.
+		</p>
+
+		<div class="bad">
+			<pre>
+&lt;cml:molecule convention="convention:molecular" id="ml"&gt;
+
+    &lt;cml:atomArray count="1"&gt;
+
+        &lt;!-- body is omitted. --&gt;
+
+    &lt;/cml:atomArray&gt;
+
+&lt;/cml:molecule&gt;</pre>
+		</div>
+
+		<h2 id="formula-atomArray">5.2 AtomArray</h2>
+		<p>
+			A <code>formula</code> element MAY contain a single <code>atomArray</code> element.
+		</p>
+
+		<h2 id="formula-concise">5.3 Concise</h2>
+		<p>
+			A <code>formula</code> element SHOULD have a <code>concise</code> attribute if possible, <i>i</i>.<i>e</i>.
+			if it can be calculated from the <code>atom</code>s in the <code>formula</code>'s <code>atomArray</code> or
+			potentially from the parent <code>molecule</code>'s <code>atom</code>s.
+		</p>
+		<p>
+			The <code>concise</code> attribute
+			is used to hold an (unstructured) formula <i>i</i>.<i>e</i>. no submolecules. The schema defines the
+			allowed pattern for the <code>concise</code> attribute.
+		</p>
+
+		<h2 id="formula-inline">5.4 Inline</h2>
+		<p>
+			A <code>formula</code> element MAY have an <code>inline</code> attribute.
+			The <code>inline</code> attribute
+			can be used to hold any information. There is no fixed way for markup to be specified but
+			it is recommended that Latex style is used <i>i</i>.<i>e</i>. H_{3}O^{+} to represent the
+			hydroxonium ion.
+		</p>
+
+		<h1 id="property-element">5. Property Element</h1>
+		<p>
+			A <code>property</code> element is used to wrap a <code>scalar</code> and define to what
+			the scalar value relates.
+		</p>
+
+		<h2 id="property-scalar">5.1 Scalar</h2>
+		<p>
+			A <code>property</code> MUST have a single <code>scalar</code> child that gives the value
+			of the property.
+		</p>
+
+		<h2 id="property-dictRef">5.2 DictRef</h2>
+		<p>
+			A <code>property</code> MUST have a <code>dictRef</code> attribute,
+			the value of which is a QName referencing an entry in a <a href="http://xml-cml.org/convention/dictionary">dictionary</a>
+			which defines how this property should be interpreted.
+		</p>
+
+		<h2 id="property-title">5.3 Title</h2>
+		<p>
+			It is RECOMMENDED that <code>property</code> elements have a <code>title</code> attribute
+			intended for human-readability.
+		</p>
+		<p>
+			The title attribute MUST NOT be empty and MUST contain at least one non-whitespace character.
+		</p>
+		<p>
+			The value of the title attribute MAY contain any valid unicode character, however it is RECOMMENDED that any character from outside of the ASCII subset (codepoints 32-127) is represented using an entity reference.
+		</p>
+		<h1 id="scalar-element">6 Scalar Element</h1>
+
+		<h2 id="scalar-units">6.1 Unit</h2>
+		<p>
+			A <code>scalar</code> MUST have
+			a <code>units</code> attribute, the value of which is a QName
+			referencing the <a href="http:/xml-cml.org/convention/unit">units</a> of the value defined
+			using the <code>scalar</code>.
+		</p>
+		<h2 id="scalar-dataType">6.2 DataType</h2>
+		<p>
+			A <code>scalar</code> element MUST have
+			<code>dataType</code> attribute, the value of which is a QName
+			referencing the data type of the value defined.
+		</p>
+
+		<h1 id="label-element">7 Label Element</h1>
+		<p>
+			The semantics of the <code>label</code> are not defined in the schema but are normally commonly
+			used standard or semi-standard text strings.
+		</p>
+		<h2 id="label-dictRef">7.1 DictRef</h2>
+		<p>
+			A <code>label</code> MUST have a <code>dictRef</code> attribute,
+			the value of which is a QName referencing an entry in a <a href="http://xml-cml.org/convention/dictionary">dictionary</a>
+			which defines how this label should be interpreted.
+		</p>
+
+		<h1 id="name-element">8 Name Element</h1>
+		<p>
+			A <code>name</code> element contains a string that is the chemical name of the molecule.
+			The name does not need to be a structural chemical name. It is RECOMMENDED that formatting
+			and foreign (non-ASCII) characters are encoded using Latex style markup.
+		</p>
+
+		<h2 id="name-dictRef">8.1 DictRef</h2>
+		<p>
+			A <code>name</code> MUST have a <code>dictRef</code> attribute,
+			the value of which is a QName referencing an entry in a <a href="http://xml-cml.org/convention/dictionary">dictionary</a>
+			which defines how this name should be interpreted.
+		</p>
+
+		<h1 id="atom-element">9 Atom Element</h1>
+		<p>
+			An <code>atom</code> MUST be a child of <code>atomArray</code>.
+		</p>
+		<h2 id="atom-elementType">9.1 ElementType</h2>
+		<p>
+			An <code>atom</code> MUST have an <code>elementType</code> attribute.
+		</p>
+		<h2 id="atom-id">9.2 Id</h2>
+		<p>
+			An <code>atom</code> MUST have an <code>id</code> attribute it is part of an
+			<code>atomArray</code> in a <code>formula</code> (when the <code>id</code> is optional).
+		</p>
+		<div class="good">
+			<pre>
+&lt;cml:molecule convention="convention:molecular" id="ml" formalCharge="1"&gt;
+
+    &lt;cml:atomArray&gt;
+
+        &lt;cml:atom elementType="H" id="a1"  formalCharge="1"/&gt;
+
+    &lt;/cml:atomArray&gt;
+
+&lt;/cml:molecule&gt;</pre>
+		</div>
+		<br/>
+		<div class="bad">
+			<pre>
+&lt;cml:molecule convention="convention:molecular" id="ml"  formalCharge="1"&gt;
+
+    &lt;cml:atomArray&gt;
+
+        &lt;cml:atom elementType="H"  formalCharge="1"/&gt;
+
+    &lt;/cml:atomArray&gt;
+
+&lt;/cml:molecule&gt;</pre>
+		</div>
+		<br/>
+		<div class="good">
+			<pre>
+&lt;cml:molecule convention="convention:molecular" id="ml"  formalCharge="1"&gt;
+
+    &lt;cml:formula concise="H 1 1"&gt;
+
+        &lt;cml:atomArray&gt;
+
+            &lt;cml:atom elementType="H" formalCharge="1" /&gt;
+
+        &lt;/cml:atomArray&gt;
+
+    &lt;/cml:formula&gt;
+
+&lt;/cml:molecule&gt;</pre>
+		</div>
+		<p>
+			The value of the <code>id</code> MUST be unique amongst the <code>atom</code>s within the
+			eldest containing <code>molecule</code>.
+		</p>
+
+		<p>
+			The value of the <code>id</code> attribute MUST start with a letter, and
+			MUST only contain letters, numbers, dot, hyphen or underscore.
+		</p>
+
+		<table>
+			<tr>
+				<td>
+					<code>IdStartChar</code>
+				</td>
+				<td>::=</td>
+				<td>
+					<code>[A-Z] | [a-z]</code>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>IdChar</code>
+				</td>
+				<td>::=</td>
+				<td>
+					<code>IdStartChar | [0-9] | "." | "-" | "_"</code>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<code>Id</code>
+				</td>
+				<td>::=</td>
+				<td>
+					<code>IdStartChar (IdChar)*</code>
+				</td>
+			</tr>
+		</table>
+
+		<h2 id="atom-x2">9.3 X2</h2>
+		<p>An <code>atom</code> MAY have an <code>x2</code> attribute, the value of which is used for displaying the
+			object in 2 dimensions. This is unrelated to the 3-D coordinates for the object.
+		</p>
+
+		<p>If a <code>x2</code> attribute is present there MUST also be a <code>y2</code> attribute.</p>
+
+		<h2 id="atom-y2">9.4 Y2</h2>
+		<p>An <code>atom</code> MAY have an <code>y2</code> attribute, the value of which is used for displaying the
+			object in 2 dimensions. This is unrelated to the 3-D coordinates for the object.</p>
+		<p>If a <code>y2</code> attribute is present there MUST also be a <code>x2</code> attribute.</p>
+
+		<h2 id="atom-x3">9.5 X3</h2>
+		<p>An <code>atom</code> MAY have an <code>x3</code> attribute, the value of which is the x
+			coordinate of a 3 dimensional object. The units are Angstrom and the axis system is always
+			right handed.</p>
+		<p>If a <code>x3</code> attribute is present there MUST also be a <code>y3</code> and <code>z3</code> present.</p>
+
+		<h2 id="atom-y3">9.6 Y3</h2>
+		<p>An <code>atom</code> MAY have an <code>y3</code> attribute, the value of which is the y
+			coordinate of a 3 dimensional object. The units are Angstrom and the axis system is always
+			right handed.</p>
+		<p>If a <code>y3</code> attribute is present there MUST also be a <code>x3</code> and <code>z3</code> present.</p>
+
+		<h2 id="atom-z3">9.7 Z3</h2>
+		<p>An <code>atom</code> MAY have an <code>x3</code> attribute, the value of which is the z
+			coordinate of a 3 dimensional object. The units are Angstrom and the axis system is always
+			right handed.</p>
+		<p>If a <code>z3</code> attribute is present there MUST also be a <code>x3</code> and <code>y3</code> present.</p>
+
+		<h2 id="atom-formalCharge">9.8 FormalCharge</h2>
+		<p>
+			An <code>atom</code> MAY have a <code>formalCharge</code> attribute.
+		</p>
+
+		<h2 id="atom-isotopeNumber">9.9 IsotopeNumber</h2>
+		<p>
+			An <code>atom</code> MAY have an <code>isotopeNumber</code> attribute.
+		</p>
+
+		<h2 id="atom-spinMultiplicity">9.10 Spin Multiplicity </h2>
+		<p>
+			An <code>atom</code> MAY have a <code>spinMultiplicity</code> attribute.
+		</p>
+
+		<h2 id="atom-count">9.11 Count </h2>
+		<p>
+			An <code>atom</code> that is an ancestor of a <code>formula</code> MAY have a
+			<code>count</code> attribute. If it does not have a <code>count</code> attribute
+			it is assumed to be present only once.
+		</p>
+
+		<h2 id="atom-atomParity">9.12 AtomParity</h2>
+		<p>
+			An <code>atom</code> that is not an ancestor of a <code>formula</code> MAY have a
+			<code>atomParity</code> element child.
+		</p>
+
+		<h2 id="atom-label">9.13 Label</h2>
+		<p>
+			An <code>atom</code> MAY contain any number of <code>label</code> children.
+		</p>
+
+		<h2 id="atom-property">9.14 Property</h2>
+		<p>
+			An <code>atom</code> MAY contain any number of <code>property</code> children.
+		</p>
+
+		<h1 id="atomParity-element">10 AtomParity Element</h1>
+
+		<p>
+			An <code>atomParity</code> element MUST be the child of an <code>atom</code>. The <code>atomParity</code>
+			defines the stereochemistry around an atom centre.
+		</p>
+
+		<h2 id="atomParity-atomRefs4">10.1 AtomRefs4</h2>
+		<p>
+			An <code>atomParity</code> MUST have an <code>atomRefs4</code> attribute, the value of which MUST
+			be the space separated <code>id</code>s of four different <code>atom</code>s which MUST be in the same overall parent
+			molecule as the <code>atomParity</code>.
+		</p>
+
+		<h1 id="bond-element">11 Bond Element</h1>
+		<p>
+			A <code>bond</code> element MUST be the child of a <code>bondArray</code>. In the molecular
+			convention a bond MUST be between only two <code>atom</code>s and these <code>atoms</code>s
+			MUST (by definition) have the same <code>molecule</code> parent.
+		</p>
+
+		<h2 id="bond-atomRefs2">11.1 AtomRefs2</h2>
+		<p>
+			A <code>bond</code> MUST have a <code>atomRefs2</code> attribute, the value of which
+			MUST be the space separated <code>id</code>s of two different <code>atom</code>s which
+			MUST be in the same <code>molecule</code>.
+		</p>
+
+		<h2 id="bond-order">11.2 Order</h2>
+		<p>
+			A <code>bond</code> MUST have an <code>order</code> attribute.
+			It is RECOMMENDED that the value of this order should not use numeric values. If the
+			value is <code>other</code> the <code>bond</code> SHOULD have a <code>dictRef</code>
+			to add further information.
+		</p>
+
+		<h2 id="bond-id">11.3 Id</h2>
+		<p>
+			It is RECOMMENDED that a <code>bond</code> has an <code>id</code> attribute so that it can
+			be referenced. The <code>id</code> of a <code>bond</code> MUST be unique amongst the <code>bond</code>s
+			of the eldest containing <code>molecule</code>.
+		</p>
+        <p>
+            The value of the <code>id</code> attribute MUST start with a letter, and
+            MUST only contain letters, numbers, dot, hyphen or underscore.
+        </p>
+
+        <table>
+            <tr>
+                <td>
+                    <code>IdStartChar</code>
+                </td>
+                <td>::=</td>
+                <td>
+                    <code>[A-Z] | [a-z]</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>IdChar</code>
+                </td>
+                <td>::=</td>
+                <td>
+                    <code>IdStartChar | [0-9] | "." | "-" | "_"</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>Id</code>
+                </td>
+                <td>::=</td>
+                <td>
+                    <code>IdStartChar (IdChar)*</code>
+                </td>
+            </tr>
+        </table>
+
+		<h2 id="bond-bondStereo">11.4 BondStereo</h2>
+		<p>
+			A <code>bond</code> MAY have a <code>bondStereo</code> element child.
+		</p>
+
+		<h2 id="bond-label">11.5 Label</h2>
+		<p>
+            A <code>bond</code> MAY have any number of  <code>label</code> children.
+		</p>
+
+		<h1 id="bondStereo-element">12 BondStereo Element</h1>
+		<p>
+           The <code>bondStereo</code> element MUST be a child of a <code>bond</code>. <code>bondStereo</code>
+            is a container used to support primarily cis <code>C</code>/trans <code>T</code> and wedge
+			<code>W</code>/hatch <code>H</code> stereochemistry but other forms may also be supported.
+		</p>
+
+		<h2 id="bondStereo-atomRefs2">12.1 AtomRefs2</h2>
+		<p>
+            If the value of the <code>bondStereo</code> is <code>W</code> or <code>H</code> there MUST
+            be a <code>atomRefs2</code> attribute present. The value of which MUST be the space separated
+			<code>id</code>s of the two <code>atom</code>s in the parent <code>bond</code>. The order of the
+			<code>id</code>s is important; the first is the sharp end of the wedge or hatch and the second is
+            the blunt end.
+		</p>
+		<p>
+            If an <code>atomRef2</code> attribute is present there MUST NOT be an <code>atoRefs4</code>
+            attribute present.
+		</p>
+
+		<h2 id="bondStereo-atomRefs4">12.2 AtomRefs4</h2>
+		<p>
+            If the value of the <code>bondStereo</code> is <code>C</code> or <code>T</code> there MUST
+            be a <code>atomRefs4</code> attribute present. The value of which MUST be the space separated
+			<code>id</code>s of four different <code>atom</code>s. Two of the <code>id</code>s in the
+			<code>atomRefs4</code> MUST be the <code>id</code>s of the <code>atom</code>s in the parent
+			<code>bond</code>.
+		</p>
+		<p>
+            The <code>atomRefs4</code> define a
+            system, if cis this will be syn-periplanar, if trans this will be anti-periplananr. Typically the
+            two central <code>atom</code>s will be bonded to each other (and the <code>bondStereo</code>
+            element will be a child of this <code>bond</code>) with a bond order of <code>D</code>
+            and the two terminal atoms will be bonded directly to these, however this does not have to
+            be the case.
+		</p>
+		<p>
+            If an <code>atomRef4</code> attribute is present there MUST NOT be an <code>atoRefs2</code>
+            attribute present.
+		</p>
+
+		<h2 id="bondStereo-dictRef">12.3 DictRef</h2>
+		<p>
+            If the value of the <code>bondStereo</code> is <code>other</code> the element MUST have a
+			<code>dictRef</code> attribute used add further semantics.
+		</p>
+
+		<h1>
+			<a name="refs">A.</a> References</h1>
+
+		<dl>
+
+			<dt>
+				<a name="ref-RFC2119">[RFC2119]</a>
+			</dt>
+			<dd>
+				IETF <cite>
+					<a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119: Keywords for use in RFCs to Indicate Requirement
+						Levels</a>
+				</cite>,
+				S. Bradner, March 1997. Available at http://www.ietf.org/rfc/rfc2119.txt.
+			</dd>
+
+			<dt>
+				<a name="ref-XML">[XML]</a>
+			</dt>
+			<dd>
+				<cite>
+					<a href="http://www.w3.org/TR/2008/REC-xml-20081126">Extensible Markup Language (XML) 1.0 (Fifth
+						Edition)</a>
+				</cite>,
+				T. Bray, J. Paoli, C.M. Sperberg-McQueen E. Maler and F. Yergeau, Editors. World Wide Web Consortium.
+				26 October 2008. This version is http://www.w3.org/TR/2008/REC-xml-20081126. <a
+                    href="http://www.w3.org/TR/REC-xml">latest version of XML</a> is available at http://www.w3.org/TR/REC-xml.
+			</dd>
+
+		</dl>
+
+
+		<h1>
+			<a name="acks">B.</a> Acknowledgements</h1>
+
+		<ul>
+			<li>Joe Townsend</li>
+			<li>Peter Murray-Rust</li>
+			<li>Alex Wade</li>
+			<li>Sam Adams</li>
+		</ul>
+
+		<hr/>
+
+		<p>
+			<a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+				<img alt="Creative Commons Licence" style="border-width:0"
+                     src="http://i.creativecommons.org/l/by/3.0/88x31.png"/>
+			</a>
+			<br/>
+			This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+				Attribution 3.0 Unported License</a>.
+		</p>
+
+	</body>
+</html>

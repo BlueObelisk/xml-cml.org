@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule>
+  <molecule id="gly1_1" convention="cml:PML-cartesian">
+    <atomArray>
+      <atom elementType="O" hydrogenCount="1" id="oh_1_a1" x3="-0.6999999999999996" y3="10.5123974110789336" z3="-1.0988397941099541"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_2_a1" x3="0.0" y3="10.0" z3="0.0"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_2_a2" x3="1.47" y3="10.0" z3="0.0"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_2_a3" x3="2.0147192833088563" y3="11.4190422482757468" z3="0.0"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_2_a4" x3="2.831231528481983" y3="11.7857896341472768" z3="-0.9009462294936026"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_3_a1" x3="1.6163421738987511" y3="12.3217663885055746" z3="0.9931690718827116"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_3_a2" x3="2.1431430597303422" y3="13.694129615456461" z3="0.993169071882712"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_3_a3" x3="1.6759579586861129" y3="14.456938506705559" z3="-0.2357575641674693"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_3_a4" x3="2.5257946472249837" y3="15.0053197699824175" z3="-1.0038432318505497"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_4_a1" x3="0.3088280463014482" y3="14.555010864966926" z3="-0.5209550662746107"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_4_a2" x3="-0.14298912378737905" y3="15.292727358477567" z3="-1.7094564840336675"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_4_a3" x3="0.3271075350013063" y3="14.61185117609294" z3="-2.9845316801131188"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_4_a4" x3="0.9966833753422588" y3="15.265123406594916" z3="-3.84348661891182"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_5_a1" x3="0.021976200086643666" y3="13.264585760226762" z3="-3.2120635848300827"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_5_a2" x3="0.4766091529941221" y3="12.606106820683735" z3="-4.445195517880605"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_5_a3" x3="1.993806929845734" y3="12.527250842701708" z3="-4.493077045143476"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_5_a4" x3="2.6232891850919238" y3="13.002828053461231" z3="-5.488304861744461"> </atom>
+      <atom elementType="Cl" id="cl_6_a1" x3="2.767658643939237" y3="11.8706731092355147" z3="-3.3347769093794577"> </atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="gly_2_a1_gly_2_a2" atomRefs2="gly_2_a1 gly_2_a2"> </bond>
+      <bond order="1" id="gly_2_a2_gly_2_a3" atomRefs2="gly_2_a2 gly_2_a3"> </bond>
+      <bond order="2" id="gly_2_a3_gly_2_a4" atomRefs2="gly_2_a3 gly_2_a4"> </bond>
+      <bond order="1" id="gly_3_a1_gly_3_a2" atomRefs2="gly_3_a1 gly_3_a2"> </bond>
+      <bond order="1" id="gly_3_a2_gly_3_a3" atomRefs2="gly_3_a2 gly_3_a3"> </bond>
+      <bond order="2" id="gly_3_a3_gly_3_a4" atomRefs2="gly_3_a3 gly_3_a4"> </bond>
+      <bond order="1" id="gly_4_a1_gly_4_a2" atomRefs2="gly_4_a1 gly_4_a2"> </bond>
+      <bond order="1" id="gly_4_a2_gly_4_a3" atomRefs2="gly_4_a2 gly_4_a3"> </bond>
+      <bond order="2" id="gly_4_a3_gly_4_a4" atomRefs2="gly_4_a3 gly_4_a4"> </bond>
+      <bond order="1" id="gly_5_a1_gly_5_a2" atomRefs2="gly_5_a1 gly_5_a2"> </bond>
+      <bond order="1" id="gly_5_a2_gly_5_a3" atomRefs2="gly_5_a2 gly_5_a3"> </bond>
+      <bond order="2" id="gly_5_a3_gly_5_a4" atomRefs2="gly_5_a3 gly_5_a4"> </bond>
+      <bond atomRefs2="oh_1_a1 gly_2_a1" id="g:oh_1_r1_g:gly_2_r1" order="1"/>
+      <bond atomRefs2="gly_2_a3 gly_3_a1" id="g:gly_2_r2_g:gly_3_r1" order="1"/>
+      <bond atomRefs2="gly_3_a3 gly_4_a1" id="g:gly_3_r2_g:gly_4_r1" order="1"/>
+      <bond atomRefs2="gly_4_a3 gly_5_a1" id="g:gly_4_r2_g:gly_5_r1" order="1"/>
+      <bond atomRefs2="gly_5_a3 cl_6_a1" id="g:gly_5_r2_g:cl_6_r1" order="1"/>
+    </bondArray>
+    <name>hydroxy_1</name>
+    <torsion atomRefs4="gly_3_a1 gly_2_a2 gly_2_a3 gly_2_a4"> 180</torsion>
+    <torsion atomRefs4="gly_2_a1 gly_2_a2 gly_2_a3 gly_3_a1"> 55</torsion>
+    <torsion atomRefs4="oh_1_a1 gly_2_a1 gly_2_a2 gly_2_a3"> 65</torsion>
+    <angle atomRefs3="gly_2_a2 gly_2_a3 gly_2_a4"> 120</angle>
+    <angle atomRefs3="gly_2_a2 gly_2_a3 gly_3_a1"> 120</angle>
+    <angle atomRefs3="oh_1_a1 gly_2_a1 gly_2_a2"> 120</angle>
+    <angle atomRefs3="gly_2_a1 gly_2_a2 gly_2_a3"> 111</angle>
+    <length atomRefs2="gly_2_a3 gly_2_a4"> 1.27</length>
+    <length atomRefs2="gly_2_a2 gly_2_a3"> 1.52</length>
+    <length atomRefs2="gly_2_a1 gly_2_a2"> 1.47</length>
+    <torsion atomRefs4="gly_4_a1 gly_3_a2 gly_3_a3 gly_3_a4"> 180</torsion>
+    <torsion atomRefs4="gly_3_a1 gly_3_a2 gly_3_a3 gly_4_a1"> 55</torsion>
+    <torsion atomRefs4="gly_2_a3 gly_3_a1 gly_3_a2 gly_3_a3"> 65</torsion>
+    <angle atomRefs3="gly_3_a2 gly_3_a3 gly_3_a4"> 120</angle>
+    <angle atomRefs3="gly_3_a2 gly_3_a3 gly_4_a1"> 120</angle>
+    <angle atomRefs3="gly_2_a3 gly_3_a1 gly_3_a2"> 120</angle>
+    <angle atomRefs3="gly_3_a1 gly_3_a2 gly_3_a3"> 111</angle>
+    <length atomRefs2="gly_3_a3 gly_3_a4"> 1.27</length>
+    <length atomRefs2="gly_3_a2 gly_3_a3"> 1.52</length>
+    <length atomRefs2="gly_3_a1 gly_3_a2"> 1.47</length>
+    <torsion atomRefs4="gly_5_a1 gly_4_a2 gly_4_a3 gly_4_a4"> 180</torsion>
+    <torsion atomRefs4="gly_4_a1 gly_4_a2 gly_4_a3 gly_5_a1"> 55</torsion>
+    <torsion atomRefs4="gly_3_a3 gly_4_a1 gly_4_a2 gly_4_a3"> 65</torsion>
+    <angle atomRefs3="gly_4_a2 gly_4_a3 gly_4_a4"> 120</angle>
+    <angle atomRefs3="gly_4_a2 gly_4_a3 gly_5_a1"> 120</angle>
+    <angle atomRefs3="gly_3_a3 gly_4_a1 gly_4_a2"> 120</angle>
+    <angle atomRefs3="gly_4_a1 gly_4_a2 gly_4_a3"> 111</angle>
+    <length atomRefs2="gly_4_a3 gly_4_a4"> 1.27</length>
+    <length atomRefs2="gly_4_a2 gly_4_a3"> 1.52</length>
+    <length atomRefs2="gly_4_a1 gly_4_a2"> 1.47</length>
+    <torsion atomRefs4="cl_6_a1 gly_5_a2 gly_5_a3 gly_5_a4"> 180</torsion>
+    <torsion atomRefs4="gly_5_a1 gly_5_a2 gly_5_a3 cl_6_a1"> 55</torsion>
+    <torsion atomRefs4="gly_4_a3 gly_5_a1 gly_5_a2 gly_5_a3"> 65</torsion>
+    <angle atomRefs3="gly_5_a2 gly_5_a3 gly_5_a4"> 120</angle>
+    <angle atomRefs3="gly_5_a2 gly_5_a3 cl_6_a1"> 120</angle>
+    <angle atomRefs3="gly_4_a3 gly_5_a1 gly_5_a2"> 120</angle>
+    <angle atomRefs3="gly_5_a1 gly_5_a2 gly_5_a3"> 111</angle>
+    <length atomRefs2="gly_5_a3 gly_5_a4"> 1.27</length>
+    <length atomRefs2="gly_5_a2 gly_5_a3"> 1.52</length>
+    <length atomRefs2="gly_5_a1 gly_5_a2"> 1.47</length>
+    <name>chlorine_6</name>
+    <length atomRefs2="oh_1_a1 gly_2_a1">1.4</length>
+    <length atomRefs2="gly_2_a3 gly_3_a1">1.4</length>
+    <torsion atomRefs4="gly_2_a2 gly_2_a3 gly_3_a1 gly_3_a2">180.0</torsion>
+    <length atomRefs2="gly_3_a3 gly_4_a1">1.4</length>
+    <torsion atomRefs4="gly_3_a2 gly_3_a3 gly_4_a1 gly_4_a2">180.0</torsion>
+    <length atomRefs2="gly_4_a3 gly_5_a1">1.4</length>
+    <torsion atomRefs4="gly_4_a2 gly_4_a3 gly_5_a1 gly_5_a2">180.0</torsion>
+    <length atomRefs2="gly_5_a3 cl_6_a1">1.54</length>
+  </molecule>
+  <molecule id="gly1_0" convention="cml:PML-cartesian">
+    <atomArray>
+      <atom elementType="O" hydrogenCount="1" id="oh_1_a1" x3="-0.6999999999999996" y3="20.5123974110789336" z3="-1.0988397941099541"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_2_a1" x3="0.0" y3="20.0" z3="0.0"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_2_a2" x3="1.47" y3="20.0" z3="0.0"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_2_a3" x3="2.0147192833088563" y3="21.4190422482757468" z3="0.0"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_2_a4" x3="2.831231528481983" y3="21.7857896341472768" z3="-0.9009462294936026"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_3_a1" x3="1.6163421738987511" y3="22.3217663885055746" z3="0.9931690718827116"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_3_a2" x3="2.1431430597303422" y3="23.694129615456461" z3="0.993169071882712"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_3_a3" x3="1.6759579586861129" y3="24.456938506705559" z3="-0.2357575641674693"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_3_a4" x3="2.5257946472249837" y3="25.0053197699824175" z3="-1.0038432318505497"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_4_a1" x3="0.3088280463014482" y3="24.555010864966926" z3="-0.5209550662746107"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_4_a2" x3="-0.14298912378737905" y3="25.292727358477567" z3="-1.7094564840336675"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_4_a3" x3="0.3271075350013063" y3="24.61185117609294" z3="-2.9845316801131188"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_4_a4" x3="0.9966833753422588" y3="25.265123406594916" z3="-3.84348661891182"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_5_a1" x3="0.021976200086643666" y3="23.264585760226762" z3="-3.2120635848300827"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_5_a2" x3="0.4766091529941221" y3="22.606106820683735" z3="-4.445195517880605"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_5_a3" x3="1.993806929845734" y3="22.527250842701708" z3="-4.493077045143476"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_5_a4" x3="2.6232891850919238" y3="23.002828053461231" z3="-5.488304861744461"> </atom>
+      <atom elementType="Cl" id="cl_6_a1" x3="2.767658643939237" y3="21.8706731092355147" z3="-3.3347769093794577"> </atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="gly_2_a1_gly_2_a2" atomRefs2="gly_2_a1 gly_2_a2"> </bond>
+      <bond order="1" id="gly_2_a2_gly_2_a3" atomRefs2="gly_2_a2 gly_2_a3"> </bond>
+      <bond order="2" id="gly_2_a3_gly_2_a4" atomRefs2="gly_2_a3 gly_2_a4"> </bond>
+      <bond order="1" id="gly_3_a1_gly_3_a2" atomRefs2="gly_3_a1 gly_3_a2"> </bond>
+      <bond order="1" id="gly_3_a2_gly_3_a3" atomRefs2="gly_3_a2 gly_3_a3"> </bond>
+      <bond order="2" id="gly_3_a3_gly_3_a4" atomRefs2="gly_3_a3 gly_3_a4"> </bond>
+      <bond order="1" id="gly_4_a1_gly_4_a2" atomRefs2="gly_4_a1 gly_4_a2"> </bond>
+      <bond order="1" id="gly_4_a2_gly_4_a3" atomRefs2="gly_4_a2 gly_4_a3"> </bond>
+      <bond order="2" id="gly_4_a3_gly_4_a4" atomRefs2="gly_4_a3 gly_4_a4"> </bond>
+      <bond order="1" id="gly_5_a1_gly_5_a2" atomRefs2="gly_5_a1 gly_5_a2"> </bond>
+      <bond order="1" id="gly_5_a2_gly_5_a3" atomRefs2="gly_5_a2 gly_5_a3"> </bond>
+      <bond order="2" id="gly_5_a3_gly_5_a4" atomRefs2="gly_5_a3 gly_5_a4"> </bond>
+      <bond atomRefs2="oh_1_a1 gly_2_a1" id="g:oh_1_r1_g:gly_2_r1" order="1"/>
+      <bond atomRefs2="gly_2_a3 gly_3_a1" id="g:gly_2_r2_g:gly_3_r1" order="1"/>
+      <bond atomRefs2="gly_3_a3 gly_4_a1" id="g:gly_3_r2_g:gly_4_r1" order="1"/>
+      <bond atomRefs2="gly_4_a3 gly_5_a1" id="g:gly_4_r2_g:gly_5_r1" order="1"/>
+      <bond atomRefs2="gly_5_a3 cl_6_a1" id="g:gly_5_r2_g:cl_6_r1" order="1"/>
+    </bondArray>
+    <name>hydroxy_1</name>
+    <torsion atomRefs4="gly_3_a1 gly_2_a2 gly_2_a3 gly_2_a4"> 180</torsion>
+    <torsion atomRefs4="gly_2_a1 gly_2_a2 gly_2_a3 gly_3_a1"> 55</torsion>
+    <torsion atomRefs4="oh_1_a1 gly_2_a1 gly_2_a2 gly_2_a3"> 65</torsion>
+    <angle atomRefs3="gly_2_a2 gly_2_a3 gly_2_a4"> 120</angle>
+    <angle atomRefs3="gly_2_a2 gly_2_a3 gly_3_a1"> 120</angle>
+    <angle atomRefs3="oh_1_a1 gly_2_a1 gly_2_a2"> 120</angle>
+    <angle atomRefs3="gly_2_a1 gly_2_a2 gly_2_a3"> 111</angle>
+    <length atomRefs2="gly_2_a3 gly_2_a4"> 1.27</length>
+    <length atomRefs2="gly_2_a2 gly_2_a3"> 1.52</length>
+    <length atomRefs2="gly_2_a1 gly_2_a2"> 1.47</length>
+    <torsion atomRefs4="gly_4_a1 gly_3_a2 gly_3_a3 gly_3_a4"> 180</torsion>
+    <torsion atomRefs4="gly_3_a1 gly_3_a2 gly_3_a3 gly_4_a1"> 55</torsion>
+    <torsion atomRefs4="gly_2_a3 gly_3_a1 gly_3_a2 gly_3_a3"> 65</torsion>
+    <angle atomRefs3="gly_3_a2 gly_3_a3 gly_3_a4"> 120</angle>
+    <angle atomRefs3="gly_3_a2 gly_3_a3 gly_4_a1"> 120</angle>
+    <angle atomRefs3="gly_2_a3 gly_3_a1 gly_3_a2"> 120</angle>
+    <angle atomRefs3="gly_3_a1 gly_3_a2 gly_3_a3"> 111</angle>
+    <length atomRefs2="gly_3_a3 gly_3_a4"> 1.27</length>
+    <length atomRefs2="gly_3_a2 gly_3_a3"> 1.52</length>
+    <length atomRefs2="gly_3_a1 gly_3_a2"> 1.47</length>
+    <torsion atomRefs4="gly_5_a1 gly_4_a2 gly_4_a3 gly_4_a4"> 180</torsion>
+    <torsion atomRefs4="gly_4_a1 gly_4_a2 gly_4_a3 gly_5_a1"> 55</torsion>
+    <torsion atomRefs4="gly_3_a3 gly_4_a1 gly_4_a2 gly_4_a3"> 65</torsion>
+    <angle atomRefs3="gly_4_a2 gly_4_a3 gly_4_a4"> 120</angle>
+    <angle atomRefs3="gly_4_a2 gly_4_a3 gly_5_a1"> 120</angle>
+    <angle atomRefs3="gly_3_a3 gly_4_a1 gly_4_a2"> 120</angle>
+    <angle atomRefs3="gly_4_a1 gly_4_a2 gly_4_a3"> 111</angle>
+    <length atomRefs2="gly_4_a3 gly_4_a4"> 1.27</length>
+    <length atomRefs2="gly_4_a2 gly_4_a3"> 1.52</length>
+    <length atomRefs2="gly_4_a1 gly_4_a2"> 1.47</length>
+    <torsion atomRefs4="cl_6_a1 gly_5_a2 gly_5_a3 gly_5_a4"> 180</torsion>
+    <torsion atomRefs4="gly_5_a1 gly_5_a2 gly_5_a3 cl_6_a1"> 55</torsion>
+    <torsion atomRefs4="gly_4_a3 gly_5_a1 gly_5_a2 gly_5_a3"> 65</torsion>
+    <angle atomRefs3="gly_5_a2 gly_5_a3 gly_5_a4"> 120</angle>
+    <angle atomRefs3="gly_5_a2 gly_5_a3 cl_6_a1"> 120</angle>
+    <angle atomRefs3="gly_4_a3 gly_5_a1 gly_5_a2"> 120</angle>
+    <angle atomRefs3="gly_5_a1 gly_5_a2 gly_5_a3"> 111</angle>
+    <length atomRefs2="gly_5_a3 gly_5_a4"> 1.27</length>
+    <length atomRefs2="gly_5_a2 gly_5_a3"> 1.52</length>
+    <length atomRefs2="gly_5_a1 gly_5_a2"> 1.47</length>
+    <name>chlorine_6</name>
+    <length atomRefs2="oh_1_a1 gly_2_a1">1.4</length>
+    <length atomRefs2="gly_2_a3 gly_3_a1">1.4</length>
+    <torsion atomRefs4="gly_2_a2 gly_2_a3 gly_3_a1 gly_3_a2">180.0</torsion>
+    <length atomRefs2="gly_3_a3 gly_4_a1">1.4</length>
+    <torsion atomRefs4="gly_3_a2 gly_3_a3 gly_4_a1 gly_4_a2">180.0</torsion>
+    <length atomRefs2="gly_4_a3 gly_5_a1">1.4</length>
+    <torsion atomRefs4="gly_4_a2 gly_4_a3 gly_5_a1 gly_5_a2">180.0</torsion>
+    <length atomRefs2="gly_5_a3 cl_6_a1">1.54</length>
+  </molecule>
+  <molecule id="gly1_2" convention="cml:PML-cartesian">
+    <atomArray>
+      <atom elementType="O" hydrogenCount="1" id="oh_1_a1" x3="-0.6999999999999996" y3="0.5123974110789336" z3="-1.0988397941099541"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_2_a1" x3="0.0" y3="0.0" z3="0.0"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_2_a2" x3="1.47" y3="0.0" z3="0.0"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_2_a3" x3="2.0147192833088563" y3="1.4190422482757468" z3="0.0"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_2_a4" x3="2.831231528481983" y3="1.7857896341472768" z3="-0.9009462294936026"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_3_a1" x3="1.6163421738987511" y3="2.3217663885055746" z3="0.9931690718827116"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_3_a2" x3="2.1431430597303422" y3="3.694129615456461" z3="0.993169071882712"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_3_a3" x3="1.6759579586861129" y3="4.456938506705559" z3="-0.2357575641674693"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_3_a4" x3="2.5257946472249837" y3="5.0053197699824175" z3="-1.0038432318505497"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_4_a1" x3="0.3088280463014482" y3="4.555010864966926" z3="-0.5209550662746107"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_4_a2" x3="-0.14298912378737905" y3="5.292727358477567" z3="-1.7094564840336675"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_4_a3" x3="0.3271075350013063" y3="4.61185117609294" z3="-2.9845316801131188"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_4_a4" x3="0.9966833753422588" y3="5.265123406594916" z3="-3.84348661891182"> </atom>
+      <atom elementType="N" hydrogenCount="1" id="gly_5_a1" x3="0.021976200086643666" y3="3.264585760226762" z3="-3.2120635848300827"> </atom>
+      <atom elementType="C" hydrogenCount="2" id="gly_5_a2" x3="0.4766091529941221" y3="2.606106820683735" z3="-4.445195517880605"> </atom>
+      <atom elementType="C" hydrogenCount="0" id="gly_5_a3" x3="1.993806929845734" y3="2.527250842701708" z3="-4.493077045143476"> </atom>
+      <atom elementType="O" hydrogenCount="0" id="gly_5_a4" x3="2.6232891850919238" y3="3.002828053461231" z3="-5.488304861744461"> </atom>
+      <atom elementType="Cl" id="cl_6_a1" x3="2.767658643939237" y3="1.8706731092355147" z3="-3.3347769093794577"> </atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="gly_2_a1_gly_2_a2" atomRefs2="gly_2_a1 gly_2_a2"> </bond>
+      <bond order="1" id="gly_2_a2_gly_2_a3" atomRefs2="gly_2_a2 gly_2_a3"> </bond>
+      <bond order="2" id="gly_2_a3_gly_2_a4" atomRefs2="gly_2_a3 gly_2_a4"> </bond>
+      <bond order="1" id="gly_3_a1_gly_3_a2" atomRefs2="gly_3_a1 gly_3_a2"> </bond>
+      <bond order="1" id="gly_3_a2_gly_3_a3" atomRefs2="gly_3_a2 gly_3_a3"> </bond>
+      <bond order="2" id="gly_3_a3_gly_3_a4" atomRefs2="gly_3_a3 gly_3_a4"> </bond>
+      <bond order="1" id="gly_4_a1_gly_4_a2" atomRefs2="gly_4_a1 gly_4_a2"> </bond>
+      <bond order="1" id="gly_4_a2_gly_4_a3" atomRefs2="gly_4_a2 gly_4_a3"> </bond>
+      <bond order="2" id="gly_4_a3_gly_4_a4" atomRefs2="gly_4_a3 gly_4_a4"> </bond>
+      <bond order="1" id="gly_5_a1_gly_5_a2" atomRefs2="gly_5_a1 gly_5_a2"> </bond>
+      <bond order="1" id="gly_5_a2_gly_5_a3" atomRefs2="gly_5_a2 gly_5_a3"> </bond>
+      <bond order="2" id="gly_5_a3_gly_5_a4" atomRefs2="gly_5_a3 gly_5_a4"> </bond>
+      <bond atomRefs2="oh_1_a1 gly_2_a1" id="g:oh_1_r1_g:gly_2_r1" order="1"/>
+      <bond atomRefs2="gly_2_a3 gly_3_a1" id="g:gly_2_r2_g:gly_3_r1" order="1"/>
+      <bond atomRefs2="gly_3_a3 gly_4_a1" id="g:gly_3_r2_g:gly_4_r1" order="1"/>
+      <bond atomRefs2="gly_4_a3 gly_5_a1" id="g:gly_4_r2_g:gly_5_r1" order="1"/>
+      <bond atomRefs2="gly_5_a3 cl_6_a1" id="g:gly_5_r2_g:cl_6_r1" order="1"/>
+    </bondArray>
+    <name>hydroxy_1</name>
+    <torsion atomRefs4="gly_3_a1 gly_2_a2 gly_2_a3 gly_2_a4"> 180</torsion>
+    <torsion atomRefs4="gly_2_a1 gly_2_a2 gly_2_a3 gly_3_a1"> 55</torsion>
+    <torsion atomRefs4="oh_1_a1 gly_2_a1 gly_2_a2 gly_2_a3"> 65</torsion>
+    <angle atomRefs3="gly_2_a2 gly_2_a3 gly_2_a4"> 120</angle>
+    <angle atomRefs3="gly_2_a2 gly_2_a3 gly_3_a1"> 120</angle>
+    <angle atomRefs3="oh_1_a1 gly_2_a1 gly_2_a2"> 120</angle>
+    <angle atomRefs3="gly_2_a1 gly_2_a2 gly_2_a3"> 111</angle>
+    <length atomRefs2="gly_2_a3 gly_2_a4"> 1.27</length>
+    <length atomRefs2="gly_2_a2 gly_2_a3"> 1.52</length>
+    <length atomRefs2="gly_2_a1 gly_2_a2"> 1.47</length>
+    <torsion atomRefs4="gly_4_a1 gly_3_a2 gly_3_a3 gly_3_a4"> 180</torsion>
+    <torsion atomRefs4="gly_3_a1 gly_3_a2 gly_3_a3 gly_4_a1"> 55</torsion>
+    <torsion atomRefs4="gly_2_a3 gly_3_a1 gly_3_a2 gly_3_a3"> 65</torsion>
+    <angle atomRefs3="gly_3_a2 gly_3_a3 gly_3_a4"> 120</angle>
+    <angle atomRefs3="gly_3_a2 gly_3_a3 gly_4_a1"> 120</angle>
+    <angle atomRefs3="gly_2_a3 gly_3_a1 gly_3_a2"> 120</angle>
+    <angle atomRefs3="gly_3_a1 gly_3_a2 gly_3_a3"> 111</angle>
+    <length atomRefs2="gly_3_a3 gly_3_a4"> 1.27</length>
+    <length atomRefs2="gly_3_a2 gly_3_a3"> 1.52</length>
+    <length atomRefs2="gly_3_a1 gly_3_a2"> 1.47</length>
+    <torsion atomRefs4="gly_5_a1 gly_4_a2 gly_4_a3 gly_4_a4"> 180</torsion>
+    <torsion atomRefs4="gly_4_a1 gly_4_a2 gly_4_a3 gly_5_a1"> 55</torsion>
+    <torsion atomRefs4="gly_3_a3 gly_4_a1 gly_4_a2 gly_4_a3"> 65</torsion>
+    <angle atomRefs3="gly_4_a2 gly_4_a3 gly_4_a4"> 120</angle>
+    <angle atomRefs3="gly_4_a2 gly_4_a3 gly_5_a1"> 120</angle>
+    <angle atomRefs3="gly_3_a3 gly_4_a1 gly_4_a2"> 120</angle>
+    <angle atomRefs3="gly_4_a1 gly_4_a2 gly_4_a3"> 111</angle>
+    <length atomRefs2="gly_4_a3 gly_4_a4"> 1.27</length>
+    <length atomRefs2="gly_4_a2 gly_4_a3"> 1.52</length>
+    <length atomRefs2="gly_4_a1 gly_4_a2"> 1.47</length>
+    <torsion atomRefs4="cl_6_a1 gly_5_a2 gly_5_a3 gly_5_a4"> 180</torsion>
+    <torsion atomRefs4="gly_5_a1 gly_5_a2 gly_5_a3 cl_6_a1"> 55</torsion>
+    <torsion atomRefs4="gly_4_a3 gly_5_a1 gly_5_a2 gly_5_a3"> 65</torsion>
+    <angle atomRefs3="gly_5_a2 gly_5_a3 gly_5_a4"> 120</angle>
+    <angle atomRefs3="gly_5_a2 gly_5_a3 cl_6_a1"> 120</angle>
+    <angle atomRefs3="gly_4_a3 gly_5_a1 gly_5_a2"> 120</angle>
+    <angle atomRefs3="gly_5_a1 gly_5_a2 gly_5_a3"> 111</angle>
+    <length atomRefs2="gly_5_a3 gly_5_a4"> 1.27</length>
+    <length atomRefs2="gly_5_a2 gly_5_a3"> 1.52</length>
+    <length atomRefs2="gly_5_a1 gly_5_a2"> 1.47</length>
+    <name>chlorine_6</name>
+    <length atomRefs2="oh_1_a1 gly_2_a1">1.4</length>
+    <length atomRefs2="gly_2_a3 gly_3_a1">1.4</length>
+    <torsion atomRefs4="gly_2_a2 gly_2_a3 gly_3_a1 gly_3_a2">180.0</torsion>
+    <length atomRefs2="gly_3_a3 gly_4_a1">1.4</length>
+    <torsion atomRefs4="gly_3_a2 gly_3_a3 gly_4_a1 gly_4_a2">180.0</torsion>
+    <length atomRefs2="gly_4_a3 gly_5_a1">1.4</length>
+    <torsion atomRefs4="gly_4_a2 gly_4_a3 gly_5_a1 gly_5_a2">180.0</torsion>
+    <length atomRefs2="gly_5_a3 cl_6_a1">1.54</length>
+  </molecule>
+</molecule>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="benzene2" convention="cml:PML-intermediate" xmlns:f="http://www.xml-cml.org/mols/frags" xmlns="http://www.xml-cml.org/schema">
+ <molecule ref="f:benzene">
+  <arg name="idx">
+   <scalar dataType="xsd:string">1</scalar>
+  </arg>
+ </molecule>
+ <join atomRefs2="f:benzene_1_r5 f:cl_2_r1" id="f:benzene_1_r5_f:cl_2_r1"/>
+ <molecule ref="f:cl">
+  <arg name="idx">
+   <scalar dataType="xsd:string">2</scalar>
+  </arg>
+ </molecule>
+ <join atomRefs2="f:benzene_1_r4 f:benzene_3_r3" id="f:benzene_1_r4_f:benzene_3_r3"/>
+ <molecule ref="f:benzene">
+  <arg name="idx">
+   <scalar dataType="xsd:string">3</scalar>
+  </arg>
+ </molecule>
+ <join atomRefs2="f:benzene_3_r4 f:benzene_4_r2" id="f:benzene_3_r4_f:benzene_4_r2"/>
+ <molecule ref="f:benzene">
+  <arg name="idx">
+   <scalar dataType="xsd:string">4</scalar>
+  </arg>
+ </molecule>
+ <join atomRefs2="f:benzene_4_r1 f:br_5_r1" id="f:benzene_4_r1_f:br_5_r1"/>
+ <molecule ref="f:br">
+  <arg name="idx">
+   <scalar dataType="xsd:string">5</scalar>
+  </arg>
+ </molecule>
+ <join atomRefs2="f:benzene_3_r5 f:i_6_r1" id="f:benzene_3_r5_f:i_6_r1"/>
+ <molecule ref="f:i">
+  <arg name="idx">
+   <scalar dataType="xsd:string">6</scalar>
+  </arg>
+ </molecule>
+ <join atomRefs2="f:benzene_1_r2 f:me_7_r1" id="f:benzene_1_r2_f:me_7_r1"/>
+ <molecule ref="f:me">
+  <arg name="idx">
+   <scalar dataType="xsd:string">7</scalar>
+  </arg>
+ </molecule>
+</molecule>

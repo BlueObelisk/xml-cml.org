@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="branch0" convention="cml:PML-cartesian" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <atomArray>
+    <atom elementType="O" hydrogenCount="1" id="oh_1_a1" x3="-1.3417859533826744" y3="-1.816214232337707" z3="-0.8819631035356497"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_2_a1" x3="-0.5518866422997625" y3="-0.7188569284028451" z3="-1.245096723366631"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_2_a2" x3="0.0" y3="0.0" z3="0.0"> </atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_2_a3" x3="1.52" y3="0.0" z3="0.0"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_2_a4" x3="2.145000000000001" y3="-1.082531754730548" z3="-1.325719048406134E-16"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_2_a5" x3="2.1799999999999997" y3="1.1431535329954592" z3="0.0"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_3_a1" x3="3.6799999999999993" y3="1.1431535329954592" z3="1.5908628580873607E-16"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_3_a2" x3="4.256894153860504" y3="1.8570851010118852" z3="-1.236565748931766"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_3_a3" x3="3.0761536404705145" y3="2.3103711270739327" z3="-2.1151917322810077"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_3_a4" x3="5.0507604382080045" y3="2.9475317484653107" z3="-0.8614625209612811"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_4_a1" x3="6.369955839216676" y3="2.81513997925377" z3="-1.3111245200257007"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_4_a2" x3="7.025922184547788" y3="4.181259088450969" z3="-1.5850346024965631"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_4_a3" x3="5.975833039667431" y3="5.273946722285665" z3="-1.3112709769558892"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_4_a4" x3="8.159677720749244" y3="4.3630367800152845" z3="-0.7840631579480719"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="me_5_a1" x3="9.30941580292358" y3="4.547283392861756" z3="-1.5431781216081761"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_6_a1" x3="-0.7699999999999997" y3="-0.6668395609140183" z3="1.155"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_6_a2" x3="0.07240171836904391" y3="-0.681321805767064" z3="2.4440886740146697"> </atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_6_a3" x3="-0.6264596084005742" y3="0.07801982625428118" z3="3.560060506914125"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_6_a4" x3="-0.899632335075102" y3="1.2892789100231332" z3="3.416087963043272"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_6_a5" x3="-0.9448950980690469" y3="-0.5416415068186695" z3="4.681228947075484"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_7_a1" x3="-1.6345608810653804" y3="0.20770878793923692" z3="5.7825169400683665"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_7_a2" x3="-3.0071538836235177" y3="-0.4017191581724546" z3="6.123377656236311"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_7_a3" x3="-3.2503822819563255" y3="-1.584536906159716" z3="5.167667385656989"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_7_a4" x3="-3.053378987779596" y3="-0.8183002808469377" z3="7.459163345625528"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_8_a1" x3="-4.057451561662044" y3="-0.16012949039391317" z3="8.179336572683795"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_8_a2" x3="-4.620169786976124" y3="-1.0344728536335994" z3="9.315325957342862"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_8_a3" x3="-3.9085988611564195" y3="-2.399066134048565" z3="9.25918331246028"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_8_a4" x3="-4.432614505215488" y3="-0.4216756982884607" z3="10.560035828230289"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="me_9_a1" x3="-5.637699355052461" y3="-0.18737971992481092" z3="11.211937584030975"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_10_a1" x3="1.4607378862837508" y3="-0.2275718552793135" z3="1.9559968104354135"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_10_a2" x3="2.218240890016923" y3="0.5229475561317878" z3="3.067081781277138"> </atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_10_a3" x3="3.5205225436798595" y3="-0.1818078365420896" z3="3.41027608634355"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_10_a4" x3="3.502407339728216" y3="-1.3596897816895972" z3="3.828326277925032"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_10_a5" x3="4.6705810035495565" y3="0.45001107758004855" z3="3.266852243696442"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_11_a1" x3="5.955727372295875" y3="-0.24547121782180387" z3="3.6055308342225065"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_11_a2" x3="6.897464729047626" y3="-0.34105591380181544" z3="2.3907904023636535"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_11_a3" x3="6.176186922699787" y3="0.2842460791014693" z3="1.1823386061627335"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_11_a4" x3="8.110272150010118" y3="0.31098037386746874" z3="2.643667525134313"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_12_a1" x3="9.202764491476842" y3="-0.5597596026336651" z3="2.5527149157194953"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_12_a2" x3="10.481636600717815" y3="0.16518632366081587" z3="2.0938690460044245"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_12_a3" x3="10.122506163314505" y3="1.6401075068695987" z3="1.8345760992193043"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_12_a4" x3="11.492596121092872" y3="0.05668226073570992" z3="3.056255515408365"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="me_13_a1" x3="12.622443958453122" y3="-0.5792771751705937" z3="2.5551572612764"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_14_a1" x3="1.140573481854345" y3="0.7194051768659331" z3="4.149503769523695"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_14_a2" x3="1.7690284363742603" y3="0.7483236778497744" z3="5.555138178052534"> </atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_14_a3" x3="1.4842409177398084" y3="2.0687610789137465" z3="6.252089495650437"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_14_a4" x3="1.8792100613516352" y3="3.1409438805182424" z3="5.745213361335479"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_14_a5" x3="0.8198380253768527" y3="2.0832316781854807" z3="7.39259789034837"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_15_a1" x3="0.5387977109349593" y3="3.386294902919664" z3="8.080378795872615"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_15_a2" x3="-0.9715525686714669" y3="3.6368023710890305" z3="8.246776035285306"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_15_a3" x3="-1.7211506732918316" y3="2.459384358277029" z3="7.596092160692277"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_15_a4" x3="-1.3131804539597856" y3="3.7634861174193084" z3="9.598531048743423"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_16_a1" x3="-1.884831548293084" y3="5.009985859851901" z3="9.880405876393965"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_16_a2" x3="-2.8897556454451876" y3="4.933740591960402" z3="11.044843173154588"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_16_a3" x3="-2.9742024172292987" y3="3.465531621684174" z3="11.501823656693722"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_16_a4" x3="-2.498610560957076" y3="5.766044232264559" z3="12.100435979693755"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="me_17_a1" x3="-3.454697705620986" y3="6.73515535757029" z3="12.381186756392717"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_18_a1" x3="3.223063659509686" y3="0.3135304973894474" z3="5.293725745091312"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_18_a2" x3="4.181851018885684" y3="0.9498444871427225" z3="6.3171666598221385"> </atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_18_a3" x3="4.9143330100996225" y3="-0.1172914052837139" z3="7.114092703845357"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_18_a4" x3="4.268608455836714" y3="-0.935316990709078" z3="7.804291183712894"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_18_a5" x3="6.232320921244938" y3="-0.18017966207643482" z3="7.077310463125403"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_19_a1" x3="6.95516499152185" y3="-1.233274292760418" z3="7.863750638148316"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_19_a2" x3="7.794056727420785" y3="-2.154835266977362" z3="6.958993197592678"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_19_a3" x3="7.576369792814476" y3="-1.7118188803120788" z3="5.500244117165291"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_19_a4" x3="9.149743164158092" y3="-2.0976123093024324" z3="7.303724713937551"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_20_a1" x3="9.646525517443383" y3="-3.3489341718245313" z3="7.687652949208878"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_20_a2" x3="11.14351363430781" y3="-3.5007005470900063" z3="7.359638398761079"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_20_a3" x3="11.607353310471812" y3="-2.210948476540446" z3="6.657504258208724"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_20_a4" x3="11.89006613350686" y3="-3.7363974857832156" z3="8.520287492600515"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="me_21_a1" x3="12.566240872340776" y3="-4.94967988823917" z3="8.467056538695926"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_22_a1" x3="3.286899408496319" y3="1.9729058652814468" z3="7.04104995954826"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_22_a2" x3="3.7464827697480283" y3="2.175628438722982" z3="8.496826965919023"> </atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_22_a3" x3="4.131311081788712" y3="3.624173695753316" z3="8.749856230208437"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_22_a4" x3="5.0517749873816875" y3="4.151029761775933" z3="8.08829075030815"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_22_a5" x3="3.4934942053073335" y3="4.3257608869281965" z3="9.668205317023945"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_23_a1" x3="3.8732589869264293" y3="5.755246337944973" z3="9.917905248888498"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_23_a2" x3="2.6962658435120943" y3="6.716724788620729" z3="9.669216026681767"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_23_a3" x3="1.495268871642102" y3="5.880592087682015" z3="9.18954074070172"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_23_a4" x3="2.378302233346564" y3="7.431406257381761" z3="10.83030583406967"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_24_a1" x3="2.507197585688204" y3="8.813397495230575" z3="10.647313466322192"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_24_a2" x3="1.5296492488498588" y3="9.606454272830916" z3="11.534477598062622"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_24_a3" x3="0.6760311373677688" y3="8.594030117883728" z3="12.320565029732421"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_24_a4" x3="2.2200745183630453" y3="10.461156804195328" z3="12.402116076979336"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="me_25_a1" x3="1.877820710171275" y3="11.793450830518655" z3="12.202228713193113"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_26_a1" x3="4.787315718649313" y3="1.0572786033826103" z3="8.690632069762083"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_26_a2" x3="5.8659919486487" y3="1.4772438131714936" z3="9.706351919622902"> </atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_26_a3" x3="5.89474575470441" y3="0.5288428634534775" z3="10.893831964596828"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_26_a4" x3="4.877203442704891" y3="0.3881060274770768" z3="11.60608247269775"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_26_a5" x3="6.994240846697967" y3="-0.14615038882635223" z3="11.172928098677504"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_27_a1" x3="7.022616313200313" y3="-1.0820723786796569" z3="12.344783406217562"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_27_a2" x3="7.330348951588128" y3="-2.5298373899751736" z3="11.919486926877129"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_27_a3" x3="7.467576875669556" y3="-2.553618541076608" z3="10.385797599241121"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_27_a4" x3="8.49814980015235" y3="-2.9961012373104436" z3="12.534986076154196"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_28_a1" x3="8.258288025254611" y3="-4.124529554830234" z3="13.328154318812942"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_28_a2" x3="9.485094768786057" y3="-5.052890363831387" z3="13.396648277207044"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_28_a3" x3="10.58883464569282" y3="-4.444816450724937" z3="12.511433952692775"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_28_a4" x3="9.926859786274001" y3="-5.203994392608544" z3="14.716501012102565"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="me_29_a1" x3="9.889271293763212" y3="-6.530683523113546" z3="15.129518028980378"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_30_a1" x3="5.574184997819182" y3="2.973743033174995" z3="9.923005532508752"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_30_a2" x3="5.974625905533895" y3="3.4141305936682342" z3="11.34332446711162"> </atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_30_a3" x3="7.028243782783673" y3="4.508748578439789" z3="11.297489587878326"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_30_a4" x3="8.130365067997394" y3="4.292810574380724" z3="10.748673178610305"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_30_a5" x3="6.779387651630687" y3="5.687368413290934" z3="11.83723574199434"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_31_a1" x3="7.819142135758757" y3="6.767583529841811" z3="11.792003953277273"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_31_a2" x3="7.318991841281584" y3="8.018867061007255" z3="11.046524773441552"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_31_a3" x3="5.894388852722472" y3="7.729241176617637" z3="10.538368132158594"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_31_a4" x3="7.334699487414675" y3="9.141159025505338" z3="11.88331268938919"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_32_a1" x3="8.164055908198764" y3="10.153930195998685" z3="11.386862809218249"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_32_a2" x3="7.672983914121041" y3="11.554673064217983" z3="11.797189159536261"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_32_a3" x3="6.371524807796221" y3="11.382933019615288" z3="12.602365880290199"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_32_a4" x3="8.64379770980109" y3="12.226091281040441" z3="12.549996008758722"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="me_33_a1" x3="9.045201398051196" y3="13.410888206562195" z3="11.943999866581716"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_34_a1" x3="6.281553361950912" y3="2.0789162342194185" z3="12.046601191324124"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_34_a2" x3="7.352822472959398" y3="2.263220331813502" z3="13.137479044893952"> </atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_34_a3" x3="6.813348072962916" y3="1.8692110540830937" z3="14.502808331480452"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_34_a4" x3="5.822133282250367" y3="2.46388942509313" z3="14.978571795531156"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_34_a5" x3="7.391579965642634" y3="0.8990647425832458" z3="15.186082809689077"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_35_a1" x3="6.859203913014529" y3="0.5102397974545534" z3="16.533447237241543"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_35_a2" x3="6.410822891777167" y3="-0.962495183520197" z3="16.573523858948505"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_35_a3" x3="6.618407398049136" y3="-1.5588682764625337" z3="15.168942851398489"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_35_a4" x3="7.1319071919223" y3="-1.6804978007465357" z3="17.535038119758156"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_36_a1" x3="6.2964978078546" y3="-2.229608012748785" z3="18.51512440988085"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_36_a2" x3="6.868267103229803" y3="-3.5371194041177985" z3="19.09399730983939"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_36_a3" x3="8.183845869339308" y3="-3.846246237738067" z3="18.355557663762816"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_36_a4" x3="7.081554736419006" y3="-3.424231874066531" z3="20.473042193477145"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="me_37_a1" x3="6.343383386920849" y3="-4.356992734606805" z3="21.19218073077315"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_38_a1" x3="7.853669825758014" y3="3.698731652080585" z3="12.892409302617034"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_38_a2" x3="8.327340626214893" y3="4.349652991485549" z3="14.20524492930523"> </atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_38_a3" x3="9.792869858175205" y3="4.743812733098936" z3="14.120026572356247"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_38_a4" x3="10.663262021163735" y3="3.8719985426152688" z3="13.90823068032938"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_38_a5" x3="10.146432172340642" y3="6.006745135966579" z3="14.26967761909145"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_39_a1" x3="11.592678124933057" y3="6.395718565190317" z3="14.185580556312848"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_39_a2" x3="11.853721176866738" y3="7.404686860465997" z3="13.05180831103356"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_39_a3" x3="10.518914544923767" y3="7.657554374045306" z3="12.326584706965626"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_39_a4" x3="12.385358096343852" y3="8.598144844195955" z3="13.55481947087011"> </atom>
+    <atom elementType="C" hydrogenCount="2" id="po_40_a1" x3="13.646912549784032" y3="8.87834352248746" z3="13.016331716423512"> </atom>
+    <atom elementType="C" hydrogenCount="1" id="po_40_a2" x3="13.91516575053996" y3="10.392498582061103" z3="12.932817191628482"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="po_40_a3" x3="12.658655843124867" y3="11.124478665025837" z3="13.43975704083217"> </atom>
+    <atom elementType="O" hydrogenCount="0" id="po_40_a4" x3="15.040127209497077" y3="10.745121284514854" z3="13.687879404678034"> </atom>
+    <atom elementType="C" hydrogenCount="3" id="me_41_a1" x3="16.0302967656545" y3="11.328211664840138" z3="12.90578615037192"> </atom>
+    <atom elementType="Cl" id="cl_42_a1" x3="7.8606415202387465" y3="3.347294721940593" z3="15.277191683559334"> </atom>
+  </atomArray>
+  <bondArray>
+    <bond order="1" id="acryl_2_a1_acryl_2_a2" atomRefs2="acryl_2_a1 acryl_2_a2"> </bond>
+    <bond order="1" id="acryl_2_a2_acryl_2_a3" atomRefs2="acryl_2_a2 acryl_2_a3"> </bond>
+    <bond order="2" id="acryl_2_a3_acryl_2_a4" atomRefs2="acryl_2_a3 acryl_2_a4"> </bond>
+    <bond order="1" id="acryl_2_a3_acryl_2_a5" atomRefs2="acryl_2_a3 acryl_2_a5"> </bond>
+    <bond order="1" id="po_3_a1_po_3_a2" atomRefs2="po_3_a1 po_3_a2"> </bond>
+    <bond order="1" id="po_3_a2_po_3_a3" atomRefs2="po_3_a2 po_3_a3"> </bond>
+    <bond order="1" id="po_3_a2_po_3_a4" atomRefs2="po_3_a2 po_3_a4"> </bond>
+    <bond order="1" id="po_4_a1_po_4_a2" atomRefs2="po_4_a1 po_4_a2"> </bond>
+    <bond order="1" id="po_4_a2_po_4_a3" atomRefs2="po_4_a2 po_4_a3"> </bond>
+    <bond order="1" id="po_4_a2_po_4_a4" atomRefs2="po_4_a2 po_4_a4"> </bond>
+    <bond order="1" id="acryl_6_a1_acryl_6_a2" atomRefs2="acryl_6_a1 acryl_6_a2"> </bond>
+    <bond order="1" id="acryl_6_a2_acryl_6_a3" atomRefs2="acryl_6_a2 acryl_6_a3"> </bond>
+    <bond order="2" id="acryl_6_a3_acryl_6_a4" atomRefs2="acryl_6_a3 acryl_6_a4"> </bond>
+    <bond order="1" id="acryl_6_a3_acryl_6_a5" atomRefs2="acryl_6_a3 acryl_6_a5"> </bond>
+    <bond order="1" id="po_7_a1_po_7_a2" atomRefs2="po_7_a1 po_7_a2"> </bond>
+    <bond order="1" id="po_7_a2_po_7_a3" atomRefs2="po_7_a2 po_7_a3"> </bond>
+    <bond order="1" id="po_7_a2_po_7_a4" atomRefs2="po_7_a2 po_7_a4"> </bond>
+    <bond order="1" id="po_8_a1_po_8_a2" atomRefs2="po_8_a1 po_8_a2"> </bond>
+    <bond order="1" id="po_8_a2_po_8_a3" atomRefs2="po_8_a2 po_8_a3"> </bond>
+    <bond order="1" id="po_8_a2_po_8_a4" atomRefs2="po_8_a2 po_8_a4"> </bond>
+    <bond order="1" id="acryl_10_a1_acryl_10_a2" atomRefs2="acryl_10_a1 acryl_10_a2"> </bond>
+    <bond order="1" id="acryl_10_a2_acryl_10_a3" atomRefs2="acryl_10_a2 acryl_10_a3"> </bond>
+    <bond order="2" id="acryl_10_a3_acryl_10_a4" atomRefs2="acryl_10_a3 acryl_10_a4"> </bond>
+    <bond order="1" id="acryl_10_a3_acryl_10_a5" atomRefs2="acryl_10_a3 acryl_10_a5"> </bond>
+    <bond order="1" id="po_11_a1_po_11_a2" atomRefs2="po_11_a1 po_11_a2"> </bond>
+    <bond order="1" id="po_11_a2_po_11_a3" atomRefs2="po_11_a2 po_11_a3"> </bond>
+    <bond order="1" id="po_11_a2_po_11_a4" atomRefs2="po_11_a2 po_11_a4"> </bond>
+    <bond order="1" id="po_12_a1_po_12_a2" atomRefs2="po_12_a1 po_12_a2"> </bond>
+    <bond order="1" id="po_12_a2_po_12_a3" atomRefs2="po_12_a2 po_12_a3"> </bond>
+    <bond order="1" id="po_12_a2_po_12_a4" atomRefs2="po_12_a2 po_12_a4"> </bond>
+    <bond order="1" id="acryl_14_a1_acryl_14_a2" atomRefs2="acryl_14_a1 acryl_14_a2"> </bond>
+    <bond order="1" id="acryl_14_a2_acryl_14_a3" atomRefs2="acryl_14_a2 acryl_14_a3"> </bond>
+    <bond order="2" id="acryl_14_a3_acryl_14_a4" atomRefs2="acryl_14_a3 acryl_14_a4"> </bond>
+    <bond order="1" id="acryl_14_a3_acryl_14_a5" atomRefs2="acryl_14_a3 acryl_14_a5"> </bond>
+    <bond order="1" id="po_15_a1_po_15_a2" atomRefs2="po_15_a1 po_15_a2"> </bond>
+    <bond order="1" id="po_15_a2_po_15_a3" atomRefs2="po_15_a2 po_15_a3"> </bond>
+    <bond order="1" id="po_15_a2_po_15_a4" atomRefs2="po_15_a2 po_15_a4"> </bond>
+    <bond order="1" id="po_16_a1_po_16_a2" atomRefs2="po_16_a1 po_16_a2"> </bond>
+    <bond order="1" id="po_16_a2_po_16_a3" atomRefs2="po_16_a2 po_16_a3"> </bond>
+    <bond order="1" id="po_16_a2_po_16_a4" atomRefs2="po_16_a2 po_16_a4"> </bond>
+    <bond order="1" id="acryl_18_a1_acryl_18_a2" atomRefs2="acryl_18_a1 acryl_18_a2"> </bond>
+    <bond order="1" id="acryl_18_a2_acryl_18_a3" atomRefs2="acryl_18_a2 acryl_18_a3"> </bond>
+    <bond order="2" id="acryl_18_a3_acryl_18_a4" atomRefs2="acryl_18_a3 acryl_18_a4"> </bond>
+    <bond order="1" id="acryl_18_a3_acryl_18_a5" atomRefs2="acryl_18_a3 acryl_18_a5"> </bond>
+    <bond order="1" id="po_19_a1_po_19_a2" atomRefs2="po_19_a1 po_19_a2"> </bond>
+    <bond order="1" id="po_19_a2_po_19_a3" atomRefs2="po_19_a2 po_19_a3"> </bond>
+    <bond order="1" id="po_19_a2_po_19_a4" atomRefs2="po_19_a2 po_19_a4"> </bond>
+    <bond order="1" id="po_20_a1_po_20_a2" atomRefs2="po_20_a1 po_20_a2"> </bond>
+    <bond order="1" id="po_20_a2_po_20_a3" atomRefs2="po_20_a2 po_20_a3"> </bond>
+    <bond order="1" id="po_20_a2_po_20_a4" atomRefs2="po_20_a2 po_20_a4"> </bond>
+    <bond order="1" id="acryl_22_a1_acryl_22_a2" atomRefs2="acryl_22_a1 acryl_22_a2"> </bond>
+    <bond order="1" id="acryl_22_a2_acryl_22_a3" atomRefs2="acryl_22_a2 acryl_22_a3"> </bond>
+    <bond order="2" id="acryl_22_a3_acryl_22_a4" atomRefs2="acryl_22_a3 acryl_22_a4"> </bond>
+    <bond order="1" id="acryl_22_a3_acryl_22_a5" atomRefs2="acryl_22_a3 acryl_22_a5"> </bond>
+    <bond order="1" id="po_23_a1_po_23_a2" atomRefs2="po_23_a1 po_23_a2"> </bond>
+    <bond order="1" id="po_23_a2_po_23_a3" atomRefs2="po_23_a2 po_23_a3"> </bond>
+    <bond order="1" id="po_23_a2_po_23_a4" atomRefs2="po_23_a2 po_23_a4"> </bond>
+    <bond order="1" id="po_24_a1_po_24_a2" atomRefs2="po_24_a1 po_24_a2"> </bond>
+    <bond order="1" id="po_24_a2_po_24_a3" atomRefs2="po_24_a2 po_24_a3"> </bond>
+    <bond order="1" id="po_24_a2_po_24_a4" atomRefs2="po_24_a2 po_24_a4"> </bond>
+    <bond order="1" id="acryl_26_a1_acryl_26_a2" atomRefs2="acryl_26_a1 acryl_26_a2"> </bond>
+    <bond order="1" id="acryl_26_a2_acryl_26_a3" atomRefs2="acryl_26_a2 acryl_26_a3"> </bond>
+    <bond order="2" id="acryl_26_a3_acryl_26_a4" atomRefs2="acryl_26_a3 acryl_26_a4"> </bond>
+    <bond order="1" id="acryl_26_a3_acryl_26_a5" atomRefs2="acryl_26_a3 acryl_26_a5"> </bond>
+    <bond order="1" id="po_27_a1_po_27_a2" atomRefs2="po_27_a1 po_27_a2"> </bond>
+    <bond order="1" id="po_27_a2_po_27_a3" atomRefs2="po_27_a2 po_27_a3"> </bond>
+    <bond order="1" id="po_27_a2_po_27_a4" atomRefs2="po_27_a2 po_27_a4"> </bond>
+    <bond order="1" id="po_28_a1_po_28_a2" atomRefs2="po_28_a1 po_28_a2"> </bond>
+    <bond order="1" id="po_28_a2_po_28_a3" atomRefs2="po_28_a2 po_28_a3"> </bond>
+    <bond order="1" id="po_28_a2_po_28_a4" atomRefs2="po_28_a2 po_28_a4"> </bond>
+    <bond order="1" id="acryl_30_a1_acryl_30_a2" atomRefs2="acryl_30_a1 acryl_30_a2"> </bond>
+    <bond order="1" id="acryl_30_a2_acryl_30_a3" atomRefs2="acryl_30_a2 acryl_30_a3"> </bond>
+    <bond order="2" id="acryl_30_a3_acryl_30_a4" atomRefs2="acryl_30_a3 acryl_30_a4"> </bond>
+    <bond order="1" id="acryl_30_a3_acryl_30_a5" atomRefs2="acryl_30_a3 acryl_30_a5"> </bond>
+    <bond order="1" id="po_31_a1_po_31_a2" atomRefs2="po_31_a1 po_31_a2"> </bond>
+    <bond order="1" id="po_31_a2_po_31_a3" atomRefs2="po_31_a2 po_31_a3"> </bond>
+    <bond order="1" id="po_31_a2_po_31_a4" atomRefs2="po_31_a2 po_31_a4"> </bond>
+    <bond order="1" id="po_32_a1_po_32_a2" atomRefs2="po_32_a1 po_32_a2"> </bond>
+    <bond order="1" id="po_32_a2_po_32_a3" atomRefs2="po_32_a2 po_32_a3"> </bond>
+    <bond order="1" id="po_32_a2_po_32_a4" atomRefs2="po_32_a2 po_32_a4"> </bond>
+    <bond order="1" id="acryl_34_a1_acryl_34_a2" atomRefs2="acryl_34_a1 acryl_34_a2"> </bond>
+    <bond order="1" id="acryl_34_a2_acryl_34_a3" atomRefs2="acryl_34_a2 acryl_34_a3"> </bond>
+    <bond order="2" id="acryl_34_a3_acryl_34_a4" atomRefs2="acryl_34_a3 acryl_34_a4"> </bond>
+    <bond order="1" id="acryl_34_a3_acryl_34_a5" atomRefs2="acryl_34_a3 acryl_34_a5"> </bond>
+    <bond order="1" id="po_35_a1_po_35_a2" atomRefs2="po_35_a1 po_35_a2"> </bond>
+    <bond order="1" id="po_35_a2_po_35_a3" atomRefs2="po_35_a2 po_35_a3"> </bond>
+    <bond order="1" id="po_35_a2_po_35_a4" atomRefs2="po_35_a2 po_35_a4"> </bond>
+    <bond order="1" id="po_36_a1_po_36_a2" atomRefs2="po_36_a1 po_36_a2"> </bond>
+    <bond order="1" id="po_36_a2_po_36_a3" atomRefs2="po_36_a2 po_36_a3"> </bond>
+    <bond order="1" id="po_36_a2_po_36_a4" atomRefs2="po_36_a2 po_36_a4"> </bond>
+    <bond order="1" id="acryl_38_a1_acryl_38_a2" atomRefs2="acryl_38_a1 acryl_38_a2"> </bond>
+    <bond order="1" id="acryl_38_a2_acryl_38_a3" atomRefs2="acryl_38_a2 acryl_38_a3"> </bond>
+    <bond order="2" id="acryl_38_a3_acryl_38_a4" atomRefs2="acryl_38_a3 acryl_38_a4"> </bond>
+    <bond order="1" id="acryl_38_a3_acryl_38_a5" atomRefs2="acryl_38_a3 acryl_38_a5"> </bond>
+    <bond order="1" id="po_39_a1_po_39_a2" atomRefs2="po_39_a1 po_39_a2"> </bond>
+    <bond order="1" id="po_39_a2_po_39_a3" atomRefs2="po_39_a2 po_39_a3"> </bond>
+    <bond order="1" id="po_39_a2_po_39_a4" atomRefs2="po_39_a2 po_39_a4"> </bond>
+    <bond order="1" id="po_40_a1_po_40_a2" atomRefs2="po_40_a1 po_40_a2"> </bond>
+    <bond order="1" id="po_40_a2_po_40_a3" atomRefs2="po_40_a2 po_40_a3"> </bond>
+    <bond order="1" id="po_40_a2_po_40_a4" atomRefs2="po_40_a2 po_40_a4"> </bond>
+    <bond atomRefs2="oh_1_a1 acryl_2_a1" id="g:oh_1_r1_g:acryl_2_r1" order="1"/>
+    <bond atomRefs2="acryl_2_a5 po_3_a1" id="g:acryl_2_r3_g:po_3_r1" order="1"/>
+    <bond atomRefs2="po_3_a4 po_4_a1" id="g:po_3_r2_g:po_4_r1" order="1"/>
+    <bond atomRefs2="po_4_a4 me_5_a1" id="g:po_4_r2_g:me_5_r1" order="1"/>
+    <bond atomRefs2="acryl_2_a2 acryl_6_a1" id="g:acryl_2_r2_g:acryl_6_r1"/>
+    <bond atomRefs2="acryl_6_a5 po_7_a1" id="g:acryl_6_r3_g:po_7_r1" order="1"/>
+    <bond atomRefs2="po_7_a4 po_8_a1" id="g:po_7_r2_g:po_8_r1" order="1"/>
+    <bond atomRefs2="po_8_a4 me_9_a1" id="g:po_8_r2_g:me_9_r1" order="1"/>
+    <bond atomRefs2="acryl_6_a2 acryl_10_a1" id="g:acryl_6_r2_g:acryl_10_r1"/>
+    <bond atomRefs2="acryl_10_a5 po_11_a1" id="g:acryl_10_r3_g:po_11_r1" order="1"/>
+    <bond atomRefs2="po_11_a4 po_12_a1" id="g:po_11_r2_g:po_12_r1" order="1"/>
+    <bond atomRefs2="po_12_a4 me_13_a1" id="g:po_12_r2_g:me_13_r1" order="1"/>
+    <bond atomRefs2="acryl_10_a2 acryl_14_a1" id="g:acryl_10_r2_g:acryl_14_r1"/>
+    <bond atomRefs2="acryl_14_a5 po_15_a1" id="g:acryl_14_r3_g:po_15_r1" order="1"/>
+    <bond atomRefs2="po_15_a4 po_16_a1" id="g:po_15_r2_g:po_16_r1" order="1"/>
+    <bond atomRefs2="po_16_a4 me_17_a1" id="g:po_16_r2_g:me_17_r1" order="1"/>
+    <bond atomRefs2="acryl_14_a2 acryl_18_a1" id="g:acryl_14_r2_g:acryl_18_r1"/>
+    <bond atomRefs2="acryl_18_a5 po_19_a1" id="g:acryl_18_r3_g:po_19_r1" order="1"/>
+    <bond atomRefs2="po_19_a4 po_20_a1" id="g:po_19_r2_g:po_20_r1" order="1"/>
+    <bond atomRefs2="po_20_a4 me_21_a1" id="g:po_20_r2_g:me_21_r1" order="1"/>
+    <bond atomRefs2="acryl_18_a2 acryl_22_a1" id="g:acryl_18_r2_g:acryl_22_r1"/>
+    <bond atomRefs2="acryl_22_a5 po_23_a1" id="g:acryl_22_r3_g:po_23_r1" order="1"/>
+    <bond atomRefs2="po_23_a4 po_24_a1" id="g:po_23_r2_g:po_24_r1" order="1"/>
+    <bond atomRefs2="po_24_a4 me_25_a1" id="g:po_24_r2_g:me_25_r1" order="1"/>
+    <bond atomRefs2="acryl_22_a2 acryl_26_a1" id="g:acryl_22_r2_g:acryl_26_r1"/>
+    <bond atomRefs2="acryl_26_a5 po_27_a1" id="g:acryl_26_r3_g:po_27_r1" order="1"/>
+    <bond atomRefs2="po_27_a4 po_28_a1" id="g:po_27_r2_g:po_28_r1" order="1"/>
+    <bond atomRefs2="po_28_a4 me_29_a1" id="g:po_28_r2_g:me_29_r1" order="1"/>
+    <bond atomRefs2="acryl_26_a2 acryl_30_a1" id="g:acryl_26_r2_g:acryl_30_r1"/>
+    <bond atomRefs2="acryl_30_a5 po_31_a1" id="g:acryl_30_r3_g:po_31_r1" order="1"/>
+    <bond atomRefs2="po_31_a4 po_32_a1" id="g:po_31_r2_g:po_32_r1" order="1"/>
+    <bond atomRefs2="po_32_a4 me_33_a1" id="g:po_32_r2_g:me_33_r1" order="1"/>
+    <bond atomRefs2="acryl_30_a2 acryl_34_a1" id="g:acryl_30_r2_g:acryl_34_r1"/>
+    <bond atomRefs2="acryl_34_a5 po_35_a1" id="g:acryl_34_r3_g:po_35_r1" order="1"/>
+    <bond atomRefs2="po_35_a4 po_36_a1" id="g:po_35_r2_g:po_36_r1" order="1"/>
+    <bond atomRefs2="po_36_a4 me_37_a1" id="g:po_36_r2_g:me_37_r1" order="1"/>
+    <bond atomRefs2="acryl_34_a2 acryl_38_a1" id="g:acryl_34_r2_g:acryl_38_r1"/>
+    <bond atomRefs2="acryl_38_a5 po_39_a1" id="g:acryl_38_r3_g:po_39_r1" order="1"/>
+    <bond atomRefs2="po_39_a4 po_40_a1" id="g:po_39_r2_g:po_40_r1" order="1"/>
+    <bond atomRefs2="po_40_a4 me_41_a1" id="g:po_40_r2_g:me_41_r1" order="1"/>
+    <bond atomRefs2="acryl_38_a2 cl_42_a1" id="g:acryl_38_r2_g:cl_42_r1" order="1"/>
+  </bondArray>
+  <name>hydroxy_1</name>
+  <length atomRefs2="acryl_2_a3 acryl_2_a5"> 1.32</length>
+  <length atomRefs2="acryl_2_a3 acryl_2_a4"> 1.25</length>
+  <length atomRefs2="acryl_2_a2 acryl_2_a3"> 1.52</length>
+  <length atomRefs2="acryl_2_a1 acryl_2_a2"> 1.54</length>
+  <angle atomRefs3="acryl_2_a3 acryl_2_a2 acryl_6_a1"> 120</angle>
+  <angle atomRefs3="acryl_2_a3 acryl_2_a5 po_3_a1"> 120</angle>
+  <angle atomRefs3="acryl_2_a2 acryl_2_a1 oh_1_a1"> 111</angle>
+  <angle atomRefs3="acryl_2_a5 acryl_2_a3 acryl_2_a4"> 120</angle>
+  <angle atomRefs3="acryl_2_a2 acryl_2_a3 acryl_2_a5"> 120</angle>
+  <angle atomRefs3="acryl_2_a1 acryl_2_a2 acryl_2_a3"> 111</angle>
+  <torsion atomRefs4="acryl_2_a2 acryl_2_a5 acryl_2_a3 acryl_2_a4"> 180</torsion>
+  <torsion atomRefs4="acryl_2_a1 acryl_2_a3 acryl_2_a2 acryl_6_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_2_a2 acryl_2_a3 acryl_2_a5 po_3_a1"> 180</torsion>
+  <torsion atomRefs4="acryl_2_a1 acryl_2_a2 acryl_2_a3 acryl_2_a5"> 120</torsion>
+  <torsion atomRefs4="oh_1_a1 acryl_2_a1 acryl_2_a2 acryl_2_a3"> 120</torsion>
+  <torsion atomRefs4="po_3_a1 po_3_a2 po_3_a4 po_4_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_2_a5 po_3_a1 po_3_a2 po_3_a4"> 120</torsion>
+  <angle atomRefs3="po_4_a1 po_3_a4 po_3_a2"> 112</angle>
+  <angle atomRefs3="acryl_2_a5 po_3_a1 po_3_a2"> 112</angle>
+  <torsion atomRefs4="po_3_a1 po_3_a4 po_3_a2 po_3_a3"> 120</torsion>
+  <angle atomRefs3="po_3_a1 po_3_a2 po_3_a4"> 111</angle>
+  <length atomRefs2="po_3_a2 po_3_a4"> 1.40</length>
+  <angle atomRefs3="po_3_a4 po_3_a2 po_3_a3"> 111</angle>
+  <length atomRefs2="po_3_a2 po_3_a3"> 1.54</length>
+  <length atomRefs2="po_3_a1 po_3_a2"> 1.54</length>
+  <torsion atomRefs4="po_4_a1 po_4_a2 po_4_a4 me_5_a1"> 120</torsion>
+  <torsion atomRefs4="po_3_a4 po_4_a1 po_4_a2 po_4_a4"> 120</torsion>
+  <angle atomRefs3="me_5_a1 po_4_a4 po_4_a2"> 112</angle>
+  <angle atomRefs3="po_3_a4 po_4_a1 po_4_a2"> 112</angle>
+  <torsion atomRefs4="po_4_a1 po_4_a4 po_4_a2 po_4_a3"> 120</torsion>
+  <angle atomRefs3="po_4_a1 po_4_a2 po_4_a4"> 111</angle>
+  <length atomRefs2="po_4_a2 po_4_a4"> 1.40</length>
+  <angle atomRefs3="po_4_a4 po_4_a2 po_4_a3"> 111</angle>
+  <length atomRefs2="po_4_a2 po_4_a3"> 1.54</length>
+  <length atomRefs2="po_4_a1 po_4_a2"> 1.54</length>
+  <name>methyl_5</name>
+  <length atomRefs2="acryl_6_a3 acryl_6_a5"> 1.32</length>
+  <length atomRefs2="acryl_6_a3 acryl_6_a4"> 1.25</length>
+  <length atomRefs2="acryl_6_a2 acryl_6_a3"> 1.52</length>
+  <length atomRefs2="acryl_6_a1 acryl_6_a2"> 1.54</length>
+  <angle atomRefs3="acryl_6_a3 acryl_6_a2 acryl_10_a1"> 120</angle>
+  <angle atomRefs3="acryl_6_a3 acryl_6_a5 po_7_a1"> 120</angle>
+  <angle atomRefs3="acryl_6_a2 acryl_6_a1 acryl_2_a2"> 111</angle>
+  <angle atomRefs3="acryl_6_a5 acryl_6_a3 acryl_6_a4"> 120</angle>
+  <angle atomRefs3="acryl_6_a2 acryl_6_a3 acryl_6_a5"> 120</angle>
+  <angle atomRefs3="acryl_6_a1 acryl_6_a2 acryl_6_a3"> 111</angle>
+  <torsion atomRefs4="acryl_6_a2 acryl_6_a5 acryl_6_a3 acryl_6_a4"> 180</torsion>
+  <torsion atomRefs4="acryl_6_a1 acryl_6_a3 acryl_6_a2 acryl_10_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_6_a2 acryl_6_a3 acryl_6_a5 po_7_a1"> 180</torsion>
+  <torsion atomRefs4="acryl_6_a1 acryl_6_a2 acryl_6_a3 acryl_6_a5"> 120</torsion>
+  <torsion atomRefs4="acryl_2_a2 acryl_6_a1 acryl_6_a2 acryl_6_a3"> 120</torsion>
+  <torsion atomRefs4="po_7_a1 po_7_a2 po_7_a4 po_8_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_6_a5 po_7_a1 po_7_a2 po_7_a4"> 120</torsion>
+  <angle atomRefs3="po_8_a1 po_7_a4 po_7_a2"> 112</angle>
+  <angle atomRefs3="acryl_6_a5 po_7_a1 po_7_a2"> 112</angle>
+  <torsion atomRefs4="po_7_a1 po_7_a4 po_7_a2 po_7_a3"> 120</torsion>
+  <angle atomRefs3="po_7_a1 po_7_a2 po_7_a4"> 111</angle>
+  <length atomRefs2="po_7_a2 po_7_a4"> 1.40</length>
+  <angle atomRefs3="po_7_a4 po_7_a2 po_7_a3"> 111</angle>
+  <length atomRefs2="po_7_a2 po_7_a3"> 1.54</length>
+  <length atomRefs2="po_7_a1 po_7_a2"> 1.54</length>
+  <torsion atomRefs4="po_8_a1 po_8_a2 po_8_a4 me_9_a1"> 120</torsion>
+  <torsion atomRefs4="po_7_a4 po_8_a1 po_8_a2 po_8_a4"> 120</torsion>
+  <angle atomRefs3="me_9_a1 po_8_a4 po_8_a2"> 112</angle>
+  <angle atomRefs3="po_7_a4 po_8_a1 po_8_a2"> 112</angle>
+  <torsion atomRefs4="po_8_a1 po_8_a4 po_8_a2 po_8_a3"> 120</torsion>
+  <angle atomRefs3="po_8_a1 po_8_a2 po_8_a4"> 111</angle>
+  <length atomRefs2="po_8_a2 po_8_a4"> 1.40</length>
+  <angle atomRefs3="po_8_a4 po_8_a2 po_8_a3"> 111</angle>
+  <length atomRefs2="po_8_a2 po_8_a3"> 1.54</length>
+  <length atomRefs2="po_8_a1 po_8_a2"> 1.54</length>
+  <name>methyl_9</name>
+  <length atomRefs2="acryl_10_a3 acryl_10_a5"> 1.32</length>
+  <length atomRefs2="acryl_10_a3 acryl_10_a4"> 1.25</length>
+  <length atomRefs2="acryl_10_a2 acryl_10_a3"> 1.52</length>
+  <length atomRefs2="acryl_10_a1 acryl_10_a2"> 1.54</length>
+  <angle atomRefs3="acryl_10_a3 acryl_10_a2 acryl_14_a1"> 120</angle>
+  <angle atomRefs3="acryl_10_a3 acryl_10_a5 po_11_a1"> 120</angle>
+  <angle atomRefs3="acryl_10_a2 acryl_10_a1 acryl_6_a2"> 111</angle>
+  <angle atomRefs3="acryl_10_a5 acryl_10_a3 acryl_10_a4"> 120</angle>
+  <angle atomRefs3="acryl_10_a2 acryl_10_a3 acryl_10_a5"> 120</angle>
+  <angle atomRefs3="acryl_10_a1 acryl_10_a2 acryl_10_a3"> 111</angle>
+  <torsion atomRefs4="acryl_10_a2 acryl_10_a5 acryl_10_a3 acryl_10_a4"> 180</torsion>
+  <torsion atomRefs4="acryl_10_a1 acryl_10_a3 acryl_10_a2 acryl_14_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_10_a2 acryl_10_a3 acryl_10_a5 po_11_a1"> 180</torsion>
+  <torsion atomRefs4="acryl_10_a1 acryl_10_a2 acryl_10_a3 acryl_10_a5"> 120</torsion>
+  <torsion atomRefs4="acryl_6_a2 acryl_10_a1 acryl_10_a2 acryl_10_a3"> 120</torsion>
+  <torsion atomRefs4="po_11_a1 po_11_a2 po_11_a4 po_12_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_10_a5 po_11_a1 po_11_a2 po_11_a4"> 120</torsion>
+  <angle atomRefs3="po_12_a1 po_11_a4 po_11_a2"> 112</angle>
+  <angle atomRefs3="acryl_10_a5 po_11_a1 po_11_a2"> 112</angle>
+  <torsion atomRefs4="po_11_a1 po_11_a4 po_11_a2 po_11_a3"> 120</torsion>
+  <angle atomRefs3="po_11_a1 po_11_a2 po_11_a4"> 111</angle>
+  <length atomRefs2="po_11_a2 po_11_a4"> 1.40</length>
+  <angle atomRefs3="po_11_a4 po_11_a2 po_11_a3"> 111</angle>
+  <length atomRefs2="po_11_a2 po_11_a3"> 1.54</length>
+  <length atomRefs2="po_11_a1 po_11_a2"> 1.54</length>
+  <torsion atomRefs4="po_12_a1 po_12_a2 po_12_a4 me_13_a1"> 120</torsion>
+  <torsion atomRefs4="po_11_a4 po_12_a1 po_12_a2 po_12_a4"> 120</torsion>
+  <angle atomRefs3="me_13_a1 po_12_a4 po_12_a2"> 112</angle>
+  <angle atomRefs3="po_11_a4 po_12_a1 po_12_a2"> 112</angle>
+  <torsion atomRefs4="po_12_a1 po_12_a4 po_12_a2 po_12_a3"> 120</torsion>
+  <angle atomRefs3="po_12_a1 po_12_a2 po_12_a4"> 111</angle>
+  <length atomRefs2="po_12_a2 po_12_a4"> 1.40</length>
+  <angle atomRefs3="po_12_a4 po_12_a2 po_12_a3"> 111</angle>
+  <length atomRefs2="po_12_a2 po_12_a3"> 1.54</length>
+  <length atomRefs2="po_12_a1 po_12_a2"> 1.54</length>
+  <name>methyl_13</name>
+  <length atomRefs2="acryl_14_a3 acryl_14_a5"> 1.32</length>
+  <length atomRefs2="acryl_14_a3 acryl_14_a4"> 1.25</length>
+  <length atomRefs2="acryl_14_a2 acryl_14_a3"> 1.52</length>
+  <length atomRefs2="acryl_14_a1 acryl_14_a2"> 1.54</length>
+  <angle atomRefs3="acryl_14_a3 acryl_14_a2 acryl_18_a1"> 120</angle>
+  <angle atomRefs3="acryl_14_a3 acryl_14_a5 po_15_a1"> 120</angle>
+  <angle atomRefs3="acryl_14_a2 acryl_14_a1 acryl_10_a2"> 111</angle>
+  <angle atomRefs3="acryl_14_a5 acryl_14_a3 acryl_14_a4"> 120</angle>
+  <angle atomRefs3="acryl_14_a2 acryl_14_a3 acryl_14_a5"> 120</angle>
+  <angle atomRefs3="acryl_14_a1 acryl_14_a2 acryl_14_a3"> 111</angle>
+  <torsion atomRefs4="acryl_14_a2 acryl_14_a5 acryl_14_a3 acryl_14_a4"> 180</torsion>
+  <torsion atomRefs4="acryl_14_a1 acryl_14_a3 acryl_14_a2 acryl_18_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_14_a2 acryl_14_a3 acryl_14_a5 po_15_a1"> 180</torsion>
+  <torsion atomRefs4="acryl_14_a1 acryl_14_a2 acryl_14_a3 acryl_14_a5"> 120</torsion>
+  <torsion atomRefs4="acryl_10_a2 acryl_14_a1 acryl_14_a2 acryl_14_a3"> 120</torsion>
+  <torsion atomRefs4="po_15_a1 po_15_a2 po_15_a4 po_16_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_14_a5 po_15_a1 po_15_a2 po_15_a4"> 120</torsion>
+  <angle atomRefs3="po_16_a1 po_15_a4 po_15_a2"> 112</angle>
+  <angle atomRefs3="acryl_14_a5 po_15_a1 po_15_a2"> 112</angle>
+  <torsion atomRefs4="po_15_a1 po_15_a4 po_15_a2 po_15_a3"> 120</torsion>
+  <angle atomRefs3="po_15_a1 po_15_a2 po_15_a4"> 111</angle>
+  <length atomRefs2="po_15_a2 po_15_a4"> 1.40</length>
+  <angle atomRefs3="po_15_a4 po_15_a2 po_15_a3"> 111</angle>
+  <length atomRefs2="po_15_a2 po_15_a3"> 1.54</length>
+  <length atomRefs2="po_15_a1 po_15_a2"> 1.54</length>
+  <torsion atomRefs4="po_16_a1 po_16_a2 po_16_a4 me_17_a1"> 120</torsion>
+  <torsion atomRefs4="po_15_a4 po_16_a1 po_16_a2 po_16_a4"> 120</torsion>
+  <angle atomRefs3="me_17_a1 po_16_a4 po_16_a2"> 112</angle>
+  <angle atomRefs3="po_15_a4 po_16_a1 po_16_a2"> 112</angle>
+  <torsion atomRefs4="po_16_a1 po_16_a4 po_16_a2 po_16_a3"> 120</torsion>
+  <angle atomRefs3="po_16_a1 po_16_a2 po_16_a4"> 111</angle>
+  <length atomRefs2="po_16_a2 po_16_a4"> 1.40</length>
+  <angle atomRefs3="po_16_a4 po_16_a2 po_16_a3"> 111</angle>
+  <length atomRefs2="po_16_a2 po_16_a3"> 1.54</length>
+  <length atomRefs2="po_16_a1 po_16_a2"> 1.54</length>
+  <name>methyl_17</name>
+  <length atomRefs2="acryl_18_a3 acryl_18_a5"> 1.32</length>
+  <length atomRefs2="acryl_18_a3 acryl_18_a4"> 1.25</length>
+  <length atomRefs2="acryl_18_a2 acryl_18_a3"> 1.52</length>
+  <length atomRefs2="acryl_18_a1 acryl_18_a2"> 1.54</length>
+  <angle atomRefs3="acryl_18_a3 acryl_18_a2 acryl_22_a1"> 120</angle>
+  <angle atomRefs3="acryl_18_a3 acryl_18_a5 po_19_a1"> 120</angle>
+  <angle atomRefs3="acryl_18_a2 acryl_18_a1 acryl_14_a2"> 111</angle>
+  <angle atomRefs3="acryl_18_a5 acryl_18_a3 acryl_18_a4"> 120</angle>
+  <angle atomRefs3="acryl_18_a2 acryl_18_a3 acryl_18_a5"> 120</angle>
+  <angle atomRefs3="acryl_18_a1 acryl_18_a2 acryl_18_a3"> 111</angle>
+  <torsion atomRefs4="acryl_18_a2 acryl_18_a5 acryl_18_a3 acryl_18_a4"> 180</torsion>
+  <torsion atomRefs4="acryl_18_a1 acryl_18_a3 acryl_18_a2 acryl_22_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_18_a2 acryl_18_a3 acryl_18_a5 po_19_a1"> 180</torsion>
+  <torsion atomRefs4="acryl_18_a1 acryl_18_a2 acryl_18_a3 acryl_18_a5"> 120</torsion>
+  <torsion atomRefs4="acryl_14_a2 acryl_18_a1 acryl_18_a2 acryl_18_a3"> 120</torsion>
+  <torsion atomRefs4="po_19_a1 po_19_a2 po_19_a4 po_20_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_18_a5 po_19_a1 po_19_a2 po_19_a4"> 120</torsion>
+  <angle atomRefs3="po_20_a1 po_19_a4 po_19_a2"> 112</angle>
+  <angle atomRefs3="acryl_18_a5 po_19_a1 po_19_a2"> 112</angle>
+  <torsion atomRefs4="po_19_a1 po_19_a4 po_19_a2 po_19_a3"> 120</torsion>
+  <angle atomRefs3="po_19_a1 po_19_a2 po_19_a4"> 111</angle>
+  <length atomRefs2="po_19_a2 po_19_a4"> 1.40</length>
+  <angle atomRefs3="po_19_a4 po_19_a2 po_19_a3"> 111</angle>
+  <length atomRefs2="po_19_a2 po_19_a3"> 1.54</length>
+  <length atomRefs2="po_19_a1 po_19_a2"> 1.54</length>
+  <torsion atomRefs4="po_20_a1 po_20_a2 po_20_a4 me_21_a1"> 120</torsion>
+  <torsion atomRefs4="po_19_a4 po_20_a1 po_20_a2 po_20_a4"> 120</torsion>
+  <angle atomRefs3="me_21_a1 po_20_a4 po_20_a2"> 112</angle>
+  <angle atomRefs3="po_19_a4 po_20_a1 po_20_a2"> 112</angle>
+  <torsion atomRefs4="po_20_a1 po_20_a4 po_20_a2 po_20_a3"> 120</torsion>
+  <angle atomRefs3="po_20_a1 po_20_a2 po_20_a4"> 111</angle>
+  <length atomRefs2="po_20_a2 po_20_a4"> 1.40</length>
+  <angle atomRefs3="po_20_a4 po_20_a2 po_20_a3"> 111</angle>
+  <length atomRefs2="po_20_a2 po_20_a3"> 1.54</length>
+  <length atomRefs2="po_20_a1 po_20_a2"> 1.54</length>
+  <name>methyl_21</name>
+  <length atomRefs2="acryl_22_a3 acryl_22_a5"> 1.32</length>
+  <length atomRefs2="acryl_22_a3 acryl_22_a4"> 1.25</length>
+  <length atomRefs2="acryl_22_a2 acryl_22_a3"> 1.52</length>
+  <length atomRefs2="acryl_22_a1 acryl_22_a2"> 1.54</length>
+  <angle atomRefs3="acryl_22_a3 acryl_22_a2 acryl_26_a1"> 120</angle>
+  <angle atomRefs3="acryl_22_a3 acryl_22_a5 po_23_a1"> 120</angle>
+  <angle atomRefs3="acryl_22_a2 acryl_22_a1 acryl_18_a2"> 111</angle>
+  <angle atomRefs3="acryl_22_a5 acryl_22_a3 acryl_22_a4"> 120</angle>
+  <angle atomRefs3="acryl_22_a2 acryl_22_a3 acryl_22_a5"> 120</angle>
+  <angle atomRefs3="acryl_22_a1 acryl_22_a2 acryl_22_a3"> 111</angle>
+  <torsion atomRefs4="acryl_22_a2 acryl_22_a5 acryl_22_a3 acryl_22_a4"> 180</torsion>
+  <torsion atomRefs4="acryl_22_a1 acryl_22_a3 acryl_22_a2 acryl_26_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_22_a2 acryl_22_a3 acryl_22_a5 po_23_a1"> 180</torsion>
+  <torsion atomRefs4="acryl_22_a1 acryl_22_a2 acryl_22_a3 acryl_22_a5"> 120</torsion>
+  <torsion atomRefs4="acryl_18_a2 acryl_22_a1 acryl_22_a2 acryl_22_a3"> 120</torsion>
+  <torsion atomRefs4="po_23_a1 po_23_a2 po_23_a4 po_24_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_22_a5 po_23_a1 po_23_a2 po_23_a4"> 120</torsion>
+  <angle atomRefs3="po_24_a1 po_23_a4 po_23_a2"> 112</angle>
+  <angle atomRefs3="acryl_22_a5 po_23_a1 po_23_a2"> 112</angle>
+  <torsion atomRefs4="po_23_a1 po_23_a4 po_23_a2 po_23_a3"> 120</torsion>
+  <angle atomRefs3="po_23_a1 po_23_a2 po_23_a4"> 111</angle>
+  <length atomRefs2="po_23_a2 po_23_a4"> 1.40</length>
+  <angle atomRefs3="po_23_a4 po_23_a2 po_23_a3"> 111</angle>
+  <length atomRefs2="po_23_a2 po_23_a3"> 1.54</length>
+  <length atomRefs2="po_23_a1 po_23_a2"> 1.54</length>
+  <torsion atomRefs4="po_24_a1 po_24_a2 po_24_a4 me_25_a1"> 120</torsion>
+  <torsion atomRefs4="po_23_a4 po_24_a1 po_24_a2 po_24_a4"> 120</torsion>
+  <angle atomRefs3="me_25_a1 po_24_a4 po_24_a2"> 112</angle>
+  <angle atomRefs3="po_23_a4 po_24_a1 po_24_a2"> 112</angle>
+  <torsion atomRefs4="po_24_a1 po_24_a4 po_24_a2 po_24_a3"> 120</torsion>
+  <angle atomRefs3="po_24_a1 po_24_a2 po_24_a4"> 111</angle>
+  <length atomRefs2="po_24_a2 po_24_a4"> 1.40</length>
+  <angle atomRefs3="po_24_a4 po_24_a2 po_24_a3"> 111</angle>
+  <length atomRefs2="po_24_a2 po_24_a3"> 1.54</length>
+  <length atomRefs2="po_24_a1 po_24_a2"> 1.54</length>
+  <name>methyl_25</name>
+  <length atomRefs2="acryl_26_a3 acryl_26_a5"> 1.32</length>
+  <length atomRefs2="acryl_26_a3 acryl_26_a4"> 1.25</length>
+  <length atomRefs2="acryl_26_a2 acryl_26_a3"> 1.52</length>
+  <length atomRefs2="acryl_26_a1 acryl_26_a2"> 1.54</length>
+  <angle atomRefs3="acryl_26_a3 acryl_26_a2 acryl_30_a1"> 120</angle>
+  <angle atomRefs3="acryl_26_a3 acryl_26_a5 po_27_a1"> 120</angle>
+  <angle atomRefs3="acryl_26_a2 acryl_26_a1 acryl_22_a2"> 111</angle>
+  <angle atomRefs3="acryl_26_a5 acryl_26_a3 acryl_26_a4"> 120</angle>
+  <angle atomRefs3="acryl_26_a2 acryl_26_a3 acryl_26_a5"> 120</angle>
+  <angle atomRefs3="acryl_26_a1 acryl_26_a2 acryl_26_a3"> 111</angle>
+  <torsion atomRefs4="acryl_26_a2 acryl_26_a5 acryl_26_a3 acryl_26_a4"> 180</torsion>
+  <torsion atomRefs4="acryl_26_a1 acryl_26_a3 acryl_26_a2 acryl_30_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_26_a2 acryl_26_a3 acryl_26_a5 po_27_a1"> 180</torsion>
+  <torsion atomRefs4="acryl_26_a1 acryl_26_a2 acryl_26_a3 acryl_26_a5"> 120</torsion>
+  <torsion atomRefs4="acryl_22_a2 acryl_26_a1 acryl_26_a2 acryl_26_a3"> 120</torsion>
+  <torsion atomRefs4="po_27_a1 po_27_a2 po_27_a4 po_28_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_26_a5 po_27_a1 po_27_a2 po_27_a4"> 120</torsion>
+  <angle atomRefs3="po_28_a1 po_27_a4 po_27_a2"> 112</angle>
+  <angle atomRefs3="acryl_26_a5 po_27_a1 po_27_a2"> 112</angle>
+  <torsion atomRefs4="po_27_a1 po_27_a4 po_27_a2 po_27_a3"> 120</torsion>
+  <angle atomRefs3="po_27_a1 po_27_a2 po_27_a4"> 111</angle>
+  <length atomRefs2="po_27_a2 po_27_a4"> 1.40</length>
+  <angle atomRefs3="po_27_a4 po_27_a2 po_27_a3"> 111</angle>
+  <length atomRefs2="po_27_a2 po_27_a3"> 1.54</length>
+  <length atomRefs2="po_27_a1 po_27_a2"> 1.54</length>
+  <torsion atomRefs4="po_28_a1 po_28_a2 po_28_a4 me_29_a1"> 120</torsion>
+  <torsion atomRefs4="po_27_a4 po_28_a1 po_28_a2 po_28_a4"> 120</torsion>
+  <angle atomRefs3="me_29_a1 po_28_a4 po_28_a2"> 112</angle>
+  <angle atomRefs3="po_27_a4 po_28_a1 po_28_a2"> 112</angle>
+  <torsion atomRefs4="po_28_a1 po_28_a4 po_28_a2 po_28_a3"> 120</torsion>
+  <angle atomRefs3="po_28_a1 po_28_a2 po_28_a4"> 111</angle>
+  <length atomRefs2="po_28_a2 po_28_a4"> 1.40</length>
+  <angle atomRefs3="po_28_a4 po_28_a2 po_28_a3"> 111</angle>
+  <length atomRefs2="po_28_a2 po_28_a3"> 1.54</length>
+  <length atomRefs2="po_28_a1 po_28_a2"> 1.54</length>
+  <name>methyl_29</name>
+  <length atomRefs2="acryl_30_a3 acryl_30_a5"> 1.32</length>
+  <length atomRefs2="acryl_30_a3 acryl_30_a4"> 1.25</length>
+  <length atomRefs2="acryl_30_a2 acryl_30_a3"> 1.52</length>
+  <length atomRefs2="acryl_30_a1 acryl_30_a2"> 1.54</length>
+  <angle atomRefs3="acryl_30_a3 acryl_30_a2 acryl_34_a1"> 120</angle>
+  <angle atomRefs3="acryl_30_a3 acryl_30_a5 po_31_a1"> 120</angle>
+  <angle atomRefs3="acryl_30_a2 acryl_30_a1 acryl_26_a2"> 111</angle>
+  <angle atomRefs3="acryl_30_a5 acryl_30_a3 acryl_30_a4"> 120</angle>
+  <angle atomRefs3="acryl_30_a2 acryl_30_a3 acryl_30_a5"> 120</angle>
+  <angle atomRefs3="acryl_30_a1 acryl_30_a2 acryl_30_a3"> 111</angle>
+  <torsion atomRefs4="acryl_30_a2 acryl_30_a5 acryl_30_a3 acryl_30_a4"> 180</torsion>
+  <torsion atomRefs4="acryl_30_a1 acryl_30_a3 acryl_30_a2 acryl_34_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_30_a2 acryl_30_a3 acryl_30_a5 po_31_a1"> 180</torsion>
+  <torsion atomRefs4="acryl_30_a1 acryl_30_a2 acryl_30_a3 acryl_30_a5"> 120</torsion>
+  <torsion atomRefs4="acryl_26_a2 acryl_30_a1 acryl_30_a2 acryl_30_a3"> 120</torsion>
+  <torsion atomRefs4="po_31_a1 po_31_a2 po_31_a4 po_32_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_30_a5 po_31_a1 po_31_a2 po_31_a4"> 120</torsion>
+  <angle atomRefs3="po_32_a1 po_31_a4 po_31_a2"> 112</angle>
+  <angle atomRefs3="acryl_30_a5 po_31_a1 po_31_a2"> 112</angle>
+  <torsion atomRefs4="po_31_a1 po_31_a4 po_31_a2 po_31_a3"> 120</torsion>
+  <angle atomRefs3="po_31_a1 po_31_a2 po_31_a4"> 111</angle>
+  <length atomRefs2="po_31_a2 po_31_a4"> 1.40</length>
+  <angle atomRefs3="po_31_a4 po_31_a2 po_31_a3"> 111</angle>
+  <length atomRefs2="po_31_a2 po_31_a3"> 1.54</length>
+  <length atomRefs2="po_31_a1 po_31_a2"> 1.54</length>
+  <torsion atomRefs4="po_32_a1 po_32_a2 po_32_a4 me_33_a1"> 120</torsion>
+  <torsion atomRefs4="po_31_a4 po_32_a1 po_32_a2 po_32_a4"> 120</torsion>
+  <angle atomRefs3="me_33_a1 po_32_a4 po_32_a2"> 112</angle>
+  <angle atomRefs3="po_31_a4 po_32_a1 po_32_a2"> 112</angle>
+  <torsion atomRefs4="po_32_a1 po_32_a4 po_32_a2 po_32_a3"> 120</torsion>
+  <angle atomRefs3="po_32_a1 po_32_a2 po_32_a4"> 111</angle>
+  <length atomRefs2="po_32_a2 po_32_a4"> 1.40</length>
+  <angle atomRefs3="po_32_a4 po_32_a2 po_32_a3"> 111</angle>
+  <length atomRefs2="po_32_a2 po_32_a3"> 1.54</length>
+  <length atomRefs2="po_32_a1 po_32_a2"> 1.54</length>
+  <name>methyl_33</name>
+  <length atomRefs2="acryl_34_a3 acryl_34_a5"> 1.32</length>
+  <length atomRefs2="acryl_34_a3 acryl_34_a4"> 1.25</length>
+  <length atomRefs2="acryl_34_a2 acryl_34_a3"> 1.52</length>
+  <length atomRefs2="acryl_34_a1 acryl_34_a2"> 1.54</length>
+  <angle atomRefs3="acryl_34_a3 acryl_34_a2 acryl_38_a1"> 120</angle>
+  <angle atomRefs3="acryl_34_a3 acryl_34_a5 po_35_a1"> 120</angle>
+  <angle atomRefs3="acryl_34_a2 acryl_34_a1 acryl_30_a2"> 111</angle>
+  <angle atomRefs3="acryl_34_a5 acryl_34_a3 acryl_34_a4"> 120</angle>
+  <angle atomRefs3="acryl_34_a2 acryl_34_a3 acryl_34_a5"> 120</angle>
+  <angle atomRefs3="acryl_34_a1 acryl_34_a2 acryl_34_a3"> 111</angle>
+  <torsion atomRefs4="acryl_34_a2 acryl_34_a5 acryl_34_a3 acryl_34_a4"> 180</torsion>
+  <torsion atomRefs4="acryl_34_a1 acryl_34_a3 acryl_34_a2 acryl_38_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_34_a2 acryl_34_a3 acryl_34_a5 po_35_a1"> 180</torsion>
+  <torsion atomRefs4="acryl_34_a1 acryl_34_a2 acryl_34_a3 acryl_34_a5"> 120</torsion>
+  <torsion atomRefs4="acryl_30_a2 acryl_34_a1 acryl_34_a2 acryl_34_a3"> 120</torsion>
+  <torsion atomRefs4="po_35_a1 po_35_a2 po_35_a4 po_36_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_34_a5 po_35_a1 po_35_a2 po_35_a4"> 120</torsion>
+  <angle atomRefs3="po_36_a1 po_35_a4 po_35_a2"> 112</angle>
+  <angle atomRefs3="acryl_34_a5 po_35_a1 po_35_a2"> 112</angle>
+  <torsion atomRefs4="po_35_a1 po_35_a4 po_35_a2 po_35_a3"> 120</torsion>
+  <angle atomRefs3="po_35_a1 po_35_a2 po_35_a4"> 111</angle>
+  <length atomRefs2="po_35_a2 po_35_a4"> 1.40</length>
+  <angle atomRefs3="po_35_a4 po_35_a2 po_35_a3"> 111</angle>
+  <length atomRefs2="po_35_a2 po_35_a3"> 1.54</length>
+  <length atomRefs2="po_35_a1 po_35_a2"> 1.54</length>
+  <torsion atomRefs4="po_36_a1 po_36_a2 po_36_a4 me_37_a1"> 120</torsion>
+  <torsion atomRefs4="po_35_a4 po_36_a1 po_36_a2 po_36_a4"> 120</torsion>
+  <angle atomRefs3="me_37_a1 po_36_a4 po_36_a2"> 112</angle>
+  <angle atomRefs3="po_35_a4 po_36_a1 po_36_a2"> 112</angle>
+  <torsion atomRefs4="po_36_a1 po_36_a4 po_36_a2 po_36_a3"> 120</torsion>
+  <angle atomRefs3="po_36_a1 po_36_a2 po_36_a4"> 111</angle>
+  <length atomRefs2="po_36_a2 po_36_a4"> 1.40</length>
+  <angle atomRefs3="po_36_a4 po_36_a2 po_36_a3"> 111</angle>
+  <length atomRefs2="po_36_a2 po_36_a3"> 1.54</length>
+  <length atomRefs2="po_36_a1 po_36_a2"> 1.54</length>
+  <name>methyl_37</name>
+  <length atomRefs2="acryl_38_a3 acryl_38_a5"> 1.32</length>
+  <length atomRefs2="acryl_38_a3 acryl_38_a4"> 1.25</length>
+  <length atomRefs2="acryl_38_a2 acryl_38_a3"> 1.52</length>
+  <length atomRefs2="acryl_38_a1 acryl_38_a2"> 1.54</length>
+  <angle atomRefs3="acryl_38_a3 acryl_38_a2 cl_42_a1"> 120</angle>
+  <angle atomRefs3="acryl_38_a3 acryl_38_a5 po_39_a1"> 120</angle>
+  <angle atomRefs3="acryl_38_a2 acryl_38_a1 acryl_34_a2"> 111</angle>
+  <angle atomRefs3="acryl_38_a5 acryl_38_a3 acryl_38_a4"> 120</angle>
+  <angle atomRefs3="acryl_38_a2 acryl_38_a3 acryl_38_a5"> 120</angle>
+  <angle atomRefs3="acryl_38_a1 acryl_38_a2 acryl_38_a3"> 111</angle>
+  <torsion atomRefs4="acryl_38_a2 acryl_38_a5 acryl_38_a3 acryl_38_a4"> 180</torsion>
+  <torsion atomRefs4="acryl_38_a1 acryl_38_a3 acryl_38_a2 cl_42_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_38_a2 acryl_38_a3 acryl_38_a5 po_39_a1"> 180</torsion>
+  <torsion atomRefs4="acryl_38_a1 acryl_38_a2 acryl_38_a3 acryl_38_a5"> 120</torsion>
+  <torsion atomRefs4="acryl_34_a2 acryl_38_a1 acryl_38_a2 acryl_38_a3"> 120</torsion>
+  <torsion atomRefs4="po_39_a1 po_39_a2 po_39_a4 po_40_a1"> 120</torsion>
+  <torsion atomRefs4="acryl_38_a5 po_39_a1 po_39_a2 po_39_a4"> 120</torsion>
+  <angle atomRefs3="po_40_a1 po_39_a4 po_39_a2"> 112</angle>
+  <angle atomRefs3="acryl_38_a5 po_39_a1 po_39_a2"> 112</angle>
+  <torsion atomRefs4="po_39_a1 po_39_a4 po_39_a2 po_39_a3"> 120</torsion>
+  <angle atomRefs3="po_39_a1 po_39_a2 po_39_a4"> 111</angle>
+  <length atomRefs2="po_39_a2 po_39_a4"> 1.40</length>
+  <angle atomRefs3="po_39_a4 po_39_a2 po_39_a3"> 111</angle>
+  <length atomRefs2="po_39_a2 po_39_a3"> 1.54</length>
+  <length atomRefs2="po_39_a1 po_39_a2"> 1.54</length>
+  <torsion atomRefs4="po_40_a1 po_40_a2 po_40_a4 me_41_a1"> 120</torsion>
+  <torsion atomRefs4="po_39_a4 po_40_a1 po_40_a2 po_40_a4"> 120</torsion>
+  <angle atomRefs3="me_41_a1 po_40_a4 po_40_a2"> 112</angle>
+  <angle atomRefs3="po_39_a4 po_40_a1 po_40_a2"> 112</angle>
+  <torsion atomRefs4="po_40_a1 po_40_a4 po_40_a2 po_40_a3"> 120</torsion>
+  <angle atomRefs3="po_40_a1 po_40_a2 po_40_a4"> 111</angle>
+  <length atomRefs2="po_40_a2 po_40_a4"> 1.40</length>
+  <angle atomRefs3="po_40_a4 po_40_a2 po_40_a3"> 111</angle>
+  <length atomRefs2="po_40_a2 po_40_a3"> 1.54</length>
+  <length atomRefs2="po_40_a1 po_40_a2"> 1.54</length>
+  <name>methyl_41</name>
+  <name>chlorine_42</name>
+  <length atomRefs2="oh_1_a1 acryl_2_a1">1.4</length>
+  <torsion atomRefs4="acryl_2_a3 acryl_2_a5 po_3_a1 po_3_a2">120.0</torsion>
+  <length atomRefs2="acryl_2_a5 po_3_a1">1.5</length>
+  <length atomRefs2="po_3_a4 po_4_a1">1.4</length>
+  <torsion atomRefs4="po_3_a2 po_3_a4 po_4_a1 po_4_a2">150.0</torsion>
+  <length atomRefs2="po_4_a4 me_5_a1">1.39</length>
+  <length atomRefs2="acryl_2_a2 acryl_6_a1">1.54</length>
+  <torsion atomRefs4="acryl_2_a1 acryl_2_a2 acryl_6_a1 acryl_6_a2">150.0</torsion>
+  <torsion atomRefs4="acryl_6_a3 acryl_6_a5 po_7_a1 po_7_a2">120.0</torsion>
+  <length atomRefs2="acryl_6_a5 po_7_a1">1.5</length>
+  <length atomRefs2="po_7_a4 po_8_a1">1.4</length>
+  <torsion atomRefs4="po_7_a2 po_7_a4 po_8_a1 po_8_a2">150.0</torsion>
+  <length atomRefs2="po_8_a4 me_9_a1">1.39</length>
+  <length atomRefs2="acryl_6_a2 acryl_10_a1">1.54</length>
+  <torsion atomRefs4="acryl_6_a1 acryl_6_a2 acryl_10_a1 acryl_10_a2">150.0</torsion>
+  <torsion atomRefs4="acryl_10_a3 acryl_10_a5 po_11_a1 po_11_a2">120.0</torsion>
+  <length atomRefs2="acryl_10_a5 po_11_a1">1.5</length>
+  <length atomRefs2="po_11_a4 po_12_a1">1.4</length>
+  <torsion atomRefs4="po_11_a2 po_11_a4 po_12_a1 po_12_a2">150.0</torsion>
+  <length atomRefs2="po_12_a4 me_13_a1">1.39</length>
+  <length atomRefs2="acryl_10_a2 acryl_14_a1">1.54</length>
+  <torsion atomRefs4="acryl_10_a1 acryl_10_a2 acryl_14_a1 acryl_14_a2">150.0</torsion>
+  <torsion atomRefs4="acryl_14_a3 acryl_14_a5 po_15_a1 po_15_a2">120.0</torsion>
+  <length atomRefs2="acryl_14_a5 po_15_a1">1.5</length>
+  <length atomRefs2="po_15_a4 po_16_a1">1.4</length>
+  <torsion atomRefs4="po_15_a2 po_15_a4 po_16_a1 po_16_a2">150.0</torsion>
+  <length atomRefs2="po_16_a4 me_17_a1">1.39</length>
+  <length atomRefs2="acryl_14_a2 acryl_18_a1">1.54</length>
+  <torsion atomRefs4="acryl_14_a1 acryl_14_a2 acryl_18_a1 acryl_18_a2">150.0</torsion>
+  <torsion atomRefs4="acryl_18_a3 acryl_18_a5 po_19_a1 po_19_a2">120.0</torsion>
+  <length atomRefs2="acryl_18_a5 po_19_a1">1.5</length>
+  <length atomRefs2="po_19_a4 po_20_a1">1.4</length>
+  <torsion atomRefs4="po_19_a2 po_19_a4 po_20_a1 po_20_a2">150.0</torsion>
+  <length atomRefs2="po_20_a4 me_21_a1">1.39</length>
+  <length atomRefs2="acryl_18_a2 acryl_22_a1">1.54</length>
+  <torsion atomRefs4="acryl_18_a1 acryl_18_a2 acryl_22_a1 acryl_22_a2">150.0</torsion>
+  <torsion atomRefs4="acryl_22_a3 acryl_22_a5 po_23_a1 po_23_a2">120.0</torsion>
+  <length atomRefs2="acryl_22_a5 po_23_a1">1.5</length>
+  <length atomRefs2="po_23_a4 po_24_a1">1.4</length>
+  <torsion atomRefs4="po_23_a2 po_23_a4 po_24_a1 po_24_a2">150.0</torsion>
+  <length atomRefs2="po_24_a4 me_25_a1">1.39</length>
+  <length atomRefs2="acryl_22_a2 acryl_26_a1">1.54</length>
+  <torsion atomRefs4="acryl_22_a1 acryl_22_a2 acryl_26_a1 acryl_26_a2">150.0</torsion>
+  <torsion atomRefs4="acryl_26_a3 acryl_26_a5 po_27_a1 po_27_a2">120.0</torsion>
+  <length atomRefs2="acryl_26_a5 po_27_a1">1.5</length>
+  <length atomRefs2="po_27_a4 po_28_a1">1.4</length>
+  <torsion atomRefs4="po_27_a2 po_27_a4 po_28_a1 po_28_a2">150.0</torsion>
+  <length atomRefs2="po_28_a4 me_29_a1">1.39</length>
+  <length atomRefs2="acryl_26_a2 acryl_30_a1">1.54</length>
+  <torsion atomRefs4="acryl_26_a1 acryl_26_a2 acryl_30_a1 acryl_30_a2">150.0</torsion>
+  <torsion atomRefs4="acryl_30_a3 acryl_30_a5 po_31_a1 po_31_a2">120.0</torsion>
+  <length atomRefs2="acryl_30_a5 po_31_a1">1.5</length>
+  <length atomRefs2="po_31_a4 po_32_a1">1.4</length>
+  <torsion atomRefs4="po_31_a2 po_31_a4 po_32_a1 po_32_a2">150.0</torsion>
+  <length atomRefs2="po_32_a4 me_33_a1">1.39</length>
+  <length atomRefs2="acryl_30_a2 acryl_34_a1">1.54</length>
+  <torsion atomRefs4="acryl_30_a1 acryl_30_a2 acryl_34_a1 acryl_34_a2">150.0</torsion>
+  <torsion atomRefs4="acryl_34_a3 acryl_34_a5 po_35_a1 po_35_a2">120.0</torsion>
+  <length atomRefs2="acryl_34_a5 po_35_a1">1.5</length>
+  <length atomRefs2="po_35_a4 po_36_a1">1.4</length>
+  <torsion atomRefs4="po_35_a2 po_35_a4 po_36_a1 po_36_a2">150.0</torsion>
+  <length atomRefs2="po_36_a4 me_37_a1">1.39</length>
+  <length atomRefs2="acryl_34_a2 acryl_38_a1">1.54</length>
+  <torsion atomRefs4="acryl_34_a1 acryl_34_a2 acryl_38_a1 acryl_38_a2">150.0</torsion>
+  <torsion atomRefs4="acryl_38_a3 acryl_38_a5 po_39_a1 po_39_a2">120.0</torsion>
+  <length atomRefs2="acryl_38_a5 po_39_a1">1.5</length>
+  <length atomRefs2="po_39_a4 po_40_a1">1.4</length>
+  <torsion atomRefs4="po_39_a2 po_39_a4 po_40_a1 po_40_a2">150.0</torsion>
+  <length atomRefs2="po_40_a4 me_41_a1">1.39</length>
+  <length atomRefs2="acryl_38_a2 cl_42_a1">1.54</length>
+</molecule>
+<!-- <?xml version="1.0" encoding="UTF-8"?> <molecule id='branch0' xmlns='http://www.xml-cml.org/schema' xmlns:g='http://www.xml-cml.org/mols/geom' convention='cml:PML-concise' formula='(g:oh}r1)-[l(1.40)] (r1{g:acryl [r3-(r1{g:po}r2-[l(1.4)t(150)])*(2)-[l(1.39)](r1{g:me)] }r2-[l(1.4)t(180)])*(4) -[l(1.54)](r1{g:cl)' /> -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="branch0" convention="cml:PML-basic" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <join convention="fragmentContainer">
+    <molecule ref="g:oh">
+      <join right="r1"/>
+    </molecule>
+    <join order="1">
+      <length>1.4</length>
+    </join>
+    <molecule ref="g:acryl">
+      <join linkOnParent="r3" convention="branch">
+        <join order="1">
+          <length>1.39</length>
+        </join>
+        <molecule ref="g:me">
+          <join left="r1"/>
+        </molecule>
+      </join>
+      <join left="r1" right="r2"/>
+    </molecule>
+    <join order="1">
+      <length>1.54</length>
+    </join>
+    <molecule ref="g:cl">
+      <join left="r1"/>
+    </molecule>
+  </join>
+</molecule>

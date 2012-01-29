@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="aspirin" convention="cml:PML-intermediate" xmlns:f="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <molecule ref="f:acet">
+    <arg name="idx">
+      <scalar dataType="xsd:string">1</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="f:acet_1_r1 f:ophen_2_r1" id="f:acet_1_r1_f:ophen_2_r1" order="1">
+    <length>1.4</length>
+    <torsion>180.0</torsion>
+  </join>
+  <molecule ref="f:ophen">
+    <arg name="idx">
+      <scalar dataType="xsd:string">2</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="f:ophen_2_r2 f:coxy_3_r1" id="f:ophen_2_r2_f:coxy_3_r1" order="1">
+    <length>1.4</length>
+    <torsion>180.0</torsion>
+  </join>
+  <molecule ref="f:coxy">
+    <arg name="idx">
+      <scalar dataType="xsd:string">3</scalar>
+    </arg>
+  </molecule>
+</molecule>

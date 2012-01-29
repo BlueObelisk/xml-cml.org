@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="branch0" convention="cml:PML-complete" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <atomArray>
+    <atom elementType="O" hydrogenCount="1" id="oh_1_a1"></atom>
+    <atom elementType="C" hydrogenCount="2" id="acryl_2_a1"></atom>
+    <atom elementType="C" hydrogenCount="1" id="acryl_2_a2"></atom>
+    <atom elementType="C" hydrogenCount="0" id="acryl_2_a3"></atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_2_a4"></atom>
+    <atom elementType="O" hydrogenCount="0" id="acryl_2_a5"></atom>
+    <atom elementType="C" hydrogenCount="3" id="me_3_a1"></atom>
+    <atom elementType="Cl" id="cl_4_a1"></atom>
+  </atomArray>
+  <bondArray>
+    <bond order="1" id="acryl_2_a1_acryl_2_a2" atomRefs2="acryl_2_a1 acryl_2_a2"></bond>
+    <bond order="1" id="acryl_2_a2_acryl_2_a3" atomRefs2="acryl_2_a2 acryl_2_a3"></bond>
+    <bond order="2" id="acryl_2_a3_acryl_2_a4" atomRefs2="acryl_2_a3 acryl_2_a4"></bond>
+    <bond order="1" id="acryl_2_a3_acryl_2_a5" atomRefs2="acryl_2_a3 acryl_2_a5"></bond>
+    <bond atomRefs2="oh_1_a1 acryl_2_a1" id="g:oh_1_r1_g:acryl_2_r1" order="1"/>
+    <bond atomRefs2="acryl_2_a5 me_3_a1" id="g:acryl_2_r3_g:me_3_r1" order="1"/>
+    <bond atomRefs2="acryl_2_a2 cl_4_a1" id="g:acryl_2_r2_g:cl_4_r1" order="1"/>
+  </bondArray>
+  <name>hydroxy_1</name>
+  <length atomRefs2="acryl_2_a3 acryl_2_a5">1.32</length>
+  <length atomRefs2="acryl_2_a3 acryl_2_a4">1.25</length>
+  <length atomRefs2="acryl_2_a2 acryl_2_a3">1.52</length>
+  <length atomRefs2="acryl_2_a1 acryl_2_a2">1.54</length>
+  <angle atomRefs3="acryl_2_a3 acryl_2_a2 cl_4_a1">120</angle>
+  <angle atomRefs3="acryl_2_a3 acryl_2_a5 me_3_a1">120</angle>
+  <angle atomRefs3="acryl_2_a2 acryl_2_a1 oh_1_a1">111</angle>
+  <angle atomRefs3="acryl_2_a5 acryl_2_a3 acryl_2_a4">120</angle>
+  <angle atomRefs3="acryl_2_a2 acryl_2_a3 acryl_2_a5">120</angle>
+  <angle atomRefs3="acryl_2_a1 acryl_2_a2 acryl_2_a3">111</angle>
+  <torsion atomRefs4="acryl_2_a2 acryl_2_a5 acryl_2_a3 acryl_2_a4">120</torsion>
+  <torsion atomRefs4="acryl_2_a1 acryl_2_a3 acryl_2_a2 cl_4_a1">120</torsion>
+  <torsion atomRefs4="acryl_2_a2 acryl_2_a3 acryl_2_a5 me_3_a1">180</torsion>
+  <torsion atomRefs4="acryl_2_a1 acryl_2_a2 acryl_2_a3 acryl_2_a5">-90</torsion>
+  <torsion atomRefs4="oh_1_a1 acryl_2_a1 acryl_2_a2 acryl_2_a3">120</torsion>
+  <name>methyl_3</name>
+  <name>chlorine_4</name>
+  <length atomRefs2="oh_1_a1 acryl_2_a1">1.4</length>
+  <length atomRefs2="acryl_2_a5 me_3_a1">1.39</length>
+  <length atomRefs2="acryl_2_a2 cl_4_a1">1.54</length>
+</molecule>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cml 
+   xmlns="http://www.xml-cml.org/schema"
+   xsi:schemaLocation="http://www.xml-cml.org/schema ../../schema.xsd" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ >
+
+<!-- polypropylene oxide:
+  HO-[CH2-CH(CH3)-O]10 - H
+  -->
+  
+ <!-- capping hydroxyl R2-O1H -->
+ 
+ <molecule id="oh_i_" role="fragment">
+   <arg name="i" substitute=".//@*" delete="yes"/>
+   <atomArray>
+     <atom id="oh_i__a1" elementType="O" hydrogenCount="1"/>
+     <atom id="oh_i__r1" elementType="R"/>
+   </atomArray>
+   <bondArray>
+     <bond id="oh_i__a1_oh_i__r1" atomRefs2="oh_i__a1 oh_i__r1" order="1"/>
+   </bondArray>
+ </molecule>
+
+ <!-- repeating unit R(5)-C(1)2-C(2)H(C(3)H3)-O(4)-R(6)  --> 
+ <molecule id="prop__i_" role="fragment">
+   <arg name="i" substitute=".//@*" delete="yes"/>
+   <atomArray>
+     <atom id="prop_i__a1" elementType="C" hydrogenCount="2"/>
+     <atom id="prop_i__a2" elementType="C" hydrogenCount="1"/>
+     <atom id="prop_i__a3" elementType="C" hydrogenCount="3"/>
+     <atom id="prop_i__a4" elementType="O" hydrogenCount="0"/>
+     <atom id="prop_i__r1" elementType="R"/>
+     <atom id="prop_i__r2" elementType="R"/>
+   </atomArray>
+   <bondArray>
+     <bond id="prop_i__a1_prop_i__a2" atomRefs2="prop_i__a1 prop_i__a2" order="1"/>
+     <bond id="prop_i__a2_prop_i__a3" atomRefs2="prop_i__a2 prop_i__a3" order="1"/>
+     <bond id="prop_i__a2_prop_i__a4" atomRefs2="prop_i__a2 prop_i__a4" order="1"/>
+     <bond id="prop_i__a1_prop_i__r1" atomRefs2="prop_i__r1 prop_i__r1" order="1"/>
+     <bond id="prop_i__a4_prop_i__r2" atomRefs2="prop_i__r2 prop_i__r2" order="1"/>
+   </bondArray>
+   <length atomRefs2="prop_i__a1 prop_i__a2">1.54</length>
+   <length atomRefs2="prop_i__a2 prop_i__a3">1.54</length>
+   <length atomRefs2="prop_i__a2 prop_i__a4">1.54</length>
+   <angle  atomRefs3="prop_i__a1 prop_i__a2 prop_i__a3">111</angle>
+   <angle  atomRefs3="prop_i__a1 prop_i__a2 prop_i__a4">111</angle>
+   <!-- dummy angles -->
+   <angle  atomRefs3="prop_i__r1 prop_i__a1 prop_i__a2">111</angle>
+   <angle  atomRefs3="prop_i__a3 prop_i__a4 prop_i__r2">108</angle>
+   
+   <!-- improper torsion -->
+   <torsion atomRefs4="prop_i__a1 prop_i__a3 prop_i__a2 prop_i__a4">120</torsion>
+   <!-- dummy torsions -->
+   <torsion atomRefs4="prop_i__r1 prop_i__a1 prop_i__a2 prop_i__a4">180</torsion>
+   <torsion atomRefs4="prop_i__a1 prop_i__a2 prop_i__a4 prop_i__r2">180</torsion>
+ </molecule>
+ 
+ <!-- capping hydrogen -->
+ <molecule id="h_i_" role="fragment">
+   <arg name="i" substitute=".//@*" delete="yes"/>
+   <atomArray>
+     <atom id="prop_i__a1" elementType="H"/>
+     <atom id="prop_i__r2" elementType="R"/>
+   </atomArray>
+ </molecule>
+
+ <!-- polymer -CH2-CH(CH3)-O-  
+ --> 
+ <molecule id="polypropylene_oxide" process="expand">
+   <!-- capping OH at LHS -->
+   <molecule ref="oh_i_" tail="oh_i_r1">
+     <arg name="i" substitute=".//@*" delete="yes">
+       <scalar>1</scalar>
+     </arg>
+   </molecule>
+   
+   <length atomRefs2="oh1_a1 prop1_a1">1.42</length>
+   <angle  atomRefs3="oh1_a1 prop1_a1 prop1_a2">106</angle>
+
+   <molecule id="prop_i_" ref="prop_i_" head="prop_i_r1" tail="prop_i_r2" repeat="i 1 4">
+     <arg name="j" substitute=".//@*" delete="yes" eval="_i_+1">
+       <scalar dataType="xsd:integer"/>
+     </arg>
+     <length atomRefs2="prop_i__a4 prop_j__a1">1.54</length>
+     <angle  atomRefs3="prop_i__a2 prop_i__a4 prop_j__a1">106</angle>
+     <torsion atomRefs4="prop_i__a1 prop_i__a3 prop_i__a4 prop_j__a1">180</torsion>
+   </molecule>
+   <join id="prop_i__r2_prop_j__r1" repeat="i 1 9" atomRefs2="prop_i__r2 prop_j__r1"/>
+   <join id="oh1_a1_prop1_a1" atomRefs2="oh1_a1 prop1_a1"></join>
+
+   <molecule ref="h_i_" head="h_i__r1">
+     <arg name="i" substitute=".//@*" delete="yes">
+       <scalar>1</scalar>
+     </arg>
+   </molecule>
+   <join id="prop10_r2_h1_r1" atomRefs2="prop10_r2 h1_r1"></join>
+   
+ </molecule>
+ 
+</cml>

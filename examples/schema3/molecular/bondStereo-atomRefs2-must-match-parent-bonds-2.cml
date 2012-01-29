@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml:cml xmlns:cml="http://www.xml-cml.org/schema"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:conventions="http://www.xml-cml.org/convention/" convention="conventions:molecular" xmlns:cmlDictionary="http://www.xml-cml.org/dictionary/">
+    <dc:title>test file for http://www.xml-cml.org/convention/molecular convention</dc:title>
+    <dc:description>the atoms in the atomRefs2 in a bondStereo must contain the atoms in the parent bond in any order</dc:description>
+    <dc:author>J A Townsend</dc:author>
+    <dc:rights>Copyright J A Townsend jat45@cantab.net 2009.</dc:rights>
+    <dc:date>2009-01-21</dc:date>
+    <cml:molecule id="m1">
+        <cml:atomArray>
+            <cml:atom elementType="C" id="a1" />
+            <cml:atom elementType="H" id="a2" />
+            <cml:atom elementType="F" id="a3" />
+            <cml:atom elementType="Cl" id="a4" />
+            <cml:atom elementType="Br" id="a5" />
+        </cml:atomArray>
+        <cml:bondArray>
+            <cml:bond id="b1" atomRefs2="a2 a1" order="1">
+                <cml:bondStereo>H</cml:bondStereo>
+            </cml:bond>
+            <cml:bond id="b2" atomRefs2="a1 a3" order="1" />
+            <cml:bond id="b3" atomRefs2="a1 a4" order="1" />
+            <cml:bond id="b4" atomRefs2="a1 a5" order="1" />
+        </cml:bondArray>
+    </cml:molecule>
+</cml:cml>

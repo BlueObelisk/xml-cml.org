@@ -1,0 +1,368 @@
+<module
+   xmlns="http://www.xml-cml.org/schema"
+   xsi:schemaLocation="http://www.xml-cml.org/schema ../../schema.xsd" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:gulp="http://www.xml-cml.org/dict/gulp"
+   xmlns:ccml="http://www.xml-cml.org/dict/ccml"
+   xmlns:cml="http://www.xml-cml.org/dict/cmlDict"
+   xmlns:siUnits="http://www.xml-cml.org/units/siUnits"
+   xmlns:units="http://www.xml-cml.org/units/units"
+   xmlns:gulpUnits="http://www.gulp.org/units/units"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+      title="GULP for spodumene"
+     role="ccml:job"
+     >
+    <module role="ccml:initial">
+      <module role="ccml:parameters">
+         <scalar dictRef="cml:version">1.3</scalar>
+         <parameterList>
+           <parameter role="ccml:keyword" dictRef="gulp:optimize"/>
+           <parameter role="ccml:keyword" dictRef="gulp:conp"/>
+           <parameter role="ccml:keyword" dictRef="gulp:property"/>
+           <parameter role="ccml:keyword" dictRef="gulp:phonon"/>
+           <parameter role="ccml:keyword" dictRef="gulp:bond"/>
+           <parameter role="ccml:keyword" dictRef="gulp:angle"/>
+           <parameter role="ccml:keyword" dictRef="gulp:compare"/>
+         </parameterList>
+         <scalar dictRef="ccml:cpus">1</scalar>
+      </module>
+      <module dictRef="gulp:configs">
+         <module dictRef="gulp:config" serial="1">
+              <formula concise="Li 2 Al 2 Si 4 O 12"/>
+              <scalar dictRef="gulp:iratoms">6</scalar>
+              <scalar dictRef="gulp:atoms">20</scalar>
+              <scalar dictRef="ccml:dimens">3</scalar>
+              <scalar dictRef="cml:cryst.family">Monoclinic</scalar>
+              <scalar dictRef="cml:cryst.groth">Monoclinic Prismatic</scalar>
+              <scalar dictRef="cml:spgp.cent">centrosymmetric</scalar>
+              <scalar dictRef="cml:spgp.symb">C 2/C</scalar>
+              <scalar dictRef="cml:spgp.patt">C 2/m</scalar>
+            <matrix dataType="xsd:double" rows="3" columns="3" units="units:ang" dictRef="gulp:cartlatt" title="Cartesian lattice vectors">
+          4.731000    4.196000    0.000000
+         -4.731000    4.196000    0.000000
+         -1.801091    0.000000    4.900501
+            </matrix>
+            <crystal dictRef="cml:primcell">
+              <scalar dictRef="cml:a">6.3237</scalar>
+              <scalar dictRef="cml:b">6.3237</scalar>
+              <scalar dictRef="cml:c">5.2210</scalar>
+              <scalar dictRef="cml:alpha">75.0434</scalar>
+              <scalar dictRef="cml:beta">104.9566</scalar>
+              <scalar dictRef="cml:gamma">96.8593</scalar>
+            </crystal>
+            <scalar units="units:ang3" dictRef="cml:cryst.primvol">194.562399</scalar>
+            <crystal dictRef="cml:cryst.fullcell">
+              <scalar dictRef="cml:a">9.4620</scalar>
+              <scalar dictRef="cml:b">8.3920</scalar>
+              <scalar dictRef="cml:c">5.2210</scalar>
+              <scalar dictRef="cml:alpha">90.0000</scalar>
+              <scalar dictRef="cml:beta">110.1800</scalar>
+              <scalar dictRef="cml:gamma">90.0000</scalar>
+            </crystal>
+            <scalar units="units:ang3" dictRef="cml:cryst.fullvol">389.124797</scalar>
+            <scalar dictRef="cml:temp" units="siUnits:k">0.000</scalar>
+            <scalar dictRef="cml:press" units="units:gpa">0.000</scalar>
+            <matrix dataType="xsd:string" rows="6" columns="11" dictRef="gulp:fractcoord" delimiter="~" title="Fractional coordinates of asymmetric unit">
+~1~Li~c~0.000000~~0.274700~*~0.250000~~1.000000~1.000000
+~2~Al~c~0.000000~~0.906700~*~0.250000~~1.400000~1.000000
+~3~Si~c~0.294100~*~0.093500~*~0.256000~*~2.400000~1.000000
+~4~O~c~0.109700~*~0.082300~*~0.140600~*~-1.200000~1.000000
+~5~O~c~0.364700~*~0.267100~*~0.300500~*~-1.200000~1.000000
+~6~O~c~0.356600~*~0.986700~*~0.058300~*~-1.200000~1.000000~</matrix>
+         </module>
+         <module dictRef="gulp:generalinp">
+            <matrix  dataType="xsd:string" rows="2" columns="7" dictRef="gulp:speciesout" title="Species output for all configurations">
+      Li Core 3         6.94      1.0000    0.680    0.000              
+      Si Core 14       28.09      2.4000    1.200    0.000              
+            </matrix>
+            <!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Species    Type    Atomic    Atomic    Charge      Radii (Angs)     Library
+                     Number     Mass       (e)     Covalent  Ionic    Symbol 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Li       Core        3       6.94     1.0000    0.680    0.000              
+    Al       Core       13      26.98     1.4000    1.350    0.000              
+    Si       Core       14      28.09     2.4000    1.200    0.000              
+    O        Core        8      16.00    -1.2000    0.730    0.000              
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->            
+            <atomTypeList convention="gulp:gulp">
+              <atomType id="at.li" name="Li" title="Lithium cation" convention="gulp:gulp">
+                <atom id="at.li.at" elementType="Li"/>
+                <scalar dictRef="ccml:atommass" units="units:atmass">6.94</scalar>
+                <scalar dictRef="ccml:ffCharge" units="units:electron">1.0000</scalar>
+                <scalar dictRef="ccml:covRad" units="units:ang">0.680</scalar>
+                <scalar dictRef="ccml:ionRad" units="units:ang">0.000</scalar>
+              </atomType>
+              <atomType id="attyp.al" name="Al" title="Aluminium cation" convention="gulp:gulp">
+                <atom id="at.al.at" elementType="Al"/>
+                <scalar dictRef="ccml:atommass" units="units:atmass">26.98</scalar>
+                <scalar dictRef="ccml:ffCharge" units="units:electron">1.4000</scalar>
+                <scalar dictRef="ccml:covRad" units="units:ang">1.350</scalar>
+                <scalar dictRef="ccml:ionRad" units="units:ang">0.000</scalar>
+              </atomType>
+              <atomType id="attyp.si" name="Si" title="Silicon cation" convention="gulp:gulp">
+                <atom id="at.si.at" elementType="Si"/>
+                <scalar dictRef="ccml:atommass" units="units:atmass">28.09</scalar>
+                <scalar dictRef="ccml:ffCharge" units="units:electron">2.4000</scalar>
+                <scalar dictRef="ccml:covRad" units="units:ang">1.200</scalar>
+                <scalar dictRef="ccml:ionRad" units="units:ang">0.000</scalar>
+              </atomType>
+              <atomType id="attyp.o" name="O" title="Oxygen anion" convention="gulp:gulp">
+                <atom id="at.o.at" elementType="O"/>
+                <scalar dictRef="ccml:atommass" units="units:atmass">16.00</scalar>
+                <scalar dictRef="ccml:ffCharge" units="units:electron">-1.2000</scalar>
+                <scalar dictRef="ccml:covRad" units="units:ang">0.730</scalar>
+                <scalar dictRef="ccml:ionRad" units="units:ang">0.000</scalar>
+              </atomType>
+            </atomTypeList>
+            <list dictRef="gulp:factors">
+               <scalar dictRef="gulp:acclattsum">8.000</scalar>
+               <scalar dictRef="gulp:lim">Infinity</scalar>
+               <scalar dictRef="gulp:c6">in real and reciprocal space</scalar>
+            </list>
+           <potentialList title="General interatomic potentials (WARNING- I AM NOT SURE THE VALUES AND UNITS CORRESPOND TO THE FUNCTIONAL FORM">
+<!--  O  c Si c Buckingham 0.180E+05 0.205     134.     .000E+00   0.000 10.000-->
+             <potential form="gulp:buckingham">
+               <arg name="atom1">
+                   <atomType dictRef="gulp:at" ref="o"/>
+               </arg>
+               <arg name="atom2">
+                   <atomType dictRef="gulp:at" ref="si"/>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="a">
+                 <scalar units="units:ev">0.180E+05</scalar>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="b">
+                 <scalar units="units:ang">0.205</scalar>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="c">
+                 <scalar units="units:ev">134.</scalar>
+               </arg>
+             </potential>
+<!--  O  c O  c Buckingham 0.139E+04 0.362     175.     .000E+00   0.000 10.000-->
+             <potential form="gulp:buckingham">
+               <arg name="atom1">
+                   <atomType dictRef="gulp:at" ref="o"/>
+               </arg>
+               <arg name="atom2">
+                   <atomType dictRef="gulp:at" ref="o"/>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="a">
+                 <scalar units="units:ev">0.139E+04</scalar>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="b">
+                 <scalar units="units:ang">0.362</scalar>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="c">
+                 <scalar units="units:ev">175.</scalar>
+               </arg>
+             </potential>
+<!--  Li c O  c Buckingham 0.115E+04 0.280     .000E+00 .000E+00   0.000 10.000-->
+             <potential form="gulp:buckingham">
+               <arg name="atom1">
+                   <atomType dictRef="gulp:at" ref="li"/>
+               </arg>
+               <arg name="atom2">
+                   <atomType dictRef="gulp:at" ref="o"/>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="a">
+                 <scalar units="units:ev">0.115E+04</scalar>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="b">
+                 <scalar units="units:ang">0.280</scalar>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="c">
+                 <scalar units="units:ev">.000E+00</scalar>
+               </arg>
+             </potential>
+<!--  O  c Al c Buckingham 0.160E+05 0.208     131.     .000E+00   0.000 10.000-->
+             <potential form="gulp:buckingham">
+               <arg name="atom1">
+                   <atomType dictRef="gulp:at" ref="o"/>
+               </arg>
+               <arg name="atom2">
+                   <atomType dictRef="gulp:at" ref="al"/>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="a">
+                 <scalar units="units:ev">0.160E+05</scalar>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="b">
+                 <scalar units="units:ang">0.208 </scalar>
+               </arg>
+               <arg dictRef="gulp:buckingham" ref="c">
+                 <scalar units="units:ev">131.</scalar>
+               </arg>
+             </potential>
+           </potentialList>
+           <potentialForm name="gulp:buckingham">
+           <!--
+             <annotation>
+               <documentation>A exp(-r/rho) - Cr-6 == ? A exp(-r/B) - Cr-6 ?</documentation> 
+             </annotation>
+             -->
+             <arg name="atom1" dataType="cml:atom"/>
+             <arg name="atom2" dataType="cml:atom"/>
+             <arg name="a"     dataType="xsd:double"/>
+             <arg name="b"     dataType="xsd:double"/>
+             <arg name="c"     dataType="xsd:double"/>
+             
+             <parameter name="r">
+               <expression dataType="xsd:double">
+                 <parameter ref="atom1"/>
+                 <parameter ref="atom2"/>
+                 <operator type="distance"/>
+               </expression>
+             </parameter>
+             <expression dataType="xsd:double">
+               <parameter ref="a"/>
+               <parameter ref="r"/>
+               <parameter ref="b"/>
+               <operator type="div"/>
+               <operator type="exp"/>
+               <operator type="mult"/>
+               <parameter ref="c"/>
+               <parameter ref="r"/>
+               <parameter value="-6"/>
+               <operator type="power"/>
+               <operator type="mult"/>
+               <operator type="minus"/>
+             </expression>
+           </potentialForm>
+        </module>
+      </module>
+      </module>
+      <module role="ccml:optimize">
+         <module dictRef="gulp:enercomp">
+               <scalar dictRef="gulp:interat" units="units:ev">182.12057598</scalar>
+               <scalar dictRef="gulp:monomono.real" units="units:ev">-111.87323038</scalar>
+               <scalar dictRef="gulp:monomono.recip" units="units:ev">-187.58675132</scalar>
+               <scalar dictRef="gulp:monomono.total" units="units:ev">-299.45998170</scalar>
+               <scalar dictRef="gulp:dispersion" units="units:ev">-191.69186124</scalar>
+               <scalar dictRef="gulp:totlaten.prim" units="units:ev">-309.03126696</scalar>
+               <scalar dictRef="gulp:totlaten.nonprim" units="units:ev">-618.06253392</scalar>
+               <scalar dictRef="gulp:totlaten.prim" units="units:kj.mol-1">-29816.7933</scalar>
+               <scalar dictRef="gulp:totlaten.nonprim" units="units:kj.mol-1">-59633.5866</scalar>
+         </module>
+         <module dictRef="gulp:optimize">
+               <scalar dictRef="ccml:numvar">18</scalar>
+               <scalar dictRef="gulp:maxcalc">1000</scalar>
+               <scalar dictRef="gulp:hessupdate">10</scalar>
+               <scalar dictRef="gulp:maxstepsize">1.0000000</scalar>
+               <scalar dictRef="gulp:maxparamtol">0.0000100</scalar>
+               <scalar dictRef="gulp:maxfuncttol">0.0000100</scalar>
+               <scalar dictRef="gulp:maxgradtol">0.0000100</scalar>
+<scalar dictRef="gulp:optimize.option">gulp:optimize.symmconn</scalar>
+<scalar dictRef="gulp:optimize.option">gulp:optimize.symmsecderiv</scalar>
+<scalar dictRef="gulp:optimize.option">gulp:optimize.newtonraph</scalar>
+<scalar dictRef="gulp:optimize.option">gulp:optimize.bfgshessian</scalar>
+               </module>
+
+             <module dictRef="gulp:bulkopt">
+               <module role="ccml:cycle" serial="0">
+                 <scalar dictRef="ccml:energy" units="units:ev">-309.031267</scalar>
+                 <scalar dictRef="ccml:energy.gnorm" units="units:ev">9.526851</scalar>
+                 <scalar dictRef="ccml:time" units="siUnits:s">0.000</scalar>
+                 <scalar>** Hessian calculated **</scalar>
+               </module>
+               <module role="ccml:cycle" serial="1">
+                 <scalar dictRef="ccml:energy" units="units:ev">-310.516192</scalar>
+                 <scalar dictRef="ccml:energy.gnorm" units="units:ev">1.443553</scalar>
+                 <scalar dictRef="ccml:time" units="siUnits:s">0.000</scalar>
+               </module>
+               <module role="ccml:cycle" serial="2">
+                 <scalar dictRef="ccml:energy" units="units:ev">-310.565026</scalar>
+                 <scalar dictRef="ccml:energy.gnorm" units="units:ev">0.481560</scalar>
+                 <scalar dictRef="ccml:time" units="siUnits:s">0.000</scalar>
+               </module>
+               <module role="ccml:cycle" serial="3">
+                 <scalar dictRef="ccml:energy" units="units:ev">-310.572212</scalar>
+                 <scalar dictRef="ccml:energy.gnorm" units="units:ev">0.075045</scalar>
+                 <scalar dictRef="ccml:time" units="siUnits:s">0.000</scalar>
+               </module>
+               <module role="ccml:cycle" serial="4">
+                 <scalar dictRef="ccml:energy" units="units:ev">-310.572937</scalar>
+                 <scalar dictRef="ccml:energy.gnorm" units="units:ev">0.033508</scalar>
+                 <scalar dictRef="ccml:time" units="siUnits:s">0.000</scalar>
+               </module>
+               <module role="ccml:cycle" serial="5">
+                 <scalar dictRef="ccml:energy" units="units:ev">-310.573050</scalar>
+                 <scalar dictRef="ccml:energy.gnorm" units="units:ev">0.022654</scalar>
+                 <scalar dictRef="ccml:time" units="siUnits:s">0.000</scalar>
+               </module>
+               <module role="ccml:cycle" serial="6">
+                 <scalar dictRef="ccml:energy" units="units:ev">-310.573064</scalar>
+                 <scalar dictRef="ccml:energy.gnorm" units="units:ev">0.004059</scalar>
+                 <scalar dictRef="ccml:time" units="siUnits:s">0.000</scalar>
+               </module>
+                 <scalar dictRef="ccml:energy" units="units:ev">-310.57306394</scalar>
+                 <scalar dictRef="ccml:energy.gnorm" units="units:ev">0.00405943</scalar>
+        </module>
+      </module>
+      <module role="ccml:final">
+        <module dictRef="gulp:config" serial="1">
+               
+         <module dictRef="gulp:enercomp">
+               <scalar dictRef="gulp:interat" units="units:ev">189.73012970</scalar>
+               <scalar dictRef="gulp:monomono.real" units="units:ev">-114.42614857</scalar>
+               <scalar dictRef="gulp:monomono.recip" units="units:ev">-186.87383017</scalar>
+               <scalar dictRef="gulp:monomono.total" units="units:ev">-301.29997875</scalar>
+               <scalar dictRef="gulp:totlaten.prim" units="units:ev">-310.57306394</scalar>
+               <scalar dictRef="gulp:totlaten.nonprim" units="units:ev">-621.14612788</scalar>
+               <scalar dictRef="gulp:totlaten.prim" units="units:kj.mol-1">-29965.5531</scalar>
+               <scalar dictRef="gulp:totlaten.nonprim" units="units:kj.mol-1">-59931.1063</scalar>
+         </module>
+         <matrix  dataType="xsd:double" rows="6" columns="6" dictRef="ccml:elastconstmat" title="Elastic Constant Matrix" units="gulpUnits:tenGPa">
+             27.69070  11.48629  13.25068   0.00000   2.17117   0.00000
+             11.48629  27.16459  10.31422   0.00000  -0.35912   0.00000
+             13.25068  10.31422  27.55477   0.00000  -1.90038   0.00000
+              0.00000   0.00000   0.00000   9.19736   0.00000  -0.34645
+              2.17117  -0.35912  -1.90038   0.00000   9.24532   0.00000
+              0.00000   0.00000   0.00000  -0.34645   0.00000   6.61635
+         </matrix>
+         <scalar dictRef="gulp:bulkmod" units="units:gpa">169.02423</scalar>
+
+         <matrix  dataType="xsd:double" rows="3" columns="6" dictRef="ccml:piezostress" title="Piezoelectric Stress Matrix">
+          0.00000   0.00000   0.00000   0.00000   0.00000   0.00000
+          0.00000   0.00000   0.00000   0.00000   0.00000   0.00000
+          0.00000   0.00000   0.00000   0.00000   0.00000   0.00000
+         </matrix>
+         <matrix  dataType="xsd:double" columns="6" rows="3" dictRef="ccml:piezostrain" units="gulpUnits:decimicroCperdyne">
+  0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 
+  0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 
+  0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 
+         </matrix>
+         <matrix dataType="xsd:double" dictRef="ccml:dielectensor" rows="3" columns="3">
+               3.37593               0.00000               -0.14016
+               0.00000               2.58330               0.00000
+               -0.14016              0.00000               4.62601
+         </matrix>
+         <array  dictRef="cml:refract" dataType="xsd:double">1.60726 1.83314 2.15442</array>
+       <module dictRef="gulp:phonon">
+         <scalar dictRef="gulp:outphonon.num">1</scalar>
+         <array dictRef="gulp:kpoint" dataType="xsd:double">0.000000  0.000000  0.000000</array>
+         <scalar dictRef="gulp:kpoint.wt" dataType="xsd:double">1.000</scalar>
+         <array dataType="xsd:double" dictRef="gulp:freq" units="units:cm-1">0.00    0.00    0.00  151.17  151.94  161.23  203.85  242.80  260.92
+  261.61  265.14  286.69  312.24  316.73  321.86  325.80  334.72  346.92
+  356.69  367.55  375.31  394.15  396.75  407.23  433.39  441.20  447.44
+  448.66  459.01  463.22  476.06  495.40  497.56  535.41  556.75  559.60
+  601.80  627.06  644.47  691.58  694.07  695.12  709.96  732.86  750.82
+  762.79  833.50  893.71  968.44  974.20  982.58  992.88 1028.28 1041.97
+ 1050.31 1053.32 1074.71 1115.56 1169.80 1175.98
+         </array>
+         <table dictRef="gulp:dos">
+         <array dictRef="cml:freq" dataType="xsd:double">
+ 0.00000 19.00000 38.00000 57.00000 76.00000 95.00000 114.00000 133.00000 152.00000 171.00000 190.00000 209.00000 228.00000 247.00000 266.00000 285.00000 304.00000 323.00000 342.00000 361.00000 380.00000 399.00000 418.00000 437.00000 456.00000 475.00000 494.00000 513.00000 532.00000 551.00000 570.00000 589.00000 608.00000 627.00000 646.00000 665.00000 684.00000 703.00000 722.00000 741.00000 760.00000 779.00000 798.00000 817.00000 836.00000 855.00000 874.00000 893.00000 912.00000 931.00000 950.00000 969.00000 988.00000 1007.00000 1026.00000 1045.00000 1064.00000 1083.00000 1102.00000 1121.00000 1140.00000 1159.00000 1178.00000 1197.00000 </array>
+         <array dictRef="cml:freq" dataType="xsd:double">
+0.034 0.000 0.000 0.000 0.000 0.000 0.000 0.034 0.017 0.000 0.017 0.000 0.017 0.051 0.000 0.017 0.051 0.034 0.034 0.034 0.034 0.017 0.017 0.051 0.034 0.017 0.034 0.000 0.017 0.034 0.000 0.017 0.000 0.034 0.000 0.000 0.051 0.017 0.017 0.017 0.017 0.000 0.000 0.017 0.000 0.000 0.000 0.017 0.000 0.000 0.017 0.034 0.017 0.000 0.034 0.034 0.017 0.000 0.017 0.000 0.000 0.034 0.000 0.000            
+  </array>
+</table>
+         <scalar dictRef="gulp:temp" units="siUnits:k">0.000</scalar>
+         <scalar dictRef="ccml:zpe" units="units:ev">2.065640</scalar>
+       </module>
+
+         <scalar dictRef="gulp:time.opt" units="siUnits:s">0.0000</scalar>
+         <scalar dictRef="gulp:timeanal.time" units="siUnits:s">0.0000</scalar>
+      </module>
+    </module>
+</module>

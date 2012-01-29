@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="aspirin" convention="cml:PML-explicit" xmlns:f="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <molecule role="fragment" id="acet_1">
+    <atomArray>
+      <atom elementType="C" hydrogenCount="3" id="acet_1_a1"></atom>
+      <atom elementType="C" hydrogenCount="0" id="acet_1_a2"></atom>
+      <atom elementType="O" hydrogenCount="0" id="acet_1_a3"></atom>
+      <atom elementType="O" hydrogenCount="0" id="acet_1_a4"></atom>
+      <atom elementType="R" id="acet_1_r1"></atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="acet_1_a1_acet_1_a2" atomRefs2="acet_1_a1 acet_1_a2"></bond>
+      <bond order="2" id="acet_1_a2_acet_1_a3" atomRefs2="acet_1_a2 acet_1_a3"></bond>
+      <bond order="1" id="acet_1_a2_acet_1_a4" atomRefs2="acet_1_a2 acet_1_a4"></bond>
+      <bond order="1" id="acet_1_a4_acet_1_r1" atomRefs2="acet_1_a4 acet_1_r1"></bond>
+    </bondArray>
+    <name>acet_1</name>
+    <length atomRefs2="acet_1_a1 acet_1_a2">1.52</length>
+    <length atomRefs2="acet_1_a2 acet_1_a3">1.25</length>
+    <angle atomRefs3="acet_1_a4 acet_1_a2 acet_1_a3">119</angle>
+    <length atomRefs2="acet_1_a2 acet_1_a4">1.40</length>
+    <angle atomRefs3="acet_1_a1 acet_1_a2 acet_1_a4">121</angle>
+    <torsion atomRefs4="acet_1_a1 acet_1_a4 acet_1_a2 acet_1_a3">180</torsion>
+    <angle atomRefs3="acet_1_a2 acet_1_a4 acet_1_r1">120</angle>
+    <torsion atomRefs4="acet_1_a1 acet_1_a2 acet_1_a4 acet_1_r1">180</torsion>
+  </molecule>
+  <join atomRefs2="f:acet_1_r1 f:ophen_2_r1" id="f:acet_1_r1_f:ophen_2_r1" order="1">
+    <length>1.4</length>
+    <torsion>180.0</torsion>
+  </join>
+  <molecule role="fragment" id="ophen_2">
+    <!-- NOTE THIS HAS R GROUPS CONNECTED TO 2 ATOMS --> 
+    <atomArray>
+      <atom elementType="C" hydrogenCount="0" id="ophen_2_a1"></atom>
+      <atom elementType="C" hydrogenCount="0" id="ophen_2_a2"></atom>
+      <atom elementType="C" hydrogenCount="1" id="ophen_2_a3"></atom>
+      <atom elementType="C" hydrogenCount="1" id="ophen_2_a4"></atom>
+      <atom elementType="C" hydrogenCount="1" id="ophen_2_a5"></atom>
+      <atom elementType="C" hydrogenCount="1" id="ophen_2_a6"></atom>
+      <atom elementType="R" id="ophen_2_r1"></atom>
+      <atom elementType="R" id="ophen_2_r2"></atom>
+    </atomArray>
+    <bondArray>
+      <bond order="A" id="ophen_2_a1_ophen_2_a2" atomRefs2="ophen_2_a1 ophen_2_a2"></bond>
+      <bond order="A" id="ophen_2_a2_ophen_2_a3" atomRefs2="ophen_2_a2 ophen_2_a3"></bond>
+      <bond order="A" id="ophen_2_a3_ophen_2_a4" atomRefs2="ophen_2_a3 ophen_2_a4"></bond>
+      <bond order="A" id="ophen_2_a4_ophen_2_a5" atomRefs2="ophen_2_a4 ophen_2_a5"></bond>
+      <bond order="A" id="ophen_2_a5_ophen_2_a6" atomRefs2="ophen_2_a5 ophen_2_a6"></bond>
+      <bond order="A" id="ophen_2_a1_ophen_2_a6" atomRefs2="ophen_2_a1 ophen_2_a6"></bond>
+      <bond order="1" id="ophen_2_a1_ophen_2_r1" atomRefs2="ophen_2_a1 ophen_2_r1"></bond>
+      <bond order="1" id="ophen_2_a2_ophen_2_r2" atomRefs2="ophen_2_a2 ophen_2_r2"></bond>
+    </bondArray>
+    <length atomRefs2="ophen_2_a1 ophen_2_a2">1.39</length>
+    <length atomRefs2="ophen_2_a2 ophen_2_a3">1.39</length>
+    <length atomRefs2="ophen_2_a3 ophen_2_a4">1.39</length>
+    <length atomRefs2="ophen_2_a4 ophen_2_a5">1.39</length>
+    <length atomRefs2="ophen_2_a5 ophen_2_a6">1.39</length>
+    <angle atomRefs3="ophen_2_r1 ophen_2_a1 ophen_2_a2">120</angle>
+    <angle atomRefs3="ophen_2_r2 ophen_2_a2 ophen_2_a1">120</angle>
+    <angle atomRefs3="ophen_2_a1 ophen_2_a2 ophen_2_a3">120</angle>
+    <angle atomRefs3="ophen_2_a2 ophen_2_a3 ophen_2_a4">120</angle>
+    <angle atomRefs3="ophen_2_a3 ophen_2_a4 ophen_2_a5">120</angle>
+    <angle atomRefs3="ophen_2_a4 ophen_2_a5 ophen_2_a6">120</angle>
+    <torsion atomRefs4="ophen_2_r1 ophen_2_a1 ophen_2_a2 ophen_2_a3">180</torsion>
+    <torsion atomRefs4="ophen_2_r2 ophen_2_a2 ophen_2_a1 ophen_2_r1">0</torsion>
+    <torsion atomRefs4="ophen_2_a1 ophen_2_a2 ophen_2_a3 ophen_2_a4">0</torsion>
+    <torsion atomRefs4="ophen_2_a2 ophen_2_a3 ophen_2_a4 ophen_2_a5">0</torsion>
+    <torsion atomRefs4="ophen_2_a3 ophen_2_a4 ophen_2_a5 ophen_2_a6">0</torsion>
+    <name>ophen_2</name>
+  </molecule>
+  <join atomRefs2="f:ophen_2_r2 f:coxy_3_r1" id="f:ophen_2_r2_f:coxy_3_r1" order="1">
+    <length>1.4</length>
+    <torsion>180.0</torsion>
+  </join>
+  <molecule role="fragment" id="coxy_3">
+    <atomArray>
+      <atom elementType="O" hydrogenCount="1" id="coxy_3_a1"></atom>
+      <atom elementType="C" hydrogenCount="0" id="coxy_3_a2"></atom>
+      <atom elementType="O" hydrogenCount="0" id="coxy_3_a3"></atom>
+      <atom elementType="R" id="coxy_3_r1"></atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="coxy_3_a1_coxy_3_a2" atomRefs2="coxy_3_a1 coxy_3_a2"></bond>
+      <bond order="2" id="coxy_3_a2_coxy_3_a3" atomRefs2="coxy_3_a2 coxy_3_a3"></bond>
+      <bond order="1" id="coxy_3_a2_coxy_3_r1" atomRefs2="coxy_3_a2 coxy_3_r1"></bond>
+    </bondArray>
+    <length atomRefs2="coxy_3_a1 coxy_3_a2">1.32</length>
+    <length atomRefs2="coxy_3_a2 coxy_3_a3">1.25</length>
+    <angle atomRefs3="coxy_3_r1 coxy_3_a2 coxy_3_a3">120</angle>
+    <angle atomRefs3="coxy_3_a3 coxy_3_a2 coxy_3_a1">120</angle>
+    <torsion atomRefs4="coxy_3_r1 coxy_3_a1 coxy_3_a2 coxy_3_a3">180</torsion>
+    <name>coxy_3</name>
+  </molecule>
+</molecule>

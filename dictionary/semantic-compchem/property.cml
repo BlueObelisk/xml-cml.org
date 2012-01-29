@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- author: Weerapong Phadungsukanan -->
+<cml xmlns="http://www.xml-cml.org/schema"
+    xmlns:unitType="http://www.xml-cml.org/units/unitTypes">
+    <dictionary xmlns:cmlx="http://www.xml-cml.org/schema/cmlx"
+                namespace="http://www.xml-cml.org/dict/compchem/property"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+        <!-- Begin Superclasses -->
+        <entry id="property"
+            term="property"
+            definition="property of molecule or calculated result"
+            description="this can be either calculated property of molecule or calcualted results.">
+        </entry>
+        <!-- End Superclasses -->
+
+        <!-- Begin Property Entries -->
+        <entry id="property.symbol"
+            term="symbol"
+            definition="symbol"
+            description="symbol"
+            cmlx:superclass="cml:molecule"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.inchi"
+            term="inchi"
+            definition="InChi string"
+            description="InChi string"
+            cmlx:superclass="cml:molecule"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.charge"
+            term="charge"
+            definition="Charge of molecule"
+            description="Charge of molecule (the negative of the electric charge carried by a single electron)"
+            cmlx:superclass="cml:molecule"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:e"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.spinMultiplicity"
+            term="spinMultiplicity"
+            definition="Spin multiplicity"
+            description="spin multiplicity of a molecule"
+            cmlx:superclass="cml:molecule"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:integer" units="units:none"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.coord"
+            term="coordinate"
+            definition="coordinate"
+            description="coordinate"
+            cmlx:superclass="cml:molecule"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:vector3 dataType="xsd:double" delimiter="" units="units:A"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.pointGroup"
+            term="pointGroup"
+            definition="Point group of a molecule"
+            description="needs a description"
+            cmlx:superclass="cml:molecule">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.nsymrot"
+            term="nsymrot"
+            definition="number of rotational symmetry of a molecule"
+            description="needs a description"
+            cmlx:superclass="cml:molecule">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:integer" units="units:none"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.stoichiometry"
+            term="stoichiometry"
+            definition="Stoichiometry of molecule"
+            description="element and number of each element"
+            cmlx:superclass="cml:molecule"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:string"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.rotconstants"
+            term="rotationalconstants"
+            definition="Rotational constants of molecule"
+            description="needs a description"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:double" minLength="1" delimiter="" units="units:Hz"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.freqmode"
+            term="freqmode"
+            definition="A vibrational eigenfrequencies (cm^-1)"
+            description="need description"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:double" minLength="1" delimiter="" units="units:cm-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.nfreqmode"
+            term="nfreqmode"
+            definition="The total number of molecular vibrational frequencies"
+            description="The total number of molecular vibrational frequencies"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:integer" units="units:none"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.reducedmass"
+            term="reducedmass"
+            definition="An effective mass of the molecular vibration"
+            description="The reduced mass associated with each vibrational mode of the molecule"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:double" minLength="1" delimiter="" units="units:amu"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.forceconstant"
+            term="forceconstant"
+            definition="A vibrational force constant"
+            description="A force constant is the second derivative coefficient in an expansion of the molecular vibrational potential."
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:double" minLength="1" delimiter="" units="units:mDyne.A-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.irintensity"
+            term="irintensity"
+            definition="IR intensity (infrared intensity??)"
+            description="need description"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:double" minLength="1" delimiter="" units="units:KM.mol-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.freqmodeeigen"
+            term="freqmodeeigen"
+            definition="A vibrational eigenvector"
+            description="An eigenvector of vibrational eigenfrequency is associated with the atomic coordiates"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:matrix dataType="xsd:double" units="units:A"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.temperature"
+            term="temperature"
+            definition="Temperature"
+            description="Temperature (K)"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:K"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.pressure"
+            term="pressure"
+            definition="Pressure"
+            description="Pressure"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:atm"/>
+            </cmlx:template>
+        </entry>
+        <!-- energy properties -->
+        <entry id="property.cv"
+            term="cv"
+            definition="Molar heat capacity at constant volume"
+            description="Cv is calculated from the partition function in link ??"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:J.mol-1.K-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.cp"
+            term="cp"
+            definition="Molar heat capacity at pressure volume"
+            description="Cp is calculated from the partition function in link ??"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:J.mol-1.K-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.h"
+            term="enthalpy"
+            definition="Enthalpy"
+            description="Enthalpy of molecule at specific temperature and pressure"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:J.mol-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.hf"
+            term="hf"
+            definition="Enthalpy of formation at T K"
+            description="Enthalpy of formation at T K"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <parameter units="unitType:temperature"></parameter>
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:J.mol-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.hf298"
+            term="hf298"
+            definition="Enthalpy of formation at 298.15 K"
+            description="Enthalpy of formation at 298.15 K"
+            cmlx:superclass="property" units="unitType:molar_enthalpy"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:J.mol-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.s"
+            term="entropy"
+            definition="Entropy"
+            description="Entropy of molecule at specific temperature and pressure"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:J.mol-1.K-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.scfenergy"
+            term="scfenergy"
+            definition="Self-consistent field energy of quantum calculation"
+            description="needs a description"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:hartree"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.totEE"
+            term="totalelectronicenergy"
+            definition="total electronic energy"
+            description="need description"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:hartree"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.totKE"
+            term="totalkineticenergy"
+            definition="total kinetic energy"
+            description="need description"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:J.mol-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.totPE"
+            term="totalpotentialenergy"
+            definition="total potential energy"
+            description="total potential energy"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:J.mol-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.totTE"
+            term="thermalenergy"
+            definition="Thermal energy of a molecule at specific temperature and pressure"
+            description="Thermal energy is a form of energy that manifests itself as an increase of temperature."
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:J"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.zpve"
+            term="zpve"
+            definition="Zero-Point Vibrational Energy (ZPVE)"
+            description="The total sum of energies of all vibrational mode of a molecule at absolute zero (0 K)."
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_energy:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.polarizability"
+            term="polarizability"
+            definition="Polarizability"
+            description=""
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:float" length="6" delimiter="" units="units:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.dipole"
+            term="dipole"
+            definition="Dipole"
+            description=""
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:vector3 dataType="xsd:float" delimiter="" units="units:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.diagvibpolar"
+            term="diagonal vibrational polarizability"
+            definition="diagonal vibrational polarizability"
+            description=""
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:vector3 dataType="xsd:float" delimiter="" units="units:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.pmoi"
+            term="Principal moment of inertia"
+            definition="Principal moment of inertia"
+            description="Principal moment of inertia"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array length="3" dataType="xsd:float" delimiter="" units="units:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.pmoiaxis"
+            term="Principal moment of inertia axis"
+            definition="Principal moment of inertia axis"
+            description="Principal moment of inertia axis"
+            cmlx:superclass="property"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:matrix dataType="xsd:float" rows="3" columns="3" delimiter="" units="units:amu.bohr2"/>
+            </cmlx:template>
+        </entry>
+        <!-- End Property Entries -->
+
+    </dictionary>
+</cml>

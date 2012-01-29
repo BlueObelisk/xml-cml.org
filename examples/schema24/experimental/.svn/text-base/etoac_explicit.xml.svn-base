@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="etoac" convention="cml:PML-explicit" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <molecule role="fragment" id="acetate_1">
+    <atomArray>
+      <atom elementType="C" hydrogenCount="3" id="acetate_1_a1"></atom>
+      <atom elementType="C" hydrogenCount="0" id="acetate_1_a2"></atom>
+      <atom elementType="O" hydrogenCount="0" id="acetate_1_a3"></atom>
+      <atom elementType="O" hydrogenCount="0" id="acetate_1_a4"></atom>
+      <atom elementType="R" id="acetate_1_r1"></atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="acetate_1_a1_acetate_1_a2" atomRefs2="acetate_1_a1 acetate_1_a2"></bond>
+      <bond order="2" id="acetate_1_a2_acetate_1_a3" atomRefs2="acetate_1_a2 acetate_1_a3"></bond>
+      <bond order="1" id="acetate_1_a2_acetate_1_a4" atomRefs2="acetate_1_a2 acetate_1_a4"></bond>
+      <bond order="1" id="acetate_1_a4_acetate_1_r1" atomRefs2="acetate_1_a4 acetate_1_r1"></bond>
+    </bondArray>
+    <name>acetate_1</name>
+    <length atomRefs2="acetate_1_a1 acetate_1_a2">1.52</length>
+    <length atomRefs2="acetate_1_a2 acetate_1_a3">1.25</length>
+    <angle atomRefs3="acetate_1_a1 acetate_1_a2 acetate_1_a3">111</angle>
+    <length atomRefs2="acetate_1_a2 acetate_1_a4">1.40</length>
+    <angle atomRefs3="acetate_1_a1 acetate_1_a2 acetate_1_a4">111</angle>
+    <torsion atomRefs4="acetate_1_a1 acetate_1_a4 acetate_1_a2 acetate_1_a3">180</torsion>
+    <angle atomRefs3="acetate_1_a2 acetate_1_a4 acetate_1_r1">120</angle>
+    <torsion atomRefs4="acetate_1_a1 acetate_1_a2 acetate_1_a4 acetate_1_r1">180</torsion>
+  </molecule>
+  <join atomRefs2="g:acetate_1_r1 g:et_2_r1" id="g:acetate_1_r1_g:et_2_r1" order="1">
+    <length>1.35</length>
+    <torsion>180.0</torsion>
+  </join>
+  <molecule role="fragment" id="et_2">
+    <atomArray>
+      <atom elementType="C" hydrogenCount="3" id="et_2_a1"></atom>
+      <atom elementType="C" hydrogenCount="2" id="et_2_a2"></atom>
+      <atom elementType="R" id="et_2_r1"></atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="et_2_a1_et_2_a2" atomRefs2="et_2_a1 et_2_a2"></bond>
+      <bond order="1" id="et_2_a2_et_2_r1" atomRefs2="et_2_a2 et_2_r1"></bond>
+    </bondArray>
+    <name>ethyl_2</name>
+    <length atomRefs2="et_2_a1 et_2_a2">1.54</length>
+    <angle atomRefs3="et_2_a1 et_2_a2 et_2_r1">111</angle>
+  </molecule>
+</molecule>

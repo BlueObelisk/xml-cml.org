@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml:cml xmlns:cml="http://www.xml-cml.org/schema"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:conventions="http://www.xml-cml.org/convention/"
+         xmlns:cmlDictionary="http://www.xml-cml.org/dictionary/">
+    <dc:title>test file for http://www.xml-cml.org/convention/molecular convention</dc:title>
+    <dc:description>should be valid because only molecule m2 is under the molecular convention - no such restrictions
+        are put on molecule m1
+    </dc:description>
+    <dc:author>J A Townsend</dc:author>
+    <dc:rights>Copyright J A Townsend jat45@cantab.net 2009.</dc:rights>
+    <dc:date>2009-01-21</dc:date>
+    <cml:molecule id="m1">
+        <cml:atomArray/>
+    </cml:molecule>
+    <cml:molecule id="m2" convention="conventions:molecular">
+        <cml:atomArray>
+            <cml:atom id="a1" elementType="H"/>
+        </cml:atomArray>
+    </cml:molecule>
+</cml:cml>

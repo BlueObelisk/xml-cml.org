@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+
+       Copyright 2011 Peter Murray-Rust et. al.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+           http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+
+<molecule id="h" xmlns="http://www.xml-cml.org/schema">
+  <atomArray>
+    <atom id="a1" elementType="H" x3="1.998" y3="-0.064" z3="-0.0" formalCharge="0" hydrogenCount="0"/>
+    <atom id="r1" title="H" elementType="R" x3="0.757" y3="0.831" z3="-0.0" formalCharge="0" hydrogenCount="0"/>
+  </atomArray>
+  <bondArray>
+    <bond id="b1" atomRefs2="a1 r1" order="S"/>
+  </bondArray>
+</molecule>

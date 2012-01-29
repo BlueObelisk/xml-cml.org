@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="copoly" convention="cml:PML-complete" xmlns:f="http://www.xml-cml.org/mols/frags" xmlns="http://www.xml-cml.org/schema">
+ <atomArray>
+  <atom elementType="O" hydrogenCount="1" id="oh_1_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_2_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_2_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_2_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_2_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_3_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_3_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_3_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_3_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="po_4_a1"> </atom>
+  <atom elementType="C" hydrogenCount="1" id="po_4_a2"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="po_4_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="po_4_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_5_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_5_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_5_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_6_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_6_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_6_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_7_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_7_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_7_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_8_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_8_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_8_a3"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="me_9_a1"> </atom>
+ </atomArray>
+ <bondArray>
+  <bond order="1" id="po_2_a1_po_2_a2" atomRefs2="po_2_a1 po_2_a2"> </bond>
+  <bond order="1" id="po_2_a2_po_2_a3" atomRefs2="po_2_a2 po_2_a3"> </bond>
+  <bond order="1" id="po_2_a2_po_2_a4" atomRefs2="po_2_a2 po_2_a4"> </bond>
+  <bond order="1" id="po_3_a1_po_3_a2" atomRefs2="po_3_a1 po_3_a2"> </bond>
+  <bond order="1" id="po_3_a2_po_3_a3" atomRefs2="po_3_a2 po_3_a3"> </bond>
+  <bond order="1" id="po_3_a2_po_3_a4" atomRefs2="po_3_a2 po_3_a4"> </bond>
+  <bond order="1" id="po_4_a1_po_4_a2" atomRefs2="po_4_a1 po_4_a2"> </bond>
+  <bond order="1" id="po_4_a2_po_4_a3" atomRefs2="po_4_a2 po_4_a3"> </bond>
+  <bond order="1" id="po_4_a2_po_4_a4" atomRefs2="po_4_a2 po_4_a4"> </bond>
+  <bond order="1" id="eo_5_a1_eo_5_a2" atomRefs2="eo_5_a1 eo_5_a2"> </bond>
+  <bond order="1" id="eo_5_a2_eo_5_a3" atomRefs2="eo_5_a2 eo_5_a3"> </bond>
+  <bond order="1" id="eo_6_a1_eo_6_a2" atomRefs2="eo_6_a1 eo_6_a2"> </bond>
+  <bond order="1" id="eo_6_a2_eo_6_a3" atomRefs2="eo_6_a2 eo_6_a3"> </bond>
+  <bond order="1" id="eo_7_a1_eo_7_a2" atomRefs2="eo_7_a1 eo_7_a2"> </bond>
+  <bond order="1" id="eo_7_a2_eo_7_a3" atomRefs2="eo_7_a2 eo_7_a3"> </bond>
+  <bond order="1" id="eo_8_a1_eo_8_a2" atomRefs2="eo_8_a1 eo_8_a2"> </bond>
+  <bond order="1" id="eo_8_a2_eo_8_a3" atomRefs2="eo_8_a2 eo_8_a3"> </bond>
+  <bond atomRefs2="oh_1_a1 po_2_a1" id="f:oh_1_r1_f:po_2_r1"/>
+  <bond atomRefs2="po_2_a4 po_3_a1" id="f:po_2_r2_f:po_3_r1"/>
+  <bond atomRefs2="po_3_a4 po_4_a1" id="f:po_3_r2_f:po_4_r1"/>
+  <bond atomRefs2="po_4_a4 eo_5_a1" id="f:po_4_r2_f:eo_5_r1"/>
+  <bond atomRefs2="eo_5_a3 eo_6_a1" id="f:eo_5_r2_f:eo_6_r1"/>
+  <bond atomRefs2="eo_6_a3 eo_7_a1" id="f:eo_6_r2_f:eo_7_r1"/>
+  <bond atomRefs2="eo_7_a3 eo_8_a1" id="f:eo_7_r2_f:eo_8_r1"/>
+  <bond atomRefs2="eo_8_a3 me_9_a1" id="f:eo_8_r2_f:me_9_r1"/>
+ </bondArray>
+ <name>hydroxy_1</name>
+ <name>methyl_9</name>
+</molecule>

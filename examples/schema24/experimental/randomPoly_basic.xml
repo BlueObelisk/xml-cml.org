@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="randomPoly" convention="cml:PML-basic" xmlns:f="http://www.xml-cml.org/mols/frags" xmlns="http://www.xml-cml.org/schema">
+ <join convention="fragmentContainer">
+  <molecule ref="f:po" countExpression="range(8,12)">
+   <join left="r1" right="r2"/>
+   <join order="1"/>
+   <molecule ref=""/>
+  </molecule>
+  <molecule ref="f:eo" countExpression="range(6,10)">
+   <join left="r1" right="r2"/>
+  </molecule>
+  <join order="1"/>
+ </join>
+</molecule>

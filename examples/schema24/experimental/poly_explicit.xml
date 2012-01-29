@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="poly" convention="cml:PML-explicit" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <molecule role="fragment" id="oh_1">
+    <atomArray>
+      <atom elementType="O" hydrogenCount="1" id="oh_1_a1"></atom>
+      <atom elementType="R" id="oh_1_r1"></atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="oh_1_a1_oh_1_r1" atomRefs2="oh_1_a1 oh_1_r1">
+        <bondStereo/>
+        <label/>
+      </bond>
+    </bondArray>
+    <name>hydroxy_1</name>
+  </molecule>
+  <join atomRefs2="g:oh_1_r1 g:po_2_r2" id="g:oh_1_r1_g:po_2_r2" order="1"/>
+  <molecule id="po" role="fragment">
+    <atomArray>
+      <atom elementType="C" hydrogenCount="2" id="po_2_a1"></atom>
+      <atom elementType="C" hydrogenCount="1" id="po_2_a2"></atom>
+      <atom elementType="C" hydrogenCount="3" id="po_2_a3"></atom>
+      <atom elementType="O" hydrogenCount="0" id="po_2_a4"></atom>
+      <atom elementType="R" id="po_2_r1"></atom>
+      <atom elementType="R" id="po_2_r2"></atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="po_2_a1_po_2_a2" atomRefs2="po_2_a1 po_2_a2"></bond>
+      <bond order="1" id="po_2_a2_po_2_a3" atomRefs2="po_2_a2 po_2_a3"></bond>
+      <bond order="1" id="po_2_a2_po_2_a4" atomRefs2="po_2_a2 po_2_a4"></bond>
+      <bond order="1" id="po_2_a1_po_2_r1" atomRefs2="po_2_a1 po_2_r1"></bond>
+      <bond order="1" id="po_2_a4_po_2_r2" atomRefs2="po_2_a4 po_2_r2"></bond>
+    </bondArray>
+    <length atomRefs2="po_2_a1 po_2_a2">1.54</length>
+    <length atomRefs2="po_2_a2 po_2_a3">1.54</length>
+    <angle atomRefs3="po_2_a4 po_2_a2 po_2_a3">111</angle>
+    <length atomRefs2="po_2_a2 po_2_a4">1.40</length>
+    <angle atomRefs3="po_2_a1 po_2_a2 po_2_a4">111</angle>
+    <!-- chirality -->
+    <torsion atomRefs4="po_2_a1 po_2_a4 po_2_a2 po_2_a3">120</torsion>
+    <!-- angles to R groups -->
+    <angle atomRefs3="po_2_r1 po_2_a1 po_2_a2">112</angle>
+    <angle atomRefs3="po_2_r2 po_2_a4 po_2_a2">112</angle>
+    <!-- torsions to R groups -->
+    <torsion atomRefs4="po_2_r1 po_2_a1 po_2_a2 po_2_a4">120</torsion>
+    <torsion atomRefs4="po_2_a1 po_2_a2 po_2_a4 po_2_r2">120</torsion>
+  </molecule>
+  <join atomRefs2="g:po_2_r1 g:po_3_r2" id="g:po_2_r1_g:po_3_r2"/>
+  <molecule id="po" role="fragment">
+    <atomArray>
+      <atom elementType="C" hydrogenCount="2" id="po_3_a1"></atom>
+      <atom elementType="C" hydrogenCount="1" id="po_3_a2"></atom>
+      <atom elementType="C" hydrogenCount="3" id="po_3_a3"></atom>
+      <atom elementType="O" hydrogenCount="0" id="po_3_a4"></atom>
+      <atom elementType="R" id="po_3_r1"></atom>
+      <atom elementType="R" id="po_3_r2"></atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="po_3_a1_po_3_a2" atomRefs2="po_3_a1 po_3_a2"></bond>
+      <bond order="1" id="po_3_a2_po_3_a3" atomRefs2="po_3_a2 po_3_a3"></bond>
+      <bond order="1" id="po_3_a2_po_3_a4" atomRefs2="po_3_a2 po_3_a4"></bond>
+      <bond order="1" id="po_3_a1_po_3_r1" atomRefs2="po_3_a1 po_3_r1"></bond>
+      <bond order="1" id="po_3_a4_po_3_r2" atomRefs2="po_3_a4 po_3_r2"></bond>
+    </bondArray>
+    <length atomRefs2="po_3_a1 po_3_a2">1.54</length>
+    <length atomRefs2="po_3_a2 po_3_a3">1.54</length>
+    <angle atomRefs3="po_3_a4 po_3_a2 po_3_a3">111</angle>
+    <length atomRefs2="po_3_a2 po_3_a4">1.40</length>
+    <angle atomRefs3="po_3_a1 po_3_a2 po_3_a4">111</angle>
+    <!-- chirality -->
+    <torsion atomRefs4="po_3_a1 po_3_a4 po_3_a2 po_3_a3">120</torsion>
+    <!-- angles to R groups -->
+    <angle atomRefs3="po_3_r1 po_3_a1 po_3_a2">112</angle>
+    <angle atomRefs3="po_3_r2 po_3_a4 po_3_a2">112</angle>
+    <!-- torsions to R groups -->
+    <torsion atomRefs4="po_3_r1 po_3_a1 po_3_a2 po_3_a4">120</torsion>
+    <torsion atomRefs4="po_3_a1 po_3_a2 po_3_a4 po_3_r2">120</torsion>
+  </molecule>
+  <join atomRefs2="g:po_3_r1 g:po_4_r2" id="g:po_3_r1_g:po_4_r2"/>
+  <molecule id="po" role="fragment">
+    <atomArray>
+      <atom elementType="C" hydrogenCount="2" id="po_4_a1"></atom>
+      <atom elementType="C" hydrogenCount="1" id="po_4_a2"></atom>
+      <atom elementType="C" hydrogenCount="3" id="po_4_a3"></atom>
+      <atom elementType="O" hydrogenCount="0" id="po_4_a4"></atom>
+      <atom elementType="R" id="po_4_r1"></atom>
+      <atom elementType="R" id="po_4_r2"></atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="po_4_a1_po_4_a2" atomRefs2="po_4_a1 po_4_a2"></bond>
+      <bond order="1" id="po_4_a2_po_4_a3" atomRefs2="po_4_a2 po_4_a3"></bond>
+      <bond order="1" id="po_4_a2_po_4_a4" atomRefs2="po_4_a2 po_4_a4"></bond>
+      <bond order="1" id="po_4_a1_po_4_r1" atomRefs2="po_4_a1 po_4_r1"></bond>
+      <bond order="1" id="po_4_a4_po_4_r2" atomRefs2="po_4_a4 po_4_r2"></bond>
+    </bondArray>
+    <length atomRefs2="po_4_a1 po_4_a2">1.54</length>
+    <length atomRefs2="po_4_a2 po_4_a3">1.54</length>
+    <angle atomRefs3="po_4_a4 po_4_a2 po_4_a3">111</angle>
+    <length atomRefs2="po_4_a2 po_4_a4">1.40</length>
+    <angle atomRefs3="po_4_a1 po_4_a2 po_4_a4">111</angle>
+    <!-- chirality -->
+    <torsion atomRefs4="po_4_a1 po_4_a4 po_4_a2 po_4_a3">120</torsion>
+    <!-- angles to R groups -->
+    <angle atomRefs3="po_4_r1 po_4_a1 po_4_a2">112</angle>
+    <angle atomRefs3="po_4_r2 po_4_a4 po_4_a2">112</angle>
+    <!-- torsions to R groups -->
+    <torsion atomRefs4="po_4_r1 po_4_a1 po_4_a2 po_4_a4">120</torsion>
+    <torsion atomRefs4="po_4_a1 po_4_a2 po_4_a4 po_4_r2">120</torsion>
+  </molecule>
+  <join atomRefs2="g:po_4_r1 g:et_5_r1" id="g:po_4_r1_g:et_5_r1" order="1"/>
+  <molecule role="fragment" id="et_5">
+    <atomArray>
+      <atom elementType="C" hydrogenCount="3" id="et_5_a1"></atom>
+      <atom elementType="C" hydrogenCount="2" id="et_5_a2"></atom>
+      <atom elementType="R" id="et_5_r1"></atom>
+    </atomArray>
+    <bondArray>
+      <bond order="1" id="et_5_a1_et_5_a2" atomRefs2="et_5_a1 et_5_a2"></bond>
+      <bond order="1" id="et_5_a2_et_5_r1" atomRefs2="et_5_a2 et_5_r1"></bond>
+    </bondArray>
+    <name>ethyl_5</name>
+    <length atomRefs2="et_5_a1 et_5_a2">1.54</length>
+    <angle atomRefs3="et_5_a1 et_5_a2 et_5_r1">111</angle>
+  </molecule>
+</molecule>

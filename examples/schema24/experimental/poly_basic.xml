@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="poly" convention="cml:PML-basic" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <join convention="fragmentContainer">
+    <molecule ref="g:oh">
+      <join right="r1"/>
+    </molecule>
+    <join order="1"/>
+    <molecule ref="g:po" countExpression="*(3)">
+      <join left="r2" right="r1"/>
+    </molecule>
+    <join order="1"/>
+    <molecule ref="g:et">
+      <join left="r1"/>
+    </molecule>
+  </join>
+</molecule>

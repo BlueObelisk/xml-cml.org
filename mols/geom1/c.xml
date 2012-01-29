@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+       Copyright 2011 Peter Murray-Rust et. al.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+           http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+
+<molecule id="c" xmlns="http://www.xml-cml.org/schema">
+  <atomArray>
+    <atom x3="0.0021" y3="-0.0041" z3="0.0020" id="r1" elementType="R">
+      <label dictRef="cml:torsionEnd">r2</label>
+      <label dictRef="cml:torsionEnd">r3</label>
+      <label dictRef="cml:torsionEnd">r4</label>
+    </atom>
+    <atom x3="-0.025" y3="1.9957" z3="0.013" id="a1" elementType="C"/>
+    <atom x3="1.8513" y3="2.688" z3="-0.0012" id="r2" elementType="R">
+      <label dictRef="cml:torsionEnd">r1</label>
+    </atom>
+    <atom x3="-0.9924" y3="2.6582" z3="-1.6073" id="r3" elementType="R"/>
+    <atom x3="-0.9612" y3="2.6407" z3="1.6585" id="r4" elementType="R"/>
+  </atomArray>
+  <bondArray>
+    <bond atomRefs2="r1 a1" id="b1" order="1"/>
+    <bond atomRefs2="a1 r2" id="b2" order="1"/>
+    <bond atomRefs2="a1 r3" id="b3" order="1"/>
+    <bond atomRefs2="a1 r4" id="b4" order="1"/>
+  </bondArray>
+</molecule>

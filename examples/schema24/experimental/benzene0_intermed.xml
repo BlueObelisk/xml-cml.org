@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="benzene0" convention="cml:PML-intermediate" xmlns:f="http://www.xml-cml.org/mols/frags" xmlns="http://www.xml-cml.org/schema">
+  <molecule ref="f:me">
+    <arg name="idx">
+      <scalar dataType="xsd:string">1</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="f:me_1_r1 f:benzene_2_r2" id="f:me_1_r1_f:benzene_2_r2" order="1">
+    <torsion>60.0</torsion>
+  </join>
+  <molecule ref="f:benzene">
+    <arg name="idx">
+      <scalar dataType="xsd:string">2</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="f:benzene_2_r3 f:cl_3_r1" id="f:benzene_2_r3_f:cl_3_r1" order="1">
+    <torsion>70.0</torsion>
+  </join>
+  <molecule ref="f:cl">
+    <arg name="idx">
+      <scalar dataType="xsd:string">3</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="f:benzene_2_r4 f:i_4_r1" id="f:benzene_2_r4_f:i_4_r1" order="1">
+    <torsion>80.0</torsion>
+  </join>
+  <molecule ref="f:i">
+    <arg name="idx">
+      <scalar dataType="xsd:string">4</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="f:benzene_2_r1 f:ophenylene_5_r2" id="f:benzene_2_r1_f:ophenylene_5_r2" order="1">
+    <torsion>90.0</torsion>
+  </join>
+  <molecule ref="f:ophenylene">
+    <arg name="idx">
+      <scalar dataType="xsd:string">5</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="f:ophenylene_5_r1 f:br_6_r1" id="f:ophenylene_5_r1_f:br_6_r1" order="1">
+    <torsion>180.0</torsion>
+  </join>
+  <molecule ref="f:br">
+    <arg name="idx">
+      <scalar dataType="xsd:string">6</scalar>
+    </arg>
+  </molecule>
+</molecule>

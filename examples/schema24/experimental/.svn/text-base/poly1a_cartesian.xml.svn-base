@@ -1,0 +1,2363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="poly1" convention="cml:PML-cartesian" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema"><atomArray><atom elementType="O" id="oh_1_a1" x3="70.28829412005774" y3="123.80381787480037" z3="15.494044690181205">
+    
+   </atom><atom elementType="C" id="po_2_a1" x3="69.78311490102983" y3="122.55140909591024" z3="15.16485446064626">
+    
+   </atom><atom elementType="C" id="po_2_a2" x3="68.24457892622776" y3="122.51663543372318" z3="15.222281341616249">
+    
+   </atom><atom elementType="C" id="po_2_a3" x3="67.75658020048117" y3="123.90333612377424" z3="15.681104226705495">
+    
+   </atom><atom elementType="O" id="po_2_a4" x3="67.70341549650557" y3="122.18159713015895" z3="13.975328464609216">
+    
+   </atom><atom elementType="C" id="po_3_a1" x3="66.9374155052635" y3="121.0111828742141" z3="14.033418764128433">
+    
+   </atom><atom elementType="C" id="po_3_a2" x3="67.7175639956865" y3="119.7852348567747" z3="13.523497406047516">
+    
+   </atom><atom elementType="C" id="po_3_a3" x3="69.10585723946656" y3="120.26608399032939" z3="13.061950030327154">
+    
+   </atom><atom elementType="O" id="po_3_a4" x3="67.83059268507766" y3="118.81126972650894" z3="14.522805386802654">
+    
+   </atom><atom elementType="C" id="po_4_a1" x3="67.24340645457033" y3="117.59870625244102" z3="14.142145233832947">
+    
+   </atom><atom elementType="C" id="po_4_a2" x3="65.84056927349546" y3="117.42051811148421" z3="14.751978678157107">
+    
+   </atom><atom elementType="C" id="po_4_a3" x3="65.55177675565152" y3="118.64465028460121" z3="15.64062894928586">
+    
+   </atom><atom elementType="O" id="po_4_a4" x3="64.8713233695512" y3="117.28768389197054" z3="13.750521016638928">
+    
+   </atom><atom elementType="C" id="po_5_a1" x3="64.1923422593702" y3="116.06637613829938" z3="13.836497890506623">
+    
+   </atom><atom elementType="C" id="po_5_a2" x3="64.73123718702543" y3="115.03450534708429" z3="12.82831391563664">
+    
+   </atom><atom elementType="C" id="po_5_a3" x3="65.83923143217096" y3="115.71386325618175" z3="12.002225794386188">
+    
+   </atom><atom elementType="O" id="po_5_a4" x3="65.22001669943747" y3="113.89900766816858" z3="13.485382868961398">
+    
+   </atom><atom elementType="C" id="po_6_a1" x3="64.54137299376852" y3="112.73691487621899" z3="13.099399626249067">
+    
+   </atom><atom elementType="C" id="po_6_a2" x3="63.47367871562142" y3="112.3233710544156" z3="14.129259051539808">
+    
+   </atom><atom elementType="C" id="po_6_a3" x3="63.53272457886936" y3="113.3226527666693" z3="15.29953664492893">
+    
+   </atom><atom elementType="O" id="po_6_a4" x3="62.19918246792566" y3="112.3035872009776" z3="13.550235810423718">
+    
+   </atom><atom elementType="C" id="po_7_a1" x3="61.61167514756" y3="111.03467200963807" z3="13.618714899965823">
+    
+   </atom><atom elementType="C" id="po_7_a2" x3="61.737743129384334" y3="110.26805510762705" z3="12.289051262232672">
+    
+   </atom><atom elementType="C" id="po_7_a3" x3="62.44717877771128" y3="111.18773287969779" z3="11.277866879223367">
+    
+   </atom><atom elementType="O" id="po_7_a4" x3="62.44651261575106" y3="109.07345561424611" z3="12.463916540688567">
+    
+   </atom><atom elementType="C" id="po_8_a1" x3="61.68080187392872" y3="107.95380503426361" z3="12.117405879088196">
+    
+   </atom><atom elementType="C" id="po_8_a2" x3="61.08365700002615" y3="107.25793504105003" z3="13.354654015929313">
+    
+   </atom><atom elementType="C" id="po_8_a3" x3="61.57271001444956" y3="108.01304776954579" z3="14.60454677786814">
+    
+   </atom><atom elementType="O" id="po_8_a4" x3="59.68506841033834" y3="107.24044667707086" z3="13.294287519257729">
+    
+   </atom><atom elementType="C" id="po_9_a1" x3="59.17601138565006" y3="105.93630672451688" z3="13.30322786421828">
+    
+   </atom><atom elementType="C" id="po_9_a2" x3="58.79656016615324" y3="105.4554368471612" z3="11.890294414591473">
+    
+   </atom><atom elementType="C" id="po_9_a3" x3="59.065332414697174" y3="106.61132632439043" z3="10.908825619955914">
+    
+   </atom><atom elementType="O" id="po_9_a4" x3="59.527524076487154" y3="104.31545918403697" z3="11.53512869360029">
+    
+   </atom><atom elementType="C" id="po_10_a1" x3="58.69577311761927" y3="103.22211267771404" z3="11.265344039600487">
+    
+   </atom><atom elementType="C" id="po_10_a2" x3="58.61467367235687" y3="102.25089164543009" z3="12.457716710550063">
+    
+   </atom><atom elementType="C" id="po_10_a3" x3="59.53373876362058" y3="102.7891715853135" z3="13.569999976781977">
+    
+   </atom><atom elementType="O" id="po_10_a4" x3="57.296861752481576" y3="102.12450528242738" z3="12.913126669907031">
+    
+   </atom><atom elementType="C" id="po_11_a1" x3="56.83824159748854" y3="100.80425383503956" z3="12.831863707220917">
+    
+   </atom><atom elementType="C" id="po_11_a2" x3="55.957171270620314" y3="100.57502485353938" z3="11.589781120130706">
+    
+   </atom><atom elementType="C" id="po_11_a3" x3="55.82737530918858" y3="101.91788360129975" z3="10.847161842196542">
+    
+   </atom><atom elementType="O" id="po_11_a4" x3="56.50829324360598" y3="99.59295577021473" z3="10.758033029378302">
+    
+   </atom><atom elementType="C" id="po_12_a1" x3="55.644147556289674" y3="98.50474913442183" z3="10.587567346882034">
+    
+   </atom><atom elementType="C" id="po_12_a2" x3="56.02598591015669" y3="97.3177650412004" z3="11.491374977938237">
+    
+   </atom><atom elementType="C" id="po_12_a3" x3="57.29290321833277" y3="97.70797982767503" z3="12.275117891565175">
+    
+   </atom><atom elementType="O" id="po_12_a4" x3="54.978385226882835" y3="96.99209493359751" z3="12.361128845085762">
+    
+   </atom><atom elementType="C" id="po_13_a1" x3="54.53255126398211" y3="95.67792377017484" z3="12.176233656526056">
+    
+   </atom><atom elementType="C" id="po_13_a2" x3="53.249609060612755" y3="95.61814713812414" z3="11.326477187251196">
+    
+   </atom><atom elementType="C" id="po_13_a3" x3="52.83949671107151" y3="97.06300746928258" z3="10.986203056294272">
+    
+   </atom><atom elementType="O" id="po_13_a4" x3="53.4532161284733" y3="94.86710091852693" z3="10.162658585429602">
+    
+   </atom><atom elementType="C" id="po_14_a1" x3="52.596511041221014" y3="93.76188784664762" z3="10.095127413196705">
+    
+   </atom><atom elementType="C" id="po_14_a2" x3="53.299723479268906" y3="92.45995571189691" z3="10.521818148364662">
+    
+   </atom><atom elementType="C" id="po_14_a3" x3="54.765867097637006" y3="92.7991646078643" z3="10.848865874568459">
+    
+   </atom><atom elementType="O" id="po_14_a4" x3="52.660137844074455" y3="91.88269436128532" z3="11.625312393181094">
+    
+   </atom><atom elementType="C" id="po_15_a1" x3="52.186996267229304" y3="90.59563346714411" z3="11.343157643029826">
+    
+   </atom><atom elementType="C" id="po_15_a2" x3="50.67871730012095" y3="90.59074244061505" z3="11.03223862585969">
+    
+   </atom><atom elementType="C" id="po_15_a3" x3="50.16010198682988" y3="92.03314666140517" z3="11.180926959856869">
+    
+   </atom><atom elementType="O" id="po_15_a4" x3="50.43353808984331" y3="90.09969055248838" z3="9.744311920641234">
+    
+   </atom><atom elementType="C" id="po_16_a1" x3="49.62268721456494" y3="88.95857425169898" z3="9.763662531302751">
+    
+   </atom><atom elementType="C" id="po_16_a2" x3="50.44430329830424" y3="87.66447285281265" z3="9.615849878456887">
+    
+   </atom><atom elementType="C" id="po_16_a3" x3="51.92298004728591" y3="88.05948109874845" z3="9.445310857515278">
+    
+   </atom><atom elementType="O" id="po_16_a4" x3="50.27257483100862" y3="86.83138569094598" z3="10.727818904218497">
+    
+   </atom><atom elementType="C" id="po_17_a1" x3="49.73724965099637" y3="85.5872849423246" z3="10.373361179059923">
+    
+   </atom><atom elementType="C" id="po_17_a2" x3="48.2232253745256" y3="85.51222548121163" z3="10.644832296408683">
+    
+   </atom><atom elementType="C" id="po_17_a3" x3="47.788652783175756" y3="86.848185200458" z3="11.27567165107723">
+    
+   </atom><atom elementType="O" id="po_17_a4" x3="47.51374058915733" y3="85.26046083755296" z3="9.464473917129592">
+    
+   </atom><atom elementType="C" id="po_18_a1" x3="46.77839591989602" y3="84.07140474353113" z3="9.53805260058165">
+    
+   </atom><atom elementType="C" id="po_18_a2" x3="47.49282117145419" y3="82.90641659589541" z3="8.828123607087015">
+    
+   </atom><atom elementType="C" id="po_18_a3" x3="48.794943096893384" y3="83.4533675418929" z3="8.21418293082997">
+    
+   </atom><atom elementType="O" id="po_18_a4" x3="47.759395935442996" y3="81.86215110706246" z3="9.721682493807299">
+    
+   </atom><atom elementType="C" id="po_19_a1" x3="47.13889292798851" y3="80.6686517476148" z3="9.33369370951329">
+    
+   </atom><atom elementType="C" id="po_19_a2" x3="45.83981258456474" y3="80.41177728265674" z3="10.119827140034138">
+    
+   </atom><atom elementType="C" id="po_19_a3" x3="45.665769893189236" y3="81.55764304875778" z3="11.133878809159755">
+    
+   </atom><atom elementType="O" id="po_19_a4" x3="44.739220361108224" y3="80.33287085934658" z3="9.258159841114521">
+    
+   </atom><atom elementType="C" id="po_20_a1" x3="44.094606503555845" y3="79.09299852918163" z3="9.342951229490783">
+    
+   </atom><atom elementType="C" id="po_20_a2" x3="44.496727990156444" y3="78.15373576523872" z3="8.190699620559624">
+    
+   </atom><atom elementType="C" id="po_20_a3" x3="45.466942444422294" y3="78.91974022941052" z3="7.272265587216734">
+    
+   </atom><atom elementType="O" id="po_20_a4" x3="45.08830302649079" y3="76.98329044452902" z3="8.680696281379634">
+    
+   </atom><atom elementType="C" id="po_21_a1" x3="44.37590336586231" y3="75.83836503064158" z3="8.304355318725914">
+    
+   </atom><atom elementType="C" id="po_21_a2" x3="43.47138567191568" y3="75.32276939084292" z3="9.43908386668709">
+    
+   </atom><atom elementType="C" id="po_21_a3" x3="43.68457916976613" y3="76.23121405509008" z3="10.664186647875336">
+    
+   </atom><atom elementType="O" id="po_21_a4" x3="42.1276152084876" y3="75.31726318765205" z3="9.046336335383945">
+    
+   </atom><atom elementType="C" id="po_22_a1" x3="41.57162033037943" y3="74.03340791769921" z3="9.097182587279221">
+    
+   </atom><atom elementType="C" id="po_22_a2" x3="41.51599872673188" y3="73.37335207251314" z3="7.706919116406384">
+    
+   </atom><atom elementType="C" id="po_22_a3" x3="42.062372458239295" y3="74.38366510583526" z3="6.681081253867621">
+    
+   </atom><atom elementType="O" id="po_22_a4" x3="42.25717147710561" y3="72.1858352932979" z3="7.685312330766745">
+    
+   </atom><atom elementType="C" id="po_23_a1" x3="41.46371553930406" y3="71.07817508895337" z3="7.3635724568329675">
+    
+   </atom><atom elementType="C" id="po_23_a2" x3="41.05798794380213" y3="70.27638738898612" z3="8.614220929597982">
+    
+   </atom><atom elementType="C" id="po_23_a3" x3="41.71113255994488" y3="70.94544916559823" z3="9.837886917308847">
+    
+   </atom><atom elementType="O" id="po_23_a4" x3="39.665433849665106" y3="70.2307984197061" z3="8.751022759929992">
+    
+   </atom><atom elementType="C" id="po_24_a1" x3="39.179013200249635" y3="68.91819756986219" z3="8.729252118891356">
+    
+   </atom><atom elementType="C" id="po_24_a2" x3="38.60767268474718" y3="68.53748056844826" z3="7.350765782296113">
+    
+   </atom><atom elementType="C" id="po_24_a3" x3="38.719258032750304" y3="69.77067583250367" z3="6.435135862065062">
+    
+   </atom><atom elementType="O" id="po_24_a4" x3="39.294456128321094" y3="67.44526264208466" z3="6.807269229443414">
+    
+   </atom><atom elementType="C" id="po_25_a1" x3="38.446272160487744" y3="66.35643844159269" z3="6.5726507793302815">
+    
+   </atom><atom elementType="C" id="po_25_a2" x3="38.54825552985829" y3="65.29567209577665" z3="7.684394523165134">
+    
+   </atom><atom elementType="C" id="po_25_a3" x3="39.61000230015136" y3="65.76912941115832" z3="8.694410347934141">
+    
+   </atom><atom elementType="O" id="po_25_a4" x3="37.31063377237976" y3="65.1041762099831" z3="8.310191384087188">
+    
+   </atom><atom elementType="C" id="po_26_a1" x3="36.86144866826682" y3="63.78355971706469" z3="8.191007404983576">
+    
+   </atom><atom elementType="C" id="po_26_a2" x3="35.81495468384125" y3="63.628938666747224" z3="7.071836876708365">
+    
+   </atom><atom elementType="C" id="po_26_a3" x3="35.56388140851541" y3="65.02100248269997" z3="6.4629686292752915">
+    
+   </atom><atom elementType="O" id="po_26_a4" x3="36.253754265412404" y3="62.72618062575238" z3="6.09588459988735">
+    
+   </atom><atom elementType="C" id="po_27_a1" x3="35.387627702045904" y3="61.63416412399886" z3="5.964261136443581">
+    
+   </atom><atom elementType="C" id="po_27_a2" x3="35.90923176089393" y3="60.39111702873078" z3="6.708816792347738">
+    
+   </atom><atom elementType="C" id="po_27_a3" x3="37.270157847933035" y3="60.750123535433936" z3="7.333792402880844">
+    
+   </atom><atom elementType="O" id="po_27_a4" x3="35.000654529062686" y3="59.97576931743813" z3="7.689619368058985">
+    
+   </atom><atom elementType="C" id="po_28_a1" x3="34.54925148529957" y3="58.66939871151257" z3="7.466838910982768">
+    
+   </atom><atom elementType="C" id="po_28_a2" x3="33.158959675903525" y3="58.64442931587453" z3="6.804973959495114">
+    
+   </atom><atom elementType="C" id="po_28_a3" x3="32.686652726173506" y3="60.10099211209609" z3="6.640806466062441">
+    
+   </atom><atom elementType="O" id="po_28_a4" x3="33.20356448819263" y3="57.98909104470907" z3="5.568631708713997">
+    
+   </atom><atom elementType="C" id="po_29_a1" x3="32.359709154747065" y3="56.87246390723614" z3="5.5361969730981855">
+    
+   </atom><atom elementType="C" id="po_29_a2" x3="33.132664381935136" y3="55.558663349767244" z3="5.755441840671056">
+    
+   </atom><atom elementType="C" id="po_29_a3" x3="34.62618110173127" y3="55.9062414492987" z3="5.897558948773877">
+    
+   </atom><atom elementType="O" id="po_29_a4" x3="32.664371507528635" y3="54.88429151024283" z3="6.88942791017833">
+    
+   </atom><atom elementType="C" id="po_30_a1" x3="32.17172083315735" y3="53.61170628096649" z3="6.576662587181694">
+    
+   </atom><atom elementType="C" id="po_30_a2" x3="30.634678194445783" y3="53.59517098492622" z3="6.482713075381786">
+    
+   </atom><atom elementType="C" id="po_30_a3" x3="30.12483486088054" y3="55.009539012933125" z3="6.816213984782271">
+    
+   </atom><atom elementType="O" id="po_30_a4" x3="30.21419830473278" y3="53.19793650433827" z3="5.207800752992924">
+    
+   </atom><atom elementType="C" id="po_31_a1" x3="29.428572539595926" y3="52.03998288695775" z3="5.251795947599907">
+    
+   </atom><atom elementType="C" id="po_31_a2" x3="30.236582356219053" y3="50.780475409845714" z3="4.887981363863182">
+    
+   </atom><atom elementType="C" id="po_31_a3" x3="31.67076619932403" y3="51.221831192672404" z3="4.54168412572508">
+    
+   </atom><atom elementType="O" id="po_31_a4" x3="30.235686103962536" y3="49.861400312004264" z3="5.944059088871917">
+    
+   </atom><atom elementType="C" id="po_32_a1" x3="29.67063952091475" y3="48.635684390275834" z3="5.572114417976569">
+    
+   </atom><atom elementType="C" id="po_32_a2" x3="28.211933541067534" y3="48.50475408869894" z3="6.0481754649936">
+    
+   </atom><atom elementType="C" id="po_32_a3" x3="27.85542339868073" y3="49.77829598771779" z3="6.837220172103914">
+    
+   </atom><atom elementType="O" id="po_32_a4" x3="27.344345322674886" y3="48.32699010079454" z3="4.96388277023328">
+    
+   </atom><atom elementType="C" id="po_33_a1" x3="26.641781218594197" y3="47.118890638379625" z3="5.046945208014206">
+    
+   </atom><atom elementType="C" id="po_33_a2" x3="27.261850971483685" y3="46.02834870506448" z3="4.153730903811207">
+    
+   </atom><atom elementType="C" id="po_33_a3" x3="28.456115489323864" y3="46.65076964109287" z3="3.4067875058073738">
+    
+   </atom><atom elementType="O" id="po_33_a4" x3="27.666155548691737" y3="44.9256480236556" z3="4.91569482426216">
+    
+   </atom><atom elementType="C" id="po_34_a1" x3="27.011397865536868" y3="43.75092976258198" z3="4.526684048768916">
+    
+   </atom><atom elementType="C" id="po_34_a2" x3="25.841147814103984" y3="43.40463343667398" z3="5.465935703962537">
+    
+   </atom><atom elementType="C" id="po_34_a3" x3="25.799542217101134" y3="44.46562627319971" z3="6.581356330963462">
+    
+   </atom><atom elementType="O" id="po_34_a4" x3="24.629859101332286" y3="43.36577120279717" z3="4.765029589643376">
+    
+   </atom><atom elementType="C" id="po_35_a1" x3="24.019317700126106" y3="42.10828817415046" z3="4.842331789344827">
+    
+   </atom><atom elementType="C" id="po_35_a2" x3="24.26436348344488" y3="41.26909906719862" z3="3.5745328278169928">
+    
+   </atom><atom elementType="C" id="po_35_a3" x3="25.083964939736916" y3="42.12527550617877" z3="2.5912651337584305">
+    
+   </atom><atom elementType="O" id="po_35_a4" x3="24.93424913408759" y3="40.07893683271806" z3="3.882375434808329">
+    
+   </atom><atom elementType="C" id="po_36_a1" x3="24.1896067554166" y3="38.94960018035544" z3="3.5216727130032304">
+    
+   </atom><atom elementType="C" id="po_36_a2" x3="23.46281503247479" y3="38.32811798861708" z3="4.72879063467259">
+    
+   </atom><atom elementType="C" id="po_36_a3" x3="23.83751478207653" y3="39.14545175396294" z3="5.979056851793549">
+    
+   </atom><atom elementType="O" id="po_36_a4" x3="22.076906413832578" y3="38.32104804380951" z3="4.530782259461704">
+    
+   </atom><atom elementType="C" id="po_37_a1" x3="21.549765470573192" y3="37.02437971883656" z3="4.558597380375625">
+    
+   </atom><atom elementType="C" id="po_37_a2" x3="21.304361282323406" y3="36.470903346239204" z3="3.1426027866832866">
+    
+   </atom><atom elementType="C" id="po_37_a3" x3="21.686144883931394" y3="37.56886068124767" z3="2.132488450558743">
+    
+   </atom><atom elementType="O" id="po_37_a4" x3="22.049462205942085" y3="35.3061553518117" z3="2.923088042076692">
+    
+   </atom><atom elementType="C" id="po_38_a1" x3="21.231936302202335" y3="34.20791294126856" z3="2.630658555877186">
+    
+   </atom><atom elementType="C" id="po_38_a2" x3="21.01887127257163" y3="33.304006327429235" z3="3.859135713420618">
+    
+   </atom><atom elementType="C" id="po_38_a3" x3="21.83173140515351" y3="33.89312829913247" z3="5.026951498258047">
+    
+   </atom><atom elementType="O" id="po_38_a4" x3="19.660788927672474" y3="33.21554447824106" z3="4.187444783827471">
+    
+   </atom><atom elementType="C" id="po_39_a1" x3="19.19249041070755" y3="31.897376478120677" z3="4.1315017550652655">
+    
+   </atom><atom elementType="C" id="po_39_a2" x3="18.434923237266027" y3="31.609380035655292" z3="2.822017113364148">
+    
+   </atom><atom elementType="C" id="po_39_a3" x3="18.399390469787267" y3="32.91094524685762" z3="1.9996635255303417">
+    
+   </atom><atom elementType="O" id="po_39_a4" x3="19.050501835235785" y3="30.57806603501174" z3="2.1026740646049498">
+    
+   </atom><atom elementType="C" id="po_40_a1" x3="18.191019835073057" y3="29.49068915065344" z3="1.9054376512338067">
+    
+   </atom><atom elementType="C" id="po_40_a2" x3="18.46378926324956" y3="28.351083954648807" z3="2.904685786729441">
+    
+   </atom><atom elementType="C" id="po_40_a3" x3="19.652943087678118" y3="28.771047099724434" z3="3.7885093769470393">
+    
+   </atom><atom elementType="O" id="po_40_a4" x3="17.330662451696906" y3="28.083598008917093" z3="3.682165624266418">
+    
+   </atom><atom elementType="C" id="po_41_a1" x3="16.885404981569177" y3="26.765724016656904" z3="3.524197507800951">
+    
+   </atom><atom elementType="C" id="po_41_a2" x3="15.691823623278633" y3="26.672247981682375" z3="2.555576956693995">
+    
+   </atom><atom elementType="C" id="po_41_a3" x3="15.339214918812372" y3="28.100343566338896" z3="2.0997150229693418">
+    
+   </atom><atom elementType="O" id="po_41_a4" x3="15.997890844026161" y3="25.85689175743909" z3="1.4594396094734852">
+    
+   </atom><atom elementType="C" id="po_42_a1" x3="15.135396959457154" y3="24.758075547453846" z3="1.3661270392874236">
+    
+   </atom><atom elementType="C" id="po_42_a2" x3="15.773277533301584" y3="23.474533840784105" z3="1.9293579517480497">
+    
+   </atom><atom elementType="C" id="po_42_a3" x3="17.204957841747007" y3="23.816713238740135" z3="2.3819115441811167">
+    
+   </atom><atom elementType="O" id="po_42_a4" x3="15.01925201688381" y3="22.9645987305191" z3="2.9930363354289087">
+    
+   </atom><atom elementType="C" id="po_43_a1" x3="14.556831633894253" y3="21.668756251418948" z3="2.734270690963943">
+    
+   </atom><atom elementType="C" id="po_43_a2" x3="13.086696532660493" y3="21.66167301128994" z3="2.2757375822033246">
+    
+   </atom><atom elementType="C" id="po_43_a3" x3="12.577837776092876" y3="23.11504460846149" z3="2.2950706212680347">
+    
+   </atom><atom elementType="O" id="po_43_a4" x3="12.962403375131158" y3="21.10353409942764" z3="0.9978361125834794">
+    
+   </atom><atom elementType="C" id="po_44_a1" x3="12.136417315582522" y3="19.97315948721346" z3="0.9973208524978308">
+    
+   </atom><atom elementType="C" id="po_44_a2" x3="12.9489219171998" y3="18.664946086475346" z3="1.0010585630223292">
+    
+   </atom><atom elementType="C" id="po_44_a3" x3="14.443020625301003" y3="19.035579387544878" z3="0.9574694980103431">
+    
+   </atom><atom elementType="O" id="po_44_a4" x3="12.655706476721923" y3="17.895462846357248" z3="2.13327773290187">
+    
+   </atom><atom elementType="C" id="po_45_a1" x3="12.139198633847085" y3="16.63917970265789" z3="1.7942020612507608">
+    
+   </atom><atom elementType="C" id="po_45_a2" x3="10.604812884649222" y3="16.593854095644865" z3="1.9175145180725008">
+    
+   </atom><atom elementType="C" id="po_45_a3" x3="10.130385522422014" y3="17.966417716898572" z3="2.4299477172126864">
+    
+   </atom><atom elementType="O" id="po_45_a4" x3="10.01154168526283" y3="16.28504409779364" z3="0.6876097781817403">
+    
+   </atom><atom elementType="C" id="po_46_a1" x3="9.254607408137456" y3="15.109022045188018" z3="0.7510339998793627">
+    
+   </atom><atom elementType="C" id="po_46_a2" x3="10.01788254093279" y3="13.900115924004345" z3="0.17870798979340924">
+    
+   </atom><atom elementType="C" id="po_46_a3" x3="11.3823649355176" y3="14.40000393379561" z3="-0.33109567097711734">
+    
+   </atom><atom elementType="O" id="po_46_a4" x3="10.179136427598714" y3="12.903578885248372" z3="1.1487137188603114">
+    
+   </atom><atom elementType="C" id="po_47_a1" x3="9.581951367892167" y3="11.69682407820284" z3="0.7651608018647675">
+    
+   </atom><atom elementType="C" id="po_47_a2" x3="8.207894792337454" y3="11.495928123106337" z3="1.4309004975422284">
+    
+   </atom><atom elementType="C" id="po_47_a3" x3="7.952001273961852" y3="12.69704020685562" z3="2.360119669495116">
+    
+   </atom><atom elementType="O" id="po_47_a4" x3="7.196638115533549" y3="11.380917986446919" z3="0.4695823389260993">
+    
+   </atom><atom elementType="C" id="po_48_a1" x3="6.528105472293651" y3="10.153881564164339" z3="0.5558709437047056">
+    
+   </atom><atom elementType="C" id="po_48_a2" x3="7.02770418653095" y3="9.14928650506016" z3="-0.49901762479715783">
+    
+   </atom><atom elementType="C" id="po_48_a3" x3="8.095302060260362" y3="9.854532617176103" z3="-1.35602561854855">
+    
+   </atom><atom elementType="O" id="po_48_a4" x3="7.550248683881814" y3="8.001574423849743" z3="0.10901545566145032">
+    
+   </atom><atom elementType="C" id="po_49_a1" x3="6.861212092381713" y3="6.84485330152292" z3="-0.27468341159892795">
+    
+   </atom><atom elementType="C" id="po_49_a2" x3="5.841429530210263" y3="6.40078470389347" z3="0.7904206239255109">
+    
+   </atom><atom elementType="C" id="po_49_a3" x3="5.946415835107675" y3="7.372561881991227" z3="1.980473980675681">
+    
+   </atom><atom elementType="O" id="po_49_a4" x3="4.543046737159428" y3="6.3870149643685235" z3="0.2669585746966023">
+    
+   </atom><atom elementType="C" id="po_50_a1" x3="3.965374190198286" y3="5.113344840859454" z3="0.3306676397330497">
+    
+   </atom><atom elementType="C" id="po_50_a2" x3="4.037231647629764" y3="4.379025781838662" z3="-1.0210764282658824">
+    
+   </atom><atom elementType="C" id="po_50_a3" x3="4.697404160407883" y3="5.326494481591027" z3="-2.0399362401937964">
+    
+   </atom><atom elementType="O" id="po_50_a4" x3="4.758854244198599" y3="3.184903265753582" z3="-0.9056110884452602">
+    
+   </atom><atom elementType="C" id="po_51_a1" x3="3.9843423860840943" y3="2.069160963372762" z3="-1.2450967233666308">
+    
+   </atom><atom elementType="C" id="po_51_a2" x3="3.445085582077821" y3="1.3407817703732514" z3="1.5896618356028499E-16">
+    
+   </atom><atom elementType="C" id="po_51_a3" x3="3.984342386084094" y3="2.069160963372763" z3="1.2450967233666308">
+    
+   </atom><atom elementType="O" id="po_51_a4" x3="2.0452988088588735" y3="1.3163484013610545" z3="0.0">
+    
+   </atom><atom elementType="C" id="et_52_a1" x3="0.0" y3="0.0" z3="0.0">
+    
+   </atom><atom elementType="C" id="et_52_a2" x3="1.54" y3="0.0" z3="0.0">
+    
+   </atom></atomArray><bondArray><bond order="1" id="po_2_a1_po_2_a2" atomRefs2="po_2_a1 po_2_a2">
+     
+     
+    </bond><bond order="1" id="po_2_a2_po_2_a3" atomRefs2="po_2_a2 po_2_a3">
+     
+     
+    </bond><bond order="1" id="po_2_a2_po_2_a4" atomRefs2="po_2_a2 po_2_a4">
+     
+     
+    </bond><bond order="1" id="po_3_a1_po_3_a2" atomRefs2="po_3_a1 po_3_a2">
+     
+     
+    </bond><bond order="1" id="po_3_a2_po_3_a3" atomRefs2="po_3_a2 po_3_a3">
+     
+     
+    </bond><bond order="1" id="po_3_a2_po_3_a4" atomRefs2="po_3_a2 po_3_a4">
+     
+     
+    </bond><bond order="1" id="po_4_a1_po_4_a2" atomRefs2="po_4_a1 po_4_a2">
+     
+     
+    </bond><bond order="1" id="po_4_a2_po_4_a3" atomRefs2="po_4_a2 po_4_a3">
+     
+     
+    </bond><bond order="1" id="po_4_a2_po_4_a4" atomRefs2="po_4_a2 po_4_a4">
+     
+     
+    </bond><bond order="1" id="po_5_a1_po_5_a2" atomRefs2="po_5_a1 po_5_a2">
+     
+     
+    </bond><bond order="1" id="po_5_a2_po_5_a3" atomRefs2="po_5_a2 po_5_a3">
+     
+     
+    </bond><bond order="1" id="po_5_a2_po_5_a4" atomRefs2="po_5_a2 po_5_a4">
+     
+     
+    </bond><bond order="1" id="po_6_a1_po_6_a2" atomRefs2="po_6_a1 po_6_a2">
+     
+     
+    </bond><bond order="1" id="po_6_a2_po_6_a3" atomRefs2="po_6_a2 po_6_a3">
+     
+     
+    </bond><bond order="1" id="po_6_a2_po_6_a4" atomRefs2="po_6_a2 po_6_a4">
+     
+     
+    </bond><bond order="1" id="po_7_a1_po_7_a2" atomRefs2="po_7_a1 po_7_a2">
+     
+     
+    </bond><bond order="1" id="po_7_a2_po_7_a3" atomRefs2="po_7_a2 po_7_a3">
+     
+     
+    </bond><bond order="1" id="po_7_a2_po_7_a4" atomRefs2="po_7_a2 po_7_a4">
+     
+     
+    </bond><bond order="1" id="po_8_a1_po_8_a2" atomRefs2="po_8_a1 po_8_a2">
+     
+     
+    </bond><bond order="1" id="po_8_a2_po_8_a3" atomRefs2="po_8_a2 po_8_a3">
+     
+     
+    </bond><bond order="1" id="po_8_a2_po_8_a4" atomRefs2="po_8_a2 po_8_a4">
+     
+     
+    </bond><bond order="1" id="po_9_a1_po_9_a2" atomRefs2="po_9_a1 po_9_a2">
+     
+     
+    </bond><bond order="1" id="po_9_a2_po_9_a3" atomRefs2="po_9_a2 po_9_a3">
+     
+     
+    </bond><bond order="1" id="po_9_a2_po_9_a4" atomRefs2="po_9_a2 po_9_a4">
+     
+     
+    </bond><bond order="1" id="po_10_a1_po_10_a2" atomRefs2="po_10_a1 po_10_a2">
+     
+     
+    </bond><bond order="1" id="po_10_a2_po_10_a3" atomRefs2="po_10_a2 po_10_a3">
+     
+     
+    </bond><bond order="1" id="po_10_a2_po_10_a4" atomRefs2="po_10_a2 po_10_a4">
+     
+     
+    </bond><bond order="1" id="po_11_a1_po_11_a2" atomRefs2="po_11_a1 po_11_a2">
+     
+     
+    </bond><bond order="1" id="po_11_a2_po_11_a3" atomRefs2="po_11_a2 po_11_a3">
+     
+     
+    </bond><bond order="1" id="po_11_a2_po_11_a4" atomRefs2="po_11_a2 po_11_a4">
+     
+     
+    </bond><bond order="1" id="po_12_a1_po_12_a2" atomRefs2="po_12_a1 po_12_a2">
+     
+     
+    </bond><bond order="1" id="po_12_a2_po_12_a3" atomRefs2="po_12_a2 po_12_a3">
+     
+     
+    </bond><bond order="1" id="po_12_a2_po_12_a4" atomRefs2="po_12_a2 po_12_a4">
+     
+     
+    </bond><bond order="1" id="po_13_a1_po_13_a2" atomRefs2="po_13_a1 po_13_a2">
+     
+     
+    </bond><bond order="1" id="po_13_a2_po_13_a3" atomRefs2="po_13_a2 po_13_a3">
+     
+     
+    </bond><bond order="1" id="po_13_a2_po_13_a4" atomRefs2="po_13_a2 po_13_a4">
+     
+     
+    </bond><bond order="1" id="po_14_a1_po_14_a2" atomRefs2="po_14_a1 po_14_a2">
+     
+     
+    </bond><bond order="1" id="po_14_a2_po_14_a3" atomRefs2="po_14_a2 po_14_a3">
+     
+     
+    </bond><bond order="1" id="po_14_a2_po_14_a4" atomRefs2="po_14_a2 po_14_a4">
+     
+     
+    </bond><bond order="1" id="po_15_a1_po_15_a2" atomRefs2="po_15_a1 po_15_a2">
+     
+     
+    </bond><bond order="1" id="po_15_a2_po_15_a3" atomRefs2="po_15_a2 po_15_a3">
+     
+     
+    </bond><bond order="1" id="po_15_a2_po_15_a4" atomRefs2="po_15_a2 po_15_a4">
+     
+     
+    </bond><bond order="1" id="po_16_a1_po_16_a2" atomRefs2="po_16_a1 po_16_a2">
+     
+     
+    </bond><bond order="1" id="po_16_a2_po_16_a3" atomRefs2="po_16_a2 po_16_a3">
+     
+     
+    </bond><bond order="1" id="po_16_a2_po_16_a4" atomRefs2="po_16_a2 po_16_a4">
+     
+     
+    </bond><bond order="1" id="po_17_a1_po_17_a2" atomRefs2="po_17_a1 po_17_a2">
+     
+     
+    </bond><bond order="1" id="po_17_a2_po_17_a3" atomRefs2="po_17_a2 po_17_a3">
+     
+     
+    </bond><bond order="1" id="po_17_a2_po_17_a4" atomRefs2="po_17_a2 po_17_a4">
+     
+     
+    </bond><bond order="1" id="po_18_a1_po_18_a2" atomRefs2="po_18_a1 po_18_a2">
+     
+     
+    </bond><bond order="1" id="po_18_a2_po_18_a3" atomRefs2="po_18_a2 po_18_a3">
+     
+     
+    </bond><bond order="1" id="po_18_a2_po_18_a4" atomRefs2="po_18_a2 po_18_a4">
+     
+     
+    </bond><bond order="1" id="po_19_a1_po_19_a2" atomRefs2="po_19_a1 po_19_a2">
+     
+     
+    </bond><bond order="1" id="po_19_a2_po_19_a3" atomRefs2="po_19_a2 po_19_a3">
+     
+     
+    </bond><bond order="1" id="po_19_a2_po_19_a4" atomRefs2="po_19_a2 po_19_a4">
+     
+     
+    </bond><bond order="1" id="po_20_a1_po_20_a2" atomRefs2="po_20_a1 po_20_a2">
+     
+     
+    </bond><bond order="1" id="po_20_a2_po_20_a3" atomRefs2="po_20_a2 po_20_a3">
+     
+     
+    </bond><bond order="1" id="po_20_a2_po_20_a4" atomRefs2="po_20_a2 po_20_a4">
+     
+     
+    </bond><bond order="1" id="po_21_a1_po_21_a2" atomRefs2="po_21_a1 po_21_a2">
+     
+     
+    </bond><bond order="1" id="po_21_a2_po_21_a3" atomRefs2="po_21_a2 po_21_a3">
+     
+     
+    </bond><bond order="1" id="po_21_a2_po_21_a4" atomRefs2="po_21_a2 po_21_a4">
+     
+     
+    </bond><bond order="1" id="po_22_a1_po_22_a2" atomRefs2="po_22_a1 po_22_a2">
+     
+     
+    </bond><bond order="1" id="po_22_a2_po_22_a3" atomRefs2="po_22_a2 po_22_a3">
+     
+     
+    </bond><bond order="1" id="po_22_a2_po_22_a4" atomRefs2="po_22_a2 po_22_a4">
+     
+     
+    </bond><bond order="1" id="po_23_a1_po_23_a2" atomRefs2="po_23_a1 po_23_a2">
+     
+     
+    </bond><bond order="1" id="po_23_a2_po_23_a3" atomRefs2="po_23_a2 po_23_a3">
+     
+     
+    </bond><bond order="1" id="po_23_a2_po_23_a4" atomRefs2="po_23_a2 po_23_a4">
+     
+     
+    </bond><bond order="1" id="po_24_a1_po_24_a2" atomRefs2="po_24_a1 po_24_a2">
+     
+     
+    </bond><bond order="1" id="po_24_a2_po_24_a3" atomRefs2="po_24_a2 po_24_a3">
+     
+     
+    </bond><bond order="1" id="po_24_a2_po_24_a4" atomRefs2="po_24_a2 po_24_a4">
+     
+     
+    </bond><bond order="1" id="po_25_a1_po_25_a2" atomRefs2="po_25_a1 po_25_a2">
+     
+     
+    </bond><bond order="1" id="po_25_a2_po_25_a3" atomRefs2="po_25_a2 po_25_a3">
+     
+     
+    </bond><bond order="1" id="po_25_a2_po_25_a4" atomRefs2="po_25_a2 po_25_a4">
+     
+     
+    </bond><bond order="1" id="po_26_a1_po_26_a2" atomRefs2="po_26_a1 po_26_a2">
+     
+     
+    </bond><bond order="1" id="po_26_a2_po_26_a3" atomRefs2="po_26_a2 po_26_a3">
+     
+     
+    </bond><bond order="1" id="po_26_a2_po_26_a4" atomRefs2="po_26_a2 po_26_a4">
+     
+     
+    </bond><bond order="1" id="po_27_a1_po_27_a2" atomRefs2="po_27_a1 po_27_a2">
+     
+     
+    </bond><bond order="1" id="po_27_a2_po_27_a3" atomRefs2="po_27_a2 po_27_a3">
+     
+     
+    </bond><bond order="1" id="po_27_a2_po_27_a4" atomRefs2="po_27_a2 po_27_a4">
+     
+     
+    </bond><bond order="1" id="po_28_a1_po_28_a2" atomRefs2="po_28_a1 po_28_a2">
+     
+     
+    </bond><bond order="1" id="po_28_a2_po_28_a3" atomRefs2="po_28_a2 po_28_a3">
+     
+     
+    </bond><bond order="1" id="po_28_a2_po_28_a4" atomRefs2="po_28_a2 po_28_a4">
+     
+     
+    </bond><bond order="1" id="po_29_a1_po_29_a2" atomRefs2="po_29_a1 po_29_a2">
+     
+     
+    </bond><bond order="1" id="po_29_a2_po_29_a3" atomRefs2="po_29_a2 po_29_a3">
+     
+     
+    </bond><bond order="1" id="po_29_a2_po_29_a4" atomRefs2="po_29_a2 po_29_a4">
+     
+     
+    </bond><bond order="1" id="po_30_a1_po_30_a2" atomRefs2="po_30_a1 po_30_a2">
+     
+     
+    </bond><bond order="1" id="po_30_a2_po_30_a3" atomRefs2="po_30_a2 po_30_a3">
+     
+     
+    </bond><bond order="1" id="po_30_a2_po_30_a4" atomRefs2="po_30_a2 po_30_a4">
+     
+     
+    </bond><bond order="1" id="po_31_a1_po_31_a2" atomRefs2="po_31_a1 po_31_a2">
+     
+     
+    </bond><bond order="1" id="po_31_a2_po_31_a3" atomRefs2="po_31_a2 po_31_a3">
+     
+     
+    </bond><bond order="1" id="po_31_a2_po_31_a4" atomRefs2="po_31_a2 po_31_a4">
+     
+     
+    </bond><bond order="1" id="po_32_a1_po_32_a2" atomRefs2="po_32_a1 po_32_a2">
+     
+     
+    </bond><bond order="1" id="po_32_a2_po_32_a3" atomRefs2="po_32_a2 po_32_a3">
+     
+     
+    </bond><bond order="1" id="po_32_a2_po_32_a4" atomRefs2="po_32_a2 po_32_a4">
+     
+     
+    </bond><bond order="1" id="po_33_a1_po_33_a2" atomRefs2="po_33_a1 po_33_a2">
+     
+     
+    </bond><bond order="1" id="po_33_a2_po_33_a3" atomRefs2="po_33_a2 po_33_a3">
+     
+     
+    </bond><bond order="1" id="po_33_a2_po_33_a4" atomRefs2="po_33_a2 po_33_a4">
+     
+     
+    </bond><bond order="1" id="po_34_a1_po_34_a2" atomRefs2="po_34_a1 po_34_a2">
+     
+     
+    </bond><bond order="1" id="po_34_a2_po_34_a3" atomRefs2="po_34_a2 po_34_a3">
+     
+     
+    </bond><bond order="1" id="po_34_a2_po_34_a4" atomRefs2="po_34_a2 po_34_a4">
+     
+     
+    </bond><bond order="1" id="po_35_a1_po_35_a2" atomRefs2="po_35_a1 po_35_a2">
+     
+     
+    </bond><bond order="1" id="po_35_a2_po_35_a3" atomRefs2="po_35_a2 po_35_a3">
+     
+     
+    </bond><bond order="1" id="po_35_a2_po_35_a4" atomRefs2="po_35_a2 po_35_a4">
+     
+     
+    </bond><bond order="1" id="po_36_a1_po_36_a2" atomRefs2="po_36_a1 po_36_a2">
+     
+     
+    </bond><bond order="1" id="po_36_a2_po_36_a3" atomRefs2="po_36_a2 po_36_a3">
+     
+     
+    </bond><bond order="1" id="po_36_a2_po_36_a4" atomRefs2="po_36_a2 po_36_a4">
+     
+     
+    </bond><bond order="1" id="po_37_a1_po_37_a2" atomRefs2="po_37_a1 po_37_a2">
+     
+     
+    </bond><bond order="1" id="po_37_a2_po_37_a3" atomRefs2="po_37_a2 po_37_a3">
+     
+     
+    </bond><bond order="1" id="po_37_a2_po_37_a4" atomRefs2="po_37_a2 po_37_a4">
+     
+     
+    </bond><bond order="1" id="po_38_a1_po_38_a2" atomRefs2="po_38_a1 po_38_a2">
+     
+     
+    </bond><bond order="1" id="po_38_a2_po_38_a3" atomRefs2="po_38_a2 po_38_a3">
+     
+     
+    </bond><bond order="1" id="po_38_a2_po_38_a4" atomRefs2="po_38_a2 po_38_a4">
+     
+     
+    </bond><bond order="1" id="po_39_a1_po_39_a2" atomRefs2="po_39_a1 po_39_a2">
+     
+     
+    </bond><bond order="1" id="po_39_a2_po_39_a3" atomRefs2="po_39_a2 po_39_a3">
+     
+     
+    </bond><bond order="1" id="po_39_a2_po_39_a4" atomRefs2="po_39_a2 po_39_a4">
+     
+     
+    </bond><bond order="1" id="po_40_a1_po_40_a2" atomRefs2="po_40_a1 po_40_a2">
+     
+     
+    </bond><bond order="1" id="po_40_a2_po_40_a3" atomRefs2="po_40_a2 po_40_a3">
+     
+     
+    </bond><bond order="1" id="po_40_a2_po_40_a4" atomRefs2="po_40_a2 po_40_a4">
+     
+     
+    </bond><bond order="1" id="po_41_a1_po_41_a2" atomRefs2="po_41_a1 po_41_a2">
+     
+     
+    </bond><bond order="1" id="po_41_a2_po_41_a3" atomRefs2="po_41_a2 po_41_a3">
+     
+     
+    </bond><bond order="1" id="po_41_a2_po_41_a4" atomRefs2="po_41_a2 po_41_a4">
+     
+     
+    </bond><bond order="1" id="po_42_a1_po_42_a2" atomRefs2="po_42_a1 po_42_a2">
+     
+     
+    </bond><bond order="1" id="po_42_a2_po_42_a3" atomRefs2="po_42_a2 po_42_a3">
+     
+     
+    </bond><bond order="1" id="po_42_a2_po_42_a4" atomRefs2="po_42_a2 po_42_a4">
+     
+     
+    </bond><bond order="1" id="po_43_a1_po_43_a2" atomRefs2="po_43_a1 po_43_a2">
+     
+     
+    </bond><bond order="1" id="po_43_a2_po_43_a3" atomRefs2="po_43_a2 po_43_a3">
+     
+     
+    </bond><bond order="1" id="po_43_a2_po_43_a4" atomRefs2="po_43_a2 po_43_a4">
+     
+     
+    </bond><bond order="1" id="po_44_a1_po_44_a2" atomRefs2="po_44_a1 po_44_a2">
+     
+     
+    </bond><bond order="1" id="po_44_a2_po_44_a3" atomRefs2="po_44_a2 po_44_a3">
+     
+     
+    </bond><bond order="1" id="po_44_a2_po_44_a4" atomRefs2="po_44_a2 po_44_a4">
+     
+     
+    </bond><bond order="1" id="po_45_a1_po_45_a2" atomRefs2="po_45_a1 po_45_a2">
+     
+     
+    </bond><bond order="1" id="po_45_a2_po_45_a3" atomRefs2="po_45_a2 po_45_a3">
+     
+     
+    </bond><bond order="1" id="po_45_a2_po_45_a4" atomRefs2="po_45_a2 po_45_a4">
+     
+     
+    </bond><bond order="1" id="po_46_a1_po_46_a2" atomRefs2="po_46_a1 po_46_a2">
+     
+     
+    </bond><bond order="1" id="po_46_a2_po_46_a3" atomRefs2="po_46_a2 po_46_a3">
+     
+     
+    </bond><bond order="1" id="po_46_a2_po_46_a4" atomRefs2="po_46_a2 po_46_a4">
+     
+     
+    </bond><bond order="1" id="po_47_a1_po_47_a2" atomRefs2="po_47_a1 po_47_a2">
+     
+     
+    </bond><bond order="1" id="po_47_a2_po_47_a3" atomRefs2="po_47_a2 po_47_a3">
+     
+     
+    </bond><bond order="1" id="po_47_a2_po_47_a4" atomRefs2="po_47_a2 po_47_a4">
+     
+     
+    </bond><bond order="1" id="po_48_a1_po_48_a2" atomRefs2="po_48_a1 po_48_a2">
+     
+     
+    </bond><bond order="1" id="po_48_a2_po_48_a3" atomRefs2="po_48_a2 po_48_a3">
+     
+     
+    </bond><bond order="1" id="po_48_a2_po_48_a4" atomRefs2="po_48_a2 po_48_a4">
+     
+     
+    </bond><bond order="1" id="po_49_a1_po_49_a2" atomRefs2="po_49_a1 po_49_a2">
+     
+     
+    </bond><bond order="1" id="po_49_a2_po_49_a3" atomRefs2="po_49_a2 po_49_a3">
+     
+     
+    </bond><bond order="1" id="po_49_a2_po_49_a4" atomRefs2="po_49_a2 po_49_a4">
+     
+     
+    </bond><bond order="1" id="po_50_a1_po_50_a2" atomRefs2="po_50_a1 po_50_a2">
+     
+     
+    </bond><bond order="1" id="po_50_a2_po_50_a3" atomRefs2="po_50_a2 po_50_a3">
+     
+     
+    </bond><bond order="1" id="po_50_a2_po_50_a4" atomRefs2="po_50_a2 po_50_a4">
+     
+     
+    </bond><bond order="1" id="po_51_a1_po_51_a2" atomRefs2="po_51_a1 po_51_a2">
+     
+     
+    </bond><bond order="1" id="po_51_a2_po_51_a3" atomRefs2="po_51_a2 po_51_a3">
+     
+     
+    </bond><bond order="1" id="po_51_a2_po_51_a4" atomRefs2="po_51_a2 po_51_a4">
+     
+     
+    </bond><bond order="1" id="et_52_a1_et_52_a2" atomRefs2="et_52_a1 et_52_a2">
+     
+     
+    </bond><bond atomRefs2="oh_1_a1 po_2_a1" id="g:oh_1_r1_g:po_2_r1" order="1"/><bond atomRefs2="po_2_a4 po_3_a1" id="g:po_2_r2_g:po_3_r1" order="1"/><bond atomRefs2="po_3_a4 po_4_a1" id="g:po_3_r2_g:po_4_r1" order="1"/><bond atomRefs2="po_4_a4 po_5_a1" id="g:po_4_r2_g:po_5_r1" order="1"/><bond atomRefs2="po_5_a4 po_6_a1" id="g:po_5_r2_g:po_6_r1" order="1"/><bond atomRefs2="po_6_a4 po_7_a1" id="g:po_6_r2_g:po_7_r1" order="1"/><bond atomRefs2="po_7_a4 po_8_a1" id="g:po_7_r2_g:po_8_r1" order="1"/><bond atomRefs2="po_8_a4 po_9_a1" id="g:po_8_r2_g:po_9_r1" order="1"/><bond atomRefs2="po_9_a4 po_10_a1" id="g:po_9_r2_g:po_10_r1" order="1"/><bond atomRefs2="po_10_a4 po_11_a1" id="g:po_10_r2_g:po_11_r1" order="1"/><bond atomRefs2="po_11_a4 po_12_a1" id="g:po_11_r2_g:po_12_r1" order="1"/><bond atomRefs2="po_12_a4 po_13_a1" id="g:po_12_r2_g:po_13_r1" order="1"/><bond atomRefs2="po_13_a4 po_14_a1" id="g:po_13_r2_g:po_14_r1" order="1"/><bond atomRefs2="po_14_a4 po_15_a1" id="g:po_14_r2_g:po_15_r1" order="1"/><bond atomRefs2="po_15_a4 po_16_a1" id="g:po_15_r2_g:po_16_r1" order="1"/><bond atomRefs2="po_16_a4 po_17_a1" id="g:po_16_r2_g:po_17_r1" order="1"/><bond atomRefs2="po_17_a4 po_18_a1" id="g:po_17_r2_g:po_18_r1" order="1"/><bond atomRefs2="po_18_a4 po_19_a1" id="g:po_18_r2_g:po_19_r1" order="1"/><bond atomRefs2="po_19_a4 po_20_a1" id="g:po_19_r2_g:po_20_r1" order="1"/><bond atomRefs2="po_20_a4 po_21_a1" id="g:po_20_r2_g:po_21_r1" order="1"/><bond atomRefs2="po_21_a4 po_22_a1" id="g:po_21_r2_g:po_22_r1" order="1"/><bond atomRefs2="po_22_a4 po_23_a1" id="g:po_22_r2_g:po_23_r1" order="1"/><bond atomRefs2="po_23_a4 po_24_a1" id="g:po_23_r2_g:po_24_r1" order="1"/><bond atomRefs2="po_24_a4 po_25_a1" id="g:po_24_r2_g:po_25_r1" order="1"/><bond atomRefs2="po_25_a4 po_26_a1" id="g:po_25_r2_g:po_26_r1" order="1"/><bond atomRefs2="po_26_a4 po_27_a1" id="g:po_26_r2_g:po_27_r1" order="1"/><bond atomRefs2="po_27_a4 po_28_a1" id="g:po_27_r2_g:po_28_r1" order="1"/><bond atomRefs2="po_28_a4 po_29_a1" id="g:po_28_r2_g:po_29_r1" order="1"/><bond atomRefs2="po_29_a4 po_30_a1" id="g:po_29_r2_g:po_30_r1" order="1"/><bond atomRefs2="po_30_a4 po_31_a1" id="g:po_30_r2_g:po_31_r1" order="1"/><bond atomRefs2="po_31_a4 po_32_a1" id="g:po_31_r2_g:po_32_r1" order="1"/><bond atomRefs2="po_32_a4 po_33_a1" id="g:po_32_r2_g:po_33_r1" order="1"/><bond atomRefs2="po_33_a4 po_34_a1" id="g:po_33_r2_g:po_34_r1" order="1"/><bond atomRefs2="po_34_a4 po_35_a1" id="g:po_34_r2_g:po_35_r1" order="1"/><bond atomRefs2="po_35_a4 po_36_a1" id="g:po_35_r2_g:po_36_r1" order="1"/><bond atomRefs2="po_36_a4 po_37_a1" id="g:po_36_r2_g:po_37_r1" order="1"/><bond atomRefs2="po_37_a4 po_38_a1" id="g:po_37_r2_g:po_38_r1" order="1"/><bond atomRefs2="po_38_a4 po_39_a1" id="g:po_38_r2_g:po_39_r1" order="1"/><bond atomRefs2="po_39_a4 po_40_a1" id="g:po_39_r2_g:po_40_r1" order="1"/><bond atomRefs2="po_40_a4 po_41_a1" id="g:po_40_r2_g:po_41_r1" order="1"/><bond atomRefs2="po_41_a4 po_42_a1" id="g:po_41_r2_g:po_42_r1" order="1"/><bond atomRefs2="po_42_a4 po_43_a1" id="g:po_42_r2_g:po_43_r1" order="1"/><bond atomRefs2="po_43_a4 po_44_a1" id="g:po_43_r2_g:po_44_r1" order="1"/><bond atomRefs2="po_44_a4 po_45_a1" id="g:po_44_r2_g:po_45_r1" order="1"/><bond atomRefs2="po_45_a4 po_46_a1" id="g:po_45_r2_g:po_46_r1" order="1"/><bond atomRefs2="po_46_a4 po_47_a1" id="g:po_46_r2_g:po_47_r1" order="1"/><bond atomRefs2="po_47_a4 po_48_a1" id="g:po_47_r2_g:po_48_r1" order="1"/><bond atomRefs2="po_48_a4 po_49_a1" id="g:po_48_r2_g:po_49_r1" order="1"/><bond atomRefs2="po_49_a4 po_50_a1" id="g:po_49_r2_g:po_50_r1" order="1"/><bond atomRefs2="po_50_a4 po_51_a1" id="g:po_50_r2_g:po_51_r1" order="1"/><bond atomRefs2="po_51_a4 et_52_a2" id="g:po_51_r2_g:et_52_r1" order="1"/></bondArray><name>hydroxy_1</name><torsion atomRefs4="po_2_a1 po_2_a2 po_2_a4 po_3_a1">
+     
+     
+  120</torsion><torsion atomRefs4="oh_1_a1 po_2_a1 po_2_a2 po_2_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_3_a1 po_2_a4 po_2_a2">
+     
+     
+  112</angle><angle atomRefs3="oh_1_a1 po_2_a1 po_2_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_2_a1 po_2_a4 po_2_a2 po_2_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_2_a1 po_2_a2 po_2_a4">
+     
+     
+  111</angle><length atomRefs2="po_2_a2 po_2_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_2_a4 po_2_a2 po_2_a3">
+     
+     
+  111</angle><length atomRefs2="po_2_a2 po_2_a3">
+     
+     
+  1.54</length><length atomRefs2="po_2_a1 po_2_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_3_a1 po_3_a2 po_3_a4 po_4_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_2_a4 po_3_a1 po_3_a2 po_3_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_4_a1 po_3_a4 po_3_a2">
+     
+     
+  112</angle><angle atomRefs3="po_2_a4 po_3_a1 po_3_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_3_a1 po_3_a4 po_3_a2 po_3_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_3_a1 po_3_a2 po_3_a4">
+     
+     
+  111</angle><length atomRefs2="po_3_a2 po_3_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_3_a4 po_3_a2 po_3_a3">
+     
+     
+  111</angle><length atomRefs2="po_3_a2 po_3_a3">
+     
+     
+  1.54</length><length atomRefs2="po_3_a1 po_3_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_4_a1 po_4_a2 po_4_a4 po_5_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_3_a4 po_4_a1 po_4_a2 po_4_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_5_a1 po_4_a4 po_4_a2">
+     
+     
+  112</angle><angle atomRefs3="po_3_a4 po_4_a1 po_4_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_4_a1 po_4_a4 po_4_a2 po_4_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_4_a1 po_4_a2 po_4_a4">
+     
+     
+  111</angle><length atomRefs2="po_4_a2 po_4_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_4_a4 po_4_a2 po_4_a3">
+     
+     
+  111</angle><length atomRefs2="po_4_a2 po_4_a3">
+     
+     
+  1.54</length><length atomRefs2="po_4_a1 po_4_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_5_a1 po_5_a2 po_5_a4 po_6_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_4_a4 po_5_a1 po_5_a2 po_5_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_6_a1 po_5_a4 po_5_a2">
+     
+     
+  112</angle><angle atomRefs3="po_4_a4 po_5_a1 po_5_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_5_a1 po_5_a4 po_5_a2 po_5_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_5_a1 po_5_a2 po_5_a4">
+     
+     
+  111</angle><length atomRefs2="po_5_a2 po_5_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_5_a4 po_5_a2 po_5_a3">
+     
+     
+  111</angle><length atomRefs2="po_5_a2 po_5_a3">
+     
+     
+  1.54</length><length atomRefs2="po_5_a1 po_5_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_6_a1 po_6_a2 po_6_a4 po_7_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_5_a4 po_6_a1 po_6_a2 po_6_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_7_a1 po_6_a4 po_6_a2">
+     
+     
+  112</angle><angle atomRefs3="po_5_a4 po_6_a1 po_6_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_6_a1 po_6_a4 po_6_a2 po_6_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_6_a1 po_6_a2 po_6_a4">
+     
+     
+  111</angle><length atomRefs2="po_6_a2 po_6_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_6_a4 po_6_a2 po_6_a3">
+     
+     
+  111</angle><length atomRefs2="po_6_a2 po_6_a3">
+     
+     
+  1.54</length><length atomRefs2="po_6_a1 po_6_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_7_a1 po_7_a2 po_7_a4 po_8_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_6_a4 po_7_a1 po_7_a2 po_7_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_8_a1 po_7_a4 po_7_a2">
+     
+     
+  112</angle><angle atomRefs3="po_6_a4 po_7_a1 po_7_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_7_a1 po_7_a4 po_7_a2 po_7_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_7_a1 po_7_a2 po_7_a4">
+     
+     
+  111</angle><length atomRefs2="po_7_a2 po_7_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_7_a4 po_7_a2 po_7_a3">
+     
+     
+  111</angle><length atomRefs2="po_7_a2 po_7_a3">
+     
+     
+  1.54</length><length atomRefs2="po_7_a1 po_7_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_8_a1 po_8_a2 po_8_a4 po_9_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_7_a4 po_8_a1 po_8_a2 po_8_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_9_a1 po_8_a4 po_8_a2">
+     
+     
+  112</angle><angle atomRefs3="po_7_a4 po_8_a1 po_8_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_8_a1 po_8_a4 po_8_a2 po_8_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_8_a1 po_8_a2 po_8_a4">
+     
+     
+  111</angle><length atomRefs2="po_8_a2 po_8_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_8_a4 po_8_a2 po_8_a3">
+     
+     
+  111</angle><length atomRefs2="po_8_a2 po_8_a3">
+     
+     
+  1.54</length><length atomRefs2="po_8_a1 po_8_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_9_a1 po_9_a2 po_9_a4 po_10_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_8_a4 po_9_a1 po_9_a2 po_9_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_10_a1 po_9_a4 po_9_a2">
+     
+     
+  112</angle><angle atomRefs3="po_8_a4 po_9_a1 po_9_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_9_a1 po_9_a4 po_9_a2 po_9_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_9_a1 po_9_a2 po_9_a4">
+     
+     
+  111</angle><length atomRefs2="po_9_a2 po_9_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_9_a4 po_9_a2 po_9_a3">
+     
+     
+  111</angle><length atomRefs2="po_9_a2 po_9_a3">
+     
+     
+  1.54</length><length atomRefs2="po_9_a1 po_9_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_10_a1 po_10_a2 po_10_a4 po_11_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_9_a4 po_10_a1 po_10_a2 po_10_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_11_a1 po_10_a4 po_10_a2">
+     
+     
+  112</angle><angle atomRefs3="po_9_a4 po_10_a1 po_10_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_10_a1 po_10_a4 po_10_a2 po_10_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_10_a1 po_10_a2 po_10_a4">
+     
+     
+  111</angle><length atomRefs2="po_10_a2 po_10_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_10_a4 po_10_a2 po_10_a3">
+     
+     
+  111</angle><length atomRefs2="po_10_a2 po_10_a3">
+     
+     
+  1.54</length><length atomRefs2="po_10_a1 po_10_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_11_a1 po_11_a2 po_11_a4 po_12_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_10_a4 po_11_a1 po_11_a2 po_11_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_12_a1 po_11_a4 po_11_a2">
+     
+     
+  112</angle><angle atomRefs3="po_10_a4 po_11_a1 po_11_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_11_a1 po_11_a4 po_11_a2 po_11_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_11_a1 po_11_a2 po_11_a4">
+     
+     
+  111</angle><length atomRefs2="po_11_a2 po_11_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_11_a4 po_11_a2 po_11_a3">
+     
+     
+  111</angle><length atomRefs2="po_11_a2 po_11_a3">
+     
+     
+  1.54</length><length atomRefs2="po_11_a1 po_11_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_12_a1 po_12_a2 po_12_a4 po_13_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_11_a4 po_12_a1 po_12_a2 po_12_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_13_a1 po_12_a4 po_12_a2">
+     
+     
+  112</angle><angle atomRefs3="po_11_a4 po_12_a1 po_12_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_12_a1 po_12_a4 po_12_a2 po_12_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_12_a1 po_12_a2 po_12_a4">
+     
+     
+  111</angle><length atomRefs2="po_12_a2 po_12_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_12_a4 po_12_a2 po_12_a3">
+     
+     
+  111</angle><length atomRefs2="po_12_a2 po_12_a3">
+     
+     
+  1.54</length><length atomRefs2="po_12_a1 po_12_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_13_a1 po_13_a2 po_13_a4 po_14_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_12_a4 po_13_a1 po_13_a2 po_13_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_14_a1 po_13_a4 po_13_a2">
+     
+     
+  112</angle><angle atomRefs3="po_12_a4 po_13_a1 po_13_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_13_a1 po_13_a4 po_13_a2 po_13_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_13_a1 po_13_a2 po_13_a4">
+     
+     
+  111</angle><length atomRefs2="po_13_a2 po_13_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_13_a4 po_13_a2 po_13_a3">
+     
+     
+  111</angle><length atomRefs2="po_13_a2 po_13_a3">
+     
+     
+  1.54</length><length atomRefs2="po_13_a1 po_13_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_14_a1 po_14_a2 po_14_a4 po_15_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_13_a4 po_14_a1 po_14_a2 po_14_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_15_a1 po_14_a4 po_14_a2">
+     
+     
+  112</angle><angle atomRefs3="po_13_a4 po_14_a1 po_14_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_14_a1 po_14_a4 po_14_a2 po_14_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_14_a1 po_14_a2 po_14_a4">
+     
+     
+  111</angle><length atomRefs2="po_14_a2 po_14_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_14_a4 po_14_a2 po_14_a3">
+     
+     
+  111</angle><length atomRefs2="po_14_a2 po_14_a3">
+     
+     
+  1.54</length><length atomRefs2="po_14_a1 po_14_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_15_a1 po_15_a2 po_15_a4 po_16_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_14_a4 po_15_a1 po_15_a2 po_15_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_16_a1 po_15_a4 po_15_a2">
+     
+     
+  112</angle><angle atomRefs3="po_14_a4 po_15_a1 po_15_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_15_a1 po_15_a4 po_15_a2 po_15_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_15_a1 po_15_a2 po_15_a4">
+     
+     
+  111</angle><length atomRefs2="po_15_a2 po_15_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_15_a4 po_15_a2 po_15_a3">
+     
+     
+  111</angle><length atomRefs2="po_15_a2 po_15_a3">
+     
+     
+  1.54</length><length atomRefs2="po_15_a1 po_15_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_16_a1 po_16_a2 po_16_a4 po_17_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_15_a4 po_16_a1 po_16_a2 po_16_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_17_a1 po_16_a4 po_16_a2">
+     
+     
+  112</angle><angle atomRefs3="po_15_a4 po_16_a1 po_16_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_16_a1 po_16_a4 po_16_a2 po_16_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_16_a1 po_16_a2 po_16_a4">
+     
+     
+  111</angle><length atomRefs2="po_16_a2 po_16_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_16_a4 po_16_a2 po_16_a3">
+     
+     
+  111</angle><length atomRefs2="po_16_a2 po_16_a3">
+     
+     
+  1.54</length><length atomRefs2="po_16_a1 po_16_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_17_a1 po_17_a2 po_17_a4 po_18_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_16_a4 po_17_a1 po_17_a2 po_17_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_18_a1 po_17_a4 po_17_a2">
+     
+     
+  112</angle><angle atomRefs3="po_16_a4 po_17_a1 po_17_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_17_a1 po_17_a4 po_17_a2 po_17_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_17_a1 po_17_a2 po_17_a4">
+     
+     
+  111</angle><length atomRefs2="po_17_a2 po_17_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_17_a4 po_17_a2 po_17_a3">
+     
+     
+  111</angle><length atomRefs2="po_17_a2 po_17_a3">
+     
+     
+  1.54</length><length atomRefs2="po_17_a1 po_17_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_18_a1 po_18_a2 po_18_a4 po_19_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_17_a4 po_18_a1 po_18_a2 po_18_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_19_a1 po_18_a4 po_18_a2">
+     
+     
+  112</angle><angle atomRefs3="po_17_a4 po_18_a1 po_18_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_18_a1 po_18_a4 po_18_a2 po_18_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_18_a1 po_18_a2 po_18_a4">
+     
+     
+  111</angle><length atomRefs2="po_18_a2 po_18_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_18_a4 po_18_a2 po_18_a3">
+     
+     
+  111</angle><length atomRefs2="po_18_a2 po_18_a3">
+     
+     
+  1.54</length><length atomRefs2="po_18_a1 po_18_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_19_a1 po_19_a2 po_19_a4 po_20_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_18_a4 po_19_a1 po_19_a2 po_19_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_20_a1 po_19_a4 po_19_a2">
+     
+     
+  112</angle><angle atomRefs3="po_18_a4 po_19_a1 po_19_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_19_a1 po_19_a4 po_19_a2 po_19_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_19_a1 po_19_a2 po_19_a4">
+     
+     
+  111</angle><length atomRefs2="po_19_a2 po_19_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_19_a4 po_19_a2 po_19_a3">
+     
+     
+  111</angle><length atomRefs2="po_19_a2 po_19_a3">
+     
+     
+  1.54</length><length atomRefs2="po_19_a1 po_19_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_20_a1 po_20_a2 po_20_a4 po_21_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_19_a4 po_20_a1 po_20_a2 po_20_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_21_a1 po_20_a4 po_20_a2">
+     
+     
+  112</angle><angle atomRefs3="po_19_a4 po_20_a1 po_20_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_20_a1 po_20_a4 po_20_a2 po_20_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_20_a1 po_20_a2 po_20_a4">
+     
+     
+  111</angle><length atomRefs2="po_20_a2 po_20_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_20_a4 po_20_a2 po_20_a3">
+     
+     
+  111</angle><length atomRefs2="po_20_a2 po_20_a3">
+     
+     
+  1.54</length><length atomRefs2="po_20_a1 po_20_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_21_a1 po_21_a2 po_21_a4 po_22_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_20_a4 po_21_a1 po_21_a2 po_21_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_22_a1 po_21_a4 po_21_a2">
+     
+     
+  112</angle><angle atomRefs3="po_20_a4 po_21_a1 po_21_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_21_a1 po_21_a4 po_21_a2 po_21_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_21_a1 po_21_a2 po_21_a4">
+     
+     
+  111</angle><length atomRefs2="po_21_a2 po_21_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_21_a4 po_21_a2 po_21_a3">
+     
+     
+  111</angle><length atomRefs2="po_21_a2 po_21_a3">
+     
+     
+  1.54</length><length atomRefs2="po_21_a1 po_21_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_22_a1 po_22_a2 po_22_a4 po_23_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_21_a4 po_22_a1 po_22_a2 po_22_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_23_a1 po_22_a4 po_22_a2">
+     
+     
+  112</angle><angle atomRefs3="po_21_a4 po_22_a1 po_22_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_22_a1 po_22_a4 po_22_a2 po_22_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_22_a1 po_22_a2 po_22_a4">
+     
+     
+  111</angle><length atomRefs2="po_22_a2 po_22_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_22_a4 po_22_a2 po_22_a3">
+     
+     
+  111</angle><length atomRefs2="po_22_a2 po_22_a3">
+     
+     
+  1.54</length><length atomRefs2="po_22_a1 po_22_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_23_a1 po_23_a2 po_23_a4 po_24_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_22_a4 po_23_a1 po_23_a2 po_23_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_24_a1 po_23_a4 po_23_a2">
+     
+     
+  112</angle><angle atomRefs3="po_22_a4 po_23_a1 po_23_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_23_a1 po_23_a4 po_23_a2 po_23_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_23_a1 po_23_a2 po_23_a4">
+     
+     
+  111</angle><length atomRefs2="po_23_a2 po_23_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_23_a4 po_23_a2 po_23_a3">
+     
+     
+  111</angle><length atomRefs2="po_23_a2 po_23_a3">
+     
+     
+  1.54</length><length atomRefs2="po_23_a1 po_23_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_24_a1 po_24_a2 po_24_a4 po_25_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_23_a4 po_24_a1 po_24_a2 po_24_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_25_a1 po_24_a4 po_24_a2">
+     
+     
+  112</angle><angle atomRefs3="po_23_a4 po_24_a1 po_24_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_24_a1 po_24_a4 po_24_a2 po_24_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_24_a1 po_24_a2 po_24_a4">
+     
+     
+  111</angle><length atomRefs2="po_24_a2 po_24_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_24_a4 po_24_a2 po_24_a3">
+     
+     
+  111</angle><length atomRefs2="po_24_a2 po_24_a3">
+     
+     
+  1.54</length><length atomRefs2="po_24_a1 po_24_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_25_a1 po_25_a2 po_25_a4 po_26_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_24_a4 po_25_a1 po_25_a2 po_25_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_26_a1 po_25_a4 po_25_a2">
+     
+     
+  112</angle><angle atomRefs3="po_24_a4 po_25_a1 po_25_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_25_a1 po_25_a4 po_25_a2 po_25_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_25_a1 po_25_a2 po_25_a4">
+     
+     
+  111</angle><length atomRefs2="po_25_a2 po_25_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_25_a4 po_25_a2 po_25_a3">
+     
+     
+  111</angle><length atomRefs2="po_25_a2 po_25_a3">
+     
+     
+  1.54</length><length atomRefs2="po_25_a1 po_25_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_26_a1 po_26_a2 po_26_a4 po_27_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_25_a4 po_26_a1 po_26_a2 po_26_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_27_a1 po_26_a4 po_26_a2">
+     
+     
+  112</angle><angle atomRefs3="po_25_a4 po_26_a1 po_26_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_26_a1 po_26_a4 po_26_a2 po_26_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_26_a1 po_26_a2 po_26_a4">
+     
+     
+  111</angle><length atomRefs2="po_26_a2 po_26_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_26_a4 po_26_a2 po_26_a3">
+     
+     
+  111</angle><length atomRefs2="po_26_a2 po_26_a3">
+     
+     
+  1.54</length><length atomRefs2="po_26_a1 po_26_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_27_a1 po_27_a2 po_27_a4 po_28_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_26_a4 po_27_a1 po_27_a2 po_27_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_28_a1 po_27_a4 po_27_a2">
+     
+     
+  112</angle><angle atomRefs3="po_26_a4 po_27_a1 po_27_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_27_a1 po_27_a4 po_27_a2 po_27_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_27_a1 po_27_a2 po_27_a4">
+     
+     
+  111</angle><length atomRefs2="po_27_a2 po_27_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_27_a4 po_27_a2 po_27_a3">
+     
+     
+  111</angle><length atomRefs2="po_27_a2 po_27_a3">
+     
+     
+  1.54</length><length atomRefs2="po_27_a1 po_27_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_28_a1 po_28_a2 po_28_a4 po_29_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_27_a4 po_28_a1 po_28_a2 po_28_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_29_a1 po_28_a4 po_28_a2">
+     
+     
+  112</angle><angle atomRefs3="po_27_a4 po_28_a1 po_28_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_28_a1 po_28_a4 po_28_a2 po_28_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_28_a1 po_28_a2 po_28_a4">
+     
+     
+  111</angle><length atomRefs2="po_28_a2 po_28_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_28_a4 po_28_a2 po_28_a3">
+     
+     
+  111</angle><length atomRefs2="po_28_a2 po_28_a3">
+     
+     
+  1.54</length><length atomRefs2="po_28_a1 po_28_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_29_a1 po_29_a2 po_29_a4 po_30_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_28_a4 po_29_a1 po_29_a2 po_29_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_30_a1 po_29_a4 po_29_a2">
+     
+     
+  112</angle><angle atomRefs3="po_28_a4 po_29_a1 po_29_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_29_a1 po_29_a4 po_29_a2 po_29_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_29_a1 po_29_a2 po_29_a4">
+     
+     
+  111</angle><length atomRefs2="po_29_a2 po_29_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_29_a4 po_29_a2 po_29_a3">
+     
+     
+  111</angle><length atomRefs2="po_29_a2 po_29_a3">
+     
+     
+  1.54</length><length atomRefs2="po_29_a1 po_29_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_30_a1 po_30_a2 po_30_a4 po_31_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_29_a4 po_30_a1 po_30_a2 po_30_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_31_a1 po_30_a4 po_30_a2">
+     
+     
+  112</angle><angle atomRefs3="po_29_a4 po_30_a1 po_30_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_30_a1 po_30_a4 po_30_a2 po_30_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_30_a1 po_30_a2 po_30_a4">
+     
+     
+  111</angle><length atomRefs2="po_30_a2 po_30_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_30_a4 po_30_a2 po_30_a3">
+     
+     
+  111</angle><length atomRefs2="po_30_a2 po_30_a3">
+     
+     
+  1.54</length><length atomRefs2="po_30_a1 po_30_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_31_a1 po_31_a2 po_31_a4 po_32_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_30_a4 po_31_a1 po_31_a2 po_31_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_32_a1 po_31_a4 po_31_a2">
+     
+     
+  112</angle><angle atomRefs3="po_30_a4 po_31_a1 po_31_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_31_a1 po_31_a4 po_31_a2 po_31_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_31_a1 po_31_a2 po_31_a4">
+     
+     
+  111</angle><length atomRefs2="po_31_a2 po_31_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_31_a4 po_31_a2 po_31_a3">
+     
+     
+  111</angle><length atomRefs2="po_31_a2 po_31_a3">
+     
+     
+  1.54</length><length atomRefs2="po_31_a1 po_31_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_32_a1 po_32_a2 po_32_a4 po_33_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_31_a4 po_32_a1 po_32_a2 po_32_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_33_a1 po_32_a4 po_32_a2">
+     
+     
+  112</angle><angle atomRefs3="po_31_a4 po_32_a1 po_32_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_32_a1 po_32_a4 po_32_a2 po_32_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_32_a1 po_32_a2 po_32_a4">
+     
+     
+  111</angle><length atomRefs2="po_32_a2 po_32_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_32_a4 po_32_a2 po_32_a3">
+     
+     
+  111</angle><length atomRefs2="po_32_a2 po_32_a3">
+     
+     
+  1.54</length><length atomRefs2="po_32_a1 po_32_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_33_a1 po_33_a2 po_33_a4 po_34_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_32_a4 po_33_a1 po_33_a2 po_33_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_34_a1 po_33_a4 po_33_a2">
+     
+     
+  112</angle><angle atomRefs3="po_32_a4 po_33_a1 po_33_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_33_a1 po_33_a4 po_33_a2 po_33_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_33_a1 po_33_a2 po_33_a4">
+     
+     
+  111</angle><length atomRefs2="po_33_a2 po_33_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_33_a4 po_33_a2 po_33_a3">
+     
+     
+  111</angle><length atomRefs2="po_33_a2 po_33_a3">
+     
+     
+  1.54</length><length atomRefs2="po_33_a1 po_33_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_34_a1 po_34_a2 po_34_a4 po_35_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_33_a4 po_34_a1 po_34_a2 po_34_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_35_a1 po_34_a4 po_34_a2">
+     
+     
+  112</angle><angle atomRefs3="po_33_a4 po_34_a1 po_34_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_34_a1 po_34_a4 po_34_a2 po_34_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_34_a1 po_34_a2 po_34_a4">
+     
+     
+  111</angle><length atomRefs2="po_34_a2 po_34_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_34_a4 po_34_a2 po_34_a3">
+     
+     
+  111</angle><length atomRefs2="po_34_a2 po_34_a3">
+     
+     
+  1.54</length><length atomRefs2="po_34_a1 po_34_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_35_a1 po_35_a2 po_35_a4 po_36_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_34_a4 po_35_a1 po_35_a2 po_35_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_36_a1 po_35_a4 po_35_a2">
+     
+     
+  112</angle><angle atomRefs3="po_34_a4 po_35_a1 po_35_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_35_a1 po_35_a4 po_35_a2 po_35_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_35_a1 po_35_a2 po_35_a4">
+     
+     
+  111</angle><length atomRefs2="po_35_a2 po_35_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_35_a4 po_35_a2 po_35_a3">
+     
+     
+  111</angle><length atomRefs2="po_35_a2 po_35_a3">
+     
+     
+  1.54</length><length atomRefs2="po_35_a1 po_35_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_36_a1 po_36_a2 po_36_a4 po_37_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_35_a4 po_36_a1 po_36_a2 po_36_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_37_a1 po_36_a4 po_36_a2">
+     
+     
+  112</angle><angle atomRefs3="po_35_a4 po_36_a1 po_36_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_36_a1 po_36_a4 po_36_a2 po_36_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_36_a1 po_36_a2 po_36_a4">
+     
+     
+  111</angle><length atomRefs2="po_36_a2 po_36_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_36_a4 po_36_a2 po_36_a3">
+     
+     
+  111</angle><length atomRefs2="po_36_a2 po_36_a3">
+     
+     
+  1.54</length><length atomRefs2="po_36_a1 po_36_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_37_a1 po_37_a2 po_37_a4 po_38_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_36_a4 po_37_a1 po_37_a2 po_37_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_38_a1 po_37_a4 po_37_a2">
+     
+     
+  112</angle><angle atomRefs3="po_36_a4 po_37_a1 po_37_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_37_a1 po_37_a4 po_37_a2 po_37_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_37_a1 po_37_a2 po_37_a4">
+     
+     
+  111</angle><length atomRefs2="po_37_a2 po_37_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_37_a4 po_37_a2 po_37_a3">
+     
+     
+  111</angle><length atomRefs2="po_37_a2 po_37_a3">
+     
+     
+  1.54</length><length atomRefs2="po_37_a1 po_37_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_38_a1 po_38_a2 po_38_a4 po_39_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_37_a4 po_38_a1 po_38_a2 po_38_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_39_a1 po_38_a4 po_38_a2">
+     
+     
+  112</angle><angle atomRefs3="po_37_a4 po_38_a1 po_38_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_38_a1 po_38_a4 po_38_a2 po_38_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_38_a1 po_38_a2 po_38_a4">
+     
+     
+  111</angle><length atomRefs2="po_38_a2 po_38_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_38_a4 po_38_a2 po_38_a3">
+     
+     
+  111</angle><length atomRefs2="po_38_a2 po_38_a3">
+     
+     
+  1.54</length><length atomRefs2="po_38_a1 po_38_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_39_a1 po_39_a2 po_39_a4 po_40_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_38_a4 po_39_a1 po_39_a2 po_39_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_40_a1 po_39_a4 po_39_a2">
+     
+     
+  112</angle><angle atomRefs3="po_38_a4 po_39_a1 po_39_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_39_a1 po_39_a4 po_39_a2 po_39_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_39_a1 po_39_a2 po_39_a4">
+     
+     
+  111</angle><length atomRefs2="po_39_a2 po_39_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_39_a4 po_39_a2 po_39_a3">
+     
+     
+  111</angle><length atomRefs2="po_39_a2 po_39_a3">
+     
+     
+  1.54</length><length atomRefs2="po_39_a1 po_39_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_40_a1 po_40_a2 po_40_a4 po_41_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_39_a4 po_40_a1 po_40_a2 po_40_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_41_a1 po_40_a4 po_40_a2">
+     
+     
+  112</angle><angle atomRefs3="po_39_a4 po_40_a1 po_40_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_40_a1 po_40_a4 po_40_a2 po_40_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_40_a1 po_40_a2 po_40_a4">
+     
+     
+  111</angle><length atomRefs2="po_40_a2 po_40_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_40_a4 po_40_a2 po_40_a3">
+     
+     
+  111</angle><length atomRefs2="po_40_a2 po_40_a3">
+     
+     
+  1.54</length><length atomRefs2="po_40_a1 po_40_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_41_a1 po_41_a2 po_41_a4 po_42_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_40_a4 po_41_a1 po_41_a2 po_41_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_42_a1 po_41_a4 po_41_a2">
+     
+     
+  112</angle><angle atomRefs3="po_40_a4 po_41_a1 po_41_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_41_a1 po_41_a4 po_41_a2 po_41_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_41_a1 po_41_a2 po_41_a4">
+     
+     
+  111</angle><length atomRefs2="po_41_a2 po_41_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_41_a4 po_41_a2 po_41_a3">
+     
+     
+  111</angle><length atomRefs2="po_41_a2 po_41_a3">
+     
+     
+  1.54</length><length atomRefs2="po_41_a1 po_41_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_42_a1 po_42_a2 po_42_a4 po_43_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_41_a4 po_42_a1 po_42_a2 po_42_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_43_a1 po_42_a4 po_42_a2">
+     
+     
+  112</angle><angle atomRefs3="po_41_a4 po_42_a1 po_42_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_42_a1 po_42_a4 po_42_a2 po_42_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_42_a1 po_42_a2 po_42_a4">
+     
+     
+  111</angle><length atomRefs2="po_42_a2 po_42_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_42_a4 po_42_a2 po_42_a3">
+     
+     
+  111</angle><length atomRefs2="po_42_a2 po_42_a3">
+     
+     
+  1.54</length><length atomRefs2="po_42_a1 po_42_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_43_a1 po_43_a2 po_43_a4 po_44_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_42_a4 po_43_a1 po_43_a2 po_43_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_44_a1 po_43_a4 po_43_a2">
+     
+     
+  112</angle><angle atomRefs3="po_42_a4 po_43_a1 po_43_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_43_a1 po_43_a4 po_43_a2 po_43_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_43_a1 po_43_a2 po_43_a4">
+     
+     
+  111</angle><length atomRefs2="po_43_a2 po_43_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_43_a4 po_43_a2 po_43_a3">
+     
+     
+  111</angle><length atomRefs2="po_43_a2 po_43_a3">
+     
+     
+  1.54</length><length atomRefs2="po_43_a1 po_43_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_44_a1 po_44_a2 po_44_a4 po_45_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_43_a4 po_44_a1 po_44_a2 po_44_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_45_a1 po_44_a4 po_44_a2">
+     
+     
+  112</angle><angle atomRefs3="po_43_a4 po_44_a1 po_44_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_44_a1 po_44_a4 po_44_a2 po_44_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_44_a1 po_44_a2 po_44_a4">
+     
+     
+  111</angle><length atomRefs2="po_44_a2 po_44_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_44_a4 po_44_a2 po_44_a3">
+     
+     
+  111</angle><length atomRefs2="po_44_a2 po_44_a3">
+     
+     
+  1.54</length><length atomRefs2="po_44_a1 po_44_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_45_a1 po_45_a2 po_45_a4 po_46_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_44_a4 po_45_a1 po_45_a2 po_45_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_46_a1 po_45_a4 po_45_a2">
+     
+     
+  112</angle><angle atomRefs3="po_44_a4 po_45_a1 po_45_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_45_a1 po_45_a4 po_45_a2 po_45_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_45_a1 po_45_a2 po_45_a4">
+     
+     
+  111</angle><length atomRefs2="po_45_a2 po_45_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_45_a4 po_45_a2 po_45_a3">
+     
+     
+  111</angle><length atomRefs2="po_45_a2 po_45_a3">
+     
+     
+  1.54</length><length atomRefs2="po_45_a1 po_45_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_46_a1 po_46_a2 po_46_a4 po_47_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_45_a4 po_46_a1 po_46_a2 po_46_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_47_a1 po_46_a4 po_46_a2">
+     
+     
+  112</angle><angle atomRefs3="po_45_a4 po_46_a1 po_46_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_46_a1 po_46_a4 po_46_a2 po_46_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_46_a1 po_46_a2 po_46_a4">
+     
+     
+  111</angle><length atomRefs2="po_46_a2 po_46_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_46_a4 po_46_a2 po_46_a3">
+     
+     
+  111</angle><length atomRefs2="po_46_a2 po_46_a3">
+     
+     
+  1.54</length><length atomRefs2="po_46_a1 po_46_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_47_a1 po_47_a2 po_47_a4 po_48_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_46_a4 po_47_a1 po_47_a2 po_47_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_48_a1 po_47_a4 po_47_a2">
+     
+     
+  112</angle><angle atomRefs3="po_46_a4 po_47_a1 po_47_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_47_a1 po_47_a4 po_47_a2 po_47_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_47_a1 po_47_a2 po_47_a4">
+     
+     
+  111</angle><length atomRefs2="po_47_a2 po_47_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_47_a4 po_47_a2 po_47_a3">
+     
+     
+  111</angle><length atomRefs2="po_47_a2 po_47_a3">
+     
+     
+  1.54</length><length atomRefs2="po_47_a1 po_47_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_48_a1 po_48_a2 po_48_a4 po_49_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_47_a4 po_48_a1 po_48_a2 po_48_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_49_a1 po_48_a4 po_48_a2">
+     
+     
+  112</angle><angle atomRefs3="po_47_a4 po_48_a1 po_48_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_48_a1 po_48_a4 po_48_a2 po_48_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_48_a1 po_48_a2 po_48_a4">
+     
+     
+  111</angle><length atomRefs2="po_48_a2 po_48_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_48_a4 po_48_a2 po_48_a3">
+     
+     
+  111</angle><length atomRefs2="po_48_a2 po_48_a3">
+     
+     
+  1.54</length><length atomRefs2="po_48_a1 po_48_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_49_a1 po_49_a2 po_49_a4 po_50_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_48_a4 po_49_a1 po_49_a2 po_49_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_50_a1 po_49_a4 po_49_a2">
+     
+     
+  112</angle><angle atomRefs3="po_48_a4 po_49_a1 po_49_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_49_a1 po_49_a4 po_49_a2 po_49_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_49_a1 po_49_a2 po_49_a4">
+     
+     
+  111</angle><length atomRefs2="po_49_a2 po_49_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_49_a4 po_49_a2 po_49_a3">
+     
+     
+  111</angle><length atomRefs2="po_49_a2 po_49_a3">
+     
+     
+  1.54</length><length atomRefs2="po_49_a1 po_49_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_50_a1 po_50_a2 po_50_a4 po_51_a1">
+     
+     
+  120</torsion><torsion atomRefs4="po_49_a4 po_50_a1 po_50_a2 po_50_a4">
+     
+     
+  120</torsion><angle atomRefs3="po_51_a1 po_50_a4 po_50_a2">
+     
+     
+  112</angle><angle atomRefs3="po_49_a4 po_50_a1 po_50_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_50_a1 po_50_a4 po_50_a2 po_50_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_50_a1 po_50_a2 po_50_a4">
+     
+     
+  111</angle><length atomRefs2="po_50_a2 po_50_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_50_a4 po_50_a2 po_50_a3">
+     
+     
+  111</angle><length atomRefs2="po_50_a2 po_50_a3">
+     
+     
+  1.54</length><length atomRefs2="po_50_a1 po_50_a2">
+     
+     
+  1.54</length><torsion atomRefs4="po_51_a1 po_51_a2 po_51_a4 et_52_a2">
+     
+     
+  120</torsion><torsion atomRefs4="po_50_a4 po_51_a1 po_51_a2 po_51_a4">
+     
+     
+  120</torsion><angle atomRefs3="et_52_a2 po_51_a4 po_51_a2">
+     
+     
+  112</angle><angle atomRefs3="po_50_a4 po_51_a1 po_51_a2">
+     
+     
+  112</angle><torsion atomRefs4="po_51_a1 po_51_a4 po_51_a2 po_51_a3">
+     
+     
+  120</torsion><angle atomRefs3="po_51_a1 po_51_a2 po_51_a4">
+     
+     
+  111</angle><length atomRefs2="po_51_a2 po_51_a4">
+     
+     
+  1.40</length><angle atomRefs3="po_51_a4 po_51_a2 po_51_a3">
+     
+     
+  111</angle><length atomRefs2="po_51_a2 po_51_a3">
+     
+     
+  1.54</length><length atomRefs2="po_51_a1 po_51_a2">
+     
+     
+  1.54</length><angle atomRefs3="et_52_a1 et_52_a2 po_51_a4">
+   111</angle><length atomRefs2="et_52_a1 et_52_a2">
+   1.54</length><name>ethyl_52</name><length atomRefs2="oh_1_a1 po_2_a1">1.39</length><length atomRefs2="po_2_a4 po_3_a1">1.4</length><torsion atomRefs4="po_2_a2 po_2_a4 po_3_a1 po_3_a2">-100.0</torsion><length atomRefs2="po_3_a4 po_4_a1">1.4</length><torsion atomRefs4="po_3_a2 po_3_a4 po_4_a1 po_4_a2">-100.0</torsion><length atomRefs2="po_4_a4 po_5_a1">1.4</length><torsion atomRefs4="po_4_a2 po_4_a4 po_5_a1 po_5_a2">-100.0</torsion><length atomRefs2="po_5_a4 po_6_a1">1.4</length><torsion atomRefs4="po_5_a2 po_5_a4 po_6_a1 po_6_a2">-100.0</torsion><length atomRefs2="po_6_a4 po_7_a1">1.4</length><torsion atomRefs4="po_6_a2 po_6_a4 po_7_a1 po_7_a2">-100.0</torsion><length atomRefs2="po_7_a4 po_8_a1">1.4</length><torsion atomRefs4="po_7_a2 po_7_a4 po_8_a1 po_8_a2">-100.0</torsion><length atomRefs2="po_8_a4 po_9_a1">1.4</length><torsion atomRefs4="po_8_a2 po_8_a4 po_9_a1 po_9_a2">-100.0</torsion><length atomRefs2="po_9_a4 po_10_a1">1.4</length><torsion atomRefs4="po_9_a2 po_9_a4 po_10_a1 po_10_a2">-100.0</torsion><length atomRefs2="po_10_a4 po_11_a1">1.4</length><torsion atomRefs4="po_10_a2 po_10_a4 po_11_a1 po_11_a2">-100.0</torsion><length atomRefs2="po_11_a4 po_12_a1">1.4</length><torsion atomRefs4="po_11_a2 po_11_a4 po_12_a1 po_12_a2">-100.0</torsion><length atomRefs2="po_12_a4 po_13_a1">1.4</length><torsion atomRefs4="po_12_a2 po_12_a4 po_13_a1 po_13_a2">-100.0</torsion><length atomRefs2="po_13_a4 po_14_a1">1.4</length><torsion atomRefs4="po_13_a2 po_13_a4 po_14_a1 po_14_a2">-100.0</torsion><length atomRefs2="po_14_a4 po_15_a1">1.4</length><torsion atomRefs4="po_14_a2 po_14_a4 po_15_a1 po_15_a2">-100.0</torsion><length atomRefs2="po_15_a4 po_16_a1">1.4</length><torsion atomRefs4="po_15_a2 po_15_a4 po_16_a1 po_16_a2">-100.0</torsion><length atomRefs2="po_16_a4 po_17_a1">1.4</length><torsion atomRefs4="po_16_a2 po_16_a4 po_17_a1 po_17_a2">-100.0</torsion><length atomRefs2="po_17_a4 po_18_a1">1.4</length><torsion atomRefs4="po_17_a2 po_17_a4 po_18_a1 po_18_a2">-100.0</torsion><length atomRefs2="po_18_a4 po_19_a1">1.4</length><torsion atomRefs4="po_18_a2 po_18_a4 po_19_a1 po_19_a2">-100.0</torsion><length atomRefs2="po_19_a4 po_20_a1">1.4</length><torsion atomRefs4="po_19_a2 po_19_a4 po_20_a1 po_20_a2">-100.0</torsion><length atomRefs2="po_20_a4 po_21_a1">1.4</length><torsion atomRefs4="po_20_a2 po_20_a4 po_21_a1 po_21_a2">-100.0</torsion><length atomRefs2="po_21_a4 po_22_a1">1.4</length><torsion atomRefs4="po_21_a2 po_21_a4 po_22_a1 po_22_a2">-100.0</torsion><length atomRefs2="po_22_a4 po_23_a1">1.4</length><torsion atomRefs4="po_22_a2 po_22_a4 po_23_a1 po_23_a2">-100.0</torsion><length atomRefs2="po_23_a4 po_24_a1">1.4</length><torsion atomRefs4="po_23_a2 po_23_a4 po_24_a1 po_24_a2">-100.0</torsion><length atomRefs2="po_24_a4 po_25_a1">1.4</length><torsion atomRefs4="po_24_a2 po_24_a4 po_25_a1 po_25_a2">-100.0</torsion><length atomRefs2="po_25_a4 po_26_a1">1.4</length><torsion atomRefs4="po_25_a2 po_25_a4 po_26_a1 po_26_a2">-100.0</torsion><length atomRefs2="po_26_a4 po_27_a1">1.4</length><torsion atomRefs4="po_26_a2 po_26_a4 po_27_a1 po_27_a2">-100.0</torsion><length atomRefs2="po_27_a4 po_28_a1">1.4</length><torsion atomRefs4="po_27_a2 po_27_a4 po_28_a1 po_28_a2">-100.0</torsion><length atomRefs2="po_28_a4 po_29_a1">1.4</length><torsion atomRefs4="po_28_a2 po_28_a4 po_29_a1 po_29_a2">-100.0</torsion><length atomRefs2="po_29_a4 po_30_a1">1.4</length><torsion atomRefs4="po_29_a2 po_29_a4 po_30_a1 po_30_a2">-100.0</torsion><length atomRefs2="po_30_a4 po_31_a1">1.4</length><torsion atomRefs4="po_30_a2 po_30_a4 po_31_a1 po_31_a2">-100.0</torsion><length atomRefs2="po_31_a4 po_32_a1">1.4</length><torsion atomRefs4="po_31_a2 po_31_a4 po_32_a1 po_32_a2">-100.0</torsion><length atomRefs2="po_32_a4 po_33_a1">1.4</length><torsion atomRefs4="po_32_a2 po_32_a4 po_33_a1 po_33_a2">-100.0</torsion><length atomRefs2="po_33_a4 po_34_a1">1.4</length><torsion atomRefs4="po_33_a2 po_33_a4 po_34_a1 po_34_a2">-100.0</torsion><length atomRefs2="po_34_a4 po_35_a1">1.4</length><torsion atomRefs4="po_34_a2 po_34_a4 po_35_a1 po_35_a2">-100.0</torsion><length atomRefs2="po_35_a4 po_36_a1">1.4</length><torsion atomRefs4="po_35_a2 po_35_a4 po_36_a1 po_36_a2">-100.0</torsion><length atomRefs2="po_36_a4 po_37_a1">1.4</length><torsion atomRefs4="po_36_a2 po_36_a4 po_37_a1 po_37_a2">-100.0</torsion><length atomRefs2="po_37_a4 po_38_a1">1.4</length><torsion atomRefs4="po_37_a2 po_37_a4 po_38_a1 po_38_a2">-100.0</torsion><length atomRefs2="po_38_a4 po_39_a1">1.4</length><torsion atomRefs4="po_38_a2 po_38_a4 po_39_a1 po_39_a2">-100.0</torsion><length atomRefs2="po_39_a4 po_40_a1">1.4</length><torsion atomRefs4="po_39_a2 po_39_a4 po_40_a1 po_40_a2">-100.0</torsion><length atomRefs2="po_40_a4 po_41_a1">1.4</length><torsion atomRefs4="po_40_a2 po_40_a4 po_41_a1 po_41_a2">-100.0</torsion><length atomRefs2="po_41_a4 po_42_a1">1.4</length><torsion atomRefs4="po_41_a2 po_41_a4 po_42_a1 po_42_a2">-100.0</torsion><length atomRefs2="po_42_a4 po_43_a1">1.4</length><torsion atomRefs4="po_42_a2 po_42_a4 po_43_a1 po_43_a2">-100.0</torsion><length atomRefs2="po_43_a4 po_44_a1">1.4</length><torsion atomRefs4="po_43_a2 po_43_a4 po_44_a1 po_44_a2">-100.0</torsion><length atomRefs2="po_44_a4 po_45_a1">1.4</length><torsion atomRefs4="po_44_a2 po_44_a4 po_45_a1 po_45_a2">-100.0</torsion><length atomRefs2="po_45_a4 po_46_a1">1.4</length><torsion atomRefs4="po_45_a2 po_45_a4 po_46_a1 po_46_a2">-100.0</torsion><length atomRefs2="po_46_a4 po_47_a1">1.4</length><torsion atomRefs4="po_46_a2 po_46_a4 po_47_a1 po_47_a2">-100.0</torsion><length atomRefs2="po_47_a4 po_48_a1">1.4</length><torsion atomRefs4="po_47_a2 po_47_a4 po_48_a1 po_48_a2">-100.0</torsion><length atomRefs2="po_48_a4 po_49_a1">1.4</length><torsion atomRefs4="po_48_a2 po_48_a4 po_49_a1 po_49_a2">-100.0</torsion><length atomRefs2="po_49_a4 po_50_a1">1.4</length><torsion atomRefs4="po_49_a2 po_49_a4 po_50_a1 po_50_a2">-100.0</torsion><length atomRefs2="po_50_a4 po_51_a1">1.4</length><torsion atomRefs4="po_50_a2 po_50_a4 po_51_a1 po_51_a2">-100.0</torsion><length atomRefs2="po_51_a4 et_52_a2">1.41</length><torsion atomRefs4="po_51_a2 po_51_a4 et_52_a2 et_52_a1">180.0</torsion></molecule>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- partially abbreviated scheme for polymers (abbrev1)
+. Requires:
+  * reference to full molecules (namespaced)
+  * cloning of repeated molecules
+-->
+<!-- OH-(PO)5-Me -->
+
+<molecule id="5 methanols" 
+   xmlns="http://www.xml-cml.org/schema"
+   xsi:schemaLocation="http://www.xml-cml.org/schema ../../schema.xsd" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:p="http://www.xml-cml.org/mols/mols"
+>
+    <arg parameterName="k">{random(1)</arg>
+    
+    <for arg="j" start="1" end="5">
+      <molecule ref="p:meoh" copy="true" title="title is methanol {$j}">
+        <name>methanol {$j}</name>
+        <length>{$k}</length>
+      </molecule>
+    </for>
+    
+</molecule>

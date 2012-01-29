@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="benzene2" convention="cml:PML-basic" xmlns:f="http://www.xml-cml.org/mols/frags" xmlns="http://www.xml-cml.org/schema">
+ <join convention="fragmentContainer">
+  <molecule ref="f:benzene">
+   <join linkOnParent="r5" convention="branch">
+    <join order="1"/>
+    <molecule ref="f:cl">
+     <join left="r1"/>
+    </molecule>
+   </join>
+   <join linkOnParent="r4" convention="branch">
+    <join order="1"/>
+    <molecule ref="f:benzene">
+     <join linkOnParent="r4" convention="branch">
+      <join order="1"/>
+      <molecule ref="f:benzene">
+       <join left="r2" right="r1"/>
+      </molecule>
+      <join order="1"/>
+      <molecule ref="f:br">
+       <join left="r1"/>
+      </molecule>
+     </join>
+     <join left="r3" right="r5"/>
+    </molecule>
+    <join order="1"/>
+    <molecule ref="f:i">
+     <join left="r1"/>
+    </molecule>
+   </join>
+   <join right="r2"/>
+  </molecule>
+  <join order="1"/>
+  <molecule ref="f:me">
+   <join left="r1"/>
+  </molecule>
+ </join>
+</molecule>

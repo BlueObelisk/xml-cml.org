@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml xmlns="http://www.xml-cml.org/schema"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:conventions="http://www.xml-cml.org/convention/" convention="conventions:molecular">
+    <dc:title>test file for http://www.xml-cml.org/conventions/molecular convention</dc:title>
+    <dc:description>valid molecular - atom has a child but it is not from the CML namespace</dc:description>
+    <dc:author>J A Townsend</dc:author>
+    <dc:rights>Copyright J A Townsend jat45@cantab.net 2009.</dc:rights>
+    <dc:date>2009-01-21</dc:date>
+    <molecule id="m1">
+        <atomArray>
+            <atom id="a1" elementType="H">
+                <dc:description>a non CML element child of atom</dc:description>
+            </atom>
+        </atomArray>
+    </molecule>
+</cml>

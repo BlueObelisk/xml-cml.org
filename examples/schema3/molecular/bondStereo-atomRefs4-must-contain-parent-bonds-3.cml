@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml:cml xmlns:cml="http://www.xml-cml.org/schema"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:conventions="http://www.xml-cml.org/convention/" convention="conventions:molecular">
+    <dc:title>test file for http://www.xml-cml.org/convention/molecular convention</dc:title>
+    <dc:description>a bondStereo with atomRefs4 must contain the same atoms (in any order) as the parent bond</dc:description>
+    <dc:author>J A Townsend</dc:author>
+    <dc:rights>Copyright J A Townsend jat45@cantab.net 2009.</dc:rights>
+    <dc:date>2009-01-21</dc:date>
+    <cml:molecule id="m1">
+        <cml:atomArray>
+            <cml:atom elementType="F" id="a1" />
+            <cml:atom elementType="H" id="a2" />
+            <cml:atom elementType="C" id="a3" />
+            <cml:atom elementType="C" id="a4" />
+            <cml:atom elementType="Cl" id="a5" />
+            <cml:atom elementType="H" id="a6" />
+        </cml:atomArray>
+        <cml:bondArray>
+            <cml:bond id="b1" atomRefs2="a1 a3" order="S">
+            </cml:bond>
+            <cml:bond id="b2" atomRefs2="a2 a3" order="S" />
+            <cml:bond id="b3" atomRefs2="a3 a4" order="D">
+                <cml:bondStereo atomRefs4="a2 a5 a3 a4">C</cml:bondStereo>
+            </cml:bond>
+            <cml:bond id="b4" atomRefs2="a4 a5" order="S" />
+            <cml:bond id="b5" atomRefs2="a4 a6" order="S" />
+        </cml:bondArray>
+    </cml:molecule>
+</cml:cml>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="branch" convention="cml:PML-intermediate" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <molecule ref="g:oh">
+    <arg name="idx">
+      <scalar dataType="xsd:string">1</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:oh_1_r1 g:acryl_2_r1" id="g:oh_1_r1_g:acryl_2_r1" order="1">
+    <length>1.4</length>
+  </join>
+  <molecule ref="g:acryl">
+    <arg name="idx">
+      <scalar dataType="xsd:string">2</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:acryl_2_r3 g:eo_3_r1" id="g:acryl_2_r3_g:eo_3_r1" order="1">
+    <torsion>20.0</torsion>
+    <length>1.39</length>
+  </join>
+  <molecule ref="g:eo">
+    <arg name="idx">
+      <scalar dataType="xsd:string">3</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:eo_3_r2 g:eo_4_r1" id="g:eo_3_r2_g:eo_4_r1" order="1">
+    <length>1.4</length>
+    <torsion>30.0</torsion>
+  </join>
+  <molecule ref="g:eo">
+    <arg name="idx">
+      <scalar dataType="xsd:string">4</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:eo_4_r2 g:et_5_r1" id="g:eo_4_r2_g:et_5_r1" order="1">
+    <length>1.41</length>
+    <torsion>40.0</torsion>
+  </join>
+  <molecule ref="g:et">
+    <arg name="idx">
+      <scalar dataType="xsd:string">5</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:acryl_2_r2 g:acryl_6_r1" id="g:acryl_2_r2_g:acryl_6_r1">
+    <length>1.53</length>
+    <torsion>50.0</torsion>
+  </join>
+  <molecule ref="g:acryl">
+    <arg name="idx">
+      <scalar dataType="xsd:string">6</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:acryl_6_r3 g:eo_7_r1" id="g:acryl_6_r3_g:eo_7_r1" order="1">
+    <torsion>20.0</torsion>
+    <length>1.39</length>
+  </join>
+  <molecule ref="g:eo">
+    <arg name="idx">
+      <scalar dataType="xsd:string">7</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:eo_7_r2 g:eo_8_r1" id="g:eo_7_r2_g:eo_8_r1" order="1">
+    <length>1.4</length>
+    <torsion>30.0</torsion>
+  </join>
+  <molecule ref="g:eo">
+    <arg name="idx">
+      <scalar dataType="xsd:string">8</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:eo_8_r2 g:et_9_r1" id="g:eo_8_r2_g:et_9_r1" order="1">
+    <length>1.41</length>
+    <torsion>40.0</torsion>
+  </join>
+  <molecule ref="g:et">
+    <arg name="idx">
+      <scalar dataType="xsd:string">9</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:acryl_6_r2 g:me_10_r1" id="g:acryl_6_r2_g:me_10_r1" order="1">
+    <length>1.54</length>
+  </join>
+  <molecule ref="g:me">
+    <arg name="idx">
+      <scalar dataType="xsd:string">10</scalar>
+    </arg>
+  </molecule>
+</molecule>

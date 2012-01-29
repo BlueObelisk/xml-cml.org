@@ -1,0 +1,14 @@
+RewriteEngine on 
+RewriteBase /convention/
+
+RewriteRule ^molecular$ molecular-20110828
+
+RewriteRule ^compchem$ compchem-20110524
+
+RewriteRule ^dictionary$ dictionary-20110525
+
+RewriteRule ^unit-dictionary$ unit-dictionary-20110303
+
+RewriteRule ^unitType-dictionary$ unitType-dictionary-20110310
+
+RewriteRule ^([^/.]+)$ $1.html

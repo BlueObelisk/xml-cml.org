@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="yes"?>
+<reaction id="r1" atomMap="nh3bf3atomMap" 
+electronMap="nh3bf3electronMap"
+   xmlns="http://www.xml-cml.org/schema"
+   xsi:schemaLocation="http://www.xml-cml.org/schema ../../schema.xsd" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
+<reactantList>
+        <reactant>
+<molecule id="nh3">
+  <atomArray>
+	<atom elementType="N" id="n1" hydrogenCount="3">
+       <electron count="2" id="e1"/>
+    </atom>
+  </atomArray>
+</molecule>
+        </reactant>
+        <reactant>
+<molecule id="bf3">
+  <atomArray>
+	<atom elementType="B" id="b1" hydrogenCount="0"/>
+	<atom elementType="F" id="f1" hydrogenCount="0"/>
+	<atom elementType="F" id="f2" hydrogenCount="0"/>
+	<atom elementType="F" id="f3" hydrogenCount="0"/>
+  </atomArray>
+  <bondArray>
+    <bond id="b1f1" atomRefs2="b1 f1" order="S"/>
+    <bond id="b1f2" atomRefs2="b1 f2" order="S"/>
+    <bond id="b1f3" atomRefs2="b1 f3" order="S"/>
+  </bondArray>
+</molecule>
+        </reactant>
+</reactantList>
+<productList>
+   <product>
+     <molecule id="nh3bf3">
+  <atomArray>
+	<atom elementType="N" id="n5" hydrogenCount="3" formalCharge="1"/>
+	<atom elementType="B" id="b19" hydrogenCount="0" formalCharge="-1"/>
+	<atom elementType="F" id="f6" hydrogenCount="0"/>
+	<atom elementType="F" id="f7" hydrogenCount="0"/>
+	<atom elementType="F" id="f8" hydrogenCount="0"/>
+  </atomArray>
+  <bondArray>
+    <bond id="b21" atomRefs2="b9 n5" order="S">
+       <electron count="2" id="e2"/>
+    </bond>
+    <bond id="b22" atomRefs2="b9 f6" order="S"/>
+    <bond id="b23" atomRefs2="b9 f7" order="S"/>
+    <bond id="b24" atomRefs2="b9 f8" order="S"/>
+  </bondArray>
+</molecule>
+        </product>     
+</productList>
+<!--explict map -->
+<map id="nh3bf3atomMap">
+  <link from="n1" to="n5"/>
+  <link from="b1" to="b9"/>
+  <link from="f1" to="f8"/>
+  <link from="f2" to="f6"/>
+  <link from="f3" to="f7"/>
+</map>
+<map id="nh3bf3electronMap">
+  <link from="e1" to="e2"/>
+</map>
+  </reaction>
+

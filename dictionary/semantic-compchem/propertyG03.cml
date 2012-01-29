@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- author: Weerapong Phadungsukanan -->
+<cml xmlns="http://www.xml-cml.org/schema"
+    xmlns:unitType="http://www.xml-cml.org/units/unitTypes">
+    <dictionary xmlns:cmlx="http://www.xml-cml.org/schema/cmlx"
+                namespace="http://www.xml-cml.org/dict/compchem/property/g03"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+        <!-- Begin Property Entries -->
+        <entry id="property.g03.rotconstants"
+            cmlx:superclass="property.rotconstants"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:double" minLength="1" delimiter="" units="units:Hz"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.freqmode"
+            cmlx:superclass="property.freqmode"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:double" minLength="1" delimiter="" units="units:cm-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.reducedmass"
+            cmlx:superclass="property.reducedmass"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:double" minLength="1" delimiter="" units="units:amu"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.forceconstant"
+            cmlx:superclass="property.forceconstant"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:double" minLength="1" delimiter="" units="units:mDyne.A-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.irintensity"
+            cmlx:superclass="property.irintensity"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:double" minLength="1" delimiter="" units="units:KM.mol-1"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.freqmodeeigen"
+            cmlx:superclass="property.freqmodeeigen"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:matrix dataType="xsd:double" units="units:A"/>
+            </cmlx:template>
+        </entry>
+        <!-- energy properties -->
+        <entry id="property.g03.cv"
+            cmlx:superclass="property.cv"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_heat_capacity:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.cp"
+            cmlx:superclass="property.cp"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_heat_capacity:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.h"
+            cmlx:superclass="property.h"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_enthalpy:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.hf"
+            cmlx:superclass="property.hf"
+            cmlx:status="unreviewed">
+            <parameter units="units:K"></parameter>
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_enthalpy:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.hf298"
+            cmlx:superclass="property.hf298"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:mo"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.s298"
+            cmlx:superclass="property.s"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_entropy:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.scfenergy"
+            cmlx:superclass="property.scfenergy"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="units:hartree"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.totEE"
+            cmlx:superclass="property.totEE"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_energy:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.totKE"
+            cmlx:superclass="property.totKE"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_energy:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.totPE"
+            cmlx:superclass="property.totPE"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_energy:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.totTE"
+            cmlx:superclass="property.totTE"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_energy:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.zpve"
+            cmlx:superclass="property.zpve"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:scalar dataType="xsd:double" units="molar_energy:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.polarizability"
+            cmlx:superclass="property.polarizability"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array dataType="xsd:float" length="6" delimiter="" units="units:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.dipole"
+            cmlx:superclass="property.dipole"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:vector3 dataType="xsd:float" delimiter="" units="units:debye"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.diagvibpolar"
+            cmlx:superclass="property.diagvibpolar"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:vector3 dataType="xsd:float" delimiter="" units="units:unknown"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.pmoi"
+            cmlx:superclass="property.pmoi"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:array length="3" dataType="xsd:float" delimiter="" units="units:amu.A2"/>
+            </cmlx:template>
+        </entry>
+        <entry id="property.g03.pmoiaxis"
+            cmlx:superclass="property.pmoiaxis"
+            cmlx:status="unreviewed">
+            <cmlx:template>
+                <cmlx:matrix dataType="xsd:float" delimiter="" units="units:none"/>
+                <!-- This ia a matrix of size 3x3-->
+            </cmlx:template>
+        </entry>
+        <!-- End Property Entries -->
+
+    </dictionary>
+</cml>
+
+
+
+
+
+
+
+
+
+
+

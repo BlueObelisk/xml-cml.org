@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="etoac" convention="cml:PML-intermediate" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <molecule ref="g:acetate">
+    <arg name="idx">
+      <scalar dataType="xsd:string">1</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:acetate_1_r1 g:et_2_r1" id="g:acetate_1_r1_g:et_2_r1" order="1">
+    <length>1.35</length>
+    <torsion>180.0</torsion>
+  </join>
+  <molecule ref="g:et">
+    <arg name="idx">
+      <scalar dataType="xsd:string">2</scalar>
+    </arg>
+  </molecule>
+</molecule>

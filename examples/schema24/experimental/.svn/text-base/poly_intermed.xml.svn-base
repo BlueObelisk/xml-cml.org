@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="poly" convention="cml:PML-intermediate" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <molecule ref="g:oh">
+    <arg name="idx">
+      <scalar dataType="xsd:string">1</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:oh_1_r1 g:po_2_r2" id="g:oh_1_r1_g:po_2_r2" order="1"/>
+  <molecule ref="g:po">
+    <arg name="idx">
+      <scalar dataType="xsd:string">2</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:po_2_r1 g:po_3_r2" id="g:po_2_r1_g:po_3_r2"/>
+  <molecule ref="g:po">
+    <arg name="idx">
+      <scalar dataType="xsd:string">3</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:po_3_r1 g:po_4_r2" id="g:po_3_r1_g:po_4_r2"/>
+  <molecule ref="g:po">
+    <arg name="idx">
+      <scalar dataType="xsd:string">4</scalar>
+    </arg>
+  </molecule>
+  <join atomRefs2="g:po_4_r1 g:et_5_r1" id="g:po_4_r1_g:et_5_r1" order="1"/>
+  <molecule ref="g:et">
+    <arg name="idx">
+      <scalar dataType="xsd:string">5</scalar>
+    </arg>
+  </molecule>
+</molecule>

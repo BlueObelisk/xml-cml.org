@@ -1,0 +1,6 @@
+RewriteEngine on 
+RewriteBase /spec/
+
+RewriteRule ^dictionaries$ dictionaries-20110209
+
+RewriteRule ^([^/.]+)$ $1.html

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cml xmlns="http://www.xml-cml.org/schema"
+xsi:schemaLocation="http://www.xml-cml.org/schema../../schema.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:ccml="http://www.xml-cml.org/schema/cml2/comp"
+xmlns:units="http://www.xml-cml.org/units/units"
+xmlns:cml="http://www.xml-cml.org/dict/cmlDict"
+xmlns:dc="http://purl.org/dc/elements/1.1/">
+<metadata name="dc:creator" content="Steven Bachrach" />
+<metadata name="dc:date" content="2006-07-06" />
+<molecule title="Benzene">
+<scalar dictRef="ccml:program">Gaussian 03</scalar>
+<scalar dictRef="ccml:version">x86-Linux-G03 RevB.03</scalar>
+<property title="Job Type" dictRef="gaussian:JobType">
+<string>Frequency</string>
+</property>
+<formula concise="C 6 H 6" formalCharge="0" />
+<property title="Multiplicity" dictRef="ccml:spinMultiplicity">
+<scalar>1</scalar>
+</property>
+<ccml:basisSet>
+<ccml:name>6-311+G(d,p) (5D, 7F)</ccml:name>
+</ccml:basisSet>
+<scalar dictRef="cml:pointgroup" convention="cml:cml">D6H</scalar>
+<atomArray>
+<atom id="a1" elementType="C" x3="0.000000" y3="1.394479" z3="0.000000" />
+<atom id="a2" elementType="C" x3="1.207655" y3="0.697240" z3="0.000000" />
+<atom id="a3" elementType="C" x3="1.207655" y3="-0.697240" z3="0.000000" />
+<atom id="a4" elementType="C" x3="0.000000" y3="-1.394479" z3="0.000000" />
+<atom id="a5" elementType="C" x3="-1.207655" y3="-0.697240" z3="0.000000" />
+<atom id="a6" elementType="C" x3="-1.207655" y3="0.697240" z3="0.000000" />
+<atom id="a7" elementType="H" x3="0.000000" y3="2.478665" z3="0.000000" />
+<atom id="a8" elementType="H" x3="2.146587" y3="1.239332" z3="0.000000" />
+<atom id="a9" elementType="H" x3="2.146587" y3="-1.239332" z3="0.000000" />
+<atom id="a10" elementType="H" x3="0.000000" y3="-2.478665" z3="0.000000" />
+<atom id="a11" elementType="H" x3="-2.146587" y3="-1.239332" z3="0.000000" />
+<atom id="a12" elementType="H" x3="-2.146587" y3="1.239332" z3="0.000000" />
+</atomArray>
+<property title="Rotational Constants" dictRef="ccml:rotationalConstants">
+<array dataType="xsd:double" units="units:GHz">5.70533 5.70533 2.85266</array>
+</property>
+<propertyList title="Energy">
+<property title="Electronic Energy" dictRef="gaussian:ElectronicEnergy">
+<string title="QMMethod" dictRef="gaussian:QMMethod">RB3LYP</string>
+<scalar units="units:hartree">-232.311242014</scalar>
+</property>
+<property title="Zero-Point Vibrational Energy" dictRef="gaussian:ZPVE">
+<string title="QMMethod" dictRef="gaussian:QMMethod">RB3LYP</string>
+<scalar units="units:Kcal/mol">62.83930</scalar>
+</property>
+<property title="Enthalpy" dictRef="gaussian:Enthalpy">
+<string title="QMMethod" dictRef="gaussian:QMMethod">RB3LYP</string>
+<scalar units="units:hartree">-232.205753</scalar>
+</property>
+<property title="Free Energy" dictRef="gaussian:FreeEnergy">
+<string title="QMMethod" dictRef="gaussian:QMMethod">RB3LYP</string>
+<scalar units="units:hartree">-232.236222</scalar>
+</property>
+</propertyList>
+<property title="S**2" dictRef="gaussian:S**2">
+<scalar>0.0000</scalar>
+</property>
+<property title="Dipole" dictRef="ccml:dipole">
+<array dataType="xsd:double" units="units:debye">0.0000 0.0000 0.0000</array>
+<scalar units="units:debye">0.0000</scalar>
+</property>
+<propertyList title="Frequency Array">
+<property title="Mode 1" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">409.6752</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.00 0.18 0.00 0.00 -0.22 0.00 0.00 0.05 0.00 0.00 0.18 0.00 0.00 -0.22 0.00 0.00 0.05 0.00 0.00 0.40 0.00 0.00 -0.50 0.00 0.00 0.10 0.00 0.00 0.40 0.00 0.00 -0.50 0.00 0.00 0.10</matrix>
+</property>
+<property title="Mode 2" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">409.6752</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.00 0.16 0.00 0.00 0.08 0.00 0.00 -0.23 0.00 0.00 0.16 0.00 0.00 0.08 0.00 0.00 -0.23 0.00 0.00 0.35 0.00 0.00 0.17 0.00 0.00 -0.52 0.00 0.00 0.35 0.00 0.00 0.17 0.00 0.00 -0.52</matrix>
+</property>
+<property title="Mode 3" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">622.2621</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.14 -0.17 0.00 0.31 0.18 0.00 -0.10 0.21 0.00 -0.14 0.17 0.00 -0.31 -0.18 0.00 0.10 -0.21 0.00 -0.20 -0.17 0.00 0.31 0.17 0.00 -0.26 -0.07 0.00 0.20 0.17 0.00 -0.31 -0.17 0.00 0.26 0.07 0.00</matrix>
+</property>
+<property title="Mode 4" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">622.2621</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">-0.07 -0.32 0.00 0.09 -0.13 0.00 0.31 -0.08 0.00 0.07 0.32 0.00 -0.09 0.13 0.00 -0.31 0.08 0.00 0.11 -0.32 0.00 -0.10 0.20 0.00 0.21 -0.25 0.00 -0.11 0.32 0.00 0.10 -0.20 0.00 -0.21 0.25 0.00</matrix>
+</property>
+<property title="Mode 5" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">684.0845</scalar>
+<scalar title="IRintensity" units="units:km/mol">124.8746</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.00 0.03 0.00 0.00 0.03 0.00 0.00 0.03 0.00 0.00 0.03 0.00 0.00 0.03 0.00 0.00 0.03 0.00 0.00 -0.41 0.00 0.00 -0.41 0.00 0.00 -0.41 0.00 0.00 -0.41 0.00 0.00 -0.41 0.00 0.00 -0.41</matrix>
+</property>
+<property title="Mode 6" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">718.5031</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.00 0.20 0.00 0.00 -0.20 0.00 0.00 0.20 0.00 0.00 -0.20 0.00 0.00 0.20 0.00 0.00 -0.20 0.00 0.00 0.36 0.00 0.00 -0.36 0.00 0.00 0.36 0.00 0.00 -0.36 0.00 0.00 0.36 0.00 0.00 -0.36</matrix>
+</property>
+<property title="Mode 7" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">860.6113</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.00 -0.01 0.00 0.00 0.07 0.00 0.00 0.08 0.00 0.00 0.01 0.00 0.00 -0.07 0.00 0.00 -0.08 0.00 0.00 0.08 0.00 0.00 -0.45 0.00 0.00 -0.53 0.00 0.00 -0.08 0.00 0.00 0.45 0.00 0.00 0.53</matrix>
+</property>
+<property title="Mode 8" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">860.6113</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.00 -0.08 0.00 0.00 -0.05 0.00 0.00 0.03 0.00 0.00 0.08 0.00 0.00 0.05 0.00 0.00 -0.03 0.00 0.00 0.57 0.00 0.00 0.35 0.00 0.00 -0.22 0.00 0.00 -0.57 0.00 0.00 -0.35 0.00 0.00 0.22</matrix>
+</property>
+<property title="Mode 9" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">985.5164</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.00 0.00 0.00 0.00 -0.09 0.00 0.00 0.09 0.00 0.00 0.00 0.00 0.00 -0.09 0.00 0.00 0.09 0.00 0.00 0.02 0.00 0.00 0.48 0.00 0.00 -0.50 0.00 0.00 0.02 0.00 0.00 0.48 0.00 0.00 -0.50</matrix>
+</property>
+<property title="Mode 10" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">985.5164</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.00 -0.11 0.00 0.00 0.06 0.00 0.00 0.05 0.00 0.00 -0.11 0.00 0.00 0.06 0.00 0.00 0.05 0.00 0.00 0.57 0.00 0.00 -0.30 0.00 0.00 -0.27 0.00 0.00 0.57 0.00 0.00 -0.30 0.00 0.00 -0.27</matrix>
+</property>
+<property title="Mode 11" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1011.1521</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.28 0.00 0.24 0.14 0.00 0.24 -0.14 0.00 0.00 -0.28 0.00 -0.24 -0.14 0.00 -0.24 0.14 0.00 0.00 0.30 0.00 0.26 0.15 0.00 0.26 -0.15 0.00 0.00 -0.30 0.00 -0.26 -0.15 0.00 -0.26 0.15 0.00</matrix>
+</property>
+<property title="Mode 12" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1015.4341</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.00 -0.06 0.00 0.00 0.06 0.00 0.00 -0.06 0.00 0.00 0.06 0.00 0.00 -0.06 0.00 0.00 0.06 0.00 0.00 0.40 0.00 0.00 -0.40 0.00 0.00 0.40 0.00 0.00 -0.40 0.00 0.00 0.40 0.00 0.00 -0.40</matrix>
+</property>
+<property title="Mode 13" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1022.5747</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.29 0.00 -0.25 -0.14 0.00 0.25 -0.14 0.00 0.00 0.29 0.00 -0.25 -0.14 0.00 0.25 -0.14 0.00 0.00 0.29 0.00 -0.25 -0.14 0.00 0.25 -0.14 0.00 0.00 0.29 0.00 -0.25 -0.14 0.00 0.25 -0.14 0.00</matrix>
+</property>
+<property title="Mode 14" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1059.0011</scalar>
+<scalar title="IRintensity" units="units:km/mol">6.3847</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">-0.08 0.01 0.00 0.07 0.09 0.00 0.06 -0.09 0.00 -0.08 0.01 0.00 0.07 0.09 0.00 0.06 -0.09 0.00 -0.54 0.01 0.00 -0.02 0.27 0.00 -0.06 -0.31 0.00 -0.54 0.01 0.00 -0.02 0.27 0.00 -0.06 -0.31 0.00</matrix>
+</property>
+<property title="Mode 15" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1059.0011</scalar>
+<scalar title="IRintensity" units="units:km/mol">6.3828</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.12 0.00 0.08 -0.04 0.00 -0.09 -0.03 0.00 0.00 0.12 0.00 0.08 -0.04 0.00 -0.09 -0.03 0.00 0.03 0.13 0.00 0.29 -0.39 0.00 -0.29 -0.36 0.00 0.03 0.13 0.00 0.29 -0.39 0.00 -0.29 -0.36 0.00</matrix>
+</property>
+<property title="Mode 16" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1174.5048</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.04 0.00 0.00 -0.02 0.03 0.00 -0.02 -0.03 0.00 0.04 0.00 0.00 -0.02 0.03 0.00 -0.02 -0.03 0.00 0.41 0.00 0.00 -0.20 0.35 0.00 -0.20 -0.35 0.00 0.41 0.00 0.00 -0.20 0.35 0.00 -0.20 -0.35 0.00</matrix>
+</property>
+<property title="Mode 17" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1197.2020</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.06 0.00 0.00 0.00 0.01 0.00 0.02 0.04 0.00 -0.06 0.00 0.00 0.00 -0.01 0.00 -0.02 -0.04 0.00 0.54 0.00 0.00 -0.05 0.09 0.00 0.22 0.38 0.00 -0.54 0.00 0.00 0.05 -0.09 0.00 -0.22 -0.38 0.00</matrix>
+</property>
+<property title="Mode 18" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1197.2020</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.02 0.00 0.00 -0.03 0.05 0.00 -0.02 -0.03 0.00 -0.02 0.00 0.00 0.03 -0.05 0.00 0.02 0.03 0.00 0.20 0.00 0.00 -0.28 0.49 0.00 -0.19 -0.32 0.00 -0.20 0.00 0.00 0.28 -0.49 0.00 0.19 0.32 0.00</matrix>
+</property>
+<property title="Mode 19" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1336.3558</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.28 0.00 0.00 -0.14 0.24 0.00 -0.14 -0.24 0.00 0.28 0.00 0.00 -0.14 0.24 0.00 -0.14 -0.24 0.00 -0.30 0.00 0.00 0.15 -0.26 0.00 0.15 0.26 0.00 -0.30 0.00 0.00 0.15 -0.26 0.00 0.15 0.26 0.00</matrix>
+</property>
+<property title="Mode 20" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1381.0050</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">-0.06 0.00 0.00 -0.03 0.05 0.00 0.03 0.05 0.00 0.06 0.00 0.00 0.03 -0.05 0.00 -0.03 -0.05 0.00 0.40 0.00 0.00 0.20 -0.35 0.00 -0.20 -0.35 0.00 -0.40 0.00 0.00 -0.20 0.35 0.00 0.20 0.35 0.00</matrix>
+</property>
+<property title="Mode 21" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1510.3305</scalar>
+<scalar title="IRintensity" units="units:km/mol">7.1673</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.13 -0.04 0.00 -0.08 -0.05 0.00 0.02 0.13 0.00 0.13 -0.04 0.00 -0.08 -0.05 0.00 0.02 0.13 0.00 -0.48 -0.05 0.00 -0.11 -0.03 0.00 -0.28 -0.36 0.00 -0.48 -0.05 0.00 -0.11 -0.03 0.00 -0.28 -0.36 0.00</matrix>
+</property>
+<property title="Mode 22" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1510.3305</scalar>
+<scalar title="IRintensity" units="units:km/mol">7.1708</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">-0.07 -0.08 0.00 -0.08 0.12 0.00 0.11 0.03 0.00 -0.07 -0.08 0.00 -0.08 0.12 0.00 0.11 0.03 0.00 0.24 -0.10 0.00 0.26 -0.47 0.00 -0.07 -0.30 0.00 0.24 -0.10 0.00 0.26 -0.47 0.00 -0.07 -0.30 0.00</matrix>
+</property>
+<property title="Mode 23" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1633.7756</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.33 -0.01 0.00 -0.20 0.10 0.00 0.19 0.05 0.00 -0.33 0.01 0.00 0.20 -0.10 0.00 -0.19 -0.05 0.00 -0.42 -0.02 0.00 0.00 -0.28 0.00 0.05 -0.23 0.00 0.42 0.02 0.00 0.00 0.28 0.00 -0.05 0.23 0.00</matrix>
+</property>
+<property title="Mode 24" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">1633.7756</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.03 0.15 0.00 0.06 -0.28 0.00 0.10 0.29 0.00 -0.03 -0.15 0.00 -0.06 0.28 0.00 -0.10 -0.29 0.00 -0.04 0.17 0.00 -0.25 0.25 0.00 -0.25 -0.29 0.00 0.04 -0.17 0.00 0.25 -0.25 0.00 0.25 0.29 0.00</matrix>
+</property>
+<property title="Mode 25" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">3158.5451</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 -0.03 0.00 0.03 0.02 0.00 -0.03 0.02 0.00 0.00 -0.03 0.00 0.03 0.02 0.00 -0.03 0.02 0.00 0.00 0.41 0.00 -0.35 -0.20 0.00 0.35 -0.20 0.00 0.00 0.41 0.00 -0.35 -0.20 0.00 0.35 -0.20 0.00</matrix>
+</property>
+<property title="Mode 26" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">3168.1711</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 -0.04 0.00 0.00 0.00 0.00 0.04 -0.02 0.00 0.00 0.04 0.00 0.00 0.00 0.00 -0.04 0.02 0.00 0.00 0.50 0.00 0.00 0.00 0.00 -0.43 0.25 0.00 0.00 -0.50 0.00 0.00 0.00 0.00 0.43 -0.25 0.00</matrix>
+</property>
+<property title="Mode 27" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">3168.1711</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.02 0.00 -0.04 -0.02 0.00 0.02 -0.01 0.00 0.00 -0.02 0.00 0.04 0.02 0.00 -0.02 0.01 0.00 0.00 -0.29 0.00 0.50 0.29 0.00 -0.25 0.14 0.00 0.00 0.29 0.00 -0.50 -0.29 0.00 0.25 -0.14 0.00</matrix>
+</property>
+<property title="Mode 28" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">3183.7650</scalar>
+<scalar title="IRintensity" units="units:km/mol">37.5601</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.04 0.00 0.00 0.00 0.00 -0.04 0.02 0.00 0.00 0.04 0.00 0.00 0.00 0.00 -0.04 0.02 0.00 0.00 -0.50 0.00 0.00 0.01 0.00 0.43 -0.25 0.00 0.00 -0.50 0.00 0.00 0.01 0.00 0.43 -0.25 0.00</matrix>
+</property>
+<property title="Mode 29" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">3183.7650</scalar>
+<scalar title="IRintensity" units="units:km/mol">37.5587</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 0.03 0.00 0.04 0.03 0.00 0.02 -0.02 0.00 0.00 0.03 0.00 0.04 0.03 0.00 0.02 -0.02 0.00 0.00 -0.29 0.00 -0.50 -0.29 0.00 -0.25 0.15 0.00 0.00 -0.29 0.00 -0.50 -0.29 0.00 -0.25 0.15 0.00</matrix>
+</property>
+<property title="Mode 30" dictRef="gaussian:VibrationalFrequency">
+<scalar title="Frequency" units="units:cm**-1">3193.9493</scalar>
+<scalar title="IRintensity" units="units:km/mol">0.0000</scalar>
+<matrix rows="12" columns="3" dataType="xsd:float">0.00 -0.04 0.00 -0.03 -0.02 0.00 -0.03 0.02 0.00 0.00 0.04 0.00 0.03 0.02 0.00 0.03 -0.02 0.00 0.00 0.41 0.00 0.35 0.20 0.00 0.35 -0.20 0.00 0.00 -0.41 0.00 -0.35 -0.20 0.00 -0.35 0.20 0.00</matrix>
+</property>
+</propertyList>
+<bondArray>
+   <bond atomRefs2="a1 a2" order="2"/>
+   <bond atomRefs2="a1 a6" order="1"/>
+   <bond atomRefs2="a1 a7" order="1"/>
+   <bond atomRefs2="a2 a3" order="1"/>
+   <bond atomRefs2="a2 a8" order="1"/>
+   <bond atomRefs2="a3 a4" order="2"/>
+   <bond atomRefs2="a3 a9" order="1"/>
+   <bond atomRefs2="a4 a5" order="1"/>
+   <bond atomRefs2="a4 a10" order="1"/>
+   <bond atomRefs2="a5 a6" order="2"/>
+   <bond atomRefs2="a5 a11" order="1"/>
+   <bond atomRefs2="a6 a12" order="1"/>
+  </bondArray>
+<identifier>1/C6H6/c1-2-4-6-5-3-1/h1-6H</identifier>
+</molecule>
+</cml>

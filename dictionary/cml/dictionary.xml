@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cml xmlns="http://www.xml-cml.org/schema" xmlns:html="http://www.w3.org/1999/xhtml">
+  <dictionary title="fundamental chemistry concepts" namespace="http://www.xml-cml.org/dictionary/cml/">
+    <entry id="mw" term="Molecular weight" title="Molecular weight">
+      <description>
+        <html:p>
+          The molecular mass of a substance, more commonly referred to as molecular weight, is the mass of one
+          molecule of that substance, relative to the unified atomic mass unit (equal to 1/12 the mass of one 
+          atom of carbon-12).
+          </html:p> 
+          <html:p><html:i>May be specific mass of this molecule (i.e. the particular isotopes present) or 
+          an ensemble mass (i.e.taking account of the natural relative abundance of particular isotopes).
+          Further disambiguation is required.</html:i>
+        </html:p>
+      </description>
+    </entry>
+    <entry id="mpt" term="Melting point" title="Melting point">
+      <description>
+        <html:p>
+          The melting point of a solid is the temperature range at which it changes state from solid to liquid. Although the phrase would suggest a
+          specific temperature and is commonly and incorrectly used as such in most textbooks and literature, most crystalline compounds actually melt
+          over a range of a few degrees or less. At the melting point the solid and liquid phase exist in equilibrium.
+        </html:p>
+      </description>
+    </entry>
+    <entry id="bpt" term="Boiling point" title="Boiling point">
+      <description>
+        <html:p>
+          The boiling point of a liquid is the temperature at which the vapour pressure of the liquid equals the environmental pressure surrounding the
+          liquid. 
+        </html:p>
+      </description>
+    </entry>    
+    <entry id="boldNo" term="Bold number" title="Bold number">
+      <description>
+        <html:p>
+          The identifier which is used to refer to this molecule / fragment within a particular document. 
+        </html:p>
+      </description>
+    </entry>    
+    <entry id="locant" term="Locant" title="Locant">
+      <description>
+        <html:p>
+          The identifier which is used to refer to this atom position in the molecule for example; numbers, element symbols or greek characters.
+        </html:p>
+      </description>
+    </entry>    
+  </dictionary>
+</cml>

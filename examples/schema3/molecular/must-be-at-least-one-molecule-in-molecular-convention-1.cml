@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml:cml xmlns:cml="http://www.xml-cml.org/schema"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:conventions="http://www.xml-cml.org/convention/"
+        xmlns:cmlDictionary="http://www.xml-cml.org/dictionary/">
+    <dc:title>test file for http://www.xml-cml.org/convention/molecular convention</dc:title>
+    <dc:description>there must be at least one molecule within the molecular convention</dc:description>
+    <dc:author>J A Townsend</dc:author>
+    <dc:rights>Copyright J A Townsend jat45@cantab.net 2009.</dc:rights>
+    <dc:date>2009-01-21</dc:date>
+    <foreign-element>
+        <cml:molecule id="m1" convention="conventions:molecular" />
+    </foreign-element>
+</cml:cml>

@@ -1,0 +1,12 @@
+<cml xmlns="http://www.xml-cml.org/schema" xmlns:html="http://www.w3.org/1999/xhtml">
+  <dictionary title="chemical naming conventions" namespace="http://www.xml-cml.org/dictionary/cml/name/">
+    <entry id="iupac" term="IUPAC chemical name" title="IUPAC chemical name">
+      <description>
+        <html:p>
+          The chemical name determined according to the nomenclature rules agreed upon by the International Union of Pure and Applied Chemistry
+          (IUPAC).
+        </html:p>
+      </description>
+    </entry>
+</dictionary>
+</cml>

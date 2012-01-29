@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="gly0" convention="cml:PML-basic" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <join convention="fragmentContainer">
+    <molecule ref="g:oh">
+      <join right="r1"/>
+    </molecule>
+    <join order="1">
+      <length>1.4</length>
+    </join>
+    <molecule ref="g:gly" countExpression="*(10)">
+      <arg name="psi">
+        <scalar dataType="xsd:string">55</scalar>
+      </arg>
+      <arg name="phi">
+        <scalar dataType="xsd:string">65</scalar>
+      </arg>
+      <join order="1">
+        <torsion>180.0</torsion>
+        <length>1.4</length>
+      </join>
+      <join left="r1" right="r2"/>
+    </molecule>
+    <join order="1">
+      <length>1.54</length>
+    </join>
+    <molecule ref="g:cl">
+      <join left="r1"/>
+    </molecule>
+  </join>
+</molecule>

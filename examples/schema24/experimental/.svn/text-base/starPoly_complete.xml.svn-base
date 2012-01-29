@@ -1,0 +1,253 @@
+<molecule id="starPoly" convention="cml:PML-complete" xmlns:f="http://www.xml-cml.org/mols/frags" xmlns="http://www.xml-cml.org/schema">
+ <atomArray>
+  <atom elementType="C" hydrogenCount="0" id="benzene_1_a1"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="benzene_1_a2"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="benzene_1_a3"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="benzene_1_a4"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="benzene_1_a5"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="benzene_1_a6"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_2_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_2_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_2_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_3_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_3_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_3_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_4_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_4_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_4_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_5_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_5_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_5_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_6_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_6_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_6_a3"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="acetate_7_a1"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="acetate_7_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_7_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_7_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_8_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_8_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_8_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_9_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_9_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_9_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_10_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_10_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_10_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_11_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_11_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_11_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_12_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_12_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_12_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_13_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_13_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_13_a3"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="acetate_14_a1"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="acetate_14_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_14_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_14_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_15_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_15_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_15_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_16_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_16_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_16_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_17_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_17_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_17_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_18_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_18_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_18_a3"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="acetate_19_a1"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="acetate_19_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_19_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_19_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_20_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_20_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_20_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_21_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_21_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_21_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_22_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_22_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_22_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_23_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_23_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_23_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_24_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_24_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_24_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_25_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_25_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_25_a3"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="acetate_26_a1"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="acetate_26_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_26_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_26_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_27_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_27_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_27_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_28_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_28_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_28_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_29_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_29_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_29_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_30_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_30_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_30_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_31_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_31_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_31_a3"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="acetate_32_a1"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="acetate_32_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_32_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_32_a4"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_33_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_33_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_33_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_34_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_34_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_34_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_35_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_35_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_35_a3"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_36_a1"> </atom>
+  <atom elementType="C" hydrogenCount="2" id="eo_36_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="eo_36_a3"> </atom>
+  <atom elementType="C" hydrogenCount="3" id="acetate_37_a1"> </atom>
+  <atom elementType="C" hydrogenCount="0" id="acetate_37_a2"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_37_a3"> </atom>
+  <atom elementType="O" hydrogenCount="0" id="acetate_37_a4"> </atom>
+ </atomArray>
+ <bondArray>
+  <bond order="A" id="benzene_1_a1_benzene_1_a2" atomRefs2="benzene_1_a1 benzene_1_a2"> </bond>
+  <bond order="A" id="benzene_1_a2_benzene_1_a3" atomRefs2="benzene_1_a2 benzene_1_a3"> </bond>
+  <bond order="A" id="benzene_1_a3_benzene_1_a4" atomRefs2="benzene_1_a3 benzene_1_a4"> </bond>
+  <bond order="A" id="benzene_1_a4_benzene_1_a5" atomRefs2="benzene_1_a4 benzene_1_a5"> </bond>
+  <bond order="A" id="benzene_1_a5_benzene_1_a6" atomRefs2="benzene_1_a5 benzene_1_a6"> </bond>
+  <bond order="A" id="benzene_1_a6_benzene_1_a1" atomRefs2="benzene_1_a6 benzene_1_a1"> </bond>
+  <bond order="1" id="eo_2_a1_eo_2_a2" atomRefs2="eo_2_a1 eo_2_a2"> </bond>
+  <bond order="1" id="eo_2_a2_eo_2_a3" atomRefs2="eo_2_a2 eo_2_a3"> </bond>
+  <bond order="1" id="eo_3_a1_eo_3_a2" atomRefs2="eo_3_a1 eo_3_a2"> </bond>
+  <bond order="1" id="eo_3_a2_eo_3_a3" atomRefs2="eo_3_a2 eo_3_a3"> </bond>
+  <bond order="1" id="eo_4_a1_eo_4_a2" atomRefs2="eo_4_a1 eo_4_a2"> </bond>
+  <bond order="1" id="eo_4_a2_eo_4_a3" atomRefs2="eo_4_a2 eo_4_a3"> </bond>
+  <bond order="1" id="eo_5_a1_eo_5_a2" atomRefs2="eo_5_a1 eo_5_a2"> </bond>
+  <bond order="1" id="eo_5_a2_eo_5_a3" atomRefs2="eo_5_a2 eo_5_a3"> </bond>
+  <bond order="1" id="eo_6_a1_eo_6_a2" atomRefs2="eo_6_a1 eo_6_a2"> </bond>
+  <bond order="1" id="eo_6_a2_eo_6_a3" atomRefs2="eo_6_a2 eo_6_a3"> </bond>
+  <bond order="1" id="acetate_7_a1_acetate_7_a2" atomRefs2="acetate_7_a1 acetate_7_a2"> </bond>
+  <bond order="2" id="acetate_7_a2_acetate_7_a3" atomRefs2="acetate_7_a2 acetate_7_a3"> </bond>
+  <bond order="1" id="acetate_7_a2_acetate_7_a4" atomRefs2="acetate_7_a2 acetate_7_a4"> </bond>
+  <bond order="1" id="eo_8_a1_eo_8_a2" atomRefs2="eo_8_a1 eo_8_a2"> </bond>
+  <bond order="1" id="eo_8_a2_eo_8_a3" atomRefs2="eo_8_a2 eo_8_a3"> </bond>
+  <bond order="1" id="eo_9_a1_eo_9_a2" atomRefs2="eo_9_a1 eo_9_a2"> </bond>
+  <bond order="1" id="eo_9_a2_eo_9_a3" atomRefs2="eo_9_a2 eo_9_a3"> </bond>
+  <bond order="1" id="eo_10_a1_eo_10_a2" atomRefs2="eo_10_a1 eo_10_a2"> </bond>
+  <bond order="1" id="eo_10_a2_eo_10_a3" atomRefs2="eo_10_a2 eo_10_a3"> </bond>
+  <bond order="1" id="eo_11_a1_eo_11_a2" atomRefs2="eo_11_a1 eo_11_a2"> </bond>
+  <bond order="1" id="eo_11_a2_eo_11_a3" atomRefs2="eo_11_a2 eo_11_a3"> </bond>
+  <bond order="1" id="eo_12_a1_eo_12_a2" atomRefs2="eo_12_a1 eo_12_a2"> </bond>
+  <bond order="1" id="eo_12_a2_eo_12_a3" atomRefs2="eo_12_a2 eo_12_a3"> </bond>
+  <bond order="1" id="eo_13_a1_eo_13_a2" atomRefs2="eo_13_a1 eo_13_a2"> </bond>
+  <bond order="1" id="eo_13_a2_eo_13_a3" atomRefs2="eo_13_a2 eo_13_a3"> </bond>
+  <bond order="1" id="acetate_14_a1_acetate_14_a2" atomRefs2="acetate_14_a1 acetate_14_a2"> </bond>
+  <bond order="2" id="acetate_14_a2_acetate_14_a3" atomRefs2="acetate_14_a2 acetate_14_a3"> </bond>
+  <bond order="1" id="acetate_14_a2_acetate_14_a4" atomRefs2="acetate_14_a2 acetate_14_a4"> </bond>
+  <bond order="1" id="eo_15_a1_eo_15_a2" atomRefs2="eo_15_a1 eo_15_a2"> </bond>
+  <bond order="1" id="eo_15_a2_eo_15_a3" atomRefs2="eo_15_a2 eo_15_a3"> </bond>
+  <bond order="1" id="eo_16_a1_eo_16_a2" atomRefs2="eo_16_a1 eo_16_a2"> </bond>
+  <bond order="1" id="eo_16_a2_eo_16_a3" atomRefs2="eo_16_a2 eo_16_a3"> </bond>
+  <bond order="1" id="eo_17_a1_eo_17_a2" atomRefs2="eo_17_a1 eo_17_a2"> </bond>
+  <bond order="1" id="eo_17_a2_eo_17_a3" atomRefs2="eo_17_a2 eo_17_a3"> </bond>
+  <bond order="1" id="eo_18_a1_eo_18_a2" atomRefs2="eo_18_a1 eo_18_a2"> </bond>
+  <bond order="1" id="eo_18_a2_eo_18_a3" atomRefs2="eo_18_a2 eo_18_a3"> </bond>
+  <bond order="1" id="acetate_19_a1_acetate_19_a2" atomRefs2="acetate_19_a1 acetate_19_a2"> </bond>
+  <bond order="2" id="acetate_19_a2_acetate_19_a3" atomRefs2="acetate_19_a2 acetate_19_a3"> </bond>
+  <bond order="1" id="acetate_19_a2_acetate_19_a4" atomRefs2="acetate_19_a2 acetate_19_a4"> </bond>
+  <bond order="1" id="eo_20_a1_eo_20_a2" atomRefs2="eo_20_a1 eo_20_a2"> </bond>
+  <bond order="1" id="eo_20_a2_eo_20_a3" atomRefs2="eo_20_a2 eo_20_a3"> </bond>
+  <bond order="1" id="eo_21_a1_eo_21_a2" atomRefs2="eo_21_a1 eo_21_a2"> </bond>
+  <bond order="1" id="eo_21_a2_eo_21_a3" atomRefs2="eo_21_a2 eo_21_a3"> </bond>
+  <bond order="1" id="eo_22_a1_eo_22_a2" atomRefs2="eo_22_a1 eo_22_a2"> </bond>
+  <bond order="1" id="eo_22_a2_eo_22_a3" atomRefs2="eo_22_a2 eo_22_a3"> </bond>
+  <bond order="1" id="eo_23_a1_eo_23_a2" atomRefs2="eo_23_a1 eo_23_a2"> </bond>
+  <bond order="1" id="eo_23_a2_eo_23_a3" atomRefs2="eo_23_a2 eo_23_a3"> </bond>
+  <bond order="1" id="eo_24_a1_eo_24_a2" atomRefs2="eo_24_a1 eo_24_a2"> </bond>
+  <bond order="1" id="eo_24_a2_eo_24_a3" atomRefs2="eo_24_a2 eo_24_a3"> </bond>
+  <bond order="1" id="eo_25_a1_eo_25_a2" atomRefs2="eo_25_a1 eo_25_a2"> </bond>
+  <bond order="1" id="eo_25_a2_eo_25_a3" atomRefs2="eo_25_a2 eo_25_a3"> </bond>
+  <bond order="1" id="acetate_26_a1_acetate_26_a2" atomRefs2="acetate_26_a1 acetate_26_a2"> </bond>
+  <bond order="2" id="acetate_26_a2_acetate_26_a3" atomRefs2="acetate_26_a2 acetate_26_a3"> </bond>
+  <bond order="1" id="acetate_26_a2_acetate_26_a4" atomRefs2="acetate_26_a2 acetate_26_a4"> </bond>
+  <bond order="1" id="eo_27_a1_eo_27_a2" atomRefs2="eo_27_a1 eo_27_a2"> </bond>
+  <bond order="1" id="eo_27_a2_eo_27_a3" atomRefs2="eo_27_a2 eo_27_a3"> </bond>
+  <bond order="1" id="eo_28_a1_eo_28_a2" atomRefs2="eo_28_a1 eo_28_a2"> </bond>
+  <bond order="1" id="eo_28_a2_eo_28_a3" atomRefs2="eo_28_a2 eo_28_a3"> </bond>
+  <bond order="1" id="eo_29_a1_eo_29_a2" atomRefs2="eo_29_a1 eo_29_a2"> </bond>
+  <bond order="1" id="eo_29_a2_eo_29_a3" atomRefs2="eo_29_a2 eo_29_a3"> </bond>
+  <bond order="1" id="eo_30_a1_eo_30_a2" atomRefs2="eo_30_a1 eo_30_a2"> </bond>
+  <bond order="1" id="eo_30_a2_eo_30_a3" atomRefs2="eo_30_a2 eo_30_a3"> </bond>
+  <bond order="1" id="eo_31_a1_eo_31_a2" atomRefs2="eo_31_a1 eo_31_a2"> </bond>
+  <bond order="1" id="eo_31_a2_eo_31_a3" atomRefs2="eo_31_a2 eo_31_a3"> </bond>
+  <bond order="1" id="acetate_32_a1_acetate_32_a2" atomRefs2="acetate_32_a1 acetate_32_a2"> </bond>
+  <bond order="2" id="acetate_32_a2_acetate_32_a3" atomRefs2="acetate_32_a2 acetate_32_a3"> </bond>
+  <bond order="1" id="acetate_32_a2_acetate_32_a4" atomRefs2="acetate_32_a2 acetate_32_a4"> </bond>
+  <bond order="1" id="eo_33_a1_eo_33_a2" atomRefs2="eo_33_a1 eo_33_a2"> </bond>
+  <bond order="1" id="eo_33_a2_eo_33_a3" atomRefs2="eo_33_a2 eo_33_a3"> </bond>
+  <bond order="1" id="eo_34_a1_eo_34_a2" atomRefs2="eo_34_a1 eo_34_a2"> </bond>
+  <bond order="1" id="eo_34_a2_eo_34_a3" atomRefs2="eo_34_a2 eo_34_a3"> </bond>
+  <bond order="1" id="eo_35_a1_eo_35_a2" atomRefs2="eo_35_a1 eo_35_a2"> </bond>
+  <bond order="1" id="eo_35_a2_eo_35_a3" atomRefs2="eo_35_a2 eo_35_a3"> </bond>
+  <bond order="1" id="eo_36_a1_eo_36_a2" atomRefs2="eo_36_a1 eo_36_a2"> </bond>
+  <bond order="1" id="eo_36_a2_eo_36_a3" atomRefs2="eo_36_a2 eo_36_a3"> </bond>
+  <bond order="1" id="acetate_37_a1_acetate_37_a2" atomRefs2="acetate_37_a1 acetate_37_a2"> </bond>
+  <bond order="2" id="acetate_37_a2_acetate_37_a3" atomRefs2="acetate_37_a2 acetate_37_a3"> </bond>
+  <bond order="1" id="acetate_37_a2_acetate_37_a4" atomRefs2="acetate_37_a2 acetate_37_a4"> </bond>
+  <bond atomRefs2="benzene_1_a1 eo_2_a3" id="f:benzene_1_r1_f:eo_2_r2"/>
+  <bond atomRefs2="eo_2_a1 eo_3_a3" id="f:eo_2_r1_f:eo_3_r2"/>
+  <bond atomRefs2="eo_3_a1 eo_4_a3" id="f:eo_3_r1_f:eo_4_r2"/>
+  <bond atomRefs2="eo_4_a1 eo_5_a3" id="f:eo_4_r1_f:eo_5_r2"/>
+  <bond atomRefs2="eo_5_a1 eo_6_a3" id="f:eo_5_r1_f:eo_6_r2"/>
+  <bond atomRefs2="eo_6_a1 acetate_7_a4" id="f:eo_6_r1_f:acetate_7_r1"/>
+  <bond atomRefs2="benzene_1_a2 eo_8_a3" id="f:benzene_1_r2_f:eo_8_r2"/>
+  <bond atomRefs2="eo_8_a1 eo_9_a3" id="f:eo_8_r1_f:eo_9_r2"/>
+  <bond atomRefs2="eo_9_a1 eo_10_a3" id="f:eo_9_r1_f:eo_10_r2"/>
+  <bond atomRefs2="eo_10_a1 eo_11_a3" id="f:eo_10_r1_f:eo_11_r2"/>
+  <bond atomRefs2="eo_11_a1 eo_12_a3" id="f:eo_11_r1_f:eo_12_r2"/>
+  <bond atomRefs2="eo_12_a1 eo_13_a3" id="f:eo_12_r1_f:eo_13_r2"/>
+  <bond atomRefs2="eo_13_a1 acetate_14_a4" id="f:eo_13_r1_f:acetate_14_r1"/>
+  <bond atomRefs2="benzene_1_a3 eo_15_a3" id="f:benzene_1_r3_f:eo_15_r2"/>
+  <bond atomRefs2="eo_15_a1 eo_16_a3" id="f:eo_15_r1_f:eo_16_r2"/>
+  <bond atomRefs2="eo_16_a1 eo_17_a3" id="f:eo_16_r1_f:eo_17_r2"/>
+  <bond atomRefs2="eo_17_a1 eo_18_a3" id="f:eo_17_r1_f:eo_18_r2"/>
+  <bond atomRefs2="eo_18_a1 acetate_19_a4" id="f:eo_18_r1_f:acetate_19_r1"/>
+  <bond atomRefs2="benzene_1_a4 eo_20_a3" id="f:benzene_1_r4_f:eo_20_r2"/>
+  <bond atomRefs2="eo_20_a1 eo_21_a3" id="f:eo_20_r1_f:eo_21_r2"/>
+  <bond atomRefs2="eo_21_a1 eo_22_a3" id="f:eo_21_r1_f:eo_22_r2"/>
+  <bond atomRefs2="eo_22_a1 eo_23_a3" id="f:eo_22_r1_f:eo_23_r2"/>
+  <bond atomRefs2="eo_23_a1 eo_24_a3" id="f:eo_23_r1_f:eo_24_r2"/>
+  <bond atomRefs2="eo_24_a1 eo_25_a3" id="f:eo_24_r1_f:eo_25_r2"/>
+  <bond atomRefs2="eo_25_a1 acetate_26_a4" id="f:eo_25_r1_f:acetate_26_r1"/>
+  <bond atomRefs2="benzene_1_a5 eo_27_a3" id="f:benzene_1_r5_f:eo_27_r2"/>
+  <bond atomRefs2="eo_27_a1 eo_28_a3" id="f:eo_27_r1_f:eo_28_r2"/>
+  <bond atomRefs2="eo_28_a1 eo_29_a3" id="f:eo_28_r1_f:eo_29_r2"/>
+  <bond atomRefs2="eo_29_a1 eo_30_a3" id="f:eo_29_r1_f:eo_30_r2"/>
+  <bond atomRefs2="eo_30_a1 eo_31_a3" id="f:eo_30_r1_f:eo_31_r2"/>
+  <bond atomRefs2="eo_31_a1 acetate_32_a4" id="f:eo_31_r1_f:acetate_32_r1"/>
+  <bond atomRefs2="benzene_1_a6 eo_33_a3" id="f:benzene_1_r6_f:eo_33_r2"/>
+  <bond atomRefs2="eo_33_a1 eo_34_a3" id="f:eo_33_r1_f:eo_34_r2"/>
+  <bond atomRefs2="eo_34_a1 eo_35_a3" id="f:eo_34_r1_f:eo_35_r2"/>
+  <bond atomRefs2="eo_35_a1 eo_36_a3" id="f:eo_35_r1_f:eo_36_r2"/>
+  <bond atomRefs2="eo_36_a1 acetate_37_a4" id="f:eo_36_r1_f:acetate_37_r1"/>
+ </bondArray>
+ <name>benzene_1</name>
+ <name>acetate_7</name>
+ <name>acetate_14</name>
+ <name>acetate_19</name>
+ <name>acetate_26</name>
+ <name>acetate_32</name>
+ <name>acetate_37</name>
+</molecule>

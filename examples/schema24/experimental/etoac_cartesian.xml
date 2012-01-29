@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule id="etoac" convention="cml:PML-cartesian" xmlns:g="http://www.xml-cml.org/mols/geom" xmlns="http://www.xml-cml.org/schema">
+  <atomArray>
+    <atom elementType="C" hydrogenCount="3" id="acet_1_a1" x3="0.0" y3="0.0" z3="0.0"></atom>
+    <atom elementType="C" hydrogenCount="0" id="acet_1_a2" x3="1.52" y3="0.0" z3="0.0"></atom>
+    <atom elementType="O" hydrogenCount="0" id="acet_1_a3" x3="2.145" y3="-1.0825317547305486" z3="-1.3388752810243206E-16"></atom>
+    <atom elementType="O" hydrogenCount="0" id="acet_1_a4" x3="2.241053304874076" y3="1.200034220982957" z3="0.0"></atom>
+    <atom elementType="C" hydrogenCount="3" id="et_2_a1" x3="4.1677418471957095" y3="2.604336608325476" z3="-6.239436295555454E-17"></atom>
+    <atom elementType="C" hydrogenCount="2" id="et_2_a2" x3="3.590847693335204" y3="1.1764734722926238" z3="1.4317765722786243E-16"></atom>
+  </atomArray>
+  <bondArray>
+    <bond order="1" id="acet_1_a1_acet_1_a2" atomRefs2="acet_1_a1 acet_1_a2"></bond>
+    <bond order="2" id="acet_1_a2_acet_1_a3" atomRefs2="acet_1_a2 acet_1_a3"></bond>
+    <bond order="1" id="acet_1_a2_acet_1_a4" atomRefs2="acet_1_a2 acet_1_a4"></bond>
+    <bond order="1" id="et_2_a1_et_2_a2" atomRefs2="et_2_a1 et_2_a2"></bond>
+    <bond atomRefs2="acet_1_a4 et_2_a2" id="g:acet_1_r1_g:et_2_r1" order="1"/>
+  </bondArray>
+  <torsion atomRefs4="acet_1_a1 acet_1_a2 acet_1_a4 et_2_a2">180</torsion>
+  <angle atomRefs3="acet_1_a2 acet_1_a4 et_2_a2">120</angle>
+  <torsion atomRefs4="acet_1_a1 acet_1_a4 acet_1_a2 acet_1_a3">180</torsion>
+  <angle atomRefs3="acet_1_a1 acet_1_a2 acet_1_a4">121</angle>
+  <length atomRefs2="acet_1_a2 acet_1_a4">1.40</length>
+  <angle atomRefs3="acet_1_a4 acet_1_a2 acet_1_a3">119</angle>
+  <length atomRefs2="acet_1_a2 acet_1_a3">1.25</length>
+  <length atomRefs2="acet_1_a1 acet_1_a2">1.52</length>
+  <name>acet_1</name>
+  <angle atomRefs3="et_2_a1 et_2_a2 acet_1_a4">111</angle>
+  <length atomRefs2="et_2_a1 et_2_a2">1.54</length>
+  <name>ethyl_2</name>
+  <length atomRefs2="acet_1_a4 et_2_a2">1.35</length>
+  <torsion atomRefs4="acet_1_a2 acet_1_a4 et_2_a2 et_2_a1">180.0</torsion>
+</molecule>
