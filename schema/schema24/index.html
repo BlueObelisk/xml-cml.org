@@ -1,140 +1,41 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
-<head profile="http://dublincore.org/documents/dcq-html/">
-    <meta name="dcterms.created" content="2010-09-30T15:00:00Z" />
-    <meta name="dcterms.creator" content="Joe Townsend, University of Cambridge" />
-    <meta name="dcterms.contributor" content="Henry Rzepa, Imperial College London" />
-    <meta name="dcterms.contributor" content="Peter Murray-Rust, University of Cambridge" />
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <meta name="description" content="CML home page" />
-    <meta name="keywords" content="CML, schema, xml-cml" />
-    <meta name="robots" content="index,follow,noodp,noydir" />
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset-fonts-grids/reset-fonts-grids.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="http://xml-cml.org/css/superfish.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="http://xml-cml.org/css/cml.css" />
-    <script type="text/javascript" src="http://xml-cml.org/js/jquery-1.2.6.min.js"></script>
-    <script type="text/javascript" src="http://xml-cml.org/js/hoverIntent.js"></script>
-    <script type="text/javascript" src="http://xml-cml.org/js/superfish.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("ul.sf-menu").superfish();
-        });  
-    </script>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--#include virtual="/common/include/common-head.html" -->
     <title>Chemical Markup Language | Schema 2.4</title>
+    <meta name="description" content="CML home page" />
 </head>
 <body>
-    <div id="wrapper" class="page clear">
-        <div id="header">
-            <img alt="Chemical Markup Language" src="http://xml-cml.org/images/title.png">
-            <div id="navigation" class="clear">
-                <div id="menu">
-                    <ul class="sf-menu">
-                        <li><a href="/index.html">Home</a> </li>
-                        <li><a href="/tutorial/index.html">Tutorial</a> </li>
-                        <li><a href="/examples/index.html" class="sf-with-ul">Examples<span class="sf-sub-indicator">»</span></a>
-                            <ul>
-                                <li><a href="/examples/schema3/index.html">Schema 3<span class="sf-sub-indicator">»</span></a>
-                                    <ul>
-                                        <li><a href="/examples/schema3/compchem/index.html">CompChem</a></li>
-                                        <li><a href="/examples/schema3/molecular/index.html">Molecular</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="/examples/schema24/index.html">Schema 2.4</a> </li>
-                            </ul>
-                        </li>
-                        <li><a href="/software/index.html">Validator</a> </li>
-                        <li><a href="/schema/index.html" class="sf-with-ul">Schema<span class="sf-sub-indicator">»</span></a>
-                            <ul>
-                                <li><a href="#" class="sf-with-ul">Latest<span class="sf-sub-indicator">»</span></a>
-                                    <ul>
-                                        <li><a href="#">View</a></li>
-                                        <li><a href="#">Download</a></li>
-                                        <li><a href="#">CMLLite</a></li>
-                                        <li><a href="/examples/schema3/index.html">Examples</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="sf-with-ul">Schema 2.4<span class="sf-sub-indicator">»</span></a>
-                                    <ul>
-                                        <li><a href="/schema/schema24">View 2.4</a></li>
-                                        <li><a href="#">Download 2.4</a></li>
-                                        <li><a href="/examples/schema24/index.html">Examples</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="/dictionary/index.html" class="sf-with-ul">Dictionaries<span class="sf-sub-indicator">»</span></a>
-                            <ul>
-                                <li><a href="#" class="sf-with-ul">menu item<span class="sf-sub-indicator">»</span></a>
-                                    <ul>
-                                        <li><a href="#">menu item</a></li>
-                                        <li><a href="#">menu item</a></li>
-                                        <li><a href="#">menu item</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="sf-with-ul">menu item<span class="sf-sub-indicator">»</span></a>
-                                    <ul>
-                                        <li><a href="#">menu item</a></li>
-                                        <li><a href="#">menu item</a></li>
-                                        <li><a href="#">menu item</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="sf-with-ul">menu item<span class="sf-sub-indicator">»</span></a>
-                                    <ul>
-                                        <li><a href="#">menu item</a></li>
-                                        <li><a href="#">menu item</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">menu item</a> </li>
-                            </ul>
-                        </li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li class="last"><a href="http://www.xml-cml.org/links/index.html" class="sf-with-ul">
-                            Tools &amp; Links<span class="sf-sub-indicator">»</span></a>
-                            <ul>
-                                <li><a href="./tools/index.html#validator">Validator</a></li>
-                                <li><a href="./tools/index.html#jumbo">JUMBO</a></li>
-                                <li><a href="./tools/index.html#chem4word">Chem4Word</a></li>
-                                <li><a href="/links/bibliography.html">Bibliography</a></li>
-                                <li><a href="/blog/" class="sf-with-ul">Blogs<span class="sf-sub-indicator">»</span></a>
-                                    <ul>
-                                        <li><a href="/blog/">The CML Blog</a></li>
-                                        <li><a href="http://www.ch.ic.ac.uk/rzepa/blog/">Henry Rzepa</a></li>
-                                        <li><a href="http://wwmm.ch.cam.ac.uk/blogs/murrayrust/">Peter MR</a></li>
-                                        <li><a href="http://jat45.wordpress.com">Joe Townsend</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="http://wikipedia.org/wiki/Chemical_Markup_Language">Wikipedia Entry</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="clear">
-                    </div>
-                </div>
-                <div id="breadcrumbs" class="clear">
-                    <ul>
-                        <li><a href="/index.html">CML</a></li>
-                        <li><a href="/schema/index.html">CML</a></li>
-                        <li>Schema 2.4</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="content">
-            schema 2.4 to go here
-        </div>
-        <div id="footer" class="clear">
-            <div id="footer-links">
-                <ul>
-                    <li><a href="mailto:jat45@cam.ac.uk">Contact Us</a></li>
-                    <li class="last"><a href="/blog/">Blog</a></li>
-                </ul>
-            </div>
-            <div id="footer-copywrite">
-                <p>
-                    &#169; J. A. Townsend 2010
-                </p>
-            </div>
-        </div>
+<div id="wrapper" class="page clear">
+
+<div id="header">
+    <!--#include virtual="/common/include/header-and-menu.html" -->
+    <div id="breadcrumbs" class="clear">
+        <ul>
+            <li><a href="/">CML</a></li>
+            <li><a href="/schema/">Schema</a></li>
+            <li>Schema 2.4</li>
+        </ul>
     </div>
+</div>
+
+<div id="content">
+
+    <h2>
+   Warning
+   </h2>
+   <p>
+   This page can take a long time to load. If you would prefer to download the schema (much
+   faster) click <a href="/schema/schema24/schema.xsd">here</a>.
+   </p>
+   <div id="XMLHolder">
+       <script> LoadXML('XMLHolder', 'schema.xsd'); </script>
+   </div>
+
+</div>
+
+<!--#include virtual="/common/include/footer.html" -->
+
+</div>
 </body>
 </html>

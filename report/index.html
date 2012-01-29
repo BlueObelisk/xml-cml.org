@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--#include virtual="/common/include/common-head.html" -->
+    <title>Chemical Markup Language | Report</title>
+    <meta name="description" content="CML home page" />
+</head>
+<body>
+<div id="wrapper" class="page clear">
+
+<div id="header">
+    <!--#include virtual="/common/include/header-and-menu.html" -->
+    <div id="breadcrumbs" class="clear">
+        <ul>
+            <li><a href="/">CML</a></li>
+            <li>Report</li>
+        </ul>
+    </div>
+</div>
+
+<div id="content">
+    <h1>Report language</h1>
+    <p>
+     To support the MUST, SHOULD, MAY style of rules we use in the <a href='http://validator.xml-cml.org'>validator</a>
+     we have developed a small report language to indicate the different levels of severity. The structure of this
+     language is shown schematically below.
+    </p>
+    <p>
+      <img alt="Report language schematic" src="http://www.xml-cml.org/common/images/report-language.png" width="100%"/>
+    </p>
+    <h2>Example documents</h2>
+    <h3>VALID</h3>
+    <p>
+    <pre>
+&lt;report xmlns = "http://www.xml-cml.org/report/"&gt;
+	&lt;well-formed-test&gt;
+		&lt;valid &gt;xml is well formed&lt;/valid&gt;
+	&lt;/well-formed-test&gt;
+	&lt;schema-validation-test&gt;
+		&lt;valid&gt;document conforms to the schema&lt;/valid&gt;
+	&lt;/schema-validation-test&gt;
+	&lt;convention-validation-test&gt;
+		&lt;valid&gt;document conforms to all the conventions specified&lt;/valid&gt;
+	&lt;/convention-validation-test&gt;
+	&lt;uris-reachable-test&gt;
+		&lt;valid&gt;All appropriate URIs were reachable&lt;/valid&gt;
+		&lt;valid&gt;all dictRefs are resolvable &lt;/valid&gt;
+	&lt;/uris-reachable-test&gt;
+&lt;/report&gt;
+    </pre>
+    </p>
+    <h3>VALID with INFO</h3>
+    <p>
+    <pre>
+&lt;report xmlns = "http://www.xml-cml.org/report/"&gt;
+	&lt;well-formed-test&gt;
+		&lt;valid &gt; xml is well formed &lt;/valid&gt;
+	&lt;/well-formed-test&gt;
+	&lt;schema-validation-test&gt;
+		&lt;valid &gt; document conforms to the schema &lt;/valid&gt;
+	&lt;/schema-validation-test&gt;
+	&lt;convention-validation-test&gt;
+		&lt;info location = "/*[local-name() = 'unitList' and namespace-uri() = 'http://www.xml-cml.org/schema']
+			[1]/*[local-name() = 'molecule' and namespace-uri() = 'http://www.xml-cml.org/schema'] [1]"&gt;
+			molecule is not a part of the http://www.xml-cml.org/convention/simpleUnit convention and may be ignored by some processors.
+		&lt;/info&gt;
+		&lt;valid&gt;
+			document conforms to all the conventions specified
+		&lt;/valid&gt;
+	&lt;/convention-validation-test&gt;
+	&lt;uris-reachable-test&gt;
+		&lt;valid &gt; All appropriate URIs were reachable &lt;/valid&gt;
+		&lt;valid &gt; all dictRefs are resolvable &lt;/valid&gt;
+	&lt;/uris-reachable-test&gt;
+&lt;/report&gt;
+    </pre>
+    </p>
+    <h3>INVALID</h3>
+    <p>
+    <pre>
+&lt;report xmlns = "http://www.xml-cml.org/report/"&gt;
+	&lt;well-formed-test&gt;
+		&lt;valid &gt; xml is well formed &lt;/valid&gt;
+	&lt;/well-formed-test&gt;
+	&lt;schema-validation-test&gt;
+		&lt;valid &gt; document conforms to the schema &lt;/valid&gt;
+	&lt;/schema-validation-test&gt;
+	&lt;convention-validation-test&gt;
+		&lt;error location = "/*[local-name() = 'molecule' and namespace-uri() = 'http://www.xml-cml.org/schema']
+		[1]@*[local-name() = 'convention' and namespace-uri() = '']"&gt;
+			the only valid cml element that can specify the simpleUnit convention is "unitList"
+		&lt;/error&gt;
+	&lt;/convention-validation-test&gt;
+	&lt;uris-reachable-test&gt;
+		&lt;valid &gt; All appropriate URIs were reachable &lt;/valid&gt;
+		&lt;valid &gt; all dictRefs are resolvable &lt;/valid&gt;
+	&lt;/uris-reachable-test&gt;
+&lt;/report&gt;
+    </pre>
+    </p>
+</div>
+
+<!--#include virtual="/common/include/footer.html" -->
+
+</div>
+</body>
+</html>

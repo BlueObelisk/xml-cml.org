@@ -1,30 +1,36 @@
 <cml xmlns="http://www.xml-cml.org/schema" xmlns:html="http://www.w3.org/1999/xhtml">
-  <dictionary title="chemical groups" namespace="http://www.xml-cml.org/dictionary/cml/group/">
-    <entry id="methyl" term="a methyl group" title="methyl group">
-      <description>
-        <html:p>
-      	A methyl group is a carbon bonded to three terminal hydrogen atoms and some other atom (R)
-        </html:p>
-	<molecule id="methyl">
-	  <atomArray>
-	    <atom id="a1" elementType="R" x2="-3.768" y2="-0.495" />
-	    <atom id="a2" elementType="C" x2="-0.729" y2="1.595" />
-	    <atom id="a3" elementType="H" x2="0.041" y2="0.261" />
-	    <atom id="a4" elementType="H" x2="0.605" y2="2.365" />
-	    <atom id="a5" elementType="H" x2="-1.499" y2="2.929" />
-  	  </atomArray>
-  	  <bondArray>
-  	    <bond atomRefs2="a1 a2" order="1" />
-    	    <bond atomRefs2="a2 a3" order="1" />
-  	    <bond atomRefs2="a2 a4" order="1" />
-    	    <bond atomRefs2="a2 a5" order="1" />
-	  </bondArray>
-	</molecule>
-      </description>
-    </entry>
-    <entry id="ethyl" term="an ethyl group" title="ethyl group">
-      <html:p>
-      </html:p>
-    </entry>
-  </dictionary>
+
+    <dictionary title="Chemical Groups" namespace="http://www.xml-cml.org/dictionary/cml/group/">
+
+        <entry id="methyl" term="a methyl group" title="methyl group">
+            <description>
+                <html:p>
+                    A methyl group is an alkyl substituent derived from methane, with the formula CH<html:sub>3</html:sub>.
+                </html:p>
+                <molecule id="methyl">
+                    <atomArray>
+                        <atom id="a1" elementType="R" x2="-3.768" y2="-0.495"/>
+                        <atom id="a2" elementType="C" x2="-0.729" y2="1.595"/>
+                        <atom id="a3" elementType="H" x2="0.041" y2="0.261"/>
+                        <atom id="a4" elementType="H" x2="0.605" y2="2.365"/>
+                        <atom id="a5" elementType="H" x2="-1.499" y2="2.929"/>
+                    </atomArray>
+                    <bondArray>
+                        <bond atomRefs2="a1 a2" order="1"/>
+                        <bond atomRefs2="a2 a3" order="1"/>
+                        <bond atomRefs2="a2 a4" order="1"/>
+                        <bond atomRefs2="a2 a5" order="1"/>
+                    </bondArray>
+                </molecule>
+            </description>
+        </entry>
+
+        <entry id="ethyl" term="an ethyl group" title="ethyl group">
+            <html:p>
+                An ethyl group is an alkyl substituent derived from ethane, with the formula C<html:sub>2</html:sub>H<html:sub>5</html:sub>.
+            </html:p>
+        </entry>
+
+    </dictionary>
+
 </cml>

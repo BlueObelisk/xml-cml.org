@@ -1,11 +1,13 @@
 RewriteEngine on 
 RewriteBase /dictionary/
 
-RewriteRule ^cif/$ cif/dictionary.cml
+RewriteRule ^cml/$          cml/dictionary.cml
 
-RewriteRule ^dummy/$ dummy/index.php
+RewriteRule ^cml/formula/$  cml/formula/dictionary.cml
+RewriteRule ^cml/group/$    cml/group/dictionary.cml
+RewriteRule ^cml/name/$     cml/name/dictionary.cml
 
+RewriteRule ^cif/$          cif/dictionary.cml
 
-RewriteRule ^cmlcomp/$ cmlcomp/dictionary.cml
-RewriteRule ^compchem/$ compchem/dictionary.cml
+RewriteRule ^compchem/$     compchem/dictionary.cml
 

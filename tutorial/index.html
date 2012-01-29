@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--#include virtual="/common/include/common-head.html" -->
+    <title>Chemical Markup Language | Tutorial</title>
+    <meta name="description" content="CML home page" />
+</head>
+<body>
+<div id="wrapper" class="page clear">
+
+<div id="header">
+    <!--#include virtual="/common/include/header-and-menu.html" -->
+    <div id="breadcrumbs" class="clear">
+        <ul>
+            <li><a href="/">CML</a></li>
+            <li>Tutorial</li>
+        </ul>
+    </div>
+</div>
+
+<div id="content">
+    <p>
+        <a href="/schema/schema3/">Schema 3</a> allows a much looser content model than previous versions for example:
+    </p>
+<pre class="code">
+&lt;molecule xmlns='http://www.xml-cml.org/schema'>
+  &lt;atom>
+    &lt;bond>
+      &lt;molecule />
+    &lt;/bond>
+  &lt;/atom>
+&lt;/molecule>
+</pre>
+    <p>
+    is schema valid although probably meaningless - what kind of atom is it, what is the bond between?
+    We use conventions to put restrictions on the content model. The links below contain information about
+    how to put together documents which conform to a particular conventions and examples of conformant
+    documents.
+    </p>
+    <ul>
+        <li><code><a href="/convention/molecular">molecular</a></code> convention</li>
+        <li><code><a href="/convention/dictionary">dictionary</a></code> convention</li>
+        <li><code><a href="/convention/compchem">compchem</a></code> convention</li>
+        <li><a href="/examples/">examples</a></li>
+    </ul>
+</div>
+
+<!--#include virtual="/common/include/footer.html" -->
+
+</div>
+</body>
+</html>
+

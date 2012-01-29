@@ -1,5 +1,0 @@
-RewriteEngine on 
-RewriteBase /dictionary/cml/		
-
-RewriteRule ^name/$ name/dictionary.cml
-

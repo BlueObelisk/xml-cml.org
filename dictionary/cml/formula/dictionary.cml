@@ -1,25 +1,34 @@
-<cml xmlns="http://www.xml-cml.org/schema" xmlns:html="http://www.w3.org/1999/xhtml">
-  <dictionary title="chemical formula conventions" namespace="http://www.xml-cml.org/dictionary/cml/formula/">
-    <entry id="adduct" term="Formal addition compounds" title="Formal addition compounds">
-      <description>
-        <html:p>
-          An adduct (from the Latin adductus, "drawn toward") is a product of a direct addition of two or more distinct molecules, resulting in a
-          single reaction product containing all atoms of all components, with formation of two chemical bonds and a net reduction in bond
-          multiplicity in at least one of the reactants. The resultant is considered a distinct molecular species. Examples include the adduct between
-          hydrogen peroxide and sodium carbonate to give sodium percarbonate, and the addition of sodium bisulfite to an aldehyde to give a sulfonate.
-        </html:p>
-        <html:p>
-          Adducts often form between Lewis acids and Lewis bases. A good example would be the formation of adducts between the Lewis acid borane and
-          the oxygen atom in the Lewis bases, tetrahydrofuran (THF) or diethyl ether: BH3•THF, BH3•OEt2. Compounds or mixtures that cannot form an
-          adduct because of steric hindrance are called frustrated Lewis pairs.
-        </html:p>
-        <html:p>
-          In the formulae of addition compounds or compounds which can formally be regarded as such, including clathrates and multiple salts, the
-          formulae of the component molecules or entities are cited in order of increasing number; if they occur in equal numbers, they are cited in
-          alphabetical order in the sense of Section IR-4.4.2.2. In addition compounds containing water, the water remains conventionally cited last.
-          However, component boron compounds are no longer treated as exceptions.
-        </html:p>
-      </description>
-    </entry>
-  </dictionary>
+<?xml version="1.0"?>
+<?xml-stylesheet href="http://www.xml-cml.org/common/style/dictionary.xsl" type="text/xsl"?>
+<cml xmlns="http://www.xml-cml.org/schema">
+
+    <dictionary title="Chemical Formula Conventions" namespace="http://www.xml-cml.org/dictionary/cml/formula/">
+
+        <entry id="adduct" term="Formal addition compounds" title="Formal addition compounds">
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+                    An adduct (from the Latin adductus, "drawn toward") is a product of a direct addition of two or
+                    more distinct molecules, resulting in a single reaction product containing all atoms of all
+                    components, with formation of two chemical bonds and a net reduction in bond multiplicity in at
+                    least one of the reactants. The resultant is considered a distinct molecular species. Examples
+                    include the adduct between hydrogen peroxide and sodium carbonate to give sodium percarbonate, and
+                    the addition of sodium bisulfite to an aldehyde to give a sulfonate.
+                </p>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+                    Adducts often form between Lewis acids and Lewis bases. A good example would be the formation of
+                    adducts between the Lewis acid borane and the oxygen atom in the Lewis bases, tetrahydrofuran (THF)
+                    or diethyl ether: BH3•THF, BH3•OEt2. Compounds or mixtures that cannot form an adduct because of
+                    steric hindrance are called frustrated Lewis pairs.
+                </p>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+                    In the formulae of addition compounds or compounds which can formally be regarded as such,
+                    including clathrates and multiple salts, the formulae of the component molecules or entities are
+                    cited in order of increasing number; if they occur in equal numbers, they are cited in alphabetical
+                    order in the sense of Section IR-4.4.2.2. In addition compounds containing water, the water remains
+                    conventionally cited last. However, component boron compounds are no longer treated as exceptions.
+                </p>
+            </description>
+        </entry>
+
+    </dictionary>
 </cml>

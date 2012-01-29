@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cml xmlns="http://www.xml-cml.org/schema"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:conventions="http://www.xml-cml.org/convention/"
+<cml xmlns="http://www.xml-cml.org/schema" xmlns:conventions="http://www.xml-cml.org/convention/"
      convention="conventions:molecular">
-    <dc:title>test file for http://www.xml-cml.org/conventions/molecular convention</dc:title>
-    <dc:description>valid molecular</dc:description>
-    <dc:author>J A Townsend</dc:author>
-    <dc:rights>Copyright J A Townsend jat45@cantab.net 2009.</dc:rights>
-    <dc:date>2009-01-21</dc:date>
     <molecule id="m1"/>
 </cml>
 

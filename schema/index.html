@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--#include virtual="/common/include/common-head.html" -->
+    <title>Chemical Markup Language | Schema</title>
+    <meta name="description" content="CML home page" />
+</head>
+<body>
+<div id="wrapper" class="page clear">
+
+<div id="header">
+    <!--#include virtual="/common/include/header-and-menu.html" -->
+    <div id="breadcrumbs" class="clear">
+        <ul>
+            <li><a href="/">CML</a></li>
+            <li>Schema</li>
+        </ul>
+    </div>
+</div>
+
+<div id="content">
+    <p>
+        There are several versions of the CML schema. The current version is Schema 3.
+    </p>
+
+    <h1>Schema 3</h1>
+    <p>
+        Schema 3 is a refinement of <a href="schema24/">Schema 2.4</a>. Much of the
+        content model has been removed as have those elements and attributes which were deprecated
+        in the previous version.
+    </p>
+    <p>
+        The only content model retained in Schema 3 is for elements which must be empty
+        or elements which must contain string content. All other elements are permitted
+        to contain any other CML element and/or and elements from a different namespace.
+    </p>
+    <p>
+        Schema 3 may be viewed <a href="schema3/">here</a> and downloaded by
+        clicking this <a href="schema3/schema.xsd">link</a>. Examples of
+        how to represent chemistry in CML conforming to Schema 3 are available
+        <a href="/examples/schema3/">here</a>.
+    </p>
+
+    <h1>Schema 2.4</h1>
+    <p>
+        The last stable release was
+        <a href="http://cml.svn.sourceforge.net/viewvc/cml/schema2/trunk/">Schema 2.4</a>
+        and has remained unchanged since 2005.
+    </p>
+    <p>
+        Schema 2.4 may be viewed <a href="schema24/">here</a> and downloaded by
+        clicking this <a href="schema24/schema.xsd">link</a>. There are many examples of
+        how to represent chemistry in CML conforming to this schema available
+        <a href="/examples/schema24/">here</a>. All these examples should also
+        validate against Schema 3.
+    </p>
+
+</div>
+
+<!--#include virtual="/common/include/footer.html" -->
+
+</div>
+</body>
+</html>

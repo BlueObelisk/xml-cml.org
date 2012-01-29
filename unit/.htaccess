@@ -1,13 +1,6 @@
 RewriteEngine on 
 RewriteBase /unit/
 
-RewriteRule ^si$ si.cml
-RewriteRule ^si/$ si.cml
-
-RewriteRule ^nonSi$ nonSi.cml
-RewriteRule ^nonSi/$ nonSi.cml
-
-
-
-RewriteRule ^unitType$ unitType.cml
-RewriteRule ^unitType/$ unitType.cml
+RewriteRule ^si/$ si/si.cml
+RewriteRule ^nonSi/$ nonSi/nonSi.cml
+RewriteRule ^unitType/$ unitType/unitType.cml

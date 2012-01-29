@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="http://www.xml-cml.org/common/style/dictionary.xsl" type="text/xsl"?>
 <cml xmlns="http://www.xml-cml.org/schema" xmlns:html="http://www.w3.org/1999/xhtml">
-  <dictionary title="fundamental chemistry concepts" namespace="http://www.xml-cml.org/dictionary/cml/">
+  <dictionary title="Fundamental Chemistry Concepts" namespace="http://www.xml-cml.org/dictionary/cml/">
     <entry id="mw" term="Molecular weight" title="Molecular weight">
       <description>
         <html:p>

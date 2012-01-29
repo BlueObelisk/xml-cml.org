@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="http://www.xml-cml.org/common/style/dictionary.xsl" type="text/xsl"?>
+<dictionary namespace="http://www.xml-cml.org/dictionary/test/testing/" dictionaryPrefix="test"
+            convention="convention:dictionary" title="Test dictionary of CML terms"
+            xmlns="http://www.xml-cml.org/schema" xmlns:xhtml="http://www.w3.org/1999/xhtml"
+            xmlns:convention="http://www.xml-cml.org/convention/" xmlns:unitType="http://www.xml-cml.org/unit/unitType/"
+            xmlns:nonSi="http://www.xml-cml.org/unit/nonSi/" xmlns:si="http://www.xml-cml.org/unit/si"
+	>
+
+
+    <description>
+        <xhtml:p>A CML dictionary of test terms.</xhtml:p>
+    </description>
+
+    <entry term="test_term_1" id="test_term_1" dataType="xsd:string">
+
+        <description>
+            <xhtml:p>Test term for the dictionary.</xhtml:p>
+        </description>
+
+        <definition>
+            <xhtml:p>A standard dictionary term for testing.</xhtml:p>
+        </definition>
+
+    </entry>
+
+    <entry term="test_term_2" id="test_term_2" dataType="xsd:string">
+
+        <description>
+            <xhtml:p>Test term for the dictionary.</xhtml:p>
+        </description>
+
+        <definition>
+            <xhtml:p>A standard dictionary term for testing.</xhtml:p>
+        </definition>
+
+    </entry>
+
+    <entry term="test_term_3" id="test_term_3" dataType="xsd:string">
+
+        <description>
+            <xhtml:p>Test term for the dictionary.</xhtml:p>
+        </description>
+
+        <definition>
+            <xhtml:p>A standard dictionary term for testing.</xhtml:p>
+        </definition>
+
+    </entry>
+
+</dictionary>
+

@@ -1,0 +1,1666 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="http://www.xml-cml.org/common/style/unit.xsl" type="text/xsl"?>
+<unitList
+        namespace="http://www.xml-cml.org/unit/nonSi/"
+        title="non SI units dictionary"
+        xmlns="http://www.xml-cml.org/schema"
+        xmlns:h="http://www.w3.org/1999/xhtml"
+        xmlns:siUnits="http://www.xml-cml.org/unit/si/"
+        xmlns:unitType="http://www.xml-cml.org/unit/unitType/"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        convention="convention:unit-dictionary"
+        xmlns:convention="http://www.xml-cml.org/convention/"
+        >
+    <dc:contributor>Andrew Walkingshaw</dc:contributor>
+    <dc:contributor>J A Townsend</dc:contributor>
+    <dc:contributor>Peter Murray-Rust</dc:contributor>
+    <dc:contributor>Jim Downing</dc:contributor>
+    <dc:contributor>Sam Adams</dc:contributor>
+    <dc:contributor>Nick England</dc:contributor>
+    <dc:contributor>Sebastian Breuers</dc:contributor>
+    <dc:contributor>Hannah Barjat</dc:contributor>
+
+
+    <description>
+        <h:p>
+            A dictionary of non SI Units. These will necessarily have a multiplier to SI which 
+            is not unity (except for degrees Celcius).
+        </h:p>
+          <h:p>
+            Units which are of unitType dimensionless, for example mg/kg should have that specific unit defined in 
+            this dictionary. For pure numbers or concepts which cannot have dimensions such as method names you should use the 
+            SI unit <h:a href="http://www.xml-cml.org/unit/si#none">"none"</h:a>.
+        </h:p>
+    </description>
+
+<!-- angle -->
+
+<unit id="degree" title="degree" parentSI="siUnits:radian"
+    multiplierToSI="0.0174532925" symbol="deg" unitType="unitType:angle">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        1/360th of a full rotation in a plane.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        A degree is 1/360th of a full circle. 1 degree is equal to Pi/180 radians.
+	</h:p>
+    </description>
+  </unit>
+
+<!-- need to add angles represented in minutes and seconds but not to get confused with time -->
+
+<!-- angle per time -->
+
+  <unit id="degree_per_min" title="degree per min" parentSI="siUnits:radians-1"
+    multiplierToSI="2.909E-4" symbol="deg min-1" unitType="unitType:angular_velocity">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        1 degree per minute
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        A rotation of one degree in one minute of time.
+	</h:p>
+    </description>
+  </unit>
+
+<!-- velocity -->
+
+  <unit title="centimetre per second" id="cm.s-1" symbol="cm.s-1" parentSI="siUnits:m.s-1"
+    multiplierToSI="1E-2" unitType="unitType:velocity">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1 cm per second
+   </h:p>
+    </definition>
+    <description>
+      <h:p>
+        A velocity of 1 cm per second.
+   </h:p>
+    </description>
+  </unit>
+
+
+ <!-- length -->
+  <unit title="Bohr" id="bohr" symbol="Bohr" parentSI="siUnits:m"
+    multiplierToSI="5.291772108E-11" unitType="unitType:length">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Andrew Walkingshaw</dc:creator>
+    <definition>
+      <h:p>
+        The smallest possible orbital radius for an electron in hydrogen in the
+        Bohr model.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        Note that the definition of Bohr radius does not include the effect of
+        reduced mass, and so it is not precisely equal to the orbital
+        radius of
+        the electron in a hydrogen atom in the more physical model where
+        reduced
+        mass is included. This is done for convenience: the Bohr radius as
+        defined
+        above appears in equations relating to atoms other than hydrogen, where
+        the reduced mass correction is different. If the definition of
+        Bohr radius
+        included the reduced mass of hydrogen, it would be necessary to include a
+        more complex adjustment in equations relating to other atoms.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="Angstrom" id="angstrom" symbol="&#8491;" parentSI="siUnits:m"
+    multiplierToSI="1E-10" unitType="unitType:length">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Andrew Walkingshaw</dc:creator>
+    <definition>
+      <h:p>
+        1E-10 metres.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        The angstrom is named after the Swedish physicist Anders Jonas Angstrom
+        (1814-1874), one of the founders of spectroscopy, after his
+        spectrum chart
+        of solar radiation in the electromagnetic spectrum on the order
+        of multiples of one ten-millionth of a millimetre, or 1E-10 metres.
+      </h:p>
+    </description>
+  </unit>
+
+
+  <unit title="decimetre" id="dm" symbol="dm" parentSI="siUnits:m"    
+    multiplierToSI="1E-1" unitType="unitType:length">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        One tenth of a metre.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of length one tenth of a metre.
+      </h:p>
+    </description>
+  </unit>
+
+
+  <unit title="centimetre" id="cm" symbol="cm" parentSI="siUnits:m"    
+    multiplierToSI="1E-2" unitType="unitType:length">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        One hundredth of a metre.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of length one hundredth of a metre.
+      </h:p>
+    </description>
+  </unit>
+
+
+  <unit title="Millimetres" id="millimeters" symbol="mm" parentSI="siUnits:m"
+    multiplierToSI="1E-3" unitType="unitType:length">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        1E-3 metres.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        One thousandth of a metre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="Micrometers" id="micrometers" symbol="&#956;m" parentSI="siUnits:m"
+    multiplierToSI="1E-6" unitType="unitType:length">
+    <dc:creator>Sebastian Breuers</dc:creator>
+    <definition>
+      <h:p>
+        1E-6 metres.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        One 10<h:sup>-6</h:sup>th of a metre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="Nanometers" id="nanometers" symbol="nm" parentSI="siUnits:m"
+    multiplierToSI="1E-9" unitType="unitType:length">
+    <dc:creator>Sebastian Breuers</dc:creator>
+    <definition>
+      <h:p>
+        1E-9 metres.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        One 10<h:sup>-9</h:sup>th of a metre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="Picometres" id="picometers" symbol="pm" parentSI="siUnits:m"
+    multiplierToSI="1E-12" unitType="unitType:length">
+    <dc:creator>Sebastian Breuers</dc:creator>
+    <definition>
+      <h:p>
+        1E-12 metres.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        One 10<h:sup>-12</h:sup>th of a metre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="Femtometres" id="femtometers" symbol="fm" parentSI="siUnits:m"
+    multiplierToSI="1E-15" unitType="unitType:length">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        1E-15 metres.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        One 10<h:sup>-15</h:sup>th of a metre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="kilometre" id="km" symbol="km" parentSI="siUnits:m"    
+    multiplierToSI="1E3" unitType="unitType:length">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        1000 metres.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of length equal to one thousand metres.
+      </h:p>
+    </description>
+  </unit>
+
+<!-- area -->
+
+  <unit title="Angstrom Squared" id="angstrom2" symbol="A2" parentSI="siUnits:m2"
+    multiplierToSI="1E-20" unitType="unitType:area">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        Angstrom Squared
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        The angstrom is named after the Swedish physicist Anders Jonas Angstrom
+        (1814-1874), one of the founders of spectroscopy, after his
+        spectrum chart
+        of solar radiation in the electromagnetic spectrum on the order
+        of multiples of one ten-millionth of a millimetre, or 1E-10 metres.
+
+        An Angstrom sqaured is the area of a square of length one angstrom.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="micrometre squared" id="microm2" symbol="&#956;m2" parentSI="siUnits:m2"    
+    multiplierToSI="1E-12" unitType="unitType:area">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        Micrometre squared
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of area the square of one length of one micrometre.
+      </h:p>
+    </description>
+  </unit>
+
+
+  <unit title="millimetre squared" id="mm2" symbol="mm2" parentSI="siUnits:m2"    
+    multiplierToSI="1E-6" unitType="unitType:area">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        Millimetre squared
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of area the square of one length of one millimetre.
+      </h:p>
+    </description>
+  </unit>
+
+
+  <unit title="centimetre squared" id="cm2" symbol="cm2" parentSI="siUnits:m2"    
+    multiplierToSI="1E-4" unitType="unitType:area">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        Centimetre squared
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of area the square of one length of one centimetre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="kilometre squared" id="km2" symbol="km2" parentSI="siUnits:m2"    
+    multiplierToSI="1E6" unitType="unitType:area">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        Kilometre squared
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of area the square of one length of one kilometre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="hectare" id="ha" symbol="ha" parentSI="siUnits:m2"    
+    multiplierToSI="1E4" unitType="unitType:area">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        10,000 square metres.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        A unit of area equivalent to 10,000 square metres.
+      </h:p>
+    </description>
+  </unit>
+
+<!-- volume -->
+
+  <unit title="Angstrom Cubed" id="angstrom3" symbol="A3" parentSI="siUnits:m3"
+    multiplierToSI="1E-30" unitType="unitType:volume">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        Angstrom Cubed
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        The angstrom is named after the Swedish physicist Anders Jonas Angstrom
+        (1814-1874), one of the founders of spectroscopy, after his
+        spectrum chart
+        of solar radiation in the electromagnetic spectrum on the order
+        of multiples of one ten-millionth of a millimetre, or 1E-10 metres.
+
+        An Angstrom cubed is the volume of a cube of length one angstrom.
+      </h:p>
+    </description>
+  </unit>
+
+<!-- I've put Litre as a name for the following rather than dm3 as it is accepted for use with S.I -->
+
+  <unit title="Litre" id="L" symbol="L" parentSI="siUnits:m3"    
+    multiplierToSI="1E-3" unitType="unitType:volume">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        Decimetre cubed (1/1000 of a cubic metre).
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of volume the cube of one length of one decimetre, known most commonly as a litre (or liter) but may also be known as a cubic decimetre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="cubic centimetre" id="cm3" symbol="cm3" parentSI="siUnits:m3"    
+    multiplierToSI="1E-6" unitType="unitType:volume">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        Centimetre cubed.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of volume the cube of one length of one centimetre. Also known as a millilitre 1 cm<h:sup>3</h:sup> = 1 mL. It is sometimes also known as a 'cc' (e.g. in the automobile industry).
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="cubic millimetre" id="mm3" symbol="mm3" parentSI="siUnits:mm3"    
+    multiplierToSI="1E-9" unitType="unitType:volume">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        Millimetre cubed.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of volume the cube of one length of one millimetre.
+      </h:p>
+    </description>
+  </unit>
+ 
+ <unit title="cubic micrometre" id="microm3" symbol="&#956;m3" parentSI="siUnits:m3"    
+    multiplierToSI="1E-18" unitType="unitType:volume">    
+    <dc:source>Wikipedia</dc:source>    
+    <dc:creator>Hannah Barjat</dc:creator>    
+    <definition>      
+      <h:p>
+        Micrometre cubed (&#956;<h:sup>3</h:sup>).
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Unit of volume the cube of one length of one micrometre.
+      </h:p>
+    </description>
+  </unit>
+
+<!-- volume fraction -->
+
+  <unit title="Parts per million by volume" id="ppmv" symbol="ppmV"
+    parentSI="siUnits:m3.m-3" multiplierToSI="1E-6"
+    unitType="unitType:dimensionless">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        One part in 10<h:sup>6</h:sup> parts by volume.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        The parts-per notation is a set of pseudo units to describe small values of dimensionless quantities. Where "by volume" is stated, the unit refers to the volume fraction, which is defined as the volume of a constituent divided by the volume of all consituents of the mixture prior to mixing. Volume fraction is also called volume concentration in ideal mixtures where the volumes of the constituents are additive (their sum equals the volume of the mixtures).
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="Parts per billion by volume" id="ppbv" symbol="ppbV"
+    parentSI="siUnits:m3.m-3" multiplierToSI="1E-9"
+    unitType="unitType:dimensionless">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        One part in 10<h:sup>9</h:sup> parts by volume.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        The parts-per notation is a set of pseudo units to describe small values of dimensionless quantities. Where "by volume" is stated, the unit refers to the volume fraction, which is defined as the volume of a constituent divided by the volume of all consituents of the mixture prior to mixing. Volume fraction is also called volume concentration in ideal mixtures where the volumes of the constituents are additive (their sum equals the volume of the mixtures). [This latter meaning is commonly used in atmospheric chemistry where trace gases are measured within air samples.] NB. It is not uncommon for the 'V' to be left out of the symbol (for example within the atmospheric chemistry community), leading to ambiguity.                      
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="Parts per trillion by volume" id="pptv" symbol="pptV"
+  parentSI="siUnits:m3.m-3" multiplierToSI="1E-12"
+  unitType="unitType:dimensionless">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+       <h:p>
+         One part in 10<h:sup>12</h:sup> parts by volume.
+       </h:p>
+    </definition>
+    <description>
+     <h:p>
+       The parts-per notation is a set of pseudo units to describe small values of dimensionless quantities. Where "by volume" is stated, the unit refers to the volume fraction, which is defined as the volume of a constituent divided by the volume of all consituents of the mixture prior to mixing. Volume fraction is also called volume concentration in ideal mixtures where the volumes of the constituents are additive (their sum equals the volume of the mixtures). [This latter meaning is commonly used in atmospheric chemistry where trace gases are measured within air samples.].NB. It is not uncommon for the 'V' to be left out of the symbol (for example within the atmospheric chemistry community), leading to ambiguity.
+      </h:p>
+    </description>
+  </unit>
+
+<!-- units of volume fraction often used with condensed phase in gas phase -->
+
+ <unit title="cubic centimeter per cubic metre" id="cm3.m3" symbol="cm3.m3"
+  parentSI="siUnits:m3.m-3" multiplierToSI="1E-6"
+  unitType="unitType:dimensionless">
+    <dc:source>Schwarz and Warneck, 1995</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+       <h:p>
+        Volume ratio expressed as cm3/m3.
+       </h:p>
+    </definition>
+    <description>
+     <h:p> These units of volume ratio are often used to describe the amount of a condensed phase within a gas phase medium e.g. cloud water within air.
+      </h:p>
+    </description>
+  </unit>
+
+ <unit title="cubic micrometer per cubic metre" id="microm3.m3" symbol="&#956;m3.m3"
+  parentSI="siUnits:m3.m-3" multiplierToSI="1E-18"
+  unitType="unitType:dimensionless">
+    <dc:source>Schwarz and Warneck, 1995</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+       <h:p>
+        Volume ratio expressed as &#956;m3/m3.
+       </h:p>
+    </definition>
+    <description>
+     <h:p> These units of volume ratio are often used to describe the amount of a condensed phase within a gas phase med
+ium e.g. particulate matter within air.
+      </h:p>
+    </description>
+  </unit>
+
+<!-- density -->
+
+  <unit title="Megagrams per cubic metre" id="megagrams_per_cubic_metre"
+    symbol="Mg.m-3" parentSI="siUnits:kg.m-3" multiplierToSI="1E3"
+    unitType="unitType:mass_density">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        A density of 1E6 grams per cubic metre.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        Density measured in megagrams per cubic metre.
+    </h:p>
+    </description>
+  </unit>
+
+  <unit title="nanogram per cubic metre" id="ng.m-3" symbol="ng.m-3"
+    parentSI="siUnits:kg.m-3" multiplierToSI="1E-12"
+    unitType="unitType:mass_density">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E-12 kg per cubic metre.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Mass density measured in nanograms per cubic metre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="nanogram per cubic centimetre" id="ng.cm-3" symbol="ng.cm-3"
+    parentSI="siUnits:kg.m-3" multiplierToSI="1E-8"
+    unitType="unitType:mass_density">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E-8 kg per cubic metre.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Mass density measured in nanograms per cubic centimetre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="gram per cubic centimetre" id="g.cm-3" symbol="g.cm-3"
+    parentSI="siUnits:kg.m-3" multiplierToSI="1E3"
+    unitType="unitType:mass_density">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E8 kg per cubic metre.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Mass density measured in grams per cubic centimetre.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="gram per cubic metre" id="g.m-3" symbol="g.m-3"
+    parentSI="siUnits:kg.m-3" multiplierToSI="1E-3"
+    unitType="unitType:mass_density">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E-3 kg per cubic metre.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Mass density measured in grams per cubic metre.
+      </h:p>
+    </description>
+  </unit>
+
+<!-- concentration -->
+
+  <unit title="electrons per cubic angstrom" id="electrons_per_cubic_angstrom"
+    symbol="eA-3" parentSI="siUnits:m-3" multiplierToSI="1E30"
+    unitType="unitType:amount_concentration">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        Number of electrons per cubic angstrom of volume.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        Number of electrons per cubic angstrom of volume.
+    </h:p>
+    </description>
+  </unit>
+
+<!-- amount per area -->
+
+  <unit title="Dobson Unit" id="DU" symbol="DU"
+    parentSI="siUnits:mol.m-2" multiplierToSI="4.462E-4"
+    unitType="unitType:amountperarea">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        The Dobson unit (DU) is a unit of measurement of atmospheric ozone columnar density.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>One Dobson unit refers to a layer of ozone that would be 10 &#956;m thick under standard temperature and pressure. For example, 300 DU of ozone brought down to the surface of the Earth at 273.15K would occupy a layer only 3 mm thick. One DU is approximately equivalent to 2.69 x 10<h:sup>16</h:sup> ozone molecules per square centimetre, or 2.69 x 10<h:sup>20</h:sup> per square metre. This is 0.4462 millimoles of ozone per square metre.
+      </h:p>
+    </description>
+  </unit>
+
+<unit title="Millimole per m2" id="mmmol.m-2" symbol="mmmol.m-2"
+    parentSI="siUnits:mol.m-2" multiplierToSI="1E-3"
+    unitType="unitType:amountperarea">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        Amount per area expressed in mmol per m2.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        These are the IUPAC preferred units for the measurement of atmospheric ozone columar density (Schwarz and Warneck, 1995). 
+      </h:p>
+    </description>
+  </unit>
+
+<!-- mole fraction-->
+
+<unit title="micromoles per mole" id="micromole.mol-1" symbol="&#956;mol.mol-1"
+    parentSI="siUnits:mol.mol-1" multiplierToSI="1E-6"    unitType="unitType:molefraction">
+    <dc:source>Schwarz and Warneck, 1995</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>&#956;mol.mol<h:sup>-1</h:sup></h:p>
+    </definition>
+    <description>
+      <h:p> Molefraction given in units of &#956;mol.mol<h:sup>-1</h:sup>. Strictly speaking the quantity commonly denoted molefraction refers to the fraction that the amount of a substance contributes to the total amount of the sample, so that the correct name should be amount of substancefraction (a rather unwieldy term) or chemical amount fraction, as the name of a quantity should not involve the name of the unit. However, mole fraction is used by almost everyone without causing much confusion.
+      </h:p>    </description>
+  </unit>
+
+<unit title="nanomoles per mole" id="nmol.mol-1" symbol="nmol.mol-1"
+    parentSI="siUnits:mol.mol-1" multiplierToSI="1E-9"    unitType="unitType:molefraction">
+    <dc:source>Schwarz and Warneck, 1995</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>nmol.mol<h:sup>-1</h:sup></h:p>
+    </definition>    <description>
+      <h:p> Molefraction given in units of nmol.mol<h:sup>-1</h:sup>. Strictly speaking the quantity commonly denoted molefraction refers to the fraction that the amount of a substance contributes to the total amount of the sample, so that the correct name should be amount of substancefraction (a rather unwieldy term) or chemical amount fraction, as the name of a quantity should not involve the name of the unit. However, mole fraction is used by almost everyone without causing much confusion.
+      </h:p>    </description>
+  </unit>
+
+<unit title="picomoles per mole" id="pmol.mol-1" symbol="pmol.mol-1"
+    parentSI="siUnits:mol.mol-1" multiplierToSI="1E-12"    unitType="unitType:molefraction">
+    <dc:source>Schwarz and Warneck, 1995</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>pmol.mol<h:sup>-1</h:sup></h:p>
+    </definition>    <description>
+      <h:p> Molefraction given in units of pmol.mol<h:sup>-1</h:sup>. Strictly speaking the quantity commonly denoted molefraction refers to the fraction that the amount of a substance contributes to the total amount of the sample, so that the correct name should be amount of substancefraction (a rather unwieldy term) or chemical amount fraction, as the name of a quantity should not involve the name of the unit. However, mole fraction is used by almost everyone without causing much confusion.
+      </h:p>    </description>
+  </unit>
+
+<!-- aerosol concentration size distribution -->
+
+<unit title="number distribution" id="dn_dr" symbol="dn/dr"
+    parentSI="siUnits:m-4" multiplierToSI="1E6"    unitType="unitType:length_power-4">
+    <dc:source>Schwarz and Warneck, 1995</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>m<h:sup>-3</h:sup>.&#956;<h:sup>-1</h:sup></h:p>
+    </definition>
+    <description>
+      <h:p>
+        Units used to describe the number of aerosols per cubic metre per length in microns (i.e. the number distribution of aerosols by their radius).
+      </h:p>    </description>
+  </unit>
+
+<!-- othr aerosol descriptions -->
+
+<!-- amount -->
+
+ <unit title="picomole" id="pmol" symbol="pmol"
+    parentSI="siUnits:mol" multiplierToSI="1E-12"    unitType="unitType:amount">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        10<h:sup>-12</h:sup> of a mole
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        10<h:sup>-12</h:sup> of a mole.
+      </h:p>    </description>
+  </unit>
+
+ <unit title="nanomole" id="nmol" symbol="nmol"
+    parentSI="siUnits:mol" multiplierToSI="1E-9"    unitType="unitType:amount">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        10<h:sup>-9</h:sup> of a mole
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        10<h:sup>-9</h:sup> of a mole.
+      </h:p>    </description>
+  </unit>
+
+ <unit title="micromole" id="micromol" symbol="&#956;mol"
+    parentSI="siUnits:mol" multiplierToSI="1E-6"    unitType="unitType:amount">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        10<h:sup>-6</h:sup> of a mole
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        10<h:sup>-6</h:sup> of a mole.
+      </h:p>    </description>
+  </unit>
+
+ <!-- time -->
+ 
+  <unit title="Julian Year" id="julian_year" symbol="a_j"
+    parentSI="siUnits:s" multiplierToSI="31557600"
+    unitType="unitType:time">
+      <dc:source>Wikipedia</dc:source>
+      <dc:creator>Hannah Barjat</dc:creator>
+      <definition>
+        <h:p>31557600 seconds</h:p>
+      </definition>
+      <description>
+        <h:p>The Julian year is a time defined as exactly 365.25 days (i.e. averaging common and leap years). Fundamentally, expressing a time interval in Julian years is a way to precisely specify how many days (not how many "real" years). See also "Tropical year".</h:p>
+<h:p>The symbol for year is not used consistently in scientific publications: a, a_j, y, yr etc may all be used.</h:p>
+      </description>
+  </unit>
+
+  <unit title="Tropical Year" id="tropical_year" symbol="a_t"
+    parentSI="siUnits:s" multiplierToSI="31556925"
+    unitType="unitType:time">
+      <dc:source>Wikipedia</dc:source>
+      <dc:creator>Hannah Barjat</dc:creator>
+      <definition>
+        <h:p>31556925</h:p>
+      </definition>
+      <description>
+        <h:p>The Tropical year is "the period of time for the ecliptic longitude of the Sun to increase by 360 degrees. Since the Sun's ecliptic longitude is measured with respect to the equinox, the tropical year comprises a complete cycle of the seasons. The mean tropical year is approximated by 365 days, 5 hours, 48 minutes, 45 seconds (31556925 seconds). This time period is also sometimes referred to as the mean Gregorian year (Schwarz and Warneck, 1995). NB. A further definition of year, using the symbol a (for annus), jointly adopted by the International Union of Pure and Applied Chemistry and the International Union of Geological Sciences is defined as the length of the tropical year in the year 2000 a = 31,556,925.445 seconds </h:p>
+<h:p>The symbol for year is not used consistently in scientific publications: a, a_t, y, yr etc may all be used.</h:p>
+      </description>
+  </unit>
+
+  <unit title="Week" id="wk" symbol="Wk"
+    parentSI="siUnits:s" multiplierToSI="604800"
+    unitType="unitType:time">
+      <dc:source>Wikipedia</dc:source>
+      <dc:creator>Hannah Barjat</dc:creator>
+      <definition>
+        <h:p>7 days (or 604800 seconds)</h:p>
+      </definition>
+      <description>
+        <h:p>Based on S.I. units: a time period consisting of 7 days.</h:p>
+      </description>
+  </unit>
+
+  <unit title="Day" id="day" symbol="day"
+    parentSI="siUnits:s" multiplierToSI="86400"
+    unitType="unitType:time">
+      <dc:source>Wikipedia</dc:source>
+      <dc:creator>Hannah Barjat</dc:creator>
+      <definition>
+        <h:p>86400 seconds</h:p>
+      </definition>
+      <description>
+        <h:p>Based on S.I. units: a time period consisting of 86400 seconds (24 hours). NB Other definitions of day are available: see source.</h:p>
+      </description>
+  </unit>
+
+  <unit title="Hour" id="hr" symbol="h"
+    parentSI="siUnits:s" multiplierToSI="3600"
+    unitType="unitType:time">
+      <dc:source>Wikipedia</dc:source>
+      <dc:creator>Hannah Barjat</dc:creator>
+      <definition>
+        <h:p>3600 seconds</h:p>
+      </definition>
+      <description>
+        <h:p>A time period consisting of 3600 seconds (60 minutes).</h:p>
+      </description>
+  </unit>
+
+    <unit title="Minute" id="min" symbol="min"
+            parentSI="siUnits:s" multiplierToSI="60"
+            unitType="unitType:time">
+        <dc:source>Wikipedia</dc:source>
+        <dc:creator>Nick England</dc:creator>
+        <definition>
+            <h:p>60 seconds</h:p>
+        </definition>
+        <description>
+            <h:p>A time period consisting of 60 seconds.</h:p>
+        </description>
+    </unit>
+
+    <unit title="Milliseconds" id="milliseconds" symbol="ms"
+            parentSI="siUnits:s" multiplierToSI="1E-3"
+            unitType="unitType:time">
+        <dc:creator>Sebastian Breuers</dc:creator>
+        <definition>
+            <h:p>1E-3 seconds</h:p>
+        </definition>
+        <description>
+            <h:p>One 10<h:sup>-3</h:sup>th of a second.</h:p>
+        </description>
+    </unit>
+
+    <unit title="Microseconds" id="microseconds" symbol="&#956;s"
+            parentSI="siUnits:s" multiplierToSI="1E-6"
+            unitType="unitType:time">
+        <dc:creator>Sebastian Breuers</dc:creator>
+        <definition>
+            <h:p>1E-6 seconds</h:p>
+        </definition>
+        <description>
+            <h:p>One 10<h:sup>-6</h:sup>th of a second.</h:p>
+        </description>
+    </unit>
+
+    <unit title="Nanoseconds" id="nanoseconds" symbol="ns"
+            parentSI="siUnits:s" multiplierToSI="1E-9"
+            unitType="unitType:time">
+        <dc:creator>Sebastian Breuers</dc:creator>
+        <definition>
+            <h:p>1E-9 seconds</h:p>
+        </definition>
+        <description>
+            <h:p>One 10<h:sup>-9</h:sup>th of a second.</h:p>
+        </description>
+    </unit>
+
+    <unit title="Picoseconds" id="picoseconds" symbol="ps"
+            parentSI="siUnits:s" multiplierToSI="1E-12"
+            unitType="unitType:time">
+        <dc:creator>Sebastian Breuers</dc:creator>
+        <definition>
+            <h:p>1E-12 seconds</h:p>
+        </definition>
+        <description>
+            <h:p>One 10<h:sup>-12</h:sup>th of a second.</h:p>
+        </description>
+    </unit>
+
+    <unit title="Femtoseconds" id="femtoseconds" symbol="fs"
+            parentSI="siUnits:s" multiplierToSI="1E-15"
+            unitType="unitType:time">
+        <dc:creator>Sebastian Breuers</dc:creator>
+        <definition>
+            <h:p>1E-15 seconds</h:p>
+        </definition>
+        <description>
+            <h:p>One 10<h:sup>-15</h:sup>th of a second.</h:p>
+        </description>
+    </unit>
+  
+ <!-- frequencies (inverse time) -->
+ 
+  <unit title="Per day" id="day-1" symbol="day-1"
+    parentSI="siUnits:Hz" multiplierToSI="1.1574E-5"
+    unitType="unitType:frequency">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>The number of occurences every 86400 seconds</h:p>
+    </definition>
+    <description>
+      <h:p>The number of occurrences of a repeating event per day. NB Other definitions of day are available: see source.</h:p>
+    </description>
+  </unit>
+
+  <unit title="Per hour" id="hr-1" symbol="h-1"
+    parentSI="siUnits:Hz" multiplierToSI="2.7778E-4"
+    unitType="unitType:frequency">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>The number of occurrences every 3600 seconds</h:p>
+    </definition>
+    <description>
+      <h:p>The number of occurrences of a repeating event per hour.</h:p>
+    </description>
+  </unit>
+
+  <unit title="Per minute" id="min-1" symbol="min-1"
+    parentSI="siUnits:Hz" multiplierToSI="1.6667E-2"
+    unitType="unitType:frequency">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>The number of occurrences every 60 seconds</h:p>
+    </definition>
+    <description>
+      <h:p>The number of occurrences of a repeating event per minute.</h:p>
+    </description>
+  </unit>
+
+  <unit title="kilohertz" id="kHz" symbol="kHz"
+    parentSI="siUnits:Hz" multiplierToSI="1E3"
+    unitType="unitType:frequency">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>1000 Hz</h:p>
+    </definition>
+    <description>
+      <h:p>The number of occurrences of a repeating event per millisecond.</h:p>
+    </description>
+  </unit>
+
+  <unit title="megahertz" id="MHz" symbol="MHz"
+    parentSI="siUnits:Hz" multiplierToSI="1E6"
+    unitType="unitType:frequency">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>1E6 Hz</h:p>
+    </definition>
+    <description>
+      <h:p>The number of occurrences of a repeating event per microsecond.</h:p>
+    </description>
+  </unit>
+
+  <unit title="gigahertz" id="GHz" symbol="GHz"
+    parentSI="siUnits:Hz" multiplierToSI="1E9"
+    unitType="unitType:frequency">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>1E9 Hz</h:p>
+    </definition>
+    <description>
+      <h:p>The number of occurrences of a repeating event per nanosecond.</h:p>
+    </description>
+  </unit>
+
+  <unit title="terahertz" id="THz" symbol="THz"
+    parentSI="siUnits:Hz" multiplierToSI="1E12"
+    unitType="unitType:frequency">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>1E12 Hz</h:p>
+    </definition>
+    <description>
+      <h:p>The number of occurrences of a repeating event per picosecond.</h:p>
+    </description>
+  </unit>
+
+
+<!-- Rates of change e.g. in chemical reactions / local production rates/ destruction rates-->
+
+<!-- could extend to any variant of mass per volume per time -->
+
+  <unit title="molecule per cm3 per second" id="molec.cm-3.s-1" symbol="molecule.cm-3.s-1"
+    parentSI="siUnits:m-3.s-1" multiplierToSI="1E6"
+    unitType="unitType:number_conc_rate">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Rate of change in concentration expressed in units of molecules per cubic centimetre per second.</h:p>
+    </definition>
+    <description>
+      <h:p>The rate of change in a molecular process e.g. in a first order chemical reaction.</h:p>
+      <h:p>The conversion to a molar concentration rate requires division by the Avagadro's constant, 6.02214179 x 10<h:sup>23</h:sup> mol<h:sup>-1</h:sup>, to convert to moles and multiplication by 1E6 to convert to /m<h:sup>3</h:sup></h:p>
+    </description>
+  </unit>
+
+  <unit title="molecule per m3 per second" id="molec.m-3.s-1" symbol="molecule.m-3.s-1"
+    parentSI="siUnits:m-3.s-1" multiplierToSI="1"
+    unitType="unitType:number_conc_rate">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Rate of change in concentration expressed in units of molecules per cubic metre per second.</h:p>
+    </definition>
+    <description>
+      <h:p>The rate of change in a molecular process e.g. in a first order chemical reaction.</h:p>
+      <h:p>The conversion to a molar concentration rate requires division by the Avagadro's constant, 6.02214179 x 10<h:sup>23</h:sup> mol<h:sup>-1</h:sup></h:p>
+    </description>
+  </unit>
+
+  <unit title="nanomole per cm3 per second" id="nmol.cm-3.s-1" symbol="nmol.cm-3.s-1"
+    parentSI="siUnits:mol.m-3.s-1" multiplierToSI="1E-3"
+    unitType="unitType:molar_conc_rate">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Rate of change in concentration expressed in units of nanomoles per cubic centimetre per second.</h:p>
+    </definition>
+    <description>
+      <h:p>The rate of change in a molecular process.</h:p>
+      <h:p>The conversion to a molar concentration rate requires division to convert to moles and multiplication by 1E6 to convert to /m<h:sup>3</h:sup></h:p>
+    </description>
+  </unit>
+
+<!-- rate coefficients -->
+
+<!-- NB unimolecular rate coefficient = Hz  - as with other frequencies e.g. photolysis frequency-->
+
+  <unit title="bimolecular_rate_molec-1.cm3.s-1" id="molec-1.cm3.s-1" symbol="molecule-1.cm3.s-1"
+    parentSI="siUnits:m3.s-1" multiplierToSI="1E-6"
+    unitType="unitType:volume_per_number_per_time">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Units of a bimolecular rate coefficient expressed in cm<h:sup>3</h:sup> molecule<h:sup>-1</h:sup> s<h:sup>-1</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p>Units of a second-order rate coefficient (k)</h:p>
+      <h:p>The conversion to a be used with molar quantities and other S.I. units requires multiplication by the Avagadro's constant, 6.02214179 x 10<h:sup>23</h:sup> mol<h:sup>-1</h:sup>, to convert to moles and division by 1E6 to convert to m<h:sup>3</h:sup></h:p>
+    </description>
+  </unit>
+
+<unit title="bimolecular_rate_molec-1.m3.s-1" id="molec-1.m3.s-1" symbol="molecule-1.m3.s-1"
+    parentSI="siUnits:m3.s-1" multiplierToSI="1"
+    unitType="unitType:volume_per_number_per_time">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Units of a bimolecular rate coefficient expressed in m<h:sup>3</h:sup> molecule<h:sup>-1</h:sup> s<h:sup>-1</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p>Units of a second-order rate coefficient (k)</h:p>
+      <h:p>The conversion to a be used with molar quantities and other S.I. units requires multiplication by the Avagadro's constant, 6.02214179 x 10<h:sup>23</h:sup> mol<h:sup>-1</h:sup>, to convert to moles.</h:p>
+    </description>
+  </unit>
+
+  <unit title="termolecular_rate_molec-2.cm6.s-1" id="molec-2.cm6.s-1" symbol="molecule-2.cm6.s-1"
+    parentSI="siUnits:m6.s-1" multiplierToSI="1E-12"
+    unitType="unitType:length_power6_per_number_per_time">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Units of a termolecular rate coefficient expressed in cm<h:sup>6</h:sup> molecule<h:sup>-2</h:sup> s<h:sup>-1</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p>Units of a third-order rate coefficient (k)</h:p>
+      <h:p>The conversion to a be used with molar quantities and other S.I. units requires multiplication by the Avagadro's constant squared, to convert to moles and division by 1E12 to convert to m<h:sup>3</h:sup></h:p>
+    </description>
+  </unit>
+
+  <unit title="termolecular_rate_molec-2.m6.s-1" id="molec-2.m6.s-1" symbol="molecule-2.m6.s-1"
+    parentSI="siUnits:m6.s-1" multiplierToSI="1"
+    unitType="unitType:per_length_power6_per_number_squared_per_time">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Units of a termolecular rate coefficient expressed in m<h:sup>6</h:sup> molecule<h:sup>-2</h:sup> s<h:sup>-1</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p>Units of a third-order rate coefficient (k)</h:p>
+      <h:p>The conversion to a be used with molar quantities and other S.I. units requires multiplication by the Avagadro's constant squared, to convert to moles</h:p>
+    </description>
+  </unit>
+
+<!-- Flux measurements e.g. emission or deposition rates in atmospheric chemistry -->
+
+  <unit title="number_flux" id="molec.m-2.s-1" symbol="molecule.m-2.s-1"
+    parentSI="siUnits:mol.m-2.s-1" multiplierToSI="1"
+    unitType="unitType:per_area_per_sec">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Number flux in molecule.m<h:sup>-2</h:sup>.s<h:sup>-1</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p>Number flux in molecules/m<h:sup>2</h:sup>/s. In this case flux is defined as the amount that flows through a unit area per unit time. For an example of use see Fick's First Law. These units may be used in experiments of deposition to, or emission from, a surface etc. With the units shown here the number flux refers to molecules but, in other cases number flux could relate to particles, radicals, photons etc (see photon_number_flux).</h:p>
+      <h:p>The conversion to to a be used with molar quantities requires multiplication by the Avagadro's constant, 6.02214179 x 10<h:sup>23</h:sup> mol<h:sup>-1</h:sup>.</h:p>
+    </description>
+  </unit>
+
+  <unit title="photon_number_flux" id="photon.m-2.s-1" symbol="photon.m-2.s-1"
+    parentSI="siUnits:m-2.s-1" multiplierToSI="6.022E23"
+    unitType="unitType:per_area__per_sec">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Number flux in photon.m<h:sup>-2</h:sup>.s<h:sup>-1</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p>Number flux in photons/m<h:sup>2</h:sup>/s. In this case flux is defined as the amount that flows through a unit area per unit time </h:p>
+      <h:p>The conversion to a be used with molar quantities requires multiplication by the Avagadro's constant, 6.02214179 x 10<h:sup>23</h:sup> mol<h:sup>-1</h:sup>.</h:p>
+    </description>
+  </unit>
+
+  <unit title="particle_number_flux" id="particle.m-2.s-1" symbol="particle.m-2.s-1"
+    parentSI="siUnits:m-2.s-1" multiplierToSI="6.022E23"
+    unitType="unitType:per_area__per_sec">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Number flux in particle.m<h:sup>-2</h:sup>.s<h:sup>-1</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p>Number flux in particles/m<h:sup>2</h:sup>/s. In this case flux is defined as the amount that flows through a unit area per unit time </h:p>
+      <h:p>For example, these units could be used in the measurement of the deposition of particles from the atmosphere to a surface.</h:p>
+    </description>
+  </unit>
+
+
+  <unit title="mass_flux" id="mg.m-2.h-1" symbol="mg.m-2.h-1"
+    parentSI="siUnits:kg.m-2.s-1" multiplierToSI="3.6E-6"
+    unitType="unitType:mass_per_area_per_sec">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Mass flux in mg.m<h:sup>-2</h:sup>.h<h:sup>-1</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p>Mass flux in mg/m<h:sup>2</h:sup>/h. In this case flux is defined as the mass that flows through a unit area per unit time. These units may be used in experiments of deposition to, or emission from, a surface etc.</h:p>
+    </description>
+  </unit>
+
+  <unit title="mass_flux" id="mg.m-2.d-1" symbol="mg.m-2.d-1"
+    parentSI="siUnits:kg.m-2.s-1" multiplierToSI="3.6E-6"
+    unitType="unitType:mass_per_area_per_sec">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Mass flux in mg.m<h:sup>-2</h:sup>.h<h:sup>-d</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p>Mass flux in mg/m<h:sup>2</h:sup>/day. In this case flux is defined as the mass that flows through a unit area per unit time. These units may be used in experiments of deposition to, or emission from, a surface etc.</h:p>
+    </description>
+  </unit>
+
+
+  <unit title="mass_flux" id="microg.m-2.s-1" symbol="&#956;g.m-2.s-1"
+    parentSI="siUnits:kg.m-2.s-1" multiplierToSI="3.6E-9"
+    unitType="unitType:mass_per_area_per_sec">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Mass flux in &#181;g.m<h:sup>-2</h:sup>.s<h:sup>-1</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p>Mass flux in &#181;g/m<h:sup>2</h:sup>/s. In this case flux is defined as the mass that flows through a unit area per unit time. These units may be used in experiments of deposition to, or emission from, a surface etc.</h:p>
+    </description>
+  </unit>
+
+<!-- molecular absorption cross section - these are just special cases of area-->
+
+  <unit title="molecular_absoprtion_cross_section" id="cm2.molecule-1" symbol="cm2.molecule-1"
+    parentSI="siUnits:m2" multiplierToSI="1E-3"
+    unitType="unitType:area_per_number">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Molecular absorption cross section in cm<h:sup>2</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p></h:p>
+      <h:p>The conversion to to a be used with molar quantities requires multiplication by the Avagadro's constant, 6.02214179 x 10<h:sup>23</h:sup> mol<h:sup>-1</h:sup>.</h:p>
+    </description>
+  </unit>
+
+  <unit title="molecular_absoprtion_cross_section" id="m2.molecule-1" symbol="m2.molecule-1"
+    parentSI="siUnits:m2" multiplierToSI="1"
+    unitType="unitType:number_per_area">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Molecular absorption cross section in m<h:sup>2</h:sup>.</h:p>
+    </definition>
+    <description>
+      <h:p></h:p>
+      <h:p>The conversion to to a be used with molar quantities requires multiplication by the Avagadro's constant, 6.02214179 x 10<h:sup>23</h:sup> mol<h:sup>-1</h:sup>.</h:p>
+    </description>
+  </unit>
+
+<!-- Quantum Yield -->
+
+  <unit title="quantum yield" id="molecule.photon-1" symbol="molecule.photon-1"
+    parentSI="siUnits:dimensionless" multiplierToSI="1"
+    unitType="unitType:dimensionless">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>Molecule.photon<h:sup>-1</h:sup></h:p>
+    </definition>
+    <description>
+      <h:p>Quantum Yield units are dimensionless.</h:p>
+    </description>
+  </unit>
+
+<!-- current -->
+
+  <unit title="Milliamperes" id="milliamperes" symbol="mA" parentSI="siUnits:ampere"  unitType="unitType:current" multiplierToSI="1E-3">
+    <definition>
+      <h:p>One thousanth of an amp.</h:p>
+    </definition>
+    <description>
+      <h:p>
+        One thousanth of an amp.
+		</h:p>
+    </description>
+  </unit>
+
+    <!-- voltage -->
+
+  <unit title="kilo Volts" id="kiloVolts" symbol="kV"
+    parentSI="siUnits:volt" multiplierToSI="1E3" unitType="unitType:electric_potential_difference">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        One thousand volts.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>TODO
+    </h:p>
+    </description>
+  </unit>
+
+<!-- force -->
+
+  <unit
+    title="kilojoule per mole per nm"
+    id="kJ.mol-1.nm-1"
+    symbol="kJ.mol-1.nm-1"
+    parentSI="siUnits:n.mol-1"
+    multiplierToSI="1E12" 
+    unitType="unitType:molar_force">
+    <dc:creator>Sebastian Breuers</dc:creator>
+    <definition>
+      <h:p>
+        10<h:sup>12</h:sup> Newton per mole.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        10<h:sup>12</h:sup> Newton per mole.
+      </h:p>
+    </description>
+  </unit>
+
+
+ <!-- energy -->
+  <unit title="Electronvolt" id="electronvolt" symbol="ev"
+    parentSI="siUnits:joule" multiplierToSI="1.60217653E-19" unitType="unitType:energy">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Andrew Walkingshaw</dc:creator>
+    <definition>
+      <h:p>
+        The amount of kinetic energy gained by a single unbound electron
+        when it passes through an electrostatic potential difference of one
+        volt,
+        in vacuum.
+    </h:p>
+    </definition>
+    <description>
+      <h:p>
+        The electronvolt is a very small unit, but is convenient for chemistry;
+        bond energies are of the order of 1eV per molecule. 
+    </h:p>
+    </description>
+  </unit>
+
+  <unit title="kilojoule per mole" id="kj.mol-1" symbol="kJ.mol-1" parentSI="siUnits:j.mol-1"
+    multiplierToSI="1E3" unitType="unitType:molar_energy">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>        
+        1000 J.mol<h:sup>-1</h:sup>.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        Physical quantities of energy transferred during phase transformations or chemical reactions, are almost always quoted in kJ·mol<h:sup>-1</h:sup> rather than the S.I. J·mol<h:sup>-1</h:sup> due to magnitudes involved.
+      </h:p>
+    </description>
+  </unit>
+
+<!-- power -->
+
+  <unit title="kiloWatt" id="kilowatt" symbol="kW"
+    parentSI="siUnits:kg.m2.s-3" multiplierToSI="1E3" unitType="unitType:power">
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        One thousand Watts.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        One thousand Watts.
+	</h:p>
+    </description>
+  </unit>
+
+
+  <!-- pressure / stress -->
+
+  <unit title="kilo Pascal" id="kPascal" symbol="kPa"
+    parentSI="siUnits:pascal" multiplierToSI="1E3"
+    unitType="unitType:pressure">
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        1000 Pascals.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        One thousand Pascals.
+    </h:p>
+    </description>
+  </unit>
+
+  <unit title="hectopascal" id="hpascal" symbol="hPa"
+    parentSI="siUnits:pascal" multiplierToSI="1E2"
+    unitType="unitType:pressure">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        100 Pascals.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        One hundred Pascals.
+      </h:p>    
+    </description>
+  </unit>
+
+  <unit title="atmosphere" id="atm" symbol="atm"
+    parentSI="siUnits:pascal" multiplierToSI="1.01325E5"
+    unitType="unitType:pressure">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        101325 Pascals.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        101325 Pascals. The standard atmosphere is an international reference pressure defined as 101,325 Pa and it was formerly used as a unit of pressure. It truly reflects the mean sea level pressure for many of the industrialized nations (those with latitudes similar to Paris). Whilst it is no longer used as a unit, it is included for use with legacy documents.
+      </h:p>    
+    </description>
+  </unit>
+
+  <unit title="bar" id="bar" symbol="bar"
+    parentSI="siUnits:pascal" multiplierToSI="1E5"
+    unitType="unitType:pressure">
+    <dc:creator>Sebastian Breuers</dc:creator>
+    <definition>
+      <h:p>
+        100000 Pascals = 100 kPa.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+        Hundred thousand Pascals.
+    </h:p>
+    </description>
+  </unit>
+
+<!--Temperature -->
+
+   <unit title="degrees Celsius" id="degreesC" symbol="deg"
+    parentSI="siUnits:k" multiplierToSI="1" constantToSI="273.15"
+    unitType="unitType:temperature">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+         Temperature in &#176; C = Temperature in Kelvin - 273.15.
+      </h:p>
+      </definition>
+      <description>
+      <h:p>
+        Celsius is a scale and unit of measurement for temperature. The unit was known until 1948 as centigrade.
+      </h:p>
+   </description>
+   </unit>
+
+<!--Reciprocal Length -->
+
+  <unit title="Reciprocal angstroms" id="reciprocal_angstrom"
+    symbol="A-1" parentSI="siUnits:m-1" multiplierToSI="1E10"
+    unitType="unitType:reciprocal_length">
+    <dc:source>Wikipedia</dc:source>
+<dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>Reciprocal Angstroms</h:p>
+    </definition>
+    <description>
+      <h:p>TODO
+	</h:p>
+    </description>
+  </unit>
+
+  <unit title="Reciprocal Millimetres" id="reciprocal_millimeters" symbol="mm-1" parentSI="siUnits:m-1"
+    multiplierToSI="1E3" unitType="unitType:reciprocal_length">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Nick England</dc:creator>
+    <definition>
+      <h:p>
+        A reciprocal millimetre.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+       TODO
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="Reciprocal centimetre" id="cm-1" symbol="cm-1" parentSI="siUnits:m-1"
+    multiplierToSI="1E2" unitType="unitType:reciprocal_length">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        A reciprocal centimetre.
+	</h:p>
+    </definition>
+    <description>
+      <h:p>
+       A factor of 100 greater than a reciprocal metre. It is used, for example, in the description of absorption coefficients or, in spectroscopy, as the units of wavenumber.
+      </h:p>
+    </description>
+  </unit>
+
+    <!--mass -->
+
+  <unit title="Petagram" id="Petag" symbol="Pg"
+    parentSI="siUnits:kg" multiplierToSI="1E12"
+    unitType="unitType:mass">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E12 kg.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        The Petagram is a unit of mass equivalent to 1E15 grams.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="Teragram" id="Tg" symbol="Tg"
+    parentSI="siUnits:kg" multiplierToSI="1E9"
+    unitType="unitType:mass">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E9 kg.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        The Teragram is a unit of mass equivalent to 1E12 grams.
+      </h:p>
+    </description>
+  </unit>
+
+ <unit title="Megagram" id="Mg" symbol="Mg"
+    parentSI="siUnits:kg" multiplierToSI="1E3"
+    unitType="unitType:mass">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E3 kg.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>The Megagram, also known as the tonne, is a unit of mass equivalent to 1E6 grams.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="gram" id="g" symbol="g"
+    parentSI="siUnits:kg" multiplierToSI="1E-3"
+    unitType="unitType:mass">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E-3 kg.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        The gram (also gramme in some British English texts), is a unit of mass equivalent to 1 thousandth of a kg.
+      </h:p>
+    </description>
+  </unit>
+
+
+  <unit title="milligram" id="mg" symbol="mg"
+    parentSI="siUnits:kg" multiplierToSI="1E-6"
+    unitType="unitType:mass">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E-6 kg.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        The milligram, is a unit of mass equivalent to 1E-3 g or 1E-6 kg.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="microgram" id="microgram" symbol="&#956;g"
+    parentSI="siUnits:kg" multiplierToSI="1E-9"
+    unitType="unitType:mass">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E-9 kg.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        The microgram, is a unit of mass equivalent to 1E-6 g or 1E-9 kg.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="nanogram" id="ng" symbol="ng"
+    parentSI="siUnits:kg" multiplierToSI="1E-12"
+    unitType="unitType:mass">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E-12 kg.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        The nanogram, is a unit of mass equivalent to 1E-9 g or 1E-12 kg.
+      </h:p>
+    </description>
+  </unit>
+
+  <unit title="picogram" id="pg" symbol="pg"
+    parentSI="siUnits:kg" multiplierToSI="1E-15"
+    unitType="unitType:mass">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        1E-15 kg.
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        The picogram, is a unit of mass equivalent to 1E-12 g or 1E-15 kg.
+      </h:p>
+    </description>
+  </unit>
+
+      <unit title="Dalton" id="dalton" symbol="Da"
+        parentSI="siUnits:kilogram" multiplierToSI="1.660539E-27"
+        unitType="unitType:mass">
+        <dc:creator>Nick England</dc:creator>
+        <definition>
+          <h:p>
+            1/12 of the mass of an atom of Carbon 12.
+        </h:p>
+        </definition>
+        <description>
+          <h:p>
+            A definition of mass where the mass of an atom of Carbon 12 is defined to be 1 Dalton.
+        </h:p>
+        </description>
+      </unit>
+
+<!-- special units e.g. pH, RH?  -->
+
+</unitList>

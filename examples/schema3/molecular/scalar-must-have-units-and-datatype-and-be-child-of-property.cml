@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cml:molecule xmlns:cml="http://www.xml-cml.org/schema"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
-         xmlns:conventions="http://www.xml-cml.org/convention/" convention="conventions:molecular"
-        xmlns:cmlDictionary="http://www.xml-cml.org/dictionary/"
-        id="m1">
-    <dc:title>test file for http://www.xml-cml.org/convention/molecular convention</dc:title>
-    <dc:description>scalar must be child of property, have units and dataType specified and the property should have a title </dc:description>
-    <dc:author>J A Townsend</dc:author>
-    <dc:rights>Copyright J A Townsend jat45@cantab.net 2009.</dc:rights>
-    <dc:date>2009-01-21</dc:date>
+<cml:molecule xmlns:cml="http://www.xml-cml.org/schema" xmlns:conventions="http://www.xml-cml.org/convention/"
+              convention="conventions:molecular" xmlns:cmlDictionary="http://www.xml-cml.org/dictionary/" id="m1">
     <cml:property dictRef="cmlDictionary:dummy" title="a dummy scalar for testing">
         <cml:scalar units="cmlDictionary:dummy" dataType="xsd:string">a dummy scalar</cml:scalar>
     </cml:property>

@@ -1,47 +1,64 @@
-<cml xmlns="http://www.xml-cml.org/schema" xmlns:html="http://www.w3.org/1999/xhtml">
-  <dictionary title="chemical naming conventions" namespace="http://www.xml-cml.org/dictionary/cml/name/">
-    <entry id="iupac" term="IUPAC chemical name" title="IUPAC chemical name">
-      <description>
-        <html:p>
-          The chemical name determined according to the nomenclature rules agreed upon by the International Union of Pure and Applied Chemistry
-          (IUPAC).
-        </html:p>
-      </description>
-    </entry>
-     <entry id="cas" term="CAS index chemical name" title="CAS index chemical name">
-      <html:p>Chemical name determined according to the nomenclature rules agreed upon by Chemical Abstracts Service (CAS).</html:p>
-    </entry>
-    <entry id="trivial" term="Trivial chemical name" title="Trivial chemical name">
-      <html:p>
-        A non-systematic name. That is, the name is not recognised according to the rules of any formal (e.g. IUPAC) system of nomenclature. For
-        example
-        <html:b>chloroform</html:b>
-        rather than
-        <html:b>trichloromethane</html:b>
-        .
-      </html:p>
-    </entry>
-    <entry id="systematic" term="Systematic chemical name" title="Systematic chemical name">
-      <html:p>
-        A systematic name. That is, the name should be generated from the connection table and be reproducible 
-        but it is not known which formal rules of nomenclature are being followed.
-      </html:p>
-    </entry>
-    <entry id="generic" term="Generic chemical name" title="Generic chemical name">
-      <html:p>
-        Usually based on the class that the conventional (CAS or IUPAC) names derives from. For example the generic names
-        <html:b>acid</html:b>
-        or
-        <html:b>carboxylic acid</html:b>
-        may be used for
-        <html:b>ethanoic acid</html:b>
-        .
-      </html:p>
-    </entry>
-    <entry id="abbreviation" term="Abbreviation for name" title="Abbreviation for name">
-      <html:p>
-        An abbreviation for a chemical name, for example <html:b>Ser</html:b> for <html:b>serine</html:b> or <html:b>DMSO</html:b> for <html:b>dimethyl sulphoxide</html:b>.
-      </html:p>
-    </entry>
-  </dictionary>
+<?xml version="1.0"?>
+<?xml-stylesheet href="http://www.xml-cml.org/common/style/dictionary.xsl" type="text/xsl"?>
+<cml xmlns="http://www.xml-cml.org/schema">
+
+    <dictionary title="Chemical Naming Conventions" namespace="http://www.xml-cml.org/dictionary/cml/name/">
+
+        <entry id="iupac" term="IUPAC chemical name" title="IUPAC chemical name">
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+                    The chemical name determined according to the nomenclature rules agreed upon by the International
+                    Union of Pure and Applied Chemistry (IUPAC).
+                </p>
+            </description>
+        </entry>
+
+        <entry id="cas" term="CAS index chemical name" title="CAS index chemical name">
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+                    Chemical name determined according to the nomenclature rules agreed upon by Chemical Abstracts
+                    Service (CAS).
+                </p>
+            </description>
+        </entry>
+
+        <entry id="trivial" term="Trivial chemical name" title="Trivial chemical name">
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+                    A non-systematic name. That is, the name is not recognised according to the rules of any formal
+                    (e.g. IUPAC) system of nomenclature. For example <b>chloroform</b> rather than
+                    <b>trichloromethane</b>.
+                </p>
+            </description>
+        </entry>
+
+        <entry id="systematic" term="Systematic chemical name" title="Systematic chemical name">
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+                    A systematic name. That is, the name should be generated from the connection table and be
+                    reproducible but it is not known which formal rules of nomenclature are being followed.
+                </p>
+            </description>
+        </entry>
+
+        <entry id="generic" term="Generic chemical name" title="Generic chemical name">
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+                    Usually based on the class that the conventional (CAS or IUPAC) names derives from. For example the
+                    generic names <b>acid</b> or <b>carboxylic acid</b> may be used for <b>ethanoic acid</b>.
+                </p>
+            </description>
+        </entry>
+
+        <entry id="abbreviation" term="Abbreviation for name" title="Abbreviation for name">
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">
+                    An abbreviation for a chemical name, for example <b>Ser</b> for <b>serine</b> or <b>DMSO</b> for
+                    <b>dimethyl sulphoxide</b>.
+                </p>
+            </description>
+        </entry>
+
+    </dictionary>
+
 </cml>

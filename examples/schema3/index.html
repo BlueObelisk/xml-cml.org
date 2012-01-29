@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--#include virtual="/common/include/common-head.html" -->
+    <title>Chemical Markup Language | Examples - Schema 3</title>
+    <meta name="description" content="CML home page" />
+</head>
+<body>
+<div id="wrapper" class="page clear">
+
+<div id="header">
+    <!--#include virtual="/common/include/header-and-menu.html" -->
+    <div id="breadcrumbs" class="clear">
+        <ul>
+            <li><a href="/">CML</a></li>
+            <li><a href="/examples/">Examples</a></li>
+            <li>Schema 3</li>
+        </ul>
+    </div>
+</div>
+
+<div id="content">
+    <h1>Examples for Schema 3</h1>
+    <p>
+        Schema 3 is a less restrictive schema than Schema 2.4, designed to be used with conventions as part of
+        <a href="/schema/cmllite.html">CMLLite</a>. The loosening of the restrictions in the schema mean that it is
+        valid to create documents which do not make chemical sense. For example molecules being the children of atoms
+        and bonds being defined in a molecule with no atoms present. However, the inclusion of conventions allows us
+        to place much tighter constraints and co-constraints on the structure.
+    </p>
+    <p>
+        Owing to the looser content model of Schema 3 it is less meaningful to give examples of how the elements and
+        attributes may be combined than it is for <a href="/examples/schema24/">Schema 2.4</a>; hence we only give
+        examples of files which are both valid according to the schema but also conform to a specified convention.
+        These examples are available by clicking on the links below.
+    </p>
+    <ul>
+        <li><a href="/examples/schema3/molecular/">Molecular</a> - conformant to the <code>http://www.xml-cml.org/convention/molecular</code> convention</li>
+        <li><a href="/examples/schema3/compchem/">CompChem</a> - conformant to the <code>http://www.xml-cml.org/convention/compchem</code> convention</li>
+    </ul>
+</div>
+
+<!--#include virtual="/common/include/footer.html" -->
+
+</div>
+</body>
+</html>
