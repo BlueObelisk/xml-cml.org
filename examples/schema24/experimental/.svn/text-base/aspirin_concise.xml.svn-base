@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<molecule id='aspirin'
-  xmlns='http://www.xml-cml.org/schema'
-  xmlns:f='http://www.xml-cml.org/mols/geom'
-  convention='cml:PML-concise'
-  formula='(f:acet}r1)-[l(1.4)t(180)](r1{f:ophen}r2)-[l(1.4)t(180)](r1{f:coxy)'
-  />

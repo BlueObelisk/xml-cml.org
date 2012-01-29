@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<molecule id='randomPoly'
-  xmlns='http://www.xml-cml.org/schema'
-  xmlns:f='http://www.xml-cml.org/mols/frags'
-  convention='cml:PML-concise'
-  formula='(r1{f:po}r2-[l(1.5)t(120)])range(8,12)-(r1{f:eo}r2-[l(1.5)t(120)])range(6,10)'
-  />
