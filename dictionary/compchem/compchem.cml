@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href='http://www.xml-cml.org/common/style/dictionary.xsl' type='text/xsl'?>
+<dictionary convention="convention:dictionary" title="Computational Chemistry - Core Concepts" namespace="http://www.xml-cml.org/dictionary/compchem/" dictionaryPrefix="compchem" xmlns="http://www.xml-cml.org/schema" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:cmlx="http://www.xml-cml.org/schema/cmlx" xmlns:convention="http://www.xml-cml.org/convention/" xmlns:unitType="http://www.xml-cml.org/unit/unitType/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    
+    <description>
+        <h:p>Toplevel dictionary for computational chemistry</h:p>
+        <h:p>
+            Concepts in this dictionary are general throughout computational chemistry and
+            are used extensively in the CompChem convention to describe the structure of
+            computational chemistry.
+        </h:p>
+    </description>
+    <dc:author>Weerapong Phadungsukanan</dc:author>
+
+    <entry id="jobList" term="job list" unitType="unitType:none">
+        <definition>
+            <h:p>A list of computational job</h:p>
+        </definition>
+        <description>
+            <h:p>
+                A quantum chemistry calculation is often comprised of a series of subtasks,
+                <h:i>e.g.</h:i> coarse optimisation -&gt; fine optimisation -&gt; NMR Spectrum Analysis; this is
+        because most quantum chemistry software packages are designed to be
+        modularised and only to perform a single task at a time. The joblist concept
+        is introduced to capture these series of successive subtasks and links
+        the information from one subtask to the next subtask.
+    </h:p>
+</description>
+</entry>
+
+<entry id="job" term="job" unitType="unitType:none">
+    <definition>
+        <h:p>A job or computational task</h:p>
+    </definition>
+    <description>
+        <h:p>
+            The job concept represents a computational job performed by quantum chemistry
+            software, e.g. geometry optimisation job, frequency analysis job. The job
+            concept is the smallest unit which can fully describe a general picture of
+            computational modelling.
+        </h:p>
+    </description>
+</entry>
+
+<entry id="initialization" term="initialization" unitType="unitType:none">
+    <definition>
+        <h:p>A initialisation module for a computational job</h:p>
+    </definition>
+    <description>
+        <h:p>
+            An initialisation module represents the concept of the model parameters and
+            inputs for computational job.
+        </h:p>
+    </description>
+</entry>
+
+<entry id="calculation" term="calculation" unitType="unitType:none">
+    <definition>
+        <h:p>A calculation module for a computational job</h:p>
+    </definition>
+    <description>
+        <h:p>
+            A calculation module represents the concept of the model calculation or
+            optimisation or iteration processes for computational job.
+        </h:p>
+    </description>
+</entry>
+
+<entry id="finalization" term="finalization" unitType="unitType:none">
+    <definition>
+        <h:p>A finalization module for a computational job</h:p>
+    </definition>
+    <description>
+        <h:p>
+            A finalisation module represents the concept of the model results for
+            computational job.
+        </h:p>
+    </description>
+</entry>
+
+<entry id="environment" term="environment" unitType="unitType:none">
+    <definition>
+        <h:p>Module holding concepts relating to environment that the job used or required</h:p>
+    </definition>
+    <description>
+        <h:p>
+            The computing environment concept refers to a hardware platform, software application, 
+            the operating system and any hardware and software configurations used in order to run 
+            the job or computational task. The environment also includes the metadata such as 
+            machine id, username, starting and finishing date time, tools, compilers, IP, etc.
+        </h:p>
+        <h:p>   
+            This information is not related to input and output of the model but is supplementary to 
+            the software application to run properly and may vary from machine to machine. 
+            Therefore, the computing environment is OPTIONAL element in the CompChem convention.
+        </h:p>
+    </description>
+</entry>
+
+</dictionary>
