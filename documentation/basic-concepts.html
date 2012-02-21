@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="CML home page" />
+    <meta name="keywords" content="CML, schema, xml-cml" />
+    <meta name="robots" content="index,follow,noodp,noydir" />
+    <!--#include virtual="/common/include/common-head.html" -->
+	<title>Chemical Markup Language | CML</title>
+</head>
+<body>
+    <div id="wrapper" class="page clear">
+        <div id="header">
+			<!--#include virtual="/common/include/header-and-menu.html" -->
+			<div id="breadcrumbs" class="clear">
+				<ul>
+					<li><a href="/">CML</a></li>
+					<li><a href="documentation/">Documentation</a></li>
+                    <li>Basic concepts</li>
+				</ul>
+			</div>
+        </div>
+        <div id="content">
+            <h1>CML - Some basic concepts</h1>
+            
+            <p>There are three fundamental concepts in CML: the schema, conventions and dictionaries, providing the grammar, vocabulary and semantic definitions. Interoperability is 
+            provided through namespaces, which must be unique. To qualify as "well-formed", CML code will require compliance with all these factors, but can be checked for validity via 
+            the <a href="http://validator.xml-cml.org/">validation service provided</a>.
+            </p>
+            
+            <h2>The CML Schema</h2>
+             
+            <p>
+            XML schemas describe the structure of an XML (CML) document. The CML schema defines the elements and attributes that can appear in a CML document, together with their data types.
+            </p>
+            <p>
+            The schema content model in CML has been relaxed quite substantially between version 2.4 and version 3. <a href="schema/">Further details</a> can be found in the 'schema' section.
+            </p>
+             
+            <h2>CML conventions</h2>
+             
+            <p>
+            Different domains of chemistry think about chemistry differently; often this means a very tight specification of rules in your area of expertise and very little if any 
+            applied to the rest. The loosening of the CML content model in Schema 3 allows users to combine the elements and attributes as they need to represent data. However, users 
+            still need to be able to specify a set of rules (constraints) which model their particular domain. This can be likened to thinking of the elements and attributes of CML as 
+            representing the allowed vocabulary and the set of rules as a grammar specifying how these words are allowed to be put together. The entire set of constraints which the CML 
+            should conform to is called a <strong>convention</strong>. 
+            </p>
+            <p>
+            This website provides a list of <a href="conventions/">all currently supported conventions</a>.
+            </p>
+            
+            <h2>CML dictionaries</h2>
+            
+            <p>
+            Dictionaries allow CML to be understood by machines. Much of physical science is managed through the dictionary mechanism. We find terms and units relating to an aspect of 
+            science (such as heat of formation, melting point, point group) and create entries for these items in a dictionary. Different programs sometimes produce data with the same label 
+            but a different interpretation, so each computational chemistry code has its own dictionary reflecting its specific vocabulary.  Some concepts are sufficiently universal that the community 
+            can decide to group particular concepts together into a higher-level dictionary. 
+            </p>
+            <p>
+            The entries can consist of just a unique id (within the dictionary's namespace) and some human-understandable definition but we highly encourage more information to be given. For instance 
+            what are the units, are there upper and lower bounds, what is the type of the data (string, integer, float <em>etc.</em>).
+            </p>
+            <p>
+            This website provides a list of <a href="dictionary/">all currently supported dictionaries</a>.
+            </p>
+            
+            <h2>Namespaces</h2>
+            
+            <p>XML (and CML) encourage the creation of vocabularies (dictionaries). But what if two authors choose identical tags for chemical concepts? Similarly, different programs sometimes 
+            produce data with the same label but a different interpretation; does 'density' mean 'electron density' or 'physical density'? The problem is circumvented by using namespaces based on unique 
+            URIs (<em>e.g.</em> http://www.w3.org/, http://www.xml-cml.org/ <em>etc.</em>) to differentiate the dictionaries. Element and attribute names in each dictionary have both a namespace prefix 
+            and a local name to define them, the combination being required to uniquely identify them. Thus:
+            
+            <pre>
+&lt;property dictRef="comp:density" xmlns:comp="http://example.com/dictionary/compchem">...&lt;/property>
+</pre>
+            
+            does <strong>not</strong> represent the same property as
+            
+            <pre>
+&lt;property dictRef="geo:density" xmlns:geo="http://example.com/dictionary/geology">...&lt;/property>
+</pre>
+            
+            The namespace can be any string mapped onto a URI. <strong>Namespace URIs should not be confused with Internet URLs</strong> - while it is best practice for them to resolve to a page
+            containing information about the resource they identify, it is not an absolute requirement.  Some URIs are reserved, <em>e.g.</em> W3C XML reserves 
+            <code>xml:</code>, <code>xsl:</code>, <code>xsd:</code>, <code>xsi:</code> <em>etc.</em>. For example: <code>&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/></code>
+
+            </p>
+            <h3>Multiple references</h3>
+            <p>
+            Documents may refer to a large number of different online resources each with their own namespace.
+            </p>
+            <p>
+            <pre>
+&lt;?xml version="1.0"?>
+&lt;cml:molecule xmlns:atomic="http://www.xml-cml.org/dict/atomic" xmlns:my="http://foo.org/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.xml-cml.org/schema ../../schema.xsd" xmlns:cml="http://www.xml-cml.org/schema"> 
+&lt;cml:atomArray>
+    &lt;cml:atom my:annnotation="specialBasisSet" elementType="H" id="a1">
+        &lt;my:basisSet type="minimalist"> &lt;cml:scalar units="atomic:bohr" dictRef="my:radius">1.234&lt;/cml:scalar> &lt;/my:basisSet>
+    &lt;/cml:atom> 
+&lt;/cml:atomArray> 
+&lt;/cml:molecule>
+</pre>
+
+
+            </p>
+            
+        </div>
+		<!--#include virtual="/common/include/footer.html" -->
+    </div>
+</body>
+</html>

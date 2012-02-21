@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="CML home page" />
+    <meta name="keywords" content="CML, schema, xml-cml" />
+    <meta name="robots" content="index,follow,noodp,noydir" />
+    <!--#include virtual="/common/include/common-head.html" -->
+	<title>Chemical Markup Language | CML</title>
+</head>
+<body>
+    <div id="wrapper" class="page clear">
+        <div id="header">
+			<!--#include virtual="/common/include/header-and-menu.html" -->
+			<div id="breadcrumbs" class="clear">
+				<ul>
+					<li><a href="/">CML</a></li>
+					<li><a href="documentation/">Documentation</a></li>
+                    <li>History</li>
+				</ul>
+			</div>
+        </div>
+        <div id="content">
+            <h1>CML - a potted history</h1>
+           
+			<p>
+			CML has been developed by <a href="http://en.wikipedia.org/wiki/Peter_Murray-Rust" target="_blank">Peter Murray-Rust</a> and <a href="http://en.wikipedia.org/wiki/Henry_Rzepa" target="_blank">Henry Rzepa</a>
+			since 1995. It is the <em>de facto</em> XML for chemistry, is accepted by publishers and has more than 1 million lines of Open Source code supporting it. CML can be validated and built into authoring tools 
+            (for example the <a href="/tools/#chem4word">Chemistry Add-in for Microsoft Word</a>). 
+			</p>
+            <p>
+            Inspired and informed by the work of Tim Berners-Lee at CERN, CML's <a href="http://www.ch.ic.ac.uk/rzepa/cml/">first 'public outing'</a> was in August 1995, at the ACS meeting in Chicago. The primary purpose 
+            of CML is (and has always been) to allow humans and machines to communicate chemical concepts without loss of semantic information. The vision is that scientific publications should be represented semantically 
+            such that both humans and machines can consume them, again without loss. The only technology capable of managing this at present (and probably for some time to come) is XML. It is widely used in publishing and 
+            CML can therefore be technically adopted for any document-like examples such as journals, theses, supplier catalogues, textbooks, regulatory information, input/output from programs <em>etc.</em>.
+            </p>
+      		<div class="figure">
+			  <p><img alt="Peter Murray-Rust and Henry Rzepa hard at work" src="/common/images/pmrhsr.jpg" /></p>
+			  <p>CML under active development in a conducive atmosphere - Peter Murray-Rust and Henry Rzepa hard at work...</p>
+			</div>
+            <p>
+            Throughout its evolution, CML has been driven by code-design - developing the code in parallel with formal specifications and recommendations (many emanating from the <a href="http://www.w3.org/">W3C</a>). 
+            There is a particular need to validate combinations of elements and attributes, which is impossible to hand-code. Automated methods of validation and code-generation based on the full W2C DOM model proved 
+            unwieldy and led to the adoption of the simpler <a href="http://www.xom.nu/" target="_blank">XOM model</a>, which has had a strong influence on the subsequent design. The increasing availability of 
+            <a href="http://www.w3c.org/TR/xpath/">XPath</a>-based technology has had a major positive effect on the possible flexibility of the organisation of elements and attributes.
+            </p>  
+            <p>
+            However, with increasing deployment to different areas of chemistry, it became clear that it was going to be impossible to find universal content models for most elements. This is due to not only the diversity
+            of chemistry but also the different ways that chemists might wish to organise information. This led to the proposal of an extremely flexible content model, constrained by the use of convention rather than XSD 
+            technology. Conventions therefore provide the 'grammar' of CML, with the 'vocabulary' supplied by dictionaries containing well-defined entries with specific associated semantics (a concept modelled on the 
+            <a href="http://www.iucr.org/resources/cif">crystallographic CIF architecture</a>).
+            </p>
+            <p>
+            The idea of validation lies at the heart of CML. Without validation, the author of a program cannot easily write conformant software if the input is variable; similarly the author cannot know whether an input 
+            is fit for purpose. A major purpose of CML is to make sure that all chemical information is validatable and that the rules for this validation are openly visible - this website hosts 
+            a <a href="http://validator.xml-cml.org/">validation service</a> and lists all the information (<a href="schema/">schema specification</a>, <a href="dictionaries/">dictionaries</a> and 
+            <a href="convention/">conventions</a>) required to write clean compliant CML code. Extension of the CML architecture by sub-communities who wish to develop CML in their own specific area of chemistry (or related 
+            science) is now readily achieved through the dictionary/convention mechanism.
+            </p>
+            <p>
+            Those interested in a more detailed review of the <a href="http://www.jcheminf.com/content/3/1/44" target="_blank">design and evolution of CML</a> should read the article recently (October 2011) published in the Journal of 
+            Cheminformatics as part of the <a href="http://www.jcheminf.com/series/semantic_mol_future" target="_blank">Visions of a Semantic Molecular Future thematic issue</a>.
+			</p>
+			
+        </div>
+		<!--#include virtual="/common/include/footer.html" -->
+    </div>
+</body>
+</html>
