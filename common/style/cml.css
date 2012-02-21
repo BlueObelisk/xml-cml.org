@@ -172,6 +172,11 @@ padding-left: 0.3em;
 clear:left;
 }
 
+#content ol.bibliography li
+{
+padding-bottom: 10px;
+}
+
 div.figure {
 margin-top:0px;
 margin-bottom:4px;
