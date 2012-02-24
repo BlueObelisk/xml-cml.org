@@ -19,18 +19,478 @@
 				</ul>
 			</div>
         </div>
-        <div id="content">
+
+      <div id="content">
             <h1>CML - Frequently Asked Questions</h1>
-            
+
             <p>
+            The FAQ is separated into various sections: <a href="#overview">Overview</a>, <a href="#special">Why is CML
+            special?</a>, <a href="#chemistry">Chemistry</a>, <a href="#software">Software</a>.
+
+            <p>
+            Sections covering <a href="#community">Community</a>, <a href="#resources">Resources</a> &amp; <a href="#use-cases">Possible
+            use cases of CML</a> are currently in production...
             </p>
-            
-            <ol>
-                <li>What is CML?</li>
-                <li>Why do I need CML? What can it do for me?</li>
-                <li>Where can I get CML?</li>
+
+
+            <h2><a name="overview">Overview</a></h2>
+
+            <ol class="bibliography">
+            <li>Q. What is CML?</li>
+            <p>
+            A. CML (Chemical Markup Language) is an XML language designed to hold
+            most of the central concepts in chemistry.
+            It was the first language to be developed and plays the same role for
+            chemistry as <a href="http://www.w3.org/Math/">MathML</a> for mathematics and
+            <a href="http://www.opengeospatial.org/standards/gml">GML</a> for geographical systems.
+            </p>
+
+            <li>Q. What does CML cover?</li>
+            <p>
+            A. CML covers most mainstream chemistry and especially molecules,
+            reactions, solid-state, computation and spectroscopy. Since it has a
+            special flexible approach to numeric science it also covers a very
+            wide range of chemical properties, parameters and experimental
+            observation. It is particularly concerned with the communication
+            between machines and humans, and machines to machines. It has been
+            heavily informed by the current chemical scholarly literature and
+            chemical databases.
+            </p>
+
+            <li>Q. What is a CML 'element'?</li>
+            <p>
+            A. XML defines a vocabulary through 'elements'. This unfortunately
+            clashes with the concept of chemical element so we use the term
+            <code>CMLElement</code> to represent the XML vocabulary. There are
+            about 120 <code>CMLElement</code>s and most of them have
+            straightforward names representing well-understood concepts
+            (<em>e.g.</em> <code>product</code>, <code>plane3</code>). Most users
+            will only need the subset of <code>CMLElement</code>s relevent to
+            their discipline.
+            </p>
+    
+            <li>Q. How long has CML been going?</li>
+            <p>
+            A. Since 1994. It has had several versions which have expanded its
+            content and increased the rigour and semantic power.
+            </p>
+
+            <li>Q. Is CML 'stable'?</li>
+            <p>
+            A. Yes. The last major content revision was about 5 years ago, and the
+            software design has been stablefor approximately the same period.
+            </p>
+
+            <li>Q. Why do I need CML?</li>
+            <p>
+            A. CML is becoming the <em>lingua franca</em> for the formal
+            representation of chemistry in modern information systems. Most people
+            will not interact directly with CML but will increasingly use systems
+            which rely on it for their implementation.
+            </p>
+
+            <li>Q. How do I use CML?</li>
+            <p>
+            A. Most people will use software without realising that it is based on
+            CML. If you are a developer or manage a data resource then you will
+            almost certainly use existing libraries rather than having to build
+            software from scratch.
+            </p>
+
+            <li>Q. Who uses CML?</li>
+            <p>
+            A. Effectively all Open Source chemistry projects (such as in the <a href="http://blueobelisk.org">Blue
+            Obelisk</a>) use CML. It is not yet universal in closed commercial
+            products although we know anecdotally that many systems can use CML,
+            and that many companies use it internally. As an example, we have
+            worked with <a href="http://research.microsoft.com/">Microsoft Research</a> to develop a 
+            <a href="http://research.microsoft.com/en-us/projects/chem4word/">CML plug-in for Word</a> and
+            are working with a number of organisations such as chemical companies
+            and national laboratories to develop systems based on this.
+            </p>
+
+            <li>Q. Where can I see examples of CML?</li>
+            <p>
+            A. Because CML is so flexible, it's similar to asking 'where can I see
+            examples of mathematical equations?' Our publications normally include
+            significant snippets of CML with descriptions of their purpose. There
+            are a large number of CML resources mentioned in later sections. We
+            also ensure that all concepts in CML are supported by examples
+            co-published with the schema.
+            </p>
+
+        <h2><a name="special">What's special about CML?</a></h2>
+
+            <li>Q. Why can't we use existing systems?</li>
+            <p>
+            A. CML is a very powerful language for representing complex concepts
+            in a completely precise and validatable manner. Most other systems
+            rely on implicit semantics (<em>e.g.</em> units are not given and the
+            meaning of quantities can only be determined from manuals or reading
+            the source code). CML provides self-describing documents and data, and
+            means that groups who have never worked together before can understand
+            each other's information. Because it's in XML, it is straightforward
+            to integrate CML with other XML languages such as MathML, <a href="http://www.w3.org/Graphics/SVG/">SVG</a>
+            (graphics), <a href="http://en.wikipedia.org/wiki/Microsoft_Office_XML_formats">WordML</a>/<a href="http://en.wikipedia.org/wiki/Office_Open_XML">OOXML</a>, 
+            and <a href="http://www.docbook.org/">DocBook</a>/<a href="http://dtd.nlm.nih.gov/">NLM-XML (from the NIH)</a>.
+            </p>
+
+            <li>Q. What does 'extensible' mean for CML?</li>
+            <p>
+            A. CML provides an abstraction of numerical science and so rather than
+            having special markup for a melting point, it describes it as a scalar
+            property defined by a dictionary entry. This means that users can add
+            more properties to CML simply by creating and using their own
+            dictionaries.
+            </p>
+
+            <li>Q. How does CML control the spread of dictionaries?</li>
+            <p>
+            A. It doesn't. Anyone can create a dictionary but they have to use a
+            unique namespace (probably based on their domain name). This means
+            that there is no ambiguity since every item is precisely defined.
+            Dictionaries are a major part of the CML activity and we have software
+            to support their creation and validation.
+            </p>
+            <p>
+            The <code>CMLElement</code>s have evolved and been designed to provide
+            a toolkit for describing a very wide range of chemical concepts. It is
+            therefore likely that you will be able to express a new concept using
+            the existing <code>CMLElement</code>s rather than inventing new ones.
+            However, there will always be a small demand for new elements but you
+            should remember that each new element requires support by software to
+            be useful.
+            </p>
+
+            <li>Q. How does CML manage numeric quantities?</li>
+            <p>
+            A. A very wide range of numerical quantities can be broken down into
+            the data type and the dimensionality. CML supports 5 data types at
+            present (string, integer, real number, Boolean and date), and uses the
+            W3C definitions and software to support these. CML provides three
+            dimensionalities: zero (scalar), one (homogeneous array) and two
+            (rectangular matrix). This covers a very wide range of concepts found
+            in chemical documents and databases. Some concepts, such as boiling
+            point, require two primitive elements: parameter and property. The
+            parameter describes the constraining pressure while the property
+            supports the temperature. Again, we have found that a wide range of
+            chemical concepts can be created from primitive components.
+            </p>
+
+            <li>Q. If everyone makes up their own concepts, don't we get chaos?</li>
+            <p>
+            A. CML manages concepts and documents through the deployment of <a href="/conventions/">conventions</a>.
+            </p>
+
+            <li>Q. What's a convention?</li>
+            <p>
+            A. A convention is an agreement by a sub-community to use particular
+            structures and constraints for documents, <code>CMLElement</code>s and
+            attributes.
+            </p>
+
+            <li>Q. How does CML manage conventions?</li>
+            <p>
+            A. A convention consists of a formal specification, understandable by
+            humans and precisely processable by machines. Each convention has a
+            namespace so that it is always clear which convention is enforced.
+            Namespaces can be combined, for example by nesting, so that simple
+            conventions can be used by more complex ones.
+            </p>
+            <li>Q. What's validation?</li>
+            <p>
+            A. CML encourages and increasingly requires documents to be valid
+            against a convention. This means that if you use software which reads
+            and writes a CML document, the software knows what's in the document
+            from the convention. In this way, software designers can create tools
+            which can be guaranteed to perform correctly on valid documents. If a
+            document has an unknown convention, or an unsupported one, the
+            software can ignore part or all of the document without crashing.
+            </p>
+
+            <li>Q. What's a 'datument'?</li>
+            <p>
+            A. A <a href="http://journals.tdl.org/jodi/article/viewArticle/130">'datument'</a> is the combination of all the components of a piece of
+            scientific information into a single flexible CML object, possibly
+            using hyperlinks. It challenges the traditional separation of
+            documents and data, and can be used to disply information to both
+            humans and machines in the most effective manner.
+            </p>
+
+        <h2><a name="chemistry">Chemistry</a></h2>
+
+            <li>Q. What types of chemistry does CML support?</li>
+            <p>
+            A. CML can support much of the current scientific literature and most
+            undergraduate chemistry. Much of this is already possible but some
+            will require additional software and conventions to be built.
+            </p>
+
+            <li>Q. How does CML support molecules?</li>
+            <p>
+            A. A molecule is a very general term and does not imply any particular
+            use of chemical bonds or representation. At its simplest, a molecule
+            contains atoms and may optionally contain bonds between those atoms.
+            Molecules can also contain other molecules, so that salts or liganded
+            proteins can be described by nested molecules. Molecules often contain
+            property elements and can also be associated with, for example,
+            spectra. The molecule is re-used by other concepts in CML such as
+            reaction.
+            </p>
+            <p>
+            A molecule can be represented at many levels of detail. At its
+            simplest, it may have just an id, then perhaps a title or inline
+            formula, and then be extended to provide atoms, the bonds between them
+            and the coordinates and other properties. <a
+            href="http://research.microsoft.com/en-us/projects/chem4word/">Chem4Word</a>
+            allows a wide range of different representations for the molecule
+            concept.
+            </p>
+
+            <li>Q. How does CML support reactions?</li>
+            <p>
+            A. CML uses the traditional concepts of product and reactant, and can
+            associate a wide range of properties with either. There are a number
+            of concepts such as reaction list, reaction step which allow complex
+            sequences of reactions to be described. For example, CML can represent
+            a synthetic scheme or the precise reaction mechanism of a single
+            reaction. Reactions can have properties such as temperature and
+            observations such as the length of time for which a reaction took
+            place.
+            </p>
+
+            <li>Q. How does CML support crystal structures and solid state chemistry?</li>
+            <p>       
+            A. CML supports crystal structures with specific elements such as
+            crystal and symmetry, which supports most of the common
+            crystallographic data and operations. This is also enough to support
+            modelling of the solid-state, both completely periodic and also
+            partially periodic (1-D and 2-D). There is a large collection of
+            crystal structure (<a href="http://wwmm.ch.cam.ac.uk/crystaleye/">CrystalEye</a>) where the original CIF files have been
+            converted to CML.
+            </p>
+
+            <li>Q. How does CML support spectroscopy?</li>
+            <p>
+            A. CML has specific elements (spectrum and peak) which are used to
+            describe a wide range of 1-D spectra (<em>e.g.</em>IR, UV, CD
+            <em>etc.</em>) It is straightforward to devise conventions for 2-D
+            spectra. There are collections of peaks published (such as <a href="http://nmrshiftdb.nmr.uni-koeln.de/">NMRShiftDB</a>)
+            but few Open collections of continuous 1-D spectra. However, a number
+            of national laboratories are now planning to use CML to manage their
+            analytical spectroscopy.
+            </p>
+
+            <li>Q. How does CML support computational chemistry?</li>
+            <p>
+            A. CML provides a number of tools (module, list) to structure the
+            output of computational processes, both QM and empirical. We have
+            written converters (parsers) for several well-known codes and this
+            means that the information in the logfile becomes immediately much
+            more valuable. We are also working with program authors (<em>e.g.</em> <a href="http://www.nwchem-sw.org/">NWChem</a>,
+            <a href="http://www.ccp5.ac.uk/DL_POLY/">DL_POLY</a>) to embed CML routines within the code so that they
+            automatically generate CML.
+            </p>
+
+            <li>Q. Can CML be used with other disciplines, such as bioscience?</li>
+            <p>
+            A. Yes. Because CML has its own namespace, it can be included anywhere
+            in other XML documents, and the processors may choose either to
+            include it as part of the information or to ignore it. CML is part of
+            the <a href="http://www.biopax.org/">BioPAX</a> standard and we have also been involved in the <a href="http://mibbi.org/index.php/Projects/MIABE">MIABE</a>
+            activity.
+            </p>
+
+            <li>Q. What's missing from CML?</li>
+            <p>
+            A. We are currently working on the representation of forcefields in
+            CML and mapping chemical reactions onto kinetic equations. These
+            involve more complex semantics but it should be possible to use the
+            existing range of <code>CMLElement</code>s. There is no immediate
+            apparent need for new elements, although in some cases (<em>e.g.</em>
+            concentrations) it could simplify the representation.
+            </p>
+
+            <li>Q. Are there alternatives to CML?</li>
+            <p>
+            A. CML deliberately does not duplicate other established efforts, so
+            we use basis sets from the EMSL basis set exchange rather than using
+            our own markup. We continue to use our own definition for scientific
+            units until <a href="http://unitsml.nist.gov/">UnitsML</a> becomes widely deployed and supported by software.
+            We note the existence of <a href="http://animl.sourceforge.net/">Analytical Information markup language (AnIML)</a> which
+            takes  somewhat different approach and which is yet to be deployed in
+            significant volume. We also note the successful <a href="http://old.iupac.org/namespaces/ThermoML/">ThermoML</a>, used for
+            describing thermochemical data published in several journals.
+            </p>
+            <p>
+            It is theoretically possible to describe semantics in a more explicit
+            form by using <a href="http://www.w3.org/RDF/">RDF</a> and ontologies (<em>e.g.</em> <a href="http://precedings.nature.com/documents/3714/version/1">ChemAxiom</a>). 
+            Our current view is that this is too complex for the chemical community to take onboard, and provides
+            little effective added value over our hard-coded and rule-based semantics.
+            </p>
+
+        <h2><a name="software">Software</a></h2>
+
+            <li>Q. Where do I download CML?</li>
+            <p>
+            A. You don't. CML does not exist as a binary package. The uses of CML
+            are very varied so people and applications will require their own
+            selection of tools. The <a href="/tools/software.html">JUMBO and JUMBO-Converters</a> represent an
+            implementation for the whole of CML and an important part of its
+            existence is to act as a reference, defining the semantics where they
+            are not trivially interpretable from the specification.
+            </p>
+            <p>
+            The formal schema specifications are <a href="/schema/">available for download</a>.
+            </p>
+
+            <li>Q. What software do I need to use CML?</li>
+            <p>
+            A. The commonest operations in CMl will be creation, transmission,
+            reading, tranformation, editing, computation, searching and display.
+            Most applications have a small subset of this. For example, a <a href="http://quixote.ch.cam.ac.uk/">Quixote
+            repository</a> is based on the <a href="http://www.chempound.net/">Chempound</a> software which provides
+            validation, ingest, indexing,searching and display. <a href="http://research.microsoft.com/en-us/projects/chem4word/">Chem4Word</a> provides
+            the creation of molecules, the integration of documents and CML and a
+            rich set of display options in the widely-distributed Word
+            environment. <a href="http://wwmm.ch.cam.ac.uk/crystaleye/">CrystalEye</a> trawls the public scientific literature for
+            crystal structures which it converts into CML and displays on browsable
+            pages. Many programs such as <a href="<a href="http://www.ccp5.ac.uk/DL_POLY/">DL_POLY</a> now emit CML as a primary
+            representation of computational results. The <a href="http://www.ebi.ac.uk/thornton-srv/databases/MACiE/">MaCiE system</a> annotated
+            enzyme reaction mechanisms and provided animated graphical
+            representation of the reaction. There are a vast number of different
+            ways of combining the tools in CML systems to provide a very large
+            range of chemical applications.
+            </p>
+
+            <li>Q. How do I write CML software?</li>
+            <p>
+            A. Wherever possible, you should build on an existing library and use
+            existing web services. The libraries ensure not only syntactic
+            validity of the CML but also increasingly support conventions and
+            other chemical operations. Not all functions are available in all
+            languages so you may need to refer to some existing implementations
+            and port parts of the code. Because XML is designed as the 'digital
+            dialtone of the Web' (Jon Bosak) it is the means of choice for
+            supplying information from web services. Frequently it is preferable
+            to use existing web services rather than try to write functionality
+            from scratch. For example, our <a href="http://opsin.ch.cam.ac.uk/">OPSIN</a> server will supply chemical name
+            to structure conversion on demand.
+            </p>
+            <p>
+            If you do have to write CML software then we provide a range of
+            examples and tools to help with the validation.
+            </p>
+
+            <li>Q. What tools and groups include CML in their applications?</li>
+            <p>
+            A. In 2011 there were over 20 independent Open Source chemistry
+            systems and most of these have facilities for CML. The most central is
+            probably <a href="http://openbabel.org/">OpenBabel</a> and <a href="http://sourceforge.net/projects/cdk/">CDK</a> probably has the richest chemical
+            functionality. <a href="http://jmol.sourceforge.net/">Jmol</a> and <a href="http://avogadro.openmolecules.net">Avogadro</a> are very high-quality display and
+            analysis tools.
+            </p>
+
+            <li>Q. How do I create documents containing CML?</li>
+            <p>
+            A. The <a href="http://research.microsoft.com/en-us/projects/chem4word/">Chem4Word</a> system is an example of an integrated chemistry and
+            text editor, where the result is held completely in XML. The code is
+            all Open and it will be technically possible to port most of the
+            functionality to OpenOffice. In many cases the document will be
+            created by automated aggregation and editing of components, of which
+            CML will be one. Thus, for example, XML stylesheets could be used to
+            include CML into documents conforming to the NLM-DTD.
+            </p>
+
+        <h2><a name="resources">Resources</a></h2>
+
+            <li>Q. Where can I find molecules in CML?</li>
+            <p>
+            A. <a href="http://wwmm.ch.cam.ac.uk/crystaleye/">CrystalEye1</a>, <a href="http://crystaleye.ch.cam.ac.uk/">CrystalEye2</a> and <a href="http://quixote.ch.cam.ac.uk">Quixote</a> servers have tens or hundreds
+            of thousands of molecular structures. It is straightforward to convert
+            other legacy formats <em>e.g.</em> MDL <a href="http://en.wikipedia.org/wiki/Chemical_table_file">molfiles</a> or <a href="http://www.cambridgesoft.com/software/ChemDraw/">ChemDraw</a> files to CML using
+            OpenBabel, CDK or JUMBO-Converters.
+            </p>
+
+            <li>Q. Where can I find reactions in CML?</li>
+            <p>
+            A. Reactions are not yet widely represented in chemistry because there
+            are very few examples of collections of Open reactions that we can
+            process without legal constraints. We have, however, extracted a large
+            number of reactions from the patent literature (the <a href="http://greenchain.ch.cam.ac.uk/">Green Chain Reaction</a>)
+            and the <a href="http://www.ebi.ac.uk/thornton-srv/databases/MACiE/"MaCiE database</a> 
+            contains enzyme reactions and mechanisms.
+            </p>
+
+            <li>Q. Where can I find spectra in CML?</li>
+            <p>
+            A. There are none (yet).
+            </p>
+            <li>Q. Where can I find crystal structures in CML?</li>
+            <p>
+            A. The original <a href="http://wwmm.ch.cam.ac.uk/crystaleye/">CrystalEye project</a> contains approx. 250000 crystal structures 
+            converted into CML. 
+            </p>
+
+            <li>Q. Where can I find computational chemistry in CML?</li>
+            <p>
+            A. The aim of the <a href="http://quixote.wikispot.org/">Quixote project</a> is to transform and aggregate compchem results into 
+            a <a href="http://quixote.ch.cam.ac.uk">browsable and searchable <a href="http://www.chempound.net/">Chempound</a> repository</a>.
+            </p>
+
+        <h2><a name="community">Community<a/></h2>
+
+            <li>Q. How is the community organised?</li>
+            <p>
+            A.
+            </p>
+
+            <li>Q. Where can I ask questions about CML?</li>
+            <p>
+            A.
+            </p>
+
+            <li>Q. How do I contribute software or resources?</li>
+            <p>
+            A.
+            </p>
+
+            <li>Q. Where do I report problems?</li>
+            <p>
+            A.
+            </p>
+
+        <h3><a name="use-cases">Possible use cases of CML</a></h3>
+
+            <li> Q. I'm a synthetic chemist - how can CML help me? </li>
+            <p>
+            A.
+            </p>
+
+            <li> Q. I'm a materials scientist - how can CML help me?</li>
+            <p>
+            A.
+            </p>
+
+            <li>Q. I'm a computational chemist - how can CML help me?</li>
+            <p>
+            A.
+            </p>
+
+            <li>Q. I'm a crystallographer - how can CML help me?</li>
+            <p>
+            A.
+            </p>
+
+            <li>Q. I'm a teacher - how can CML help me?</li>
+            <p>
+            A.
+            </p>
+
             </ol>
-        </div>
+        </div>       
+        
+        
 		<!--#include virtual="/common/include/footer.html" -->
     </div>
 </body>
