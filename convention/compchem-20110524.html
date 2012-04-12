@@ -43,6 +43,7 @@
                 <dd>Weerapong Phadungsukanan, University of Cambridge</dd>
                 <dd>Sam Adams, University of Cambridge</dd>
                 <dd>Joe Townsend, University of Cambridge</dd>
+                <dd>Jens Thomas, STFC Daresbury Laboratory</dd>
             </dl>
 
             <h2>
@@ -66,16 +67,41 @@
 
         <p>
             The CompChem convention is used to specify computational chemistry documents. It is
-            designed to capture the typical underlying processes of quantum calculations and their relationships in a well defined implicit semantic structure using Chemical Markup Language (CML).
+            designed to capture the typical underlying processes of quantum calculations and their 
+            relationships in a well defined implicit semantic structure using Chemical Markup Language (CML).
         </p>
 
         <p>
             This document describes the concepts which are introduced in CompChem, explains how to
-            compose a CompChem document and illustrates it with examples. The core concepts that make up CompChem are:
+            compose a CompChem document and illustrates it with examples. This document references and
+            should be read in conjunction with the CompChem <a href="http://www.xml-cml.org/dictionary/compchem">
+            dictionary</a>, which is a core part of the convention mechanism and defines the 
+            terms used within it.</p>
+            
+        <p>The conventions, the dictionaries and CML are ongoing efforts. This convention serves to document the 
+        procedures used in working software (such as <a href="http://www.chempound.net/">Chempound</a>), but is 
+        also intended as a discussion document and will be revised as its scope is extended and additional areas of
+        computational chemistry are explored. We very much welcome the input from all members of the community (pracitioners,
+        developers, teachers, students, etc.) so please feel free to contact us and get involved if this is of use to you
+        in your work.</p>
+        
+        <p>The &quot;human-readable&quot; text for the conventions currently resides in the the bitbucket 
+        <a href="https://bitbucket.org/cml/xml-cml.org/overview">  repository</a> for the 
+        <a href="http://www.xml-cml.org/">xml-cml.org</a> website.</p>
+
+       <p>The rules that the convention texts describe are implemented in <a href="http://www.w3.org/TR/xslt">xslt
+       </a> within the cml 
+       <a href="https://bitbucket.org/cml/cmllite-validator-code/overview">validator</a>, which is currently 
+       hosted on bitbucket. The rules defining the compchem convention, are implemented in the <a 
+       href="https://bitbucket.org/cml/cmllite-validator-code/src/2eaa18f959bb/src/main/resources/org/xmlcml/www/compchem-rules.xsl">
+       compchem-rules.xsl</a> file. Any changes or updates to the convention generally requires editing BOTH files.</p>
+            
+            
+        <p>The core concepts that make up CompChem are:
         </p>
 
         <ul>
-            <li><a href="#jobList">Job list</a></li>
+            <li><a href="#jobList">JobList</a></li>
             <li><a href="#job">Job</a></li>
             <li><a href="#initialization">Initialization</a></li>
             <li><a href="#calculation">Calculation</a></li>
@@ -97,9 +123,18 @@
         <p>
             Except the few instances where they are expressly forbidden, the convention allows users 
             to optionally include both other cml elements and attributes, and foreign namespaced 
-            elements and attributes. It is expected that in general tools will 
-            silently ignore the extra information because they will not be able to understand it.
+            elements and attributes. It is expected that in general tools will silently ignore 
+            the extra information because they will not be able to understand it. This also permits
+            the conventions and dictionaries to be developed around working tools, and only updated at
+            well-defined intervals.
         </p>
+        
+        <p>The current recommendation for the development of more complex objects not already represented
+        within CML, are that they are expressed as a CML <code>list</code>, with a <code>dictRef</code> 
+        attribute that points to the relevant entry in the CompChem <a href="http://www.xml-cml.org/dictionary/compchem">
+        dictionary</a>. Examples of this are the current representations for 
+        <a href="http://www.xml-cml.org/dictionary/compchem#basisSet">
+        basis sets</a> and <a href="http://www.xml-cml.org/dictionary/compchem#dftFunctional">DFT functionals</a>.</p>
 
 
         <h2>
@@ -268,7 +303,7 @@
         </p>
 
         <p>
-            A job list concept in CompChem is represented by a <code>module</code> element with
+            A Joblist concept in CompChem is represented by a <code>module</code> element with
             a <code>dictRef="compchem:jobList"</code> attribute on a <code>module</code>
             element. Such a module will be addressed as a <code>jobList</code>
             module or a <code>jobList</code> module element in this convention.
@@ -330,13 +365,23 @@
         </p>
 
         <p>
-            A <code>job</code> consists of model parameters (<a href="#initialization">3.3</a>) and  model
+            A <code>job</code> consists of model parameters (<a href="#initialization">3.3</a>) and model
             optimisations or calculations (<a href="#calculation">3.4</a>), model results
             (<a href="#finalization">3.5</a>) and computing environments
             (<a href="#environment">3.6</a>). These four components are fundamental to
             modelling in every field. However, a <code>job</code> does not require all four components.
-            Only model parameters are mandatory.
+            Only an <a href="#initialization">initialization</a> module with the model parameters is mandatory.
         </p>
+        
+        <p>
+        The job and <a href="#calculation">calculation</a> modules are effectively functionally identical, as 
+        many of the calculations within a job could be run as separate jobs themselves (e.g. a single-point 
+        calculation in an optimisation run could be submitted separately). A job serves to group one 
+        or more calculations into a logical unit of work; it can therefore be thought of as the unit of work 
+        that would be submitted to a computational resource. The main differences between jobs and calculations
+        are that jobs may contain an <a href="#environment">envionment</a> module, and cannot themselves contain
+        other jobs, whereas calculations can be nested within other calculations to any degree.</p>
+        
 
         <p>
             A <code>job</code> concept in CompChem is represented by a <code>module</code> element with
@@ -469,10 +514,10 @@
 
         <p>
             The model initialization concept represents the model parameters and inputs
-            for computational job. The model parameters are one of the most important
+            for a computational job or calculation. The model parameters are one of the most important
             elements and exist in every modelling study. Therefore, this concept is a
-            REQUIRED element in the CompChem convention.
-        </p>
+            REQUIRED element in the CompChem convention. The module defines the job or calculation, so that it 
+            should be possible to reproduce the job or calculation based soley on the data in this module.</p>
 
         <p>
             The model initialization concept in CompChem is represented by a <code>module</code>
@@ -505,7 +550,15 @@
                 An <code>initialization</code> module element MUST NOT contain <strong><em>more than one</em></strong>
                 <code>parameterList</code> element.
             </li>
-
+            
+            <li>
+                An <code>initialization</code> module element MAY contain <strong><em>any number</em></strong> of
+                CML <code>list</code> elements. These are recommended for holding complex objects, such as 
+                <a href="http://www.xml-cml.org/dictionary/compchem#basisSet">basis sets</a> or 
+                <a href="http://www.xml-cml.org/dictionary/compchem#dftFunctional">DFT functionals</a> that cannot
+                be simply represented with scalars, arrays or matricies in the <code>parameterList</code>.
+            </li>
+            
             <li>
                 An <code>initialization</code> module element MAY contain <strong><em>any number</em></strong> of
                 <a href="#userDefinedModule">user defined module</a> element.
@@ -544,7 +597,18 @@
 
         <p>
             A model <code>calculation</code> concept represents the computation, the optimisation or the iteration
-            processes for computational job. The <code>calculation</code> process may or may not be of interest to
+            processes for computational job. Almost any computational procedure is a calculation, and calculations 
+            can be nested to any level. As an example, an SCF calculation consists of an initial guess calculation, 
+            and a number of iterative calculations, the output of the final iteration constituting the results. An 
+            SCF geometry optimisation process consists of multiple calculation steps, each of which consists of an 
+            SCF calculation, followed by a gradient calculation.</p>
+            
+        <p>Calculations can also inherit attributes from their parents, so for example, a 
+        <a href="http://www.xml-cml.org/dictionary/compchem#basisSet">basis set</a> need not be 
+        contained within each SCF iteration calculation, as the parent calculation's basis set can be inherited by
+        the iteration calculation.</p>
+
+         <p>The <code>calculation</code> process may or may not be of interest to
             some scientists; therefore, the model <code>calculation</code> is an OPTIONAL information in CompChem.
         </p>
 
@@ -576,6 +640,29 @@
                 <a href="#recommendedMoleculeConvention">RECOMMENDED molecular conventions</a>.
             </li>
 
+<!--jmht new -->
+            <li>
+                A <code>calculation</code> module element MUST contain <strong><em>exactly one</em></strong>
+                <a href="#initialization">initialization module</a> child element.
+            </li>
+
+            <li>
+                A <code>calculation</code> module element MAY contain <strong><em>zero or more</em></strong>
+                <a href="#calculation">calculation module</a> child elements, each of which must be a direct
+                descendent of the parent calculation.</p>
+            </li>
+
+            <li>
+                A <code>calculation</code> module element MAY contain <strong><em>no more than one</em></strong>
+                <a href="#finalization">finalization module</a> child element.
+            </li>
+
+            <li>
+                A <code>calculation</code> module element MAY contain <strong><em>any number</em></strong> of
+                <a href="#userDefinedModule">user defined module</a> elements.
+            </li>
+            
+<!-- jmht - removed old code
             <li>
                 A <code>calculation</code> module element MUST NOT contain <strong><em>more than 
                 one</em></strong> <code>parameterList</code> element.
@@ -584,11 +671,6 @@
             <li>
                 A <code>calculation</code> module element MUST NOT contain <strong><em>more than 
                 one</em></strong> <code>propertyList</code> element.
-            </li>
-
-            <li>
-                A <code>calculation</code> module element MAY contain <strong><em>any number</em></strong> of
-                <a href="#userDefinedModule">user defined module</a> elements.
             </li>
 
             <li>
@@ -602,6 +684,8 @@
                 child element in any namespace, see <a href="#example8">Example 8</a>.
             </li>
         </ul>
+        
+-->
 
         <p id="example8">
             <strong>Example 8: CompChem Calculation module</strong>
@@ -609,15 +693,23 @@
         <div class="good">
             <pre>
 &lt;module dictRef="compchem:calculation"&gt;
-    &lt;molecule convention="convention:molecular"&gt;
-        &lt;!-- consult molecular convention and molecule section below. --&gt;
-    &lt;/molecule&gt;
-    &lt;parameterList&gt;
-        &lt;!-- parameterList body is omitted. --&gt;
-    &lt;/parameterList&gt;
-    &lt;propertyList&gt;
-        &lt;!-- propertyList body is omitted. --&gt;
-    &lt;/propertyList&gt;
+    &lt;module dictRef="compchem:initialization"&gt;
+        &lt;molecule convention="convention:molecular"&gt;
+            &lt;!-- consult molecular convention or recommended molecular convention. --&gt;
+        &lt;/molecule&gt;
+        &lt;parameterList&gt;
+            &lt;!-- parameterList body is omitted. --&gt;
+        &lt;/parameterList&gt;
+    &lt;/module&gt;
+
+    &lt;module dictRef="compchem:finalization"&gt;
+        &lt;molecule convention="convention:molecular"&gt;
+            &lt;!-- consult molecular convention or recommended molecular convention. --&gt;
+        &lt;/molecule&gt;
+        &lt;propertyList&gt;
+            &lt;!-- propertyList body is omitted. --&gt;
+        &lt;/propertyList&gt;
+    &lt;/module&gt;
 &lt;/module&gt;
             </pre>
         </div>
@@ -625,11 +717,22 @@
         <h2 id="finalization">3.5 Model Finalization</h2>
 
         <p>
-            A model <code>finalization</code> concept represents the model outputs or results for computational job.
+            A model <code>finalization</code> concept represents the model outputs or results for a computational job.
             In some cases, a CompChem module MAY only represent the model inputs and does not contain
             any calculations, therefore, the model finalization is an OPTIONAL information in CompChem.
         </p>
-
+        
+        <p>A job or calculation may produce any number of intermediate results, and even final results that are
+        not necessarily of interest to most users or even software using the calculation. Any important and
+        persistant results should be placed in the finalization module. This allows code developers complete freedom 
+        to structure the modules as they see fit, but any software that uses the convention knows to query the
+        initialization module for information on the calculation, and the finalization module for any results.</p>
+        
+        <p>As an example, for an SCF calculation, the finalization module should contain the calculated energies, together
+         with information on the attained convergence (e.g. norm of the gradient) and the orbitals. For an SCF optimisation,
+          it will contain the above, together with the final molecular coordinates and information on the geometry convergence 
+          criteria.</p>
+        
         <p>
             A model <code>finalization</code> concept in CompChem is represented by a <code>module</code>
             element with a <code>dictRef="compchem:finalization"</code> attribute on a
@@ -816,39 +919,13 @@
 &lt;/module&gt;
             </pre>
         </div>
-        <h1>4. Metadata</h1>
-
-        <h1>5. Adding Properties and Parameters</h1>
-
-        <p>
-            Authors MUST follow the RECOMMENDED style for <code>property</code>s and <code>parameter</code>s, visit external link.
-        </p>
-
-        <h1>6. Recommended Properties and Parameters for CompChem</h1>
-        <h2>6.1 Recommended Properties for an environment module</h2>
-
-        <p>TABLE</p>
-
-        <h2>6.2 Recommended Parameters for an initalization module</h2>
-
-        <p>TABLE</p>
-
-        <h2>6.3 Recommended Properties and Parameters for a calculation module</h2>
-
-        <p>TABLE</p>
-
-        <h2>6.4 Recommended Properties for a finalization module</h2>
-
-        <p>TABLE</p>
-
-        <h1 id="recommendedMoleculeConvention">7. Recommended Conventions for a molecule element</h1>
-
-        <p>TABLE</p>
-
-
+        
+        
+ 
         <h1>4. Data Structure with CML Elements</h1>
         <p>
-            CompChem has adopted a set of elements from CML to store the contents of the computational data. This section describes how CompChem constructs the data structure from these CML elements set.
+            CompChem has adopted a set of elements from CML to store the contents of the computational data. 
+            This section describes how CompChem constructs the data structure from these CML elements set.
         </p>
         <p><i>NOTE: elements in the CML namespace (<code>http://www.xml-cml.org/schema</code>) are denoted using the (arbitary) prefix <code>cml:</code>.</i></p>
 
@@ -980,6 +1057,46 @@
             <li>
                 <code>cml:matrix</code> MUST have units even if they are dimensionless.</li>
         </ul>
+
+       <h1>5. Adding Properties, Parameters and other objects.</h1>
+        <p>
+            Authors MUST follow the RECOMMENDED style for <code>property</code>s and <code>parameter</code>s, visit external link.
+        </p>
+
+        <h1>6. Recommended Properties and Parameters for CompChem</h1>
+        
+        <h2>6.1 Recommended Properties for an environment module</h2>
+        
+        <ul>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#hostName">hostName</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#runDate">runDate</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#program">program</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#programVersion">programVersion</a></li>
+        </ul>
+
+
+        <h2>6.2 Recommended Parameters and objects for an initalization module</h2>
+
+        <ul>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#basisSet">basisSet</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#charge">charge</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#dftFunctional">dftFunctional</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#method">method</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#pointGroup">pointGroup</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#spinMultiplicity">spinMultiplicuty</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#task">task</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#title">title</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#wavefunctionType">wavefunctionType</a></li>
+        </ul>
+
+        <h2>6.3 Recommended Properties and objects for a finalization module</h2>
+        
+        <ul>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#nuclearRepulsionEnergy">nuclearRepulsionEnergy</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#totalEnergy">totalEnergy</a></li>
+        <li><a href="http://www.xml-cml.org/dictionary/compchem/#wallTime">wallTime</a></li>
+        </ul>
+
 
         <p id="example">
             <strong>Example : Fully qualified CompChem document (Isn't qualified at the moment due to change in the rules)</strong>
