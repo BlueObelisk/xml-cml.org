@@ -57,9 +57,44 @@
         <h1>
             <a name="contents" id="contents"/>Table of Contents</h1>
 
-        <p>TODO</p>
 
-        <hr />
+<p class="toc">1. <a href="#introduction">Introduction</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;1.1 <a href="#notational_conventions">Notational Conventions</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;1.2 <a href="#namespaces">Namespaces</a><br/>
+    2. <a href="#applying">Applying the CompChem convention on CML module element</a><br/>
+    3. <a href="#concepts">CompChem Concepts and Elements</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;3.1 <a href="#concepts-joblist">JobList</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;3.2 <a href="#concepts-job">Job</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;3.3 <a href="#concepts-initialization">Model Initialization</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;3.4 <a href="#concepts-calculation">Model Calculation</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;3.5 <a href="#concepts-finalization">Model Finalization</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;3.6 <a href="#concepts-environment">Computing Environment</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;3.7 <a href="#concepts-userdefined">User Defined Concept</a><br/>
+    4. <a href="#cmldata">Data Structure with CML Elements</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;4.1 <a href="#cmldata-molecule">Molecule</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;4.2 <a href="#cmldata-zmatrix">z-Matrix</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;4.3 <a href="#cmldata-parameterlist">ParameterList</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;4.4 <a href="#cmldata-propertylist">PropertyList</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;4.5 <a href="#cmldata-parameter">Parameter</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;4.6 <a href="#cmldata-property">Property</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;4.7 <a href="#cmldata-units">Units</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;4.8 <a href="#cmldata-value">Value container</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.8.1 <a href="#cmldata-value-scalar">Scalar</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.8.2 <a href="#cmldata-value-array">Array</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.8.3 <a href="#cmldata-value-matrix">Matrix</a><br/>
+    5. <a href="#adding">Adding Properties, Parameters and other objects</a></br>
+    6. <a href="#recommended">Recommended Properties and Parameters for CompChem</a></br>
+    &nbsp;&nbsp;&nbsp;&nbsp;6.1 <a href="#recommended-environment">Recommended Properties for an environment module</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;6.1 <a href="#recommended-initialization">Recommended Parameters and objects for an initalization module</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;6.1 <a href="#recommended-finalization">Recommended Properties and objects for a finalization module</a><br/>
+    7. <a href="#example">Example Files</a></br>
+
+   <h2>Appendices</h2>
+
+   <p>A. <a href="#refs">References</a><br/>
+    B. <a href="#acks">Acknowledgements</a></p>
+    
+   <hr />
 
 
         <h1>
@@ -290,9 +325,9 @@
             </pre>
         </div>
 
-        <h1>3. CompChem Concepts and Elements</h1>
+        <h1><a name="concepts">3.</a> CompChem Concepts and Elements</h1>
 
-        <h2 id="jobList">3.1 Joblist</h2>
+        <h2 id="jobList"><a name="concepts-joblist">3.1</a> Joblist</h2>
 
         <p>
             A quantum chemistry calculation is often comprised of a series of subtasks,
@@ -356,7 +391,7 @@
             </pre>
         </div>
 
-        <h2>3.2 Job</h2>
+        <h2 id="job"><a name="concepts-job">3.2</a> Job</h2>
         <p>
             A <code>job</code> concept represents a computational job performed by quantum chemistry
             software, <i>e.g.</i> geometry optimisation job, frequency analysis job.
@@ -510,7 +545,7 @@
             </pre>
         </div>
 
-        <h2 id="initialization">3.3 Model Initialization</h2>
+        <h2 id="initialization"><a name="concepts-initialization">3.3</a> Model Initialization</h2>
 
         <p>
             The model initialization concept represents the model parameters and inputs
@@ -593,7 +628,7 @@
             </pre>
         </div>
 
-        <h2 id="calculation">3.4 Model Calculation</h2>
+        <h2 id="calculation"><a name="concepts-calculation">3.4</a> Model Calculation</h2>
 
         <p>
             A model <code>calculation</code> concept represents the computation, the optimisation or the iteration
@@ -714,7 +749,7 @@
             </pre>
         </div>
 
-        <h2 id="finalization">3.5 Model Finalization</h2>
+        <h2 id="finalization"><a name="concepts-finalization">3.5</a> Model Finalization</h2>
 
         <p>
             A model <code>finalization</code> concept represents the model outputs or results for a computational job.
@@ -800,7 +835,7 @@
             </pre>
         </div>
 
-        <h2 id="environment">3.6 Computing Environment</h2>
+        <h2 id="environment"><a name="concepts-environment">3.6</a> Computing Environment</h2>
 
         <p>
             The computing <code>environment</code> concept refers to a hardware platform, software application,
@@ -885,7 +920,7 @@
             </pre>
         </div>
 
-        <h2 id="userDefinedModule">3.7 User Defined Concept</h2>
+        <h2 id="userDefinedModule"><a name="concepts-userdefined">3.7</a> User Defined Concept</h2>
 
         <p>
             CompChem allows users or authors to define their own concepts if the RECOMMENDED concepts
@@ -922,32 +957,32 @@
         
         
  
-        <h1>4. Data Structure with CML Elements</h1>
+        <h1><a name="cmldata">4.</a> Data Structure with CML Elements</h1>
         <p>
             CompChem has adopted a set of elements from CML to store the contents of the computational data. 
             This section describes how CompChem constructs the data structure from these CML elements set.
         </p>
         <p><i>NOTE: elements in the CML namespace (<code>http://www.xml-cml.org/schema</code>) are denoted using the (arbitary) prefix <code>cml:</code>.</i></p>
 
-        <h2>4.1 Molecule</h2>
+        <h2><a name="cmldata-molecule">4.1</a> Molecule</h2>
 
         <p>CompChem uses <code>cml:molecule</code> to store molecular geometry and coordinates. <code>cml:molecule</code> specifications are defined in the <i>molecular convention</i> so the convention of the <code>molecule</code> element MUST be specified using the <code>convention</code> attribute with the value of <code>convention:molecular</code>. Readers SHOULD consult the specifications of the <i>molecular convention</i> for more details.</p>
 
-        <h2>4.2 z-Matrix</h2>
+        <h2><a name="cmldata-zmatrix">4.2</a> z-Matrix</h2>
 
         <p>In many quantum chemistry calculations, the coordinates of the atoms are represented using a z-Matrix coordinate system. CompChem adopta the z-Matrix concept from the CML schema. <em class="bad">Z-Matrices and cartesian coordinates can be converted in both directions, but may differ in orientation and translation. There may be some conventions for ordering atoms in z-matrices which cannot be guaranteed.</em>
         </p>
 
 
-        <h2>4.3 ParameterList</h2>
+        <h2><a name="cmldata-parameterlist">4.3</a> ParameterList</h2>
 
         <p>CompChem uses <code>cml:parameterList</code> to group the <code>cml:parameter</code>(s). <code>cml:parameterList</code> MUST have only <code>cml:parameter</code>(s) as child element(s).</p>
 
-        <h2>4.4 PropertyList</h2>
+        <h2><a name="cmldata-propertylist">4.4</a> PropertyList</h2>
 
         <p>CompChem uses <code>cml:propertyList</code> to group the <code>cml:property</code>(s). <code>cml:propertyList</code> MUST have only <code>cml:property</code>(s) as child element(s).</p>
 
-        <h2>4.5 Parameter</h2>
+        <h2><a name="cmldata-parameter">4.5</a> Parameter</h2>
 
         <p>CompChem uses <code>cml:parameter</code> to represent the inputs of the quantum chemistry calculations.</p>
 
@@ -957,7 +992,7 @@
                 <em>one of</em>
             </strong> the value containers given in section 4.8.</p>
 
-        <h2>4.6 Property</h2>
+        <h2><a name="cmldata-property">4.6</a> Property</h2>
 
         <p>CompChem uses <code>cml:property</code> to represent the concept of the outputs of the quantum chemistry calculations.</p>
 
@@ -967,7 +1002,7 @@
                 <em>one of</em>
             </strong> the value containers given in section 4.8.</p>
 
-        <h2>4.7 Units</h2>
+        <h2><a name="cmldata-units">4.7</a> Units</h2>
 
         <p>Units are among the most important information in scientific data. All value containers, see section 4.8, MUST have units associated with them <strong>
                 <em>except</em>
@@ -977,13 +1012,13 @@
             <li>The unit on a value container MUST be specified using the <code>unit</code> attribute and the value MUST be the <code>QName</code> of an entry in a unit dictionary. The unit dictionary MUST be provided along with the CompChem document if the unit entry used in the CompChem document does not exist on xml-cml.org.</li>
         </ul>
 
-        <h2>4.8 Value container</h2>
+        <h2><a name="cmldata-value">4.8</a> Value container</h2>
         <p>CML provides elements to wrap many differrent types of mathematical, scientifical and computational values and variables, e.g. scalar, vector, matrix, array, etc., which will be addressed as <i>value containers</i> in the current context. In CompChem, we currently <strong>
                 <em>only</em>
             </strong> allow the use of <code>scalar</code>, <code>array</code> and <code>matrix</code> as value containers. This should be sufficient for many computational outputs. Other type of CML containers will be added later and may be built from combinations of primitive containers.</p>
 
 
-        <h3>4.8.1 Scalar</h3>
+        <h3><a name="cmldata-value-scalar">4.8.1</a> Scalar</h3>
 
         <p>
             A CML scalar element in CompChem is used to hold scalar data, which can be a single value of <code>dataType</code> integer, real, boolean, string or date.
@@ -1006,7 +1041,7 @@
                 <code>cml:scalar</code> MUST NOT have unit and unit type if the <code>dataType</code> is <code>xsd:string</code>.</li>
         </ul>
 
-        <h3>4.8.2 Array</h3>
+        <h3><a name="cmldata-value-array">4.8.2</a> Array</h3>
 
         <p>
             A CML array element in CompChem is used to hold a one dimensional array data structure of <strong>
@@ -1031,7 +1066,7 @@
                 <code>cml:array</code> MUST have units even if they are dimensionless.</li>
         </ul>
 
-        <h3>4.8.3 Matrix</h3>
+        <h3><a name="cmldata-value-matrix">4.8.3</a> Matrix</h3>
 
         <p>
             A CML Matrix element in CompChem is used to hold a two-dimensional rectangular matrix data structure of <strong>
@@ -1058,14 +1093,14 @@
                 <code>cml:matrix</code> MUST have units even if they are dimensionless.</li>
         </ul>
 
-       <h1>5. Adding Properties, Parameters and other objects.</h1>
+       <h1><a name="adding">5.</a> Adding Properties, Parameters and other objects.</h1>
         <p>
             Authors MUST follow the RECOMMENDED style for <code>property</code>s and <code>parameter</code>s, visit external link.
         </p>
 
-        <h1>6. Recommended Properties and Parameters for CompChem</h1>
+        <h1><a name="recommended">6.</a> Recommended Properties and Parameters for CompChem</h1>
         
-        <h2>6.1 Recommended Properties for an environment module</h2>
+        <h2><a name="recommended-environment">6.1</a> Recommended Properties for an environment module</h2>
         
         <ul>
         <li><a href="http://www.xml-cml.org/dictionary/compchem/#hostName">hostName</a></li>
@@ -1075,7 +1110,7 @@
         </ul>
 
 
-        <h2>6.2 Recommended Parameters and objects for an initalization module</h2>
+        <h2><a name="recommended-initialization">6.2</a> Recommended Parameters and objects for an initalization module</h2>
 
         <ul>
         <li><a href="http://www.xml-cml.org/dictionary/compchem/#basisSet">basisSet</a></li>
@@ -1089,7 +1124,7 @@
         <li><a href="http://www.xml-cml.org/dictionary/compchem/#wavefunctionType">wavefunctionType</a></li>
         </ul>
 
-        <h2>6.3 Recommended Properties and objects for a finalization module</h2>
+        <h2><a name="recommended-finalization">6.3</a> Recommended Properties and objects for a finalization module</h2>
         
         <ul>
         <li><a href="http://www.xml-cml.org/dictionary/compchem/#nuclearRepulsionEnergy">nuclearRepulsionEnergy</a></li>
