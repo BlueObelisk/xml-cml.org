@@ -61,6 +61,7 @@
 <p class="toc">1. <a href="#introduction">Introduction</a><br/>
     &nbsp;&nbsp;&nbsp;&nbsp;1.1 <a href="#notational_conventions">Notational Conventions</a><br/>
     &nbsp;&nbsp;&nbsp;&nbsp;1.2 <a href="#namespaces">Namespaces</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;1.3 <a href="#development">Development</a><br/>
     2. <a href="#applying">Applying the CompChem convention on CML module element</a><br/>
     3. <a href="#concepts">CompChem Concepts and Elements</a><br/>
     &nbsp;&nbsp;&nbsp;&nbsp;3.1 <a href="#concepts-joblist">JobList</a><br/>
@@ -87,7 +88,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;6.1 <a href="#recommended-environment">Recommended Properties for an environment module</a><br/>
     &nbsp;&nbsp;&nbsp;&nbsp;6.1 <a href="#recommended-initialization">Recommended Parameters and objects for an initalization module</a><br/>
     &nbsp;&nbsp;&nbsp;&nbsp;6.1 <a href="#recommended-finalization">Recommended Properties and objects for a finalization module</a><br/>
-    7. <a href="#example">Example Files</a></br>
+    7. <a href="#examples">Example Files</a></br>
 
    <h2>Appendices</h2>
 
@@ -113,23 +114,7 @@
             dictionary</a>, which is a core part of the convention mechanism and defines the 
             terms used within it.</p>
             
-        <p>The conventions, the dictionaries and CML are ongoing efforts. This convention serves to document the 
-        procedures used in working software (such as <a href="http://www.chempound.net/">Chempound</a>), but is 
-        also intended as a discussion document and will be revised as its scope is extended and additional areas of
-        computational chemistry are explored. We very much welcome the input from all members of the community (pracitioners,
-        developers, teachers, students, etc.) so please feel free to contact us and get involved if this is of use to you
-        in your work.</p>
-        
-        <p>The &quot;human-readable&quot; text for the conventions currently resides in the the bitbucket 
-        <a href="https://bitbucket.org/cml/xml-cml.org/overview">  repository</a> for the 
-        <a href="http://www.xml-cml.org/">xml-cml.org</a> website.</p>
 
-       <p>The rules that the convention texts describe are implemented in <a href="http://www.w3.org/TR/xslt">xslt
-       </a> within the cml 
-       <a href="https://bitbucket.org/cml/cmllite-validator-code/overview">validator</a>, which is currently 
-       hosted on bitbucket. The rules defining the compchem convention, are implemented in the <a 
-       href="https://bitbucket.org/cml/cmllite-validator-code/src/2eaa18f959bb/src/main/resources/org/xmlcml/www/compchem-rules.xsl">
-       compchem-rules.xsl</a> file. Any changes or updates to the convention generally requires editing BOTH files.</p>
             
             
         <p>The core concepts that make up CompChem are:
@@ -255,6 +240,26 @@
                 <td>Dublin Core Metadata Element Set, Version 1.1</td>
             </tr>
         </table>
+
+        <h2><a name="development">1.3</a> Development</h2>
+
+        <p>The conventions, the dictionaries and CML are ongoing efforts. This convention serves to document the 
+        procedures used in working software (such as <a href="http://www.chempound.net/">Chempound</a>), but is 
+        also intended as a discussion document and will be revised as its scope is extended and additional areas of
+        computational chemistry are explored. We very much welcome the input from all members of the community (pracitioners,
+        developers, teachers, students, etc.) so please feel free to contact us and get involved if this is of use to you
+        in your work.</p>
+        
+        <p>The &quot;human-readable&quot; text for the conventions currently resides in the the bitbucket 
+        <a href="https://bitbucket.org/cml/xml-cml.org/overview">  repository</a> for the 
+        <a href="http://www.xml-cml.org/">xml-cml.org</a> website.</p>
+
+       <p>The rules that the convention texts describe are implemented in <a href="http://www.w3.org/TR/xslt">xslt
+       </a> within the cml 
+       <a href="https://bitbucket.org/cml/cmllite-validator-code/overview">validator</a>, which is currently 
+       hosted on bitbucket. The rules defining the compchem convention, are implemented in the <a 
+       href="https://bitbucket.org/cml/cmllite-validator-code/src/2eaa18f959bb/src/main/resources/org/xmlcml/www/compchem-rules.xsl">
+       compchem-rules.xsl</a> file. Any changes or updates to the convention generally requires editing BOTH files.</p>
 
 
         <h1 id="CompChem">
@@ -1004,13 +1009,17 @@
 
         <h2><a name="cmldata-units">4.7</a> Units</h2>
 
-        <p>Units are among the most important information in scientific data. All value containers, see section 4.8, MUST have units associated with them <strong>
-                <em>except</em>
-            </strong> for string or text values.</p>
+        <p>Units are among the most important information in scientific data. All value containers, see section 4.8, 
+        MUST have units associated with them <strong><em>except</em></strong> for string or text values.</p>
 
         <ul>
-            <li>The unit on a value container MUST be specified using the <code>unit</code> attribute and the value MUST be the <code>QName</code> of an entry in a unit dictionary. The unit dictionary MUST be provided along with the CompChem document if the unit entry used in the CompChem document does not exist on xml-cml.org.</li>
+            <li>The unit on a value container MUST be specified using the <code>unit</code> attribute and the value MUST be the 
+            <code>QName</code> of an entry in a unit dictionary. The unit dictionary MUST be provided along with the CompChem 
+            document if the unit entry used in the CompChem document does not exist in one of the <a href="http://www.xml-cml.org/unit/">
+            unit dictionaries</a> on <a href="http://www.xml-cml.org">www.xml-cml.org</a>.</li>
         </ul>
+        
+        <p>The unit dictionaries currently used within comp
 
         <h2><a name="cmldata-value">4.8</a> Value container</h2>
         <p>CML provides elements to wrap many differrent types of mathematical, scientifical and computational values and variables, e.g. scalar, vector, matrix, array, etc., which will be addressed as <i>value containers</i> in the current context. In CompChem, we currently <strong>
@@ -1131,16 +1140,49 @@
         <li><a href="http://www.xml-cml.org/dictionary/compchem/#totalEnergy">totalEnergy</a></li>
         <li><a href="http://www.xml-cml.org/dictionary/compchem/#wallTime">wallTime</a></li>
         </ul>
+        
+        
+        
+       <h1><a name="adding">7.</a> Examples.</h1>
+       
+       <p>The reference software for generating CompChem convention compliant CML is currently the NWChem 
+       <a href=https://bitbucket.org/wwmm/jumbo-converters">Jumbo Converters</a>. These will parse a subset of 
+       the standard NWChem log files into CML, which can then be imported into 
+       <a href="http://www.chempound.net">Chempound</a>. Documentation on the template parsing approach used
+       in the jumbo coverters can be found on the <a href="http://quixote.wikispot.org/JUMBO-Converters">Quixote Wiki</a>.
+       </p>
+       
+       <p>Examples of convention-compliant CML are below:</p>
+       <table border="1">
+       <tr>
+       <th>Title</th>
+       <th>NWChem Logfile</th>
+       <th>CML</th>
+       </tr>
+       
+       <tr>
+       <td>DFT B3LYP calculation on CH2 with 3-21g basis</td>
+       <td><a href="../examples/schema3/compchem/ch2_321g_b3lyp.nwo">ch2_321g_b3lyp.nwo</a></td>
+       <td><a href="../examples/schema3/compchem/ch2_321g_b3lyp.cml">ch2_321g_b3lyp.cml</a></td>
+       </tr>
+       
+       <tr>
+       <td>HF SCF optimisation  on water with STO-3G basis</td>
+       <td><a href="../examples/schema3/compchem/h2o_sto3g_opt.nwo">h2o_sto3g_opt.nwo</a></td>
+       <td><a href="../examples/schema3/compchem/h2o_sto3g_opt.cml">h2o_sto3g_opt.cml</a></td>
+       </tr>
+       
+       </table>
 
 
         <p id="example">
-            <strong>Example : Fully qualified CompChem document (Isn't qualified at the moment due to change in the rules)</strong>
+            <strong>Example (from above) : DFT B3LYP calculation on CH2 with 3-21g basis</strong>
         </p>
 
         <div class="good">
             <pre>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;module cmlx:note="A valid compchem containg two jobs is valid."
+&lt;module cmlx:note="A file containing two or more jobs is valid."
      convention="convention:compchem"
      xmlns="http://www.xml-cml.org/schema"
      xmlns:convention="http://www.xml-cml.org/convention/"
@@ -1149,121 +1191,371 @@
      xmlns:cmlx="http://www.xml-cml.org/schema/cmlx"&gt;
 
      &lt;module dictRef="compchem:jobList"&gt;
-
-        &lt;identifier convention="chemid:EmpiricalFormula" value="CCl2O2"/&gt;
-        &lt;identifier convention="chemid:InChI" value="InChI=1/CCl2O2/c2-1(4)5-3"/&gt;
-        &lt;identifier convention="chemid:CanonicalSmiles" value="ClOC(=O)Cl"/&gt;
-        &lt;identifier convention="chemid:IsomericSmiles" value="C(=O)(Cl)OCl"/&gt;
-
-        &lt;module dictRef="compchem:job"&gt;
+        &lt;module dictRef="compchem:job" id="job"&gt;
+          &lt;module dictRef="compchem:environment" id="environment"&gt;
+            &lt;parameterList&gt;
+              &lt;parameter dictRef="compchem:program"&gt;
+                &lt;scalar dataType="xsd:string"&gt;NWChem&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:programVersion"&gt;
+                &lt;scalar dataType="xsd:string"&gt;6.1&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:hostName"&gt;
+                &lt;scalar dataType="xsd:string"&gt;jmhts-MacBook-Air.local&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:executable"&gt;
+                &lt;scalar dataType="xsd:string"&gt;nwchem&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:runDate"&gt;
+                &lt;scalar dataType="xsd:string"&gt;Fri Apr 13 13:23:01 2012&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:compileDate"&gt;
+                &lt;scalar dataType="xsd:string"&gt;Sat_Mar_03_17:07:28_2012&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:numProc"&gt;
+                &lt;scalar dataType="xsd:string"&gt;1&lt;/scalar&gt;
+              &lt;/parameter&gt;
+            &lt;/parameterList&gt;
+          &lt;/module&gt;
+          &lt;module id="jobInitialization" dictRef="compchem:initialization"&gt;
+            &lt;parameterList&gt;
+              &lt;parameter dictRef="compchem:method"&gt;
+                &lt;scalar dataType="xsd:string"&gt;dft&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:task"&gt;
+                &lt;scalar dataType="xsd:string"&gt;energy&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:title"&gt;
+                &lt;scalar dataType="xsd:string"&gt;DFT B3LYP calculation on CH2 with 3-21g basis&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:wavefunctionType"&gt;
+                &lt;scalar dataType="xsd:string"&gt;closed shell&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:numAtoms"&gt;
+                &lt;scalar dataType="xsd:integer"&gt;3&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:numElectrons"&gt;
+                &lt;scalar dataType="xsd:integer"&gt;8&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:numAlphaElectrons"&gt;
+                &lt;scalar dataType="xsd:integer"&gt;4&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:numBetaElectrons"&gt;
+                &lt;scalar dataType="xsd:integer"&gt;4&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:charge"&gt;
+                &lt;scalar dataType="xsd:double" units="nonsi:elementary_charge"&gt;0.0&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:spinMultiplicty"&gt;
+                &lt;scalar dataType="xsd:integer"&gt;1&lt;/scalar&gt;
+              &lt;/parameter&gt;
+              &lt;parameter dictRef="compchem:pointGroup"&gt;
+                &lt;scalar dataType="xsd:string"&gt;C2v&lt;/scalar&gt;
+              &lt;/parameter&gt;
+            &lt;/parameterList&gt;
+            &lt;molecule id="molgeom"&gt;
+              &lt;atomArray&gt;
+                &lt;atom id="a1" elementType="C" x3="0.0" y3="0.0" z3="0.205"&gt;
+                  &lt;scalar dataType="xsd:string" dictRef="compchem:atomtypeRef"&gt;C&lt;/scalar&gt;
+                &lt;/atom&gt;
+                &lt;atom id="a2" elementType="H" x3="0.0" y3="1.87" z3="-0.615"&gt;
+                  &lt;scalar dataType="xsd:string" dictRef="compchem:atomtypeRef"&gt;H&lt;/scalar&gt;
+                &lt;/atom&gt;
+                &lt;atom id="a3" elementType="H" x3="0.0" y3="-1.87" z3="-0.615"&gt;
+                  &lt;scalar dataType="xsd:string" dictRef="compchem:atomtypeRef"&gt;H&lt;/scalar&gt;
+                &lt;/atom&gt;
+              &lt;/atomArray&gt;
+              &lt;formula formalCharge="0" concise="C 1 H 2"&gt;
+                &lt;atomArray elementType="C H" count="1.0 2.0"/&gt;
+              &lt;/formula&gt;
+              &lt;property dictRef="cml:molmass"&gt;
+                &lt;scalar dataType="xsd:double" units="unit:dalton" xmlns:unit="http://www.xml-cml.org/unit/si/"&gt;12.0107&lt;/scalar&gt;
+              &lt;/property&gt;
+            &lt;/molecule&gt;
+            &lt;list id="basisSet" dictRef="compchem:basisSet"&gt;
+              &lt;scalar id="basisSetLabel" dictRef="compchem:basisSetLabel" dataType="xsd:string"&gt;3-21g&lt;/scalar&gt;
+              &lt;scalar id="basisSetType" dictRef="compchem:basisSetType" dataType="xsd:string"&gt;orbital&lt;/scalar&gt;
+              &lt;scalar id="basisSetHarmonicType" dictRef="compchem:basisSetHarmonicType" dataType="xsd:string"&gt;cartesian&lt;/scalar&gt;
+              &lt;scalar id="basisSetContractionType" dictRef="compchem:basisSetContractionType" dataType="xsd:string"&gt;segmented&lt;/scalar&gt;
+              &lt;scalar id="basisSetDescription" dictRef="compchem:basisSetDescription" dataType="xsd:string"&gt;ao basis&lt;/scalar&gt;
+              &lt;list id="basisSetContractions" dictRef="compchem:basisSetContractions"&gt;
+                &lt;scalar dataType="xsd:string" dictRef="compchem:atomLabel"&gt;C&lt;/scalar&gt;
+                &lt;scalar dictRef="compchem:basisSetHarmonicType" dataType="xsd:string"&gt;cartesian&lt;/scalar&gt;
+                &lt;list dictRef="compchem:basisSetContraction"&gt;
+                  &lt;scalar dictRef="compchem:basisSetShell" dataType="xsd:string"&gt;S&lt;/scalar&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetExponent" size="3"&gt;172.256 25.9109 5.53335&lt;/array&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetCoefficient" size="3"&gt;0.061767 0.358794 0.700713&lt;/array&gt;
+                &lt;/list&gt;
+                &lt;list dictRef="compchem:basisSetContraction"&gt;
+                  &lt;scalar dictRef="compchem:basisSetShell" dataType="xsd:string"&gt;S&lt;/scalar&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetExponent" size="2"&gt;3.66498 0.770545&lt;/array&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetCoefficient" size="2"&gt;-0.395897 1.21584&lt;/array&gt;
+                &lt;/list&gt;
+                &lt;list dictRef="compchem:basisSetContraction"&gt;
+                  &lt;scalar dictRef="compchem:basisSetShell" dataType="xsd:string"&gt;P&lt;/scalar&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetExponent" size="2"&gt;3.66498 0.770545&lt;/array&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetCoefficient" size="2"&gt;0.23646 0.860619&lt;/array&gt;
+                &lt;/list&gt;
+                &lt;list dictRef="compchem:basisSetContraction"&gt;
+                  &lt;scalar dictRef="compchem:basisSetShell" dataType="xsd:string"&gt;S&lt;/scalar&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetExponent" size="1"&gt;0.195857&lt;/array&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetCoefficient" size="1"&gt;1.0&lt;/array&gt;
+                &lt;/list&gt;
+                &lt;list dictRef="compchem:basisSetContraction"&gt;
+                  &lt;scalar dictRef="compchem:basisSetShell" dataType="xsd:string"&gt;P&lt;/scalar&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetExponent" size="1"&gt;0.195857&lt;/array&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetCoefficient" size="1"&gt;1.0&lt;/array&gt;
+                &lt;/list&gt;
+              &lt;/list&gt;
+              &lt;list id="basisSetContractions" dictRef="compchem:basisSetContractions"&gt;
+                &lt;scalar dataType="xsd:string" dictRef="compchem:atomLabel"&gt;H&lt;/scalar&gt;
+                &lt;scalar dictRef="compchem:basisSetHarmonicType" dataType="xsd:string"&gt;cartesian&lt;/scalar&gt;
+                &lt;list dictRef="compchem:basisSetContraction"&gt;
+                  &lt;scalar dictRef="compchem:basisSetShell" dataType="xsd:string"&gt;S&lt;/scalar&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetExponent" size="2"&gt;5.447178 0.824547&lt;/array&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetCoefficient" size="2"&gt;0.156285 0.904691&lt;/array&gt;
+                &lt;/list&gt;
+                &lt;list dictRef="compchem:basisSetContraction"&gt;
+                  &lt;scalar dictRef="compchem:basisSetShell" dataType="xsd:string"&gt;S&lt;/scalar&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetExponent" size="1"&gt;0.183192&lt;/array&gt;
+                  &lt;array dataType="xsd:double" dictRef="compchem:basisSetCoefficient" size="1"&gt;1.0&lt;/array&gt;
+                &lt;/list&gt;
+              &lt;/list&gt;
+            &lt;/list&gt;
+            &lt;list dictRef="compchem:dftFunctional" id="dftFunctional"&gt;
+              &lt;scalar dataType="xsd:string" dictRef="compchem:dftFunctionalLabel"&gt;B3LYP&lt;/scalar&gt;
+            &lt;/list&gt;
+          &lt;/module&gt;
+          &lt;module dictRef="compchem:calculation" id="dftEnergy"&gt;
             &lt;module dictRef="compchem:initialization"&gt;
+              &lt;parameterList&gt;
+                &lt;parameter dictRef="compchem:method"&gt;
+                  &lt;scalar dataType="xsd:string"&gt;dft&lt;/scalar&gt;
+                &lt;/parameter&gt;
+                &lt;parameter dictRef="compchem:task"&gt;
+                  &lt;scalar dataType="xsd:string"&gt;energy&lt;/scalar&gt;
+                &lt;/parameter&gt;
+                &lt;parameter dictRef="compchem:title"&gt;
+                  &lt;scalar dataType="xsd:string"&gt;DFT B3LYP calculation on CH2 with 3-21g basis&lt;/scalar&gt;
+                &lt;/parameter&gt;
+                &lt;parameter dictRef="compchem:wavefunctionType"&gt;
+                  &lt;scalar dataType="xsd:string"&gt;closed shell&lt;/scalar&gt;
+                &lt;/parameter&gt;
+                &lt;parameter dictRef="compchem:numAtoms"&gt;
+                  &lt;scalar dataType="xsd:integer"&gt;3&lt;/scalar&gt;
+                &lt;/parameter&gt;
+                &lt;parameter dictRef="compchem:numElectrons"&gt;
+                  &lt;scalar dataType="xsd:integer"&gt;8&lt;/scalar&gt;
+                &lt;/parameter&gt;
+                &lt;parameter dictRef="compchem:numAlphaElectrons"&gt;
+                  &lt;scalar dataType="xsd:integer"&gt;4&lt;/scalar&gt;
+                &lt;/parameter&gt;
+                &lt;parameter dictRef="compchem:numBetaElectrons"&gt;
+                  &lt;scalar dataType="xsd:integer"&gt;4&lt;/scalar&gt;
+                &lt;/parameter&gt;
+                &lt;parameter dictRef="compchem:charge"&gt;
+                  &lt;scalar dataType="xsd:double" units="nonsi:elementary_charge"&gt;0.0&lt;/scalar&gt;
+                &lt;/parameter&gt;
+                &lt;parameter dictRef="compchem:spinMultiplicty"&gt;
+                  &lt;scalar dataType="xsd:integer"&gt;1&lt;/scalar&gt;
+                &lt;/parameter&gt;
+              &lt;/parameterList&gt;
+              &lt;list id="dftFunctional" dictRef="compchem:dftFunctional"&gt;
+                &lt;scalar dataType="xsd:string" dictRef="compchem:dftFunctionalLabel"&gt;B3LYP&lt;/scalar&gt;
+              &lt;/list&gt;
+            &lt;/module&gt;
+            &lt;module dictRef="compchem:calculation" id="initialGuess"&gt;
+              &lt;module dictRef="compchem:initialization"&gt;
                 &lt;parameterList&gt;
-                    &lt;parameter dictRef="cmlqm:qm.method"&gt;
-                        &lt;scalar dataType="xsd:string"&gt;B97-1&lt;/scalar&gt;
-                    &lt;/parameter&gt;
-                    &lt;parameter dictRef="cmlqm:qm.basis"&gt;
-                        &lt;scalar dataType="xsd:string"&gt;6-311+G(d,p)&lt;/scalar&gt;
-                    &lt;/parameter&gt;
-                    &lt;parameter dictRef="cmlqm:qm.integral"&gt;
-                        &lt;scalar dataType="xsd:string"&gt;UltraFine&lt;/scalar&gt;
-                    &lt;/parameter&gt;
-                    &lt;parameter dictRef="cmlqm:qm.symm"&gt;
-                        &lt;scalar dataType="xsd:string"&gt;None&lt;/scalar&gt;
-                    &lt;/parameter&gt;
-                    &lt;parameter dictRef="cmlqm:qm.pop"&gt;
-                        &lt;scalar dataType="xsd:string"&gt;Regular&lt;/scalar&gt;
-                    &lt;/parameter&gt;
-                    &lt;parameter dictRef="cmlqm:cmd.freq"&gt;
-                        &lt;scalar dataType="xsd:string"&gt;Frequency analysis&lt;/scalar&gt;
-                    &lt;/parameter&gt;
-                    &lt;parameter dictRef="cmlqm:cmd.geo"&gt;
-                        &lt;scalar dataType="xsd:string"&gt;Geometry optimization&lt;/scalar&gt;
-                    &lt;/parameter&gt;
-                    &lt;parameter dictRef="cmlqm:cmd.scf"&gt;
-                        &lt;scalar dataType="xsd:string"&gt;Tight, SCF Convergence Criteria of 10^-8&lt;/scalar&gt;
-                    &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:task"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;initialGuess&lt;/scalar&gt;
+                  &lt;/parameter&gt;
                 &lt;/parameterList&gt;
-                &lt;molecule convention="convention:molecular" formalCharge="0" spinMultiplicity="1"&gt;
-                    &lt;atomArray&gt;
-                        &lt;atom id="a1" elementType="C" x3="-1.6629" y3="-1.148" z3="-0.0578"/&gt;
-                        &lt;atom id="a2" elementType="Cl" x3="-3.0407" y3="-0.0568" z3="-0.2355"/&gt;
-                        &lt;atom id="a3" elementType="O" x3="-0.5528" y3="-0.8196" z3="0.1622"/&gt;
-                        &lt;atom id="a4" elementType="O" x3="-2.1799" y3="-2.3872" z3="-0.2293"/&gt;
-                        &lt;atom id="a5" elementType="Cl" x3="-1.0066" y3="-3.6732" z3="-0.1014"/&gt;
-                    &lt;/atomArray&gt;
-                    &lt;bondArray&gt;
-                        &lt;bond atomRefs2="a1 a2" order="S" id="a1_a2"/&gt;
-                        &lt;bond atomRefs2="a1 a3" order="D" id="a1_a3"/&gt;
-                        &lt;bond atomRefs2="a1 a4" order="S" id="a1_a4"/&gt;
-                        &lt;bond atomRefs2="a4 a5" order="S" id="a4_a5"/&gt;
-                    &lt;/bondArray&gt;
-                &lt;/molecule&gt;
-            &lt;/module&gt;
-            &lt;module dictRef="compchem:finalization"&gt;
-                &lt;molecule convention="convention:molecular" formalCharge="0" spinMultiplicity="1"&gt;
-                    &lt;atomArray&gt;
-                        &lt;atom id="a1" elementType="C" x3="-1.661722" y3="-1.150648" z3="-0.057744"/&gt;
-                        &lt;atom id="a2" elementType="Cl" x3="-3.041068" y3="-0.059007" z3="-0.235698"/&gt;
-                        &lt;atom id="a3" elementType="O" x3="-0.55104" y3="-0.821319" z3="0.162394"/&gt;
-                        &lt;atom id="a4" elementType="O" x3="-2.180501" y3="-2.387568" z3="-0.229457"/&gt;
-                        &lt;atom id="a5" elementType="Cl" x3="-1.00857" y3="-3.666258" z3="-0.101295"/&gt;
-                    &lt;/atomArray&gt;
-                    &lt;bondArray&gt;
-                        &lt;bond atomRefs2="a1 a2" order="S" id="a1_a2"/&gt;
-                        &lt;bond atomRefs2="a1 a3" order="D" id="a1_a3"/&gt;
-                        &lt;bond atomRefs2="a1 a4" order="S" id="a1_a4"/&gt;
-                        &lt;bond atomRefs2="a4 a5" order="S" id="a4_a5"/&gt;
-                    &lt;/bondArray&gt;
-                &lt;/molecule&gt;
+              &lt;/module&gt;
+              &lt;module dictRef="compchem:finalization"&gt;
                 &lt;propertyList&gt;
-                    &lt;property dictRef="cmlqm:property.nsymrot"&gt;
-                        &lt;scalar dataType="xsd:integer"&gt;1&lt;/scalar&gt;
-                    &lt;/property&gt;
-                    &lt;property dictRef="cmlqm:property.rotconstants"&gt;
-                        &lt;array dataType="xsd:double" units="units:GHz" delimiter="" size="3"&gt;
-                        9.610774107948902 1.6540686120943338 1.4111941740951228
-                        &lt;/array&gt;
-                    &lt;/property&gt;
-                    &lt;property dictRef="cmlqm:property.pmoi"&gt;
-                        &lt;array dataType="xsd:double" units="units:amu.rbohr2" delimiter="" size="3"&gt;
-                        187.7832739452039 1091.092965516907 1278.876188881425
-                        &lt;/array&gt;
-                    &lt;/property&gt;
-                    &lt;property dictRef="cmlqm:property.pmoiaxis"&gt;
-                        &lt;matrix rows="3" columns="3" dataType="xsd:double"&gt;
-                        0.4547378900162555 0.8730253212283468 -0.17618240513089256
-                        -0.8902808990268888 0.45108016953679547 -0.06266260031733822
-                        0.02476635240479569 0.18534688868388882 0.9823610123797482
-                        &lt;/matrix&gt;
-                    &lt;/property&gt;
-                    &lt;property dictRef="cmlqm:property.scfenergy"&gt;
-                        &lt;scalar dataType="xsd:double" units="units:hartree"&gt;-1108.82623721&lt;/scalar&gt;
-                    &lt;/property&gt;
-                    &lt;property dictRef="cmlqm:property.hf298"&gt;
-                        &lt;scalar units="units:kcal.mol-1" dataType="xsd:double"&gt;-61.5885860322&lt;/scalar&gt;
-                    &lt;/property&gt;
-                    &lt;property dictRef="cmlqm:property.freqmode"&gt;
-                        &lt;array dataType="xsd:double" units="units:cm-1" delimiter="" size="9"&gt;
-                        142.6122 218.2282 326.208 471.9528 665.9777 708.8044 841.3894 1047.4277 1905.0634
-                        &lt;/array&gt;
-                    &lt;/property&gt;
-                    &lt;property dictRef="cmlqm:property.forceconstant"&gt;
-                        &lt;array dataType="xsd:double" units="units:mDyne.A-1" delimiter="" size="9"&gt;
-                        0.2216 0.5379 1.7308 2.7391 3.3245 5.34 6.1336 8.6831 28.3818
-                        &lt;/array&gt;
-                    &lt;/property&gt;
-                    &lt;property dictRef="cmlqm:property.irintensity"&gt;
-                        &lt;array dataType="xsd:double" units="units:KM.mol-1" delimiter="" size="9"&gt;
-                        0.4756 1.7945 5.3957 3.2514 12.5217 26.7365 85.8421 376.7849 400.4058
-                        &lt;/array&gt;
-                    &lt;/property&gt;
-                    &lt;property dictRef="cmlqm:property.reducedmass"&gt;
-                        &lt;array dataType="xsd:double" units="units:amu" delimiter="" size="9"&gt;
-                        18.4952 19.1715 27.6069 20.8721 12.7222 18.04 14.7051 13.4331 13.273
-                        &lt;/array&gt;
-                    &lt;/property&gt;
+                  &lt;property dictRef="compchem:totalEnergy"&gt;
+                    &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-38.523335&lt;/scalar&gt;
+                  &lt;/property&gt;
+                  &lt;property dictRef="compchem:e1Energy"&gt;
+                    &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-63.008753&lt;/scalar&gt;
+                  &lt;/property&gt;
+                  &lt;property dictRef="compchem:e2Energy"&gt;
+                    &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;18.34112&lt;/scalar&gt;
+                  &lt;/property&gt;
                 &lt;/propertyList&gt;
+              &lt;/module&gt;
             &lt;/module&gt;
+            &lt;module id="iteration" dictRef="compchem:calculation"&gt;
+              &lt;module id="initialization" dictRef="compchem:initialization"&gt;
+                &lt;parameterList&gt;
+                  &lt;parameter dictRef="compchem:method"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;dft&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:task"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;iteration&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:iterationIndex"&gt;
+                    &lt;scalar dataType="xsd:integer"&gt;1&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                &lt;/parameterList&gt;
+              &lt;/module&gt;
+              &lt;module id="finalization" dictRef="compchem:finalization"&gt;
+                &lt;propertyList&gt;
+                  &lt;property dictRef="compchem:totalEnergy"&gt;
+                    &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-38.8746435786&lt;/scalar&gt;
+                  &lt;/property&gt;
+                  &lt;property dictRef="compchem:wallTime"&gt;
+                    &lt;scalar dataType="xsd:double" units="si:s"&gt;0.2&lt;/scalar&gt;
+                  &lt;/property&gt;
+                &lt;/propertyList&gt;
+              &lt;/module&gt;
+            &lt;/module&gt;
+            &lt;module id="iteration" dictRef="compchem:calculation"&gt;
+              &lt;module id="initialization" dictRef="compchem:initialization"&gt;
+                &lt;parameterList&gt;
+                  &lt;parameter dictRef="compchem:method"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;dft&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:task"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;iteration&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:iterationIndex"&gt;
+                    &lt;scalar dataType="xsd:integer"&gt;2&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                &lt;/parameterList&gt;
+              &lt;/module&gt;
+              &lt;module id="finalization" dictRef="compchem:finalization"&gt;
+                &lt;propertyList&gt;
+                  &lt;property dictRef="compchem:totalEnergy"&gt;
+                    &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-38.8851914217&lt;/scalar&gt;
+                  &lt;/property&gt;
+                  &lt;property dictRef="compchem:wallTime"&gt;
+                    &lt;scalar dataType="xsd:double" units="si:s"&gt;0.2&lt;/scalar&gt;
+                  &lt;/property&gt;
+                &lt;/propertyList&gt;
+              &lt;/module&gt;
+            &lt;/module&gt;
+            &lt;module id="iteration" dictRef="compchem:calculation"&gt;
+              &lt;module id="initialization" dictRef="compchem:initialization"&gt;
+                &lt;parameterList&gt;
+                  &lt;parameter dictRef="compchem:method"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;dft&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:task"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;iteration&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:iterationIndex"&gt;
+                    &lt;scalar dataType="xsd:integer"&gt;3&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                &lt;/parameterList&gt;
+              &lt;/module&gt;
+              &lt;module id="finalization" dictRef="compchem:finalization"&gt;
+                &lt;propertyList&gt;
+                  &lt;property dictRef="compchem:totalEnergy"&gt;
+                    &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-38.8872577036&lt;/scalar&gt;
+                  &lt;/property&gt;
+                  &lt;property dictRef="compchem:wallTime"&gt;
+                    &lt;scalar dataType="xsd:double" units="si:s"&gt;0.2&lt;/scalar&gt;
+                  &lt;/property&gt;
+                &lt;/propertyList&gt;
+              &lt;/module&gt;
+            &lt;/module&gt;
+            &lt;module id="iteration" dictRef="compchem:calculation"&gt;
+              &lt;module id="initialization" dictRef="compchem:initialization"&gt;
+                &lt;parameterList&gt;
+                  &lt;parameter dictRef="compchem:method"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;dft&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:task"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;iteration&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:iterationIndex"&gt;
+                    &lt;scalar dataType="xsd:integer"&gt;4&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                &lt;/parameterList&gt;
+              &lt;/module&gt;
+              &lt;module id="finalization" dictRef="compchem:finalization"&gt;
+                &lt;propertyList&gt;
+                  &lt;property dictRef="compchem:totalEnergy"&gt;
+                    &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-38.8876345541&lt;/scalar&gt;
+                  &lt;/property&gt;
+                  &lt;property dictRef="compchem:wallTime"&gt;
+                    &lt;scalar dataType="xsd:double" units="si:s"&gt;0.2&lt;/scalar&gt;
+                  &lt;/property&gt;
+                &lt;/propertyList&gt;
+              &lt;/module&gt;
+            &lt;/module&gt;
+            &lt;module id="iteration" dictRef="compchem:calculation"&gt;
+              &lt;module id="initialization" dictRef="compchem:initialization"&gt;
+                &lt;parameterList&gt;
+                  &lt;parameter dictRef="compchem:method"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;dft&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:task"&gt;
+                    &lt;scalar dataType="xsd:string"&gt;iteration&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                  &lt;parameter dictRef="compchem:iterationIndex"&gt;
+                    &lt;scalar dataType="xsd:integer"&gt;5&lt;/scalar&gt;
+                  &lt;/parameter&gt;
+                &lt;/parameterList&gt;
+              &lt;/module&gt;
+              &lt;module id="finalization" dictRef="compchem:finalization"&gt;
+                &lt;propertyList&gt;
+                  &lt;property dictRef="compchem:totalEnergy"&gt;
+                    &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-38.8876352147&lt;/scalar&gt;
+                  &lt;/property&gt;
+                  &lt;property dictRef="compchem:wallTime"&gt;
+                    &lt;scalar dataType="xsd:double" units="si:s"&gt;0.2&lt;/scalar&gt;
+                  &lt;/property&gt;
+                &lt;/propertyList&gt;
+              &lt;/module&gt;
+            &lt;/module&gt;
+            &lt;module id="finalization" dictRef="compchem:finalization"&gt;
+              &lt;propertyList&gt;
+                &lt;property dictRef="compchem:totalEnergy"&gt;
+                  &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-38.887635224491&lt;/scalar&gt;
+                &lt;/property&gt;
+                &lt;property dictRef="compchem:e1Energy"&gt;
+                  &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-63.613972700907&lt;/scalar&gt;
+                &lt;/property&gt;
+                &lt;property dictRef="compchem:coulombEnergy"&gt;
+                  &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;24.635014928076&lt;/scalar&gt;
+                &lt;/property&gt;
+                &lt;property dictRef="compchem:xcEnergy"&gt;
+                  &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-6.052975700546&lt;/scalar&gt;
+                &lt;/property&gt;
+                &lt;property dictRef="compchem:nuclearRepulsionEnergy"&gt;
+                  &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;6.144298248886&lt;/scalar&gt;
+                &lt;/property&gt;
+                &lt;property dictRef="compchem:wallTime"&gt;
+                  &lt;scalar dataType="xsd:double" units="si:s"&gt;0.2&lt;/scalar&gt;
+                &lt;/property&gt;
+              &lt;/propertyList&gt;
+            &lt;/module&gt;
+          &lt;/module&gt;
+          &lt;module id="finalization" dictRef="compchem:finalization"&gt;
+            &lt;propertyList&gt;
+              &lt;property dictRef="compchem:totalEnergy"&gt;
+                &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-38.887635224491&lt;/scalar&gt;
+              &lt;/property&gt;
+              &lt;property dictRef="compchem:e1Energy"&gt;
+                &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-63.613972700907&lt;/scalar&gt;
+              &lt;/property&gt;
+              &lt;property dictRef="compchem:coulombEnergy"&gt;
+                &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;24.635014928076&lt;/scalar&gt;
+              &lt;/property&gt;
+              &lt;property dictRef="compchem:xcEnergy"&gt;
+                &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;-6.052975700546&lt;/scalar&gt;
+              &lt;/property&gt;
+              &lt;property dictRef="compchem:nuclearRepulsionEnergy"&gt;
+                &lt;scalar dataType="xsd:double" units="nonsi:hartree"&gt;6.144298248886&lt;/scalar&gt;
+              &lt;/property&gt;
+              &lt;property dictRef="compchem:wallTime"&gt;
+                &lt;scalar dataType="xsd:double" units="si:s"&gt;0.2&lt;/scalar&gt;
+              &lt;/property&gt;
+            &lt;/propertyList&gt;
+          &lt;/module&gt;
         &lt;/module&gt;
     &lt;/module&gt;
 &lt;/module&gt;
