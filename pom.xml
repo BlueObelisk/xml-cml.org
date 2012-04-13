@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>uk.ac.cam.ch.wwmm</groupId>
+		<artifactId>wwmm-parent</artifactId>
+		<version>4</version>
+	</parent>
+
+	<groupId>org.xml-cml</groupId>
+	<artifactId>website</artifactId>
+	<version>0.1-SNAPSHOT</version>
+
+	<name>xml-cml.org website</name>
+	<description>An approximate shadow of http://www.xml-cml.org but requires manual update</description>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>pm286</id>
+			<name>Peter Murray-Rust</name>
+		</developer>
+	</developers>
+
+	<inceptionYear>1995</inceptionYear>
+
+	<dependencies>
+		<dependency>
+			<groupId>xom</groupId>
+			<artifactId>xom</artifactId>
+			<version>1.2.5</version>
+		</dependency>
+	</dependencies>
+
+	<organization>
+		<name>Peter Murray-Rust</name>
+		<url>http://wwmm.ch.cam.ac.uk/blogs/murrayrust/ </url>
+	</organization>
+
+
+
+</project>
