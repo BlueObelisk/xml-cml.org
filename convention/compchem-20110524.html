@@ -250,8 +250,17 @@
         developers, teachers, students, etc.) so please feel free to contact us and get involved if this is of use to you
         in your work.</p>
         
+        <p>It is hoped that the convention in its current form is both broad enough in scope, and flexible enough to be
+        extended to cover most areas of interest in computational chemistry. At the same time, there should be enough
+        structure present that it is already possible to develop tools that rely on the convention and will not be broken
+        by future updates - they may just not be able to take full advantages of the extensions. For example, the
+        results of a job are always present in the finalization module. Tools can rely on finding the results they know about 
+        in this module (and new scalar, array and matrix properties that may appear can often be handled with no
+        additional code). More complex objects (such as orbitals) will also appear in this module, but as the tool will
+        not expect them, they can just be ignored.</p>
+        
         <p>The &quot;human-readable&quot; text for the conventions currently resides in the the bitbucket 
-        <a href="https://bitbucket.org/cml/xml-cml.org/overview">  repository</a> for the 
+        <a href="https://bitbucket.org/cml/xml-cml.org/overview">repository</a> for the 
         <a href="http://www.xml-cml.org/">xml-cml.org</a> website.</p>
 
        <p>The rules that the convention texts describe are implemented in <a href="http://www.w3.org/TR/xslt">xslt
@@ -260,6 +269,13 @@
        hosted on bitbucket. The rules defining the compchem convention, are implemented in the <a 
        href="https://bitbucket.org/cml/cmllite-validator-code/src/2eaa18f959bb/src/main/resources/org/xmlcml/www/compchem-rules.xsl">
        compchem-rules.xsl</a> file. Any changes or updates to the convention generally requires editing BOTH files.</p>
+       
+       <p>The reference software for generating CompChem convention compliant CML is currently the NWChem 
+       <a href=https://bitbucket.org/wwmm/jumbo-converters">Jumbo Converters</a>. These will parse a subset of 
+       the standard NWChem log files into CML, which can then be imported into 
+       <a href="http://www.chempound.net">Chempound</a>. Documentation on the template parsing approach used
+       in the jumbo coverters can be found on the <a href="http://quixote.wikispot.org/JUMBO-Converters">Quixote Wiki</a>.
+       </p>
 
 
         <h1 id="CompChem">
@@ -1143,37 +1159,11 @@
         
         
         
-       <h1><a name="adding">7.</a> Examples.</h1>
+       <h1><a name="examples">7.</a> Examples.</h1>
        
-       <p>The reference software for generating CompChem convention compliant CML is currently the NWChem 
-       <a href=https://bitbucket.org/wwmm/jumbo-converters">Jumbo Converters</a>. These will parse a subset of 
-       the standard NWChem log files into CML, which can then be imported into 
-       <a href="http://www.chempound.net">Chempound</a>. Documentation on the template parsing approach used
-       in the jumbo coverters can be found on the <a href="http://quixote.wikispot.org/JUMBO-Converters">Quixote Wiki</a>.
-       </p>
+       <p>An example of a convention-compliant CML file for a DFT calcultion with the b3lyp functional on CH2 is below.</p>
        
-       <p>Examples of convention-compliant CML are below:</p>
-       <table border="1">
-       <tr>
-       <th>Title</th>
-       <th>NWChem Logfile</th>
-       <th>CML</th>
-       </tr>
-       
-       <tr>
-       <td>DFT B3LYP calculation on CH2 with 3-21g basis</td>
-       <td><a href="../examples/schema3/compchem/ch2_321g_b3lyp.nwo">ch2_321g_b3lyp.nwo</a></td>
-       <td><a href="../examples/schema3/compchem/ch2_321g_b3lyp.cml">ch2_321g_b3lyp.cml</a></td>
-       </tr>
-       
-       <tr>
-       <td>HF SCF optimisation  on water with STO-3G basis</td>
-       <td><a href="../examples/schema3/compchem/h2o_sto3g_opt.nwo">h2o_sto3g_opt.nwo</a></td>
-       <td><a href="../examples/schema3/compchem/h2o_sto3g_opt.cml">h2o_sto3g_opt.cml</a></td>
-       </tr>
-       
-       </table>
-
+       <p>Other examples can be found on the <a href="examples/schema3/compchem">examples</a> page.</p>
 
         <p id="example">
             <strong>Example (from above) : DFT B3LYP calculation on CH2 with 3-21g basis</strong>
