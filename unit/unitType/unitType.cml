@@ -231,8 +231,8 @@
         </description>
     </unitType>
 
-    <unitType id="luminous_intensity" name="Luminous intensity" title="Luminous intensity">
-        <dimension name="luminous_intensity" unitType="unitType:luminous_intensity" power="1"/>
+    <unitType id="luminousIntensity" name="Luminous intensity" title="Luminous intensity">
+        <dimension name="luminousIntensity" unitType="unitType:luminousIntensity" power="1"/>
         <definition>
             <h:p>TODO</h:p>
         </definition>
@@ -251,8 +251,8 @@
         </description>
     </unitType>
 
-    <unitType id="solid_angle" name="Solid angle" title="solid angle">
-        <dimension name="solid_angle" unitType="unitType:solid_angle" power="1"/>
+    <unitType id="solidAngle" name="Solid angle" title="solid angle">
+        <dimension name="solidAngle" unitType="unitType:solidAngle" power="1"/>
         <definition>
             <h:p>TODO</h:p>
         </definition>
@@ -309,7 +309,7 @@
         </description>
     </unitType>
 
-    <unitType id="radiant_flux" name="Radiant flux" title="Radiant flux">
+    <unitType id="radiantFlux" name="Radiant flux" title="Radiant flux">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-3"/>
@@ -333,9 +333,9 @@
         </description>
     </unitType>
 
-    <unitType id="luminous_flux" name="Luminous flux" title="Luminous flux">
-        <dimension name="luminous_intensity" unitType="unitType:luminous_intensity" power="1"/>
-        <dimension name="solid_angle" unitType="unitType:solid_angle" power="1"/>
+    <unitType id="luminousFlux" name="Luminous flux" title="Luminous flux">
+        <dimension name="luminousIntensity" unitType="unitType:luminousIntensity" power="1"/>
+        <dimension name="solidAngle" unitType="unitType:solidAngle" power="1"/>
         <definition>
             <h:p>TODO</h:p>
         </definition>
@@ -346,7 +346,7 @@
 
     <unitType id="illuminance" name="Illuminance" title="Illuminance">
         <dimension name="length" unitType="unitType:length" power="-2"/>
-        <dimension name="luminous_intensity" unitType="unitType:luminous_intensity" power="1"/>
+        <dimension name="luminousIntensity" unitType="unitType:luminousIntensity" power="1"/>
         <definition>
             <h:p>TODO</h:p>
         </definition>
@@ -366,7 +366,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_charge" name="Electric charge" title="Electric charge">
+    <unitType id="electricCharge" name="Electric charge" title="Electric charge">
         <dimension name="time" unitType="unitType:time" power="1"/>
         <dimension name="current" unitType="unitType:current" power="1"/>
         <definition>
@@ -377,7 +377,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_potential_difference" name="Electromotive force"
+    <unitType id="electricPotentialDifference" name="Electromotive force"
               title="Electrical potential difference, Electromotive force">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="mass" unitType="unitType:mass" power="1"/>
@@ -391,7 +391,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_resistance" name="Resistance" title="Resistance, reactance, impedance">
+    <unitType id="electricResistance" name="Resistance" title="Resistance, reactance, impedance">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-3"/>
@@ -409,7 +409,7 @@
    power="-3"/> <dimension name="current" unitType="unitType:current" power="-2"/> <definition><h:p>TODO</h:p></definition>
    </unitType> -->
 
-    <unitType id="electric_capacitance" name="Electric capacitance" title="Electric capacitance">
+    <unitType id="electricCapacitance" name="Electric capacitance" title="Electric capacitance">
         <dimension name="length" unitType="unitType:length" power="-2"/>
         <dimension name="mass" unitType="unitType:mass" power="-1"/>
         <dimension name="time" unitType="unitType:time" power="4"/>
@@ -422,7 +422,7 @@
         </description>
     </unitType>
 
-    <unitType id="magnetic_flux" name="Magnetic flux" title="Magnetic flux">
+    <unitType id="magneticFlux" name="Magnetic flux" title="Magnetic flux">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
@@ -435,7 +435,7 @@
         </description>
     </unitType>
 
-    <unitType id="magnetic_flux_density" name="Magnetic flux density"
+    <unitType id="magneticFluxDensity" name="Magnetic flux density"
               title="Magnetic flux density, magnetic inductivity">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
@@ -448,7 +448,7 @@
         </description>
     </unitType>
 
-    <unitType id="magnetic_inductance" name="Inductance" title="Inductance">
+    <unitType id="magneticInductance" name="Inductance" title="Inductance">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
@@ -461,7 +461,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_conductance" name="Electric conductance" title="Electric conductance">
+    <unitType id="electricConductance" name="Electric conductance" title="Electric conductance">
         <dimension name="length" unitType="unitType:length" power="-2"/>
         <dimension name="mass" unitType="unitType:mass" power="-1"/>
         <dimension name="time" unitType="unitType:time" power="3"/>
@@ -484,7 +484,7 @@
         </description>
     </unitType>
 
-    <unitType id="radioactive_absorbed_dose" name="absorbed dose" title="absorbed dose (of ionising radiation)">
+    <unitType id="radioactiveAbsorbedDose" name="absorbed dose" title="absorbed dose (of ionising radiation)">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
         <definition>
@@ -495,7 +495,7 @@
         </description>
     </unitType>
 
-    <unitType id="catalytic_activity" name="Catalytic activity" title="Catalytic activity">
+    <unitType id="catalyticActivity" name="Catalytic activity" title="Catalytic activity">
         <dimension name="time" unitType="unitType:time" power="-1"/>
         <dimension name="amount" unitType="unitType:amount" power="1"/>
         <definition>
@@ -550,7 +550,7 @@
         </description>
     </unitType>
 
-    <unitType id="reciprocal_volume" title="Reciprocal volume" name="reciprocal volume">
+    <unitType id="reciprocalVolume" title="Reciprocal volume" name="reciprocal volume">
         <dimension name="length" unitType="unitType:length" power="-3"/>
         <definition>
             <h:p>Reciprocal volume.</h:p>
@@ -560,7 +560,7 @@
         </description>
     </unitType>
 
-    <unitType id="length_power-4" title="Length^-4" name="length^-4">
+    <unitType id="lengthPower-4" title="Length^-4" name="length^-4">
         <dimension name="length" unitType="unitType:length" power="-4"/>
         <definition>
             <h:p>Length power -4.</h:p>
@@ -581,7 +581,7 @@
         </description>
     </unitType>
 
-    <unitType id="radioactive_equivalent_dose" name="equivalent dose"
+    <unitType id="radioactiveEquivalentDose" name="equivalent dose"
               title="(radioactive) equivalent dose (of ionising radiation)">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
@@ -619,7 +619,7 @@
         </description>
     </unitType>
 
-    <unitType id="angular_velocity" title="Angular velocity"
+    <unitType id="angularVelocity" title="Angular velocity"
               name="Angular velocity">
         <dimension name="time" unitType="unitType:time" power="-1"/>
         <definition>
@@ -643,7 +643,7 @@
     </unitType>
 
 
-    <unitType id="angular_momentum" name="Angular_momentum"
+    <unitType id="angularMomentum" name="Angular momentum"
               title="Angular momentum">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="2"/>
@@ -668,7 +668,7 @@
         </description>
     </unitType>
 
-    <unitType id="reciprocal_length" name="reciprocal length" title="reciprocal length">
+    <unitType id="reciprocalLength" name="reciprocal length" title="reciprocal length">
         <dimension name="length" unitType="unitType:length" power="-1"/>
         <definition>
             <h:p>Reciprocal length or inverse length is often used in spectroscopy as a measure of energy but in other
@@ -685,7 +685,7 @@
         </description>
     </unitType>
 
-    <unitType id="mass_density" title="Density" name="Density">
+    <unitType id="massDensity" title="Density" name="Density">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="-3"/>
         <definition>
@@ -696,7 +696,7 @@
         </description>
     </unitType>
 
-    <unitType id="specific_volume" name="specific volume" title="specific volume">
+    <unitType id="specificVolume" name="specific volume" title="specific volume">
         <dimension name="mass" unitType="unitType:mass" power="-1"/>
         <dimension name="length" unitType="unitType:length" power="3"/>
         <definition>
@@ -707,7 +707,7 @@
         </description>
     </unitType>
 
-    <unitType id="amount_concentration" name="Amount concentration" title="amount (-of-substance) concentration">
+    <unitType id="amountConcentration" name="Amount concentration" title="amount (-of-substance) concentration">
         <dimension name="length" unitType="unitType:length" power="-3"/>
         <dimension name="amount" unitType="unitType:amount" power="1"/>
         <definition>
@@ -718,7 +718,7 @@
         </description>
     </unitType>
 
-    <unitType id="molar_volume" name="Molar volume" title="Molar volume">
+    <unitType id="molarVolume" name="Molar volume" title="Molar volume">
         <dimension name="length" unitType="unitType:length" power="3"/>
         <dimension name="amount" unitType="unitType:amount" power="-1"/>
         <definition>
@@ -729,7 +729,7 @@
         </description>
     </unitType>
 
-    <unitType id="heat_capacity" name="Entropy" title="Entropy, Heat Capacity">
+    <unitType id="heatCapacity" name="Entropy" title="Entropy, Heat Capacity">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
@@ -742,7 +742,7 @@
         </description>
     </unitType>
 
-    <unitType id="molar_heat_capacity" name="molar heat capacity" title="molar heat capacity or molar entropy">
+    <unitType id="molarHeatCapacity" name="molar heat capacity" title="molar heat capacity or molar entropy">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
@@ -756,7 +756,7 @@
         </description>
     </unitType>
 
-    <unitType id="specific_heat_capacity" name="Specific heat capacity" title="Specific heat capacity">
+    <unitType id="specificHeatCapacity" name="Specific heat capacity" title="Specific heat capacity">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
         <dimension name="temperature" unitType="unitType:temperature" power="-1"/>
@@ -768,7 +768,7 @@
         </description>
     </unitType>
 
-    <unitType id="molar_energy" title="Molar energy" name="Molar energy">
+    <unitType id="molarEnergy" title="Molar energy" name="Molar energy">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
@@ -781,7 +781,7 @@
         </description>
     </unitType>
 
-    <unitType id="molar_force" title="Molar force" name="Molar force">
+    <unitType id="molarForce" title="Molar force" name="Molar force">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
@@ -796,7 +796,7 @@
         </description>
     </unitType>
 
-    <unitType id="specific_energy" name="Specific energy" title="Specific energy">
+    <unitType id="specificEnergy" name="Specific energy" title="Specific energy">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
         <definition>
@@ -807,7 +807,7 @@
         </description>
     </unitType>
 
-    <unitType id="energy_density" name="Energy density" title="Energy density">
+    <unitType id="energyDensity" name="Energy density" title="Energy density">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="-1"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
@@ -819,7 +819,7 @@
         </description>
     </unitType>
 
-    <unitType id="surface_tension" name="Surface tension" title="Surface tension or surface energy">
+    <unitType id="surfaceTension" name="Surface tension" title="Surface tension or surface energy">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
         <definition>
@@ -834,7 +834,7 @@
         </description>
     </unitType>
 
-    <unitType id="heat_flux_density" name="Heat flux density" title="heat flux density">
+    <unitType id="heatFluxDensity" name="Heat flux density" title="heat flux density">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-3"/>
         <definition>
@@ -856,7 +856,7 @@
         </description>
     </unitType>
 
-    <unitType id="thermal_conductivity" name="Thermal_conductivity" title="Thermal conductivity">
+    <unitType id="thermalConductivity" name="Thermal Conductivity" title="Thermal conductivity">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-3"/>
@@ -870,7 +870,7 @@
     </unitType>
 
 
-    <unitType id="kinematic_viscosity" name="Diffusion coefficient" title="Diffusion coefficient, kinematic viscosity">
+    <unitType id="kinematicViscosity" name="Diffusion coefficient" title="Diffusion coefficient, kinematic viscosity">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="time" unitType="unitType:time" power="-1"/>
         <definition>
@@ -881,7 +881,7 @@
         </description>
     </unitType>
 
-    <unitType id="dynamic_viscosity" name="Viscosity" title="Dynamic Viscosity">
+    <unitType id="dynamicViscosity" name="Viscosity" title="Dynamic Viscosity">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="-1"/>
         <dimension name="time" unitType="unitType:time" power="-1"/>
@@ -893,7 +893,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_charge_density" name="electric charge density" title="electric charge density">
+    <unitType id="electricChargeDensity" name="electric charge density" title="electric charge density">
         <dimension name="length" unitType="unitType:length" power="-3"/>
         <dimension name="time" unitType="unitType:time" power="1"/>
         <dimension name="current" unitType="unitType:current" power="1"/>
@@ -905,7 +905,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_current_density" name="electric current density" title="electric current density">
+    <unitType id="electriCcurrentDensity" name="electric current density" title="electric current density">
         <dimension name="current" unitType="unitType:current" power="1"/>
         <dimension name="length" unitType="unitType:length" power="-2"/>
         <definition>
@@ -916,7 +916,7 @@
         </description>
     </unitType>
 
-    <unitType id="electrical_conductivity" name="Electrical_conductivity" title="Electrical conductivity">
+    <unitType id="electricalConductivity" name="Electrical Conductivity" title="Electrical conductivity">
         <dimension name="mass" unitType="unitType:mass" power="-1"/>
         <dimension name="length" unitType="unitType:length" power="-3"/>
         <dimension name="time" unitType="unitType:time" power="3"/>
@@ -929,7 +929,7 @@
         </description>
     </unitType>
 
-    <unitType id="molar_conductivity" name="molar conductivity" title="molar conductivity">
+    <unitType id="molarConductivity" name="molar conductivity" title="molar conductivity">
         <dimension name="mass" unitType="unitType:mass" power="-1"/>
         <dimension name="time" unitType="unitType:time" power="3"/>
         <dimension name="amount" unitType="unitType:amount" power="-1"/>
@@ -968,7 +968,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_field_strength" name="Electric_field strength" title="Electric field strength">
+    <unitType id="electricFieldStrength" name="Electric_field strength" title="Electric field strength">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-3"/>
@@ -981,7 +981,7 @@
         </description>
     </unitType>
 
-    <unitType id="magnetic_field_strength" name="Magnetic_field" title="Magnetic field strength">
+    <unitType id="magneticFieldStrength" name="Magnetic_field" title="Magnetic field strength">
         <dimension name="current" unitType="unitType:current" power="1"/>
         <dimension name="length" unitType="unitType:length" power="-1"/>
         <definition>
@@ -1015,7 +1015,7 @@
         </description>
     </unitType>
 
-    <unitType id="absorbed_dose_rate" name="absorbed dose rate" title="absorbed dose rate">
+    <unitType id="absorbedDoseRate" name="absorbed dose rate" title="absorbed dose rate">
         <dimension name="length" unitType="unitType:length" power="2"/>
         <dimension name="time" unitType="unitType:time" power="-3"/>
         <definition>
@@ -1027,7 +1027,7 @@
     </unitType>
 
     <!-- locally created unitTypes -->
-    <unitType id="energy_length_gradient" name="energy_length_gradient" title="energy_length_gradient">
+    <unitType id="energyLengthGradient" name="energy_length_gradient" title="energy_length_gradient">
         <dimension name="mass" unitType="unitType:mass" power="1"/>
         <dimension name="length" unitType="unitType:length" power="1"/>
         <dimension name="time" unitType="unitType:time" power="-2"/>
@@ -1038,7 +1038,7 @@
         </definition>
     </unitType>
 
-    <unitType id="absorbed_dose" name="absorbed_dose" title="absorbed_dose">
+    <unitType id="absorbedDose" name="absorbed_dose" title="absorbed_dose">
         <dimension name="length" unitType="unitType:length" power="2" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-2" preserve="false"/>
         <definition>
@@ -1048,7 +1048,7 @@
             <h:p>TODO</h:p>
         </description>
     </unitType>
-    <unitType id="amount_density" name="amount density" title="amount density">
+    <unitType id="amountDensity" name="amount density" title="amount density">
         <dimension name="amount" unitType="unitType:amount" power="-1" preserve="false"/>
         <definition>
             <h:p>TODO</h:p>
@@ -1058,8 +1058,8 @@
         </description>
     </unitType>
 
-    <unitType id="amount_of_substance_concentration" name="amount_of_substance_concentration"
-              title="amount_of_substance_concentration">
+    <unitType id="amountOfSubstanceConcentration" name="amount_of_substance_concentration"
+              title="amount of substance concentration">
         <dimension name="amount" unitType="unitType:amount" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-3" preserve="false"/>
         <definition>
@@ -1070,7 +1070,7 @@
         </description>
     </unitType>
 
-    <unitType id="amount_of_substance_mass" name="Amount of substance mass" title="Amount of substance mass">
+    <unitType id="amountOfSubstanceMass" name="Amount of substance mass" title="Amount of substance mass">
         <dimension name="amount" unitType="unitType:amount" power="1" preserve="false"/>
         <dimension name="mass" unitType="unitType:mass" power="-1" preserve="false"/>
         <definition>
@@ -1081,7 +1081,7 @@
         </description>
     </unitType>
 
-    <unitType id="amount_of_substance_mass_flux" name="Amount of substance mass flux"
+    <unitType id="amountOfSubstanceMassFlux" name="Amount of substance mass flux"
               title="amount of substance mass flux">
         <dimension name="amount" unitType="unitType:amount" power="1" preserve="false"/>
         <dimension name="mass" unitType="unitType:mass" power="-1" preserve="false"/>
@@ -1094,7 +1094,7 @@
         </description>
     </unitType>
 
-    <unitType id="angular_acceleration" name="angular acceleration" title="angular acceleration">
+    <unitType id="angularAcceleration" name="angular acceleration" title="angular acceleration">
         <dimension name="angle" unitType="unitType:angle" power="1" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-2" preserve="false"/>
         <definition>
@@ -1105,7 +1105,7 @@
         </description>
     </unitType>
 
-    <unitType id="areal_density" name="Areal density" title="Areal density">
+    <unitType id="arealDensity" name="Areal density" title="Areal density">
         <dimension name="length" unitType="unitType:length" power="-2" preserve="false"/>
         <definition>
             <h:p>Reciprocal area</h:p>
@@ -1115,7 +1115,7 @@
         </description>
     </unitType>
 
-    <unitType id="areal_mass" name="Areal mass" title="Areal mass">
+    <unitType id="arealMass" name="Areal mass" title="Areal mass">
         <dimension name="mass" unitType="unitType:mass" power="-1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="2" preserve="false"/>
         <definition>
@@ -1126,7 +1126,7 @@
         </description>
     </unitType>
 
-    <unitType id="areal_mass_density" name="Areal mass density" title="Areal mass density">
+    <unitType id="arealMassDensity" name="Areal mass density" title="Areal mass density">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-2" preserve="false"/>
         <definition>
@@ -1137,7 +1137,7 @@
         </description>
     </unitType>
 
-    <unitType id="areal_mass_flux" name="Areal mass flux" title="Areal mass flux">
+    <unitType id="arealMassFlux" name="Areal mass flux" title="Areal mass flux">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-2" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-1" preserve="false"/>
@@ -1149,7 +1149,7 @@
         </description>
     </unitType>
 
-    <unitType id="areal_amount_flux" name="Areal amount flux" title="Areal amount flux">
+    <unitType id="areaAmountFlux" name="Areal amount flux" title="Areal amount flux">
         <dimension name="amount" unitType="unitType:amount" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-2" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-1" preserve="false"/>
@@ -1175,7 +1175,7 @@
         </description>
     </unitType>
 
-    <unitType id="catalytic_activity_concentration" name="Catalytic activity concentration"
+    <unitType id="catalyticActivityConcentration" name="Catalytic activity concentration"
               title="Catalytic activity concentration">
         <dimension name="time" unitType="unitType:time" power="-1" preserve="false"/>
         <dimension name="amount" unitType="unitType:amount" power="1" preserve="false"/>
@@ -1188,7 +1188,7 @@
         </description>
     </unitType>
 
-    <unitType id="coefficient_of_heat_transfer" name="Coefficient of heat transfer"
+    <unitType id="coefficientOfHeatTransfer" name="Coefficient of heat transfer"
               title="Coefficient of heat transfer">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-3" preserve="false"/>
@@ -1201,7 +1201,7 @@
         </description>
     </unitType>
 
-    <unitType id="coefficient_of_linear_expansion" name="Coefficient of linear expansion"
+    <unitType id="coefficientOfLinearExpansion" name="Coefficient of linear expansion"
               title="Coefficient of linear expansion">
         <dimension name="temperature" unitType="unitType:temperature" power="-1" preserve="false"/>
         <definition>
@@ -1212,7 +1212,7 @@
         </description>
     </unitType>
 
-    <unitType id="current_density" name="Current density" title="Current_density">
+    <unitType id="currentDensity" name="Current density" title="Current_density">
         <dimension name="current" unitType="unitType:current" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-2" preserve="false"/>
         <definition>
@@ -1223,7 +1223,7 @@
         </description>
     </unitType>
 
-    <unitType id="diffusion_coefficient" name="Diffusion coefficient" title="Diffusion Coefficient">
+    <unitType id="diffusionCoefficient" name="Diffusion coefficient" title="Diffusion Coefficient">
         <dimension name="length" unitType="unitType:length" power="2" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-1" preserve="false"/>
         <definition>
@@ -1234,7 +1234,7 @@
         </description>
     </unitType>
 
-    <unitType id="dose_equivalent" name="dose_equivalent" title="dose_equivalent">
+    <unitType id="doseEquivalent" name="dose_equivalent" title="dose_equivalent">
         <dimension name="time" unitType="unitType:time" power="-2" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="2" preserve="false"/>
         <definition>
@@ -1245,7 +1245,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_conductivity" name="electric_conductivity" title="electric_conductivity">
+    <unitType id="electricConductivity" name="electric_conductivity" title="electric conductivity">
         <dimension name="mass" unitType="unitType:mass" power="-1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-3" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="3" preserve="false"/>
@@ -1258,19 +1258,22 @@
         </description>
     </unitType>
 
-    <unitType id="electric_dipole_moment" name="Electric dipole moment" title="electric dipole_moment">
+    <unitType id="electricDipoleMoment" name="Electric dipole moment" title="electric dipole moment">
         <dimension name="length" unitType="unitType:length" power="1" preserve="false"/>
         <dimension name="current" unitType="unitType:current" power="1" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="1" preserve="false"/>
         <definition>
-            <h:p>TODO</h:p>
+            <h:p>The electric dipole moment vector.</h:p>
         </definition>
         <description>
-            <h:p>TODO</h:p>
+            <h:p>The electric dipole moment is a measure of the separation of positive and negative
+             electrical charges in a system of charges, that is, a measure of the charge system's overall
+             polarity.</h:p>
+            <h:a href="http://en.wikipedia.org/wiki/Electric_dipole">wikipedia article</h:a>
         </description>
     </unitType>
 
-    <unitType id="electric_flux_density" name="Electric flux density" title="Electric flux density">
+    <unitType id="electricFluxDensity" name="Electric flux density" title="Electric flux density">
         <dimension name="length" unitType="unitType:length" power="-2" preserve="false"/>
         <dimension name="current" unitType="unitType:current" power="1" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="1" preserve="false"/>
@@ -1282,7 +1285,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_permittivity" name="Electric permittivity" title="Electric permittivity">
+    <unitType id="electricPermittivity" name="Electric permittivity" title="Electric permittivity">
         <dimension name="mass" unitType="unitType:mass" power="-1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-3" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="4" preserve="false"/>
@@ -1295,7 +1298,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_potential" name="Electric potential" title="Electric potential">
+    <unitType id="electricPotential" name="Electric potential" title="Electric potential">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="2" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-3" preserve="false"/>
@@ -1308,7 +1311,7 @@
         </description>
     </unitType>
 
-    <unitType id="electric_resistivity" name="Electric resistivity" title="Electrical resistivity">
+    <unitType id="electricResistivity" name="Electric resistivity" title="Electrical resistivity">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="3" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-3" preserve="false"/>
@@ -1330,7 +1333,7 @@
         <dc:source>Wikipedia</dc:source>
     </unitType>
 
-    <unitType id="exposure_rate" name="exposure rate" title="exposure rate">
+    <unitType id="exposureRate" name="exposure rate" title="exposure rate">
         <dimension name="mass" unitType="unitType:mass" power="-1" preserve="false"/>
         <dimension name="current" unitType="unitType:current" power="1" preserve="false"/>
         <definition>
@@ -1341,7 +1344,7 @@
         </description>
     </unitType>
 
-    <unitType id="heat_transmission" name="heat transmission" title="heat transmission">
+    <unitType id="heatTransmission" name="heat transmission" title="heat transmission">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-2" preserve="false"/>
         <definition>
@@ -1352,7 +1355,7 @@
         </description>
     </unitType>
 
-    <unitType id="luminous_flux_density" name="luminous flux density" title="luminous flux density">
+    <unitType id="luminousFluxDensity" name="luminous flux density" title="luminous flux density">
         <dimension name="luminous_intensity" unitType="unitType:luminous_intensity" power="1" preserve="false"/>
         <dimension name="angle" unitType="unitType:angle" power="2" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-2" preserve="false"/>
@@ -1364,7 +1367,7 @@
         </description>
     </unitType>
 
-    <unitType id="magnetic_dipole_moment" name="magnetic dipole moment" title="magnetic dipole moment">
+    <unitType id="magneticDipoleMoment" name="magnetic dipole moment" title="magnetic dipole moment">
         <dimension name="length" unitType="unitType:length" power="2" preserve="false"/>
         <dimension name="current" unitType="unitType:current" power="1" preserve="false"/>
         <definition>
@@ -1375,7 +1378,7 @@
         </description>
     </unitType>
 
-    <unitType id="magnetic_permeability" name="Magnetic permeability" title="Magnetic permeability">
+    <unitType id="magneticPermeability" name="Magnetic permeability" title="Magnetic permeability">
         <dimension name="length" unitType="unitType:length" power="1" preserve="false"/>
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-2" preserve="false"/>
@@ -1388,7 +1391,7 @@
         </description>
     </unitType>
 
-    <unitType id="magnetomotive_force" name="Magnetomotive force" title="Magnetomotive force">
+    <unitType id="magnetomotiveForce" name="Magnetomotive force" title="Magnetomotive force">
         <dimension name="current" unitType="unitType:current" power="1" preserve="false"/>
         <definition>
             <h:p>TODO</h:p>
@@ -1399,7 +1402,7 @@
     </unitType>
 
 <!-- the following is the same as areal_mass_flux -->
-    <unitType id="mass_areal_rate" name="mass areal rate" title="mass areal rate">
+    <unitType id="massArealRate" name="mass areal rate" title="mass areal rate">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-2" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-1" preserve="false"/>
@@ -1411,7 +1414,7 @@
         </description>
     </unitType>
 
-    <unitType id="mass_density_rate" name="Mass density rate" title="Mass density rate">
+    <unitType id="massDensityRate" name="Mass density rate" title="Mass density rate">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-3" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-1" preserve="false"/>
@@ -1423,7 +1426,7 @@
         </description>
     </unitType>
 
-    <unitType id="mass_flux" name="Mass flux" title="Mass flux">
+    <unitType id="massFlux" name="Mass flux" title="Mass flux">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-1" preserve="false"/>
         <definition>
@@ -1434,7 +1437,7 @@
         </description>
     </unitType>
   
-   <unitType id="molar_conc_rate" name="Molar concentration rate of change with time" title="Molar Concentration rate of change with time">
+   <unitType id="molarConcRate" name="Molar concentration rate of change with time" title="Molar Concentration rate of change with time">
      <dc:contributor>Hannah Barjat</dc:contributor>
       <dimension name="length" unitType="unitType:length" power="-3"/>
       <dimension name="amount" unitType="unitType:amount" power="1"/>
@@ -1447,7 +1450,7 @@
       </description>
    </unitType>
 
-   <unitType id="per_molar_conc_per_sec" name="per molar concentration per second" title="per molar concentration per second">
+   <unitType id="perMolarConcPerSec" name="per molar concentration per second" title="per molar concentration per second">
     		<dc:contributor>Hannah Barjat</dc:contributor>
         <dimension name="length" unitType="unitType:length" power="3"/>
         <dimension name="amount" unitType="unitType:amount" power="-1"/>
@@ -1460,7 +1463,7 @@
         </description>
     </unitType>
 
-   <unitType id="per_molar_conc_squared_per_sec" name="per molar concentration squared per second" title="per molar concentration squared per second">
+   <unitType id="perMolarConcSquaredPerSec" name="per molar concentration squared per second" title="per molar concentration squared per second">
     		<dc:contributor>Hannah Barjat</dc:contributor>
         <dimension name="length" unitType="unitType:length" power="6"/>
         <dimension name="amount" unitType="unitType:amount" power="-2"/>
@@ -1473,7 +1476,7 @@
         </description>
     </unitType>
 
-    <unitType id="mass_fraction" name="mass fraction" title="mass fraction">
+    <unitType id="massFraction" name="mass fraction" title="mass fraction">
         <dimension name="mass" unitType="unitType:mass" preserve="true" power="1"/>
         <dimension name="mass" unitType="unitType:mass" preserve="true" power="-1"/>
         <definition>
@@ -1484,7 +1487,7 @@
         </description>
     </unitType>
 
-    <unitType id="mass_per_unit_length" name="Mass per unit length" title="Mass per unit length">
+    <unitType id="massPerUnitLength" name="Mass per unit length" title="Mass per unit length">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-1" preserve="false"/>
         <definition>
@@ -1495,7 +1498,7 @@
         </description>
     </unitType>
 
-    <unitType id="molar_mass" name="molar_mass" title="molar_mass">
+    <unitType id="molaMass" name="molar_mass" title="molar_mass">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="amount" unitType="unitType:amount" power="-1" preserve="false"/>
         <definition>
@@ -1506,7 +1509,7 @@
         </description>
     </unitType>
 
-    <unitType id="moment_of_inertia" name="Moment of inertia" title="Moment of inertia">
+    <unitType id="momentOfInertia" name="Moment of inertia" title="Moment of inertia">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="2" preserve="false"/>
         <definition>
@@ -1529,7 +1532,7 @@
         </description>
     </unitType>
 
-    <unitType id="radiant_flux_density" name="radiant_flux_density" title="radiant_flux_density">
+    <unitType id="radiantFluxDensity" name="radiant_flux_density" title="radiant flux density">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-3" preserve="false"/>
         <definition>
@@ -1540,7 +1543,7 @@
         </description>
     </unitType>
 
-    <unitType id="radiant_intensity" name="radiant_intensity" title="radiant_intensity">
+    <unitType id="radiantIntensity" name="radiant_intensity" title="radiant Intensity">
         <dimension name="mass" unitType="unitType:mass" power="1" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="2" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-3" preserve="false"/>
@@ -1553,7 +1556,7 @@
         </description>
     </unitType>
 
-    <unitType id="radionucleotide_activity" name="radionucleotide_activity" title="radionucleotide_activity">
+    <unitType id="radionucleotideActivity" name="radionucleotide_activity" title="radionucleotide Activity">
         <dimension name="time" unitType="unitType:time" power="-1" preserve="false"/>
         <definition>
             <h:p>Disintegrations per second</h:p>
@@ -1575,7 +1578,7 @@
         </description>
     </unitType>
 
-    <unitType id="surface_charge_density" name="surface charge density" title="surface charge density">
+    <unitType id="surfaceChargeDensity" name="surface charge density" title="surface charge density">
         <dimension name="length" unitType="unitType:length" power="-2" preserve="false"/>
         <dimension name="current" unitType="unitType:current" power="1" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="1" preserve="false"/>
@@ -1598,7 +1601,7 @@
         </description>
     </unitType>
 
-    <unitType id="volumetric_area" name="volumetric_area" title="volumetric_area">
+    <unitType id="volumetricArea" name="volumetric_area" title="volumetri Area">
         <dimension name="length" unitType="unitType:length" power="3" preserve="false"/>
         <dimension name="length" unitType="unitType:length" power="-2" preserve="false"/>
         <definition>
@@ -1609,7 +1612,7 @@
         </description>
     </unitType>
 
-    <unitType id="volumetric_density" name="volumetric density" title="volumetric density">
+    <unitType id="volumetricDensity" name="volumetric density" title="volumetric density">
         <dimension name="length" unitType="unitType:length" power="-3" preserve="false"/>
         <definition>
             <h:p>Reciprocal volume L-3</h:p>
@@ -1619,7 +1622,7 @@
         </description>
     </unitType>
 
-    <unitType id="volumetric_rate" name="volumetric rate" title="volumetric rate">
+    <unitType id="volumetricRate" name="volumetric rate" title="volumetric rate">
         <dimension name="length" unitType="unitType:length" power="3" preserve="false"/>
         <dimension name="time" unitType="unitType:time" power="-1" preserve="false"/>
         <definition>
