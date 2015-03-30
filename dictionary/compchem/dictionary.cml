@@ -1,6 +1,10 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="http://www.xml-cml.org/common/style/dictionary.xsl" type="text/xsl"?>
 <dictionary
+        convention="convention:dictionary"
+        dictionaryPrefix="compchem"
+        namespace="http://www.xml-cml.org/dictionary/compchem/"
+        title="Computational Chemistry - Core Concepts"
         xmlns="http://www.xml-cml.org/schema"
         xmlns:dc="http://purl.org/dc/elements/1.1/"
         xmlns:h="http://www.w3.org/1999/xhtml"
@@ -10,15 +14,12 @@
         xmlns:m="http://www.w3.org/1998/Math/MathML"
         xmlns:nonSi="http://www.xml-cml.org/unit/nonSi/"
         xmlns:si="http://www.xml-cml.org/unit/si/"
-        xmlns:unitType="http://www.xml-cml.org/unit/unitType/"
-        convention="convention:dictionary"
-        dictionaryPrefix="compchem"
-        namespace="http://www.xml-cml.org/dictionary/compchem/"
-        title="Computational Chemistry - Core Concepts">
+        xmlns:unitType="http://www.xml-cml.org/unit/unitType/">
 
     <dc:contributor>Peter Murray-Rust</dc:contributor>
     <dc:contributor>Weerapong Phadungsukanan</dc:contributor>
     <dc:contributor>Jens Thomas</dc:contributor>
+    <dc:contributor>Oliver Stueker</dc:contributor>
 
     <description>
         <h:p>Toplevel dictionary for computational chemistry</h:p>
@@ -144,8 +145,8 @@
         <description>
             <h:p>
                 A quantum chemistry calculation is often comprised of a
-                series of subtasks, <h:i>e.g.</h:i> coarse optimisation -> 
-                fine optimisation -> NMR Spectrum Analysis; this is because 
+                series of subtasks, <h:i>e.g.</h:i> coarse optimisation -&gt; 
+                fine optimisation -&gt; NMR Spectrum Analysis; this is because 
                 most quantum chemistry software s are designed to be
                 modularised and only to perform a single task at a time.
                 The joblist concept is introduced to capture these series of 
@@ -361,7 +362,7 @@
 
 
     <entry id="method" term="method"
-           dataType="xsd:string" unitType="unitType:unknown" >
+           dataType="xsd:string" unitType="unitType:unknown">
       <definition>
         <h:p>The type of computational method that is being used in the calculation. Example values are:</h:p>
         <h:ul>
@@ -381,7 +382,7 @@
     </entry>
 
     <entry id="task" term="task"
-           dataType="xsd:string" unitType="unitType:unknown" >
+           dataType="xsd:string" unitType="unitType:unknown">
       <definition>
         <h:p>The task that is being carried out by the job or calculation. Example values are:</h:p>
         <h:ul>
@@ -402,7 +403,7 @@
       </description>
     </entry>
 
-    <entry id="id" dataType="xsd:string" unitType="unitType:unknown"  term="CML id">
+    <entry id="id" dataType="xsd:string" unitType="unitType:unknown" term="CML id">
       <definition>
         <h:p>A CML id</h:p>
       </definition>
@@ -479,7 +480,7 @@
 
 <!--  Timing Data -->
     <entry id="cputime"  term="CPU time" 
-           dataType="xsd:string" unitType="unitType:time" >
+           dataType="xsd:string" unitType="unitType:time">
       <definition>
         <h:p>Elapsed CPU time.</h:p>
       </definition>
@@ -579,7 +580,7 @@
       </description>
     </entry>
 
-<entry id="nuclearDipoleMoment" term="nuclear dipole moment" >
+<entry id="nuclearDipoleMoment" term="nuclear dipole moment">
 
       <definition>
         <h:p>The nuclear electric dipole moment</h:p>
@@ -980,7 +981,7 @@
             <h:li>cartesian</h:li>
             <h:li>spherical</h:li>
        </h:ul>
-       <h:p>For higher angular momentum (l>2), basis functions can be described in cartesian 
+       <h:p>For higher angular momentum (l&gt;2), basis functions can be described in cartesian 
        (6 d, 10 f, 15 g, ...) or spherical form (5 d, 7 f, 9 g, ...). Most programs work in cartesians
        by default, although, particularly for correlated calculations, the higher number of functions
        in the cartesian form becomes significant, and it becomes more efficient to use the spherical form.
@@ -1301,11 +1302,13 @@
         define the type of energy. So if the calculation's <h:a href="#method">method</h:a> parameter is MP2, 
         then this will be an MP2 energy, with the exact definition determined by the associated SCF and MP2 parameters
         in the SCF and MP2 initialization modules.</h:p>
+        <h:p><h:em class="warn">Q: Should we maybe call this <h:i>total electronic energy</h:i> 
+        in order to properly distinguish it from the thermochemistry energies?[OSt]</h:em></h:p>
       </description>
     </entry>
 
-   
-    <entry id="xcEnergy"   term="exchange correlation energy"
+
+    <entry id="xcEnergy" term="exchange correlation energy"
       dataType="xsd:double" unitType="unitType:energy">
       <definition>
         <h:p>The Exchange correlation energy.</h:p>
@@ -1313,6 +1316,196 @@
       <description>
         <h:p>TODO</h:p>
       </description>
+    </entry>
+
+
+    <!-- Thermochemistry -->
+
+    <entry id="ZeroPointEnergy" term="Zero-point energy"
+      dataType="xsd:double" unitType="unitType:energy">
+      <definition>
+        <h:p>Zero-point energy, also called <h:i>quantum vacuum zero-point energy</h:i> or <h:i>Zero-point vibrational 
+          energy</h:i>, is the lowest possible energy that a quantum mechanical physical system may have; it is the 
+          energy of its ground state. All quantum mechanical systems undergo fluctuations even in their ground state 
+          and have an associated zero-point energy, a consequence of their wave-like nature. The uncertainty principle 
+          requires every physical system to have a zero-point energy greater than the minimum of its classical 
+          potential well. This results in motion even at absolute zero. For example, liquid helium does not freeze 
+          under atmospheric pressure at any temperature because of its zero-point energy.</h:p>
+        <h:p>More information can be found on <h:a href="https://en.wikipedia.org/wiki/Zero-point_energy">
+          <dc:source>Wikipedia</dc:source></h:a>.</h:p>
+        <h:p>
+          <m:math>
+            <m:mrow>
+            <m:mi>ZPE</m:mi>
+            <m:mo>=</m:mo>
+            <m:msub><m:mi>E</m:mi><m:mi>vib</m:mi></m:msub><m:mi>(0)</m:mi>
+            </m:mrow>
+          </m:math>
+        </h:p>
+      </definition>
+    </entry>
+    
+    <entry id="thermalCorrectionToEnergy" term="Thermal Correction to Energy"
+      dataType="xsd:double" unitType="unitType:energy">
+      <definition>
+        <h:p>The thermal correction to the total energy (including the zero-point energy).</h:p>
+        <h:p>
+          <m:math>
+            <m:mrow>
+              <m:mi>&#916;E</m:mi><m:mi>(T)</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub><m:mi>E</m:mi><m:mi>trans</m:mi></m:msub><m:mi>(T)</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub><m:mi>E</m:mi><m:mi>rot</m:mi></m:msub><m:mi>(T)</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub><m:mi>E</m:mi><m:mi>vib</m:mi></m:msub><m:mi>(T)</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub><m:mi>E</m:mi><m:mi>vib</m:mi></m:msub><m:mi>(0)</m:mi>
+            </m:mrow>
+          </m:math>
+        </h:p>
+        <h:p><h:em class="warn">TODO: Consider moving this term to an application specific dictionary (Gaussian), 
+          as other codes might report a thermal corrrection excluding the Zero-point energy.</h:em></h:p>
+      </definition>
+    </entry>
+    
+    <entry id="thermalCorrectionToEnthalpy" term="Thermal Correction to Enthalpy"
+      dataType="xsd:double" unitType="unitType:energy">
+      <definition>
+        <h:p>The thermal correction to the total enthalpy (including the zero-point energy).</h:p>
+        <h:p>
+          <m:math>
+            <m:mrow>
+              <m:mi>&#916;H(T)</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>&#916;E(T)</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>R</m:mi>
+              <mo>&#x2062;<!-- &InvisibleTimes; --></mo>
+              <m:mi>T</m:mi>
+            </m:mrow>
+          </m:math>
+        </h:p>
+        <h:p><h:em class="warn">TODO: Consider moving this term to an application specific dictionary (Gaussian), 
+          as other codes might report a thermal corrrection excluding the Zero-point energy.</h:em></h:p>
+      </definition>
+    </entry>
+    
+    <entry id="thermalCorrectionToGibbsEnergy" term="Thermal Correction to Gibbs Energy"
+      dataType="xsd:double" unitType="unitType:energy">
+      <definition>
+        <h:p>The thermal correction to the total Gibbs energy (including the zero-point energy).</h:p>
+        <h:p>
+          <m:math>
+            <m:mrow>
+              <m:mi>&#916;G(T)</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>&#916;H(T)</m:mi>
+              <m:mo>-</m:mo>
+              <m:mi>T</m:mi>
+              <mo>&#x2062;<!-- &InvisibleTimes; --></mo>
+              <m:mi>S</m:mi>
+            </m:mrow>
+          </m:math>
+        </h:p>
+        <h:p><h:em class="warn">TODO: Consider moving this term to an application specific dictionary (Gaussian), 
+          as other codes might report a thermal corrrection excluding the Zero-point energy.</h:em></h:p>
+      </definition>
+    </entry>
+
+    <entry id="Energy_0K" term="Total Energy at 0 Kelvin"
+      dataType="xsd:double" unitType="unitType:energy">
+      <definition>
+        <h:p>The total energy at 0 Kelvin.</h:p>
+        <h:p>Note that in case of composite methods, the method and basis set for the geometry optimization step 
+          are different from the ones used for the Frequency calculation.</h:p>
+        <h:p>
+          <m:math>
+            <m:mrow>
+              <m:msub><m:mi>E</m:mi><m:mi>0</m:mi></m:msub>
+              <m:mo>=</m:mo>
+              <m:msub><m:mi>E</m:mi><m:mi>electronic</m:mi></m:msub>
+              <m:mo>+</m:mo>
+              <m:mi>ZPE</m:mi>
+            </m:mrow>
+          </m:math>
+        </h:p>
+      </definition>
+    </entry>
+    
+    <entry id="Energy_T" term="Total Energy at temperature T"
+      dataType="xsd:double" unitType="unitType:energy">
+      <definition>
+        <h:p>The total Energy at temperature T. The temperature of this calculation can be found in the calculation's
+          <h:a href="#thermochemistry">thermochemistry</h:a> section.</h:p>
+        <h:p>Note that in case of composite methods, the method and basis set for the geometry optimization step 
+          are different from the ones used for the Frequency calculation.</h:p>
+        <h:p>
+          <m:math>
+            <m:mrow>
+              <m:mi>E(T)</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub><m:mi>E</m:mi><m:mi>0</m:mi></m:msub>
+              <m:mo>+</m:mo>
+              <m:msub><m:mi>E</m:mi><m:mi>vib</m:mi></m:msub><m:mi>(T)</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub><m:mi>E</m:mi><m:mi>rot</m:mi></m:msub><m:mi>(T)</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub><m:mi>E</m:mi><m:mi>trans</m:mi></m:msub><m:mi>(T)</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub><m:mi>E</m:mi><m:mi>electronic</m:mi></m:msub>
+              <m:mo>+</m:mo>
+              <m:mi>&#916;E</m:mi><m:mi>(T)</m:mi>
+            </m:mrow>
+          </m:math>
+        </h:p>
+      </definition>
+    </entry>
+    
+    <entry id="Enthalpy_T" term="Total Enthalpy at temperature T"
+      dataType="xsd:double" unitType="unitType:energy">
+      <definition>
+        <h:p>The total Enthalpy at temperature T. The temperature of this calculation can be found in the calculation's
+          <h:a href="#thermochemistry">thermochemistry</h:a> section.</h:p>
+        <h:p>Note that in case of composite methods, the method and basis set for the geometry optimization step 
+          are different from the ones used for the Frequency calculation.</h:p>
+        <h:p>
+          <m:math>
+            <m:mrow>
+              <m:mi>H(T)</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>E(T)</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>R</m:mi>
+              <mo>&#x2062;<!-- &InvisibleTimes; --></mo>
+              <m:mi>T</m:mi>
+            </m:mrow>
+          </m:math>
+        </h:p>
+      </definition>
+    </entry>
+    
+    <entry id="GibbsEnergy_T" term="Total Gibbs Energy at temperature T"
+      dataType="xsd:double" unitType="unitType:energy">
+      <definition>
+        <h:p>The total Gibbs Energy at temperature T. The temperature of this calculation can be found in the calculation's
+          <h:a href="#thermochemistry">thermochemistry</h:a> section.</h:p>
+        <h:p>Note that in case of composite methods, the method and basis set for the geometry optimization step 
+          are different from the ones used for the Frequency calculation.</h:p>
+        <h:p>
+          <m:math>
+            <m:mrow>
+              <m:mi>G(T)</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>H(T)</m:mi>
+              <m:mo>-</m:mo>
+              <m:mi>T</m:mi>
+              <mo>&#x2062;<!-- &InvisibleTimes; --></mo>
+              <m:mi>S</m:mi>
+            </m:mrow>
+          </m:math>
+        </h:p>
+      </definition>
     </entry>
 
 </dictionary>
