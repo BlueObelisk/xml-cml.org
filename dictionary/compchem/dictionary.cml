@@ -1486,6 +1486,7 @@
             </m:mrow>
           </m:math>
         </h:p>
+
       </definition>
     </entry>
     
@@ -1511,5 +1512,18 @@
         </h:p>
       </definition>
     </entry>
+
+
+    <entry id="Frequencies" term="Vibrational Frequencies"
+      dataType="xsd:double" unitType="unitType:frequency">
+      <definition>
+        <h:p>The vibrational frequencies -----.</h:p>
+      </definition>
+      <description>
+        <h:p>TODO</h:p>
+      </description>
+    </entry>
+
+
 
 </dictionary>
