@@ -1524,6 +1524,34 @@
       </description>
     </entry>
 
+    <entry id="alphaocc" term="alpha occupied orbital energies"
+      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
+      <definition>
+        <h:p>Energies of the alpha occupied orbitals.</h:p>
+      </definition>
+      <description>
+        <h:p>The energies of the alpha occupied orbitals from the SCF calculation</h:p>
+      </description>
+    </entry>
 
+    <entry id="alphavirt" term="alpha virtual orbital energies"
+      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
+      <definition>
+        <h:p>Energies of the alpha virtual orbitals.</h:p>
+      </definition>
+      <description>
+        <h:p>The energies of the alpha virtual orbitals from the SCF calculation</h:p>
+      </description>
+    </entry>
+
+    <entry id="atomicmass" term="atomic masses of all constituent of the molecule calculated"
+      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
+      <definition>
+        <h:p>The atomic masses of all constituent atoms of the molecule calculated.</h:p>
+      </definition>
+      <description>
+        <h:p>TODO</h:p>
+      </description>
+    </entry>
 
 </dictionary>
