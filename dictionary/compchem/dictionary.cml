@@ -1553,4 +1553,28 @@
         <h:p>TODO</h:p>
       </description>
     </entry>
+
+    <entry id="basis" term="The basis set used for the calculation"
+      dataType="xsd:double" units="none" unitType="none">
+      <definition>
+        <h:p>The basis set used for the calculation.  I see that basis set is described earlier in this dictionary;  should the name in retrievium-portal be consistent with the CML CompChem dictionary? </h:p>
+      </definition>
+      <description>
+        <h:p>TODO</h:p>
+      </description>
+    </entry>
+
+    <entry id="control" term="The IOp for the job"
+      dataType="xsd:double" units="none" unitType="none">
+      <definition>
+        <h:p> For a Gaussian calculation the IOp used to specify internal options for the calculation.  
+          A description can be found <h:a href="http://www.gaussian.com/g_tech/g_ur/k_iop.htm"></h:a>
+        I see that basis set is described earlier in this dictionary;  should the name in retrievium-portal
+        be consistent with the CML CompChem dictionary? </h:p>
+      </definition>
+      <description>
+        <h:p>TODO</h:p>
+      </description>
+    </entry>
+
 </dictionary>
