@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="http://www.xml-cml.org/common/style/dictionary.xsl" type="text/xsl"?>
 <dictionary
@@ -580,12 +581,32 @@
       </description>
     </entry>
 
-<entry id="nuclearDipoleMoment" term="nuclear dipole moment">
-
+<entry id="nuclearDipoleMoment" term="nuclear dipole moment"
+       dataType="xsd:double" unitType="unitType:electric_dipole_moment"  units="si:Coulomb-meter" >
       <definition>
         <h:p>The nuclear electric dipole moment</h:p>
+        <h:p> 
+            <m:math>
+              <m:mrow>
+              <m:mo> &#956;</m:mo>
+              <m:mo stretchy="false">=</m:mo>
+              <m:mrow>
+              <m:mi>Q</m:mi>
+              <m:mo stretchy="false">×</m:mo>
+              <m:mi>r</m:mi>
+              </m:mrow>
+              </m:mrow>
+            </m:math>
+        </h:p>
+        <h:p>Where &#956; is dipole moment, Q is the magnitude of the charge and r is the distance between the charges.</h:p>
       </definition>
       
+     <description class="description">
+        <h:p>The electric dipole moment arising from the nuclear charges. </h:p>
+      </description>
+      
+    
+
       <!-- Work in progress...
       <description class="description">
         <h:p>The electric dipole moment arising from the nuclear charges.</h:p>
@@ -1523,5 +1544,7 @@
         <h:p>TODO</h:p>
       </description>
     </entry>
+
+    
 
 </dictionary>
