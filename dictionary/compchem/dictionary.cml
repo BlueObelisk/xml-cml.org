@@ -1230,64 +1230,59 @@
        units="nonSi:hartree" unitType="unitType:energy" dataType="xsd:double">
     <definition>
         <h:p>The potential energy arising from Coulombic nuclei-nuclei repulsions.</h:p>
-        <h:p>
+    <h:p>
         <m:math>
+          <m:mrow>
+           <m:msub>
+            <m:mi>U</m:mi>
+            <m:mi mathvariant="italic">nn</m:mi>
+            </m:msub>
             <m:mrow>
-
-                <m:msub>
-                    <m:mover>
-                        <m:mi>T</m:mi>
-                        <!-- <m:mo>&Hat;-->
-                                <m:mo>&#94;
-                                </m:mo>
-                            </m:mover>
-                            <m:mi>n</m:mi>
-                        </m:msub>
-
-                        <m:mo>=</m:mo>
-
-                        <m:mo>-</m:mo>
-                        <m:munder>
-<!--                            <m:mo>&Sum;-->
-                            <m:mo>&#8721;
-                            </m:mo>
-                            <m:mi>i</m:mi>
-                        </m:munder>
-
-                        <m:mfrac>
-                            <m:mrow>
-                                <m:msup>
-<!--                                    <m:mo>&hbar; -->
-                                    <m:mo>&#8463;
-                                    </m:mo>
-                                    <m:mn>2</m:mn>
-                                </m:msup>
-                            </m:mrow>
-
-                            <m:mrow>
-                                <m:mn>2</m:mn>
-                                <m:msub>
-                                    <m:mi>M</m:mi>
-                                    <m:mi>i</m:mi>
-                                </m:msub>
-                            </m:mrow>
-                        </m:mfrac>
-
-                        <m:msubsup>
-<!--                            <m:mi>&nabla;-->
-                    <m:mi>&#8711;
-                    </m:mi>
-                    <m:msub>
-                        <m:mi>R</m:mi>
-                        <m:mi>i</m:mi>
-                    </m:msub>
-                    <m:mn>2</m:mn>
-                </m:msubsup>
-
+            <m:mo fence="true" stretchy="true">(</m:mo>
+            <m:mrow>
+            <m:mrow>
+            <m:mi>A</m:mi>
+            <m:mi>B</m:mi>
             </m:mrow>
-        </m:math>
-        </h:p>
-
+            </m:mrow>
+            <m:mo fence="true" stretchy="true">)</m:mo>
+            </m:mrow>
+            <m:mrow>
+            <m:mrow/>
+            <m:mo stretchy="false">=</m:mo>
+            <m:mrow/>
+            </m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:msub>
+              <m:mi>Z</m:mi>
+               <m:mi>A</m:mi>
+              </m:msub>
+              <m:msub>
+               <m:mi>Z</m:mi>
+               <m:mi>B</m:mi>
+               </m:msub>
+            </m:mrow>
+              <m:msub>
+               <m:mi>R</m:mi>
+               <m:mi mathvariant="italic">AB</m:mi>
+              </m:msub>
+           </m:mfrac>
+          </m:mrow>
+           
+        </m:math>   
+    </h:p>
+   <h:p> where <m:math> <m:msub>
+              <m:mi>Z</m:mi>
+               <m:mi>A</m:mi>
+              </m:msub>
+              <m:msub>
+               <m:mi>Z</m:mi>
+               <m:mi>B</m:mi>
+               </m:msub> </m:math> are charges of atomic nuclei A and B and <m:math> <m:msub>
+               <m:mi>R</m:mi>
+               <m:mi mathvariant="italic">AB</m:mi>
+              </m:msub> </m:math> is a separation between the atomic nuclei, A and B </h:p>
       <!-- DFT Terms  <h:p>
             <m:math><m:mrow><m:mo stretchy="true">&#8721;</m:mo><m:mfrac><m:mi>i</m:mi><m:mi>n</m:mi></m:mfrac></m:mrow></m:math>
         </h:p>--> 
