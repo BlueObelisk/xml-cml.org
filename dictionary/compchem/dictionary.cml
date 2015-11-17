@@ -1226,7 +1226,7 @@
       </description>
     </entry>
     
-    <entry id="nuclearRepulsionEnergy" term="nuclear repulsion energy" 
+    <entry id="Energy_Nuc" term="nuclear repulsion energy" 
        units="nonSi:hartree" unitType="unitType:energy" dataType="xsd:double">
     <definition>
         <h:p>The potential energy arising from Coulombic nuclei-nuclei repulsions.</h:p>
@@ -1234,7 +1234,7 @@
         <m:math>
           <m:mrow>
            <m:msub>
-            <m:mi>U</m:mi>
+            <m:mi>V</m:mi>
             <m:mi mathvariant="italic">nn</m:mi>
             </m:msub>
             <m:mrow>
@@ -1252,8 +1252,10 @@
             <m:mo stretchy="false">=</m:mo>
             <m:mrow/>
             </m:mrow>
-          <m:mfrac>
-            <m:mrow>
+           <m:mrow>
+            <m:mo stretchy="false">∑</m:mo>
+            <m:mfrac>
+             <m:mrow>
               <m:msub>
               <m:mi>Z</m:mi>
                <m:mi>A</m:mi>
@@ -1269,6 +1271,7 @@
               </m:msub>
            </m:mfrac>
           </m:mrow>
+          </m:mrow>
            
         </m:math>   
     </h:p>
@@ -1282,7 +1285,7 @@
                </m:msub> </m:math> are charges of atomic nuclei A and B and <m:math> <m:msub>
                <m:mi>R</m:mi>
                <m:mi mathvariant="italic">AB</m:mi>
-              </m:msub> </m:math> is a separation between the atomic nuclei, A and B </h:p>
+              </m:msub> </m:math> is a distance between the atomic nuclei, A and B </h:p>
       <!-- DFT Terms  <h:p>
             <m:math><m:mrow><m:mo stretchy="true">&#8721;</m:mo><m:mfrac><m:mi>i</m:mi><m:mi>n</m:mi></m:mfrac></m:mrow></m:math>
         </h:p>--> 
