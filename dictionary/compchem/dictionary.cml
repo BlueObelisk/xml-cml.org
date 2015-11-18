@@ -1185,7 +1185,7 @@
 
 <!--Calculated Energies-->
 
-    <entry id="coulombEnergy" term="coulomb energy" 
+    <entry id="Energy_Coulomb" term="coulomb energy" 
      unitType="unitType:energy"  dataType="xsd:double">
       <definition>
         <h:p>The Coulomb compoment of the electronic energy in a Density Functional Calculation.</h:p>
@@ -1195,17 +1195,24 @@
       </description>
     </entry>
     
-    <entry id="correlationEnergy" term="correlation energy" 
+    <entry id="Energy_corr" term="correlation energy" 
      unitType="unitType:energy"  dataType="xsd:double">
       <definition>
-        <h:p>The Correlation Energy.</h:p>
+        <h:p>The Correlation Energy <m:math> <m:msub>
+              <m:mi>E</m:mi>
+               <m:mi>corr</m:mi>
+              </m:msub>
+               </m:msub> </m:math> is the difference between the exact nonrecharges of atomic nuclei A and B and <m:math> <m:msub>
+               <m:mi>R</m:mi>
+               <m:mi mathvariant="italic">AB</m:mi>
+              </m:msub> </m:math> is a distance between the atomic nuclei, A and B </h:p></h:p>
       </definition>
       <description>
         <h:p>TODO</h:p>
       </description>
     </entry>
 
-    <entry id="e1Energy" term="1-electron energy" 
+    <entry id="Energy_e1" term="1-electron energy" 
     unitType="unitType:energy" dataType="xsd:double">
       <definition>
         <h:p>The one-electron energy.</h:p>
@@ -1216,7 +1223,7 @@
       </description>
     </entry>
     
-    <entry id="e2Energy" term="2-electron energy" 
+    <entry id="Energy_e2" term="2-electron energy" 
     unitType="unitType:energy" dataType="xsd:double">
       <definition>
         <h:p>The two-electron energy.</h:p>
@@ -1226,11 +1233,11 @@
       </description>
     </entry>
     
-    <entry id="Energy_Nuc" term="nuclear repulsion energy" 
+    <entry id="Energy_NucRep" term="nuclear repulsion energy" 
        units="nonSi:hartree" unitType="unitType:energy" dataType="xsd:double">
     <definition>
         <h:p>The potential energy arising from Coulombic nuclei-nuclei repulsions.</h:p>
-    <h:p>
+   <!-- <h:p>
         <m:math>
           <m:mrow>
            <m:msub>
@@ -1274,7 +1281,65 @@
           </m:mrow>
            
         </m:math>   
-    </h:p>
+    </h:p> -->
+<h:p> <!-- from Mathtoweb- Latex formula converted to mathml then added m: -->
+<m:math>
+<m:mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+    <m:mtr>
+        <m:mtd>
+            <mspace width="6.0em" />
+        </m:mtd>
+        <m:mtd columnalign="left">
+            <m:msub>
+                <m:mi>V</m:mi>
+                <m:mrow>
+                    <m:mi>N</m:mi>
+                    <m:mi>N</m:mi>
+                </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mstyle displaystyle="true">
+                <m:munder>
+                    <m:mo>&#x02211;</m:mo>
+                    <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo>&#x0003E;</m:mo>
+                        <m:mi>B</m:mi>
+                    </m:mrow>
+                </m:munder>
+            </m:mstyle>
+            <m:mstyle displaystyle="true">
+                <m:munder>
+                    <m:mo>&#x02211;</m:mo>
+                    <m:mi>B</m:mi>
+                </m:munder>
+            </m:mstyle>
+            <m:mfrac linethickness="1">
+                <m:mrow>
+                    <m:msub>
+                        <m:mi>Z</m:mi>
+                        <m:mi>A</m:mi>
+                    </m:msub>
+                    <m:msub>
+                        <m:mi>Z</m:mi>
+                        <m:mi>B</m:mi>
+                    </m:msub>
+                </m:mrow>
+                <m:mrow>
+                    <m:msub>
+                        <m:mi>R</m:mi>
+                        <m:mrow>
+                            <m:mi>A</m:mi>
+                            <m:mi>B</m:mi>
+                        </m:mrow>
+                    </m:msub>
+                </m:mrow>
+            </m:mfrac>
+        </m:mtd>
+    </m:mtr>
+</m:mtable>
+</m:math>
+</h:p>
    <h:p> where <m:math> <m:msub>
               <m:mi>Z</m:mi>
                <m:mi>A</m:mi>
@@ -1296,22 +1361,22 @@
     </description>
 </entry>
     
-    <entry id="scfEnergy"  term="energy"
+    <entry id="Energy_SCF"  term="energy"
            dataType="xsd:double" unitType="unitType:energy">
       <definition>
         <h:p>The Hartree-Fock Self-Consistent Field component of the energy.</h:p>
       </definition>
       <description>
         <h:p>This is the SCF energy, where the SCF energy is a compment of another energy, such as the
-        MP2 energy. The scf_energy term should NOT be used for the total energy of an SCF calculation, for this
-        the <h:a href="#total_energy">total energy</h:a> term should be used, as the exact meaning of the SCF
+        MP2 energy. The Energy_SCF term should NOT be used for the total energy of an SCF calculation, for this
+        the <h:a href="#Energy_total">total energy</h:a> term should be used, as the exact meaning of the SCF
         energy will be properly determined by the parameters in the <h:a href="#initialization">initialization</h:a> 
         module.</h:p>
       </description>
     </entry>
     
     
-   <entry id="totalEnergy" term="total energy" 
+   <entry id="Energy_total" term="total energy" 
     dataType="xsd:string" unitType="unitType:energy">
       <definition>
         <h:p>The total energy for a system of electrons and nuclei.</h:p>
@@ -1331,7 +1396,7 @@
     </entry>
 
 
-    <entry id="xcEnergy" term="exchange correlation energy"
+    <entry id="Energy_XC" term="exchange correlation energy"
       dataType="xsd:double" unitType="unitType:energy">
       <definition>
         <h:p>The Exchange correlation energy.</h:p>
@@ -1344,7 +1409,7 @@
 
     <!-- Thermochemistry -->
 
-    <entry id="ZeroPointEnergy" term="Zero-point energy"
+    <entry id="Energy_ZPVE" term="Zero-point energy"
       dataType="xsd:double" unitType="unitType:energy">
       <definition>
         <h:p>Zero-point energy, also called <h:i>quantum vacuum zero-point energy</h:i> or <h:i>Zero-point vibrational 
@@ -1449,7 +1514,7 @@
               <m:mo>=</m:mo>
               <m:msub><m:mi>E</m:mi><m:mi>electronic</m:mi></m:msub>
               <m:mo>+</m:mo>
-              <m:mi>ZPE</m:mi>
+              <m:mi>ZPVE</m:mi>
             </m:mrow>
           </m:math>
         </h:p>
