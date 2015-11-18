@@ -1188,7 +1188,51 @@
     <entry id="Energy_Coulomb" term="coulomb energy" 
      unitType="unitType:energy"  dataType="xsd:double">
       <definition>
+        <h:p> <math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+    <mtr>
+        <mtd>
+            <mspace width="6.0em" />
+        </mtd>
+        <mtd columnalign="left">
+            <msub>
+                <mi>E</mi>
+                <mrow>
+                    <mi>c</mi>
+                    <mi>o</mi>
+                    <mi>u</mi>
+                    <mi>l</mi>
+                </mrow>
+            </msub>
+            <mo>=</mo>
+            <mi>k</mi>
+            <mfrac linethickness="1">
+                <mrow>
+                    <msub>
+                        <mi>q</mi>
+                        <mn>1</mn>
+                    </msub>
+                    <msub>
+                        <mi>q</mi>
+                        <mn>2</mn>
+                    </msub>
+                </mrow>
+                <mi>d</mi>
+            </mfrac>
+        </mtd>
+    </mtr>
+</mtable>
+</math> </h:p>
+      </definition>
+      <description>
         <h:p>The Coulomb compoment of the electronic energy in a Density Functional Calculation.</h:p>
+      </description>
+    </entry>
+
+   <entry id="Energy_x" term="exchange energy"
+      dataType="xsd:double" unitType="unitType:energy">
+      <definition>
+        <h:p>The Exchange energy.</h:p>
       </definition>
       <description>
         <h:p>TODO</h:p>
@@ -1201,11 +1245,27 @@
         <h:p>The Correlation Energy <m:math> <m:msub>
               <m:mi>E</m:mi>
                <m:mi>corr</m:mi>
-              </m:msub>
-               </m:msub> </m:math> is the difference between the exact nonrecharges of atomic nuclei A and B and <m:math> <m:msub>
-               <m:mi>R</m:mi>
-               <m:mi mathvariant="italic">AB</m:mi>
-              </m:msub> </m:math> is a distance between the atomic nuclei, A and B </h:p></h:p>
+              </m:msub> </m:math> is the difference between the exact nonrelativistic energy <m:math> <m:msub>
+               <m:mi>E</m:mi>
+               <m:mi mathvariant="italic">nonrel</m:mi>
+              </m:msub> </m:math> and the (nonrelativistic) Hartree-Fock energy <m:math> <m:msub> <m:mi>E</m:mi> <m:mi>HF</m:mi> </m:msub> </m:math>. </h:p>
+            <h:p> <m:math> <m:msub>
+              <m:mi>E</m:mi>
+               <m:mi>corr</m:mi>
+              </m:msub> <m:mo>=</m:mo> <m:msub>
+               <m:mi>E</m:mi>
+               <m:mi mathvariant="italic">nonrel</m:mi> 
+              </m:msub> <m:mo>-</m:mo> <m:msub> <m:mi>E</m:mi> <m:mi>HF</m:mi> </m:msub> </m:math> </h:p>
+      </definition>
+      <description>
+        <h:p>TODO</h:p>
+      </description>
+    </entry>
+
+   <entry id="Energy_xc" term="exchange correlation energy"
+      dataType="xsd:double" unitType="unitType:energy">
+      <definition>
+        <h:p>The Exchange correlation energy.</h:p>
       </definition>
       <description>
         <h:p>TODO</h:p>
@@ -1396,15 +1456,7 @@
     </entry>
 
 
-    <entry id="Energy_XC" term="exchange correlation energy"
-      dataType="xsd:double" unitType="unitType:energy">
-      <definition>
-        <h:p>The Exchange correlation energy.</h:p>
-      </definition>
-      <description>
-        <h:p>TODO</h:p>
-      </description>
-    </entry>
+
 
 
     <!-- Thermochemistry -->
