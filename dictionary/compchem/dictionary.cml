@@ -1188,41 +1188,69 @@
     <entry id="Energy_Coulomb" term="coulomb energy" 
      unitType="unitType:energy"  dataType="xsd:double">
       <definition>
-        <h:p> <math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-    <mtr>
-        <mtd>
-            <mspace width="6.0em" />
-        </mtd>
-        <mtd columnalign="left">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+    <msub>
+        <mi>V</mi>
+        <mrow>
+            <mi>e</mi>
+            <mi>e</mi>
+        </mrow>
+    </msub>
+    <mo>=</mo>
+    <mstyle displaystyle="true">
+        <mo>&#x0222B;</mo>
+    </mstyle>
+    <mstyle displaystyle="true">
+        <mo>&#x0222B;</mo>
+    </mstyle>
+    <mfrac linethickness="1">
+        <mrow>
+            <mi>&#x003C1;</mi>
+            <mrow>
+                <mo form="prefix">(</mo>
+                <msub>
+                    <mi>r</mi>
+                    <mn>1</mn>
+                </msub>
+                <mo form="postfix">)</mo>
+            </mrow>
+            <mi>&#x003C1;</mi>
+            <mrow>
+                <mo form="prefix">(</mo>
+                <msub>
+                    <mi>r</mi>
+                    <mn>2</mn>
+                </msub>
+                <mo form="postfix">)</mo>
+            </mrow>
+        </mrow>
+        <mrow>
+            <mo rspace="0.3em" lspace="0em" stretchy="true" fence="true" form="prefix">|</mo>
             <msub>
-                <mi>E</mi>
-                <mrow>
-                    <mi>c</mi>
-                    <mi>o</mi>
-                    <mi>u</mi>
-                    <mi>l</mi>
-                </mrow>
+                <mi>r</mi>
+                <mn>12</mn>
             </msub>
-            <mo>=</mo>
-            <mi>k</mi>
-            <mfrac linethickness="1">
-                <mrow>
-                    <msub>
-                        <mi>q</mi>
-                        <mn>1</mn>
-                    </msub>
-                    <msub>
-                        <mi>q</mi>
-                        <mn>2</mn>
-                    </msub>
-                </mrow>
-                <mi>d</mi>
-            </mfrac>
-        </mtd>
-    </mtr>
-</mtable>
-</math> </h:p>
+            <mo rspace="0em" lspace="0.3em" stretchy="true" fence="true" form="postfix">|</mo>
+        </mrow>
+    </mfrac>
+    <mi>d</mi>
+    <mrow>
+        <msub>
+            <mi>r</mi>
+            <mn>1</mn>
+        </msub>
+    </mrow>
+    <mi>d</mi>
+    <mrow>
+        <msub>
+            <mi>r</mi>
+            <mn>2</mn>
+        </msub>
+    </mrow>
+</mrow>
+</math>  
+
       </definition>
       <description>
         <h:p>The Coulomb compoment of the electronic energy in a Density Functional Calculation.</h:p>
@@ -1232,10 +1260,10 @@
    <entry id="Energy_x" term="exchange energy"
       dataType="xsd:double" unitType="unitType:energy">
       <definition>
-        <h:p>The Exchange energy.</h:p>
+        <h:p>The Exchange energy arises from the antisymmetry of the total n-electron wavefunction.</h:p>
       </definition>
       <description>
-        <h:p>TODO</h:p>
+        <h:p> More information can be found on <h:a href="https://en.wikipedia.org/wiki/Hartree%E2%80%93Fock_method">Wikipedia </h:a>  or on <h:a href="http://www.chm.bris.ac.uk/pt/harvey/elstruct/hf_method.html"> link</h:a> </h:p>
       </description>
     </entry>
     
@@ -1258,7 +1286,7 @@
               </m:msub> <m:mo>-</m:mo> <m:msub> <m:mi>E</m:mi> <m:mi>HF</m:mi> </m:msub> </m:math> </h:p>
       </definition>
       <description>
-        <h:p>TODO</h:p>
+        <h:p>More information can be found on <h:a href="https://en.wikipedia.org/wiki/Electronic_correlation">Wikipedia </h:a></h:p>
       </description>
     </entry>
 
@@ -1297,51 +1325,7 @@
        units="nonSi:hartree" unitType="unitType:energy" dataType="xsd:double">
     <definition>
         <h:p>The potential energy arising from Coulombic nuclei-nuclei repulsions.</h:p>
-   <!-- <h:p>
-        <m:math>
-          <m:mrow>
-           <m:msub>
-            <m:mi>V</m:mi>
-            <m:mi mathvariant="italic">nn</m:mi>
-            </m:msub>
-            <m:mrow>
-            <m:mo fence="true" stretchy="true">(</m:mo>
-            <m:mrow>
-            <m:mrow>
-            <m:mi>A</m:mi>
-            <m:mi>B</m:mi>
-            </m:mrow>
-            </m:mrow>
-            <m:mo fence="true" stretchy="true">)</m:mo>
-            </m:mrow>
-            <m:mrow>
-            <m:mrow/>
-            <m:mo stretchy="false">=</m:mo>
-            <m:mrow/>
-            </m:mrow>
-           <m:mrow>
-            <m:mo stretchy="false">∑</m:mo>
-            <m:mfrac>
-             <m:mrow>
-              <m:msub>
-              <m:mi>Z</m:mi>
-               <m:mi>A</m:mi>
-              </m:msub>
-              <m:msub>
-               <m:mi>Z</m:mi>
-               <m:mi>B</m:mi>
-               </m:msub>
-            </m:mrow>
-              <m:msub>
-               <m:mi>R</m:mi>
-               <m:mi mathvariant="italic">AB</m:mi>
-              </m:msub>
-           </m:mfrac>
-          </m:mrow>
-          </m:mrow>
-           
-        </m:math>   
-    </h:p> -->
+
 <h:p> <!-- from Mathtoweb- Latex formula converted to mathml then added m: -->
 <m:math>
 <m:mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
@@ -1440,7 +1424,57 @@
     dataType="xsd:string" unitType="unitType:energy">
       <definition>
         <h:p>The total energy for a system of electrons and nuclei.</h:p>
-      </definition>
+       <h:p> 
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+      <msub>
+        <mi>E</mi>
+        <mrow>
+            <mi>t</mi>
+            <mi>o</mi>
+            <mi>t</mi>
+            <mi>a</mi>
+            <mi>l</mi>
+        </mrow>
+    </msub>
+    <mo>=</mo>
+    <msub>
+        <mi>T</mi>
+        <mi>e</mi>
+    </msub>
+    <mo>+</mo>
+    <msub>
+        <mi>V</mi>
+        <mrow>
+            <mi>e</mi>
+            <mi>e</mi>
+        </mrow>
+    </msub>
+    <mo>+</mo>
+    <msub>
+        <mi>V</mi>
+        <mrow>
+            <mi>e</mi>
+            <mi>n</mi>
+        </mrow>
+    </msub>
+    <mo>+</mo>
+    <msub>
+        <mi>V</mi>
+        <mrow>
+            <mi>n</mi>
+            <mi>n</mi>
+        </mrow>
+    </msub>
+   </mrow>
+  </math>
+      </h:p>
+
+       <h:p> Where <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi><mi>e</mi> </msub> </math> is kinetic energy of electron, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub>
+        <mi>V</mi> <mrow> <mi>e</mi> <mi>e</mi> </mrow> </msub> </math> is potential energy of the couloumb repulsion between the electrons, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub>
+        <mi>V</mi> <mrow> <mi>e</mi><mi>n</mi> </mrow> </msub> </math> is potential energy of the coulomb attractions between electron and nucleus, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub>
+        <mi>V</mi> <mrow> <mi>e</mi><mi>n</mi> </mrow> </msub> </math> is potential energy of the coulomb repulsion between nucleus and nucleus. </h:p>
+      </definition> 
       <description>
         <h:p>The total energy is formed from the sum of the nuclear, one- and two-electron energies for
         a system of electrons and nuclei.</h:p>
