@@ -1188,13 +1188,14 @@
     <entry id="Energy_Coulomb" term="coulomb energy" 
      unitType="unitType:energy"  dataType="xsd:double">
       <definition>
+        <h:p>Coulombs integral for DFT is given as:</h:p> 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
     <msub>
-        <mi>V</mi>
+        <mi>J</mi>
         <mrow>
-            <mi>e</mi>
-            <mi>e</mi>
+            <mi>i</mi>
+            <mi>j</mi>
         </mrow>
     </msub>
     <mo>=</mo>
@@ -1206,7 +1207,10 @@
     </mstyle>
     <mfrac linethickness="1">
         <mrow>
-            <mi>&#x003C1;</mi>
+            <msub>
+                <mi>&#x003C1;</mi>
+                <mi>i</mi>
+            </msub>
             <mrow>
                 <mo form="prefix">(</mo>
                 <msub>
@@ -1215,7 +1219,10 @@
                 </msub>
                 <mo form="postfix">)</mo>
             </mrow>
-            <mi>&#x003C1;</mi>
+            <msub>
+                <mi>&#x003C1;</mi>
+                <mi>j</mi>
+            </msub>
             <mrow>
                 <mo form="prefix">(</mo>
                 <msub>
@@ -1249,18 +1256,92 @@
         </msub>
     </mrow>
 </mrow>
-</math>  
+</math>
+
+<h:p>Coulombs integral for HF is given as:</h:p> 
+
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) $J_{ij} = \int \int \frac{\psi_i (r_1)\psi_j (r_2)}{\left| r_{12} \right| } d{r_1}d{r_2}$ -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+    <msub>
+        <mi>J</mi>
+        <mrow>
+            <mi>i</mi>
+            <mi>j</mi>
+        </mrow>
+    </msub>
+    <mo>=</mo>
+    <mstyle displaystyle="true">
+        <mo>&#x0222B;</mo>
+    </mstyle>
+    <mstyle displaystyle="true">
+        <mo>&#x0222B;</mo>
+    </mstyle>
+    <mfrac linethickness="1">
+        <mrow>
+            <msub>
+                <mi>&#x003C8;</mi>
+                <mi>i</mi>
+            </msub>
+            <mrow>
+                <mo form="prefix">(</mo>
+                <msub>
+                    <mi>r</mi>
+                    <mn>1</mn>
+                </msub>
+                <mo form="postfix">)</mo>
+            </mrow>
+            <msub>
+                <mi>&#x003C8;</mi>
+                <mi>j</mi>
+            </msub>
+            <mrow>
+                <mo form="prefix">(</mo>
+                <msub>
+                    <mi>r</mi>
+                    <mn>2</mn>
+                </msub>
+                <mo form="postfix">)</mo>
+            </mrow>
+        </mrow>
+        <mrow>
+            <mo rspace="0.3em" lspace="0em" stretchy="true" fence="true" form="prefix">|</mo>
+            <msub>
+                <mi>r</mi>
+                <mn>12</mn>
+            </msub>
+            <mo rspace="0em" lspace="0.3em" stretchy="true" fence="true" form="postfix">|</mo>
+        </mrow>
+    </mfrac>
+    <mi>d</mi>
+    <mrow>
+        <msub>
+            <mi>r</mi>
+            <mn>1</mn>
+        </msub>
+    </mrow>
+    <mi>d</mi>
+    <mrow>
+        <msub>
+            <mi>r</mi>
+            <mn>2</mn>
+        </msub>
+    </mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->
 
       </definition>
       <description>
-        <h:p>The Coulomb compoment of the electronic energy in a Density Functional Calculation.</h:p>
+        <h:p>The Coulomb compoment of the total energy in a Density Functional Calculation. </h:p>
       </description>
     </entry>
 
    <entry id="Energy_x" term="exchange energy"
       dataType="xsd:double" unitType="unitType:energy">
       <definition>
-        <h:p>The Exchange energy arises from the antisymmetry of the total n-electron wavefunction.</h:p>
+        <h:p>The Exchange energy arises from the antisymmetry of the total n-electron wavefunction. </h:p>
       </definition>
       <description>
         <h:p> More information can be found on <h:a href="https://en.wikipedia.org/wiki/Hartree%E2%80%93Fock_method">Wikipedia </h:a>  or on <h:a href="http://www.chm.bris.ac.uk/pt/harvey/elstruct/hf_method.html"> link</h:a> </h:p>
@@ -1293,7 +1374,34 @@
    <entry id="Energy_xc" term="exchange correlation energy"
       dataType="xsd:double" unitType="unitType:energy">
       <definition>
-        <h:p>The Exchange correlation energy.</h:p>
+        <h:p>The Exchange correlation energy is defined as: </h:p>
+
+       <h:p> <math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+    <msub>
+        <mi>E</mi>
+        <mrow>
+            <mi>x</mi>
+            <mi>c</mi>
+        </mrow>
+    </msub>
+    <mo>=</mo>
+    <msub>
+        <mi>E</mi>
+        <mi>x</mi>
+    </msub>
+    <mo>+</mo>
+    <msub>
+        <mi>E</mi>
+        <mrow>
+            <mi>c</mi>
+            <mi>o</mi>
+            <mi>r</mi>
+            <mi>r</mi>
+        </mrow>
+    </msub>
+</mrow>
+</math></h:p>
       </definition>
       <description>
         <h:p>TODO</h:p>
@@ -1328,7 +1436,7 @@
 
 <h:p> <!-- from Mathtoweb- Latex formula converted to mathml then added m: -->
 <m:math>
-<m:mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+<m:mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 0.0em; margin-bottom: 0.0em">
     <m:mtr>
         <m:mtd>
             <mspace width="6.0em" />
@@ -1337,8 +1445,8 @@
             <m:msub>
                 <m:mi>V</m:mi>
                 <m:mrow>
-                    <m:mi>N</m:mi>
-                    <m:mi>N</m:mi>
+                    <m:mi>n</m:mi>
+                    <m:mi>n</m:mi>
                 </m:mrow>
             </m:msub>
             <m:mo>=</m:mo>
@@ -1421,7 +1529,7 @@
     
     
    <entry id="Energy_total" term="total energy" 
-    dataType="xsd:string" unitType="unitType:energy">
+    dataType="xsd:double" unitType="unitType:energy">
       <definition>
         <h:p>The total energy for a system of electrons and nuclei.</h:p>
        <h:p> 
@@ -1510,7 +1618,7 @@
         <h:p>
           <m:math>
             <m:mrow>
-            <m:mi>ZPE</m:mi>
+            <m:mi>ZPVE</m:mi>
             <m:mo>=</m:mo>
             <m:msub><m:mi>E</m:mi><m:mi>vib</m:mi></m:msub><m:mi>(0)</m:mi>
             </m:mrow>
@@ -1598,7 +1706,7 @@
             <m:mrow>
               <m:msub><m:mi>E</m:mi><m:mi>0</m:mi></m:msub>
               <m:mo>=</m:mo>
-              <m:msub><m:mi>E</m:mi><m:mi>electronic</m:mi></m:msub>
+              <m:msub><m:mi>E</m:mi><m:mi>total</m:mi></m:msub>
               <m:mo>+</m:mo>
               <m:mi>ZPVE</m:mi>
             </m:mrow>
@@ -1627,7 +1735,7 @@
               <m:mo>+</m:mo>
               <m:msub><m:mi>E</m:mi><m:mi>trans</m:mi></m:msub><m:mi>(T)</m:mi>
               <m:mo>=</m:mo>
-              <m:msub><m:mi>E</m:mi><m:mi>electronic</m:mi></m:msub>
+              <m:msub><m:mi>E</m:mi><m:mi>total</m:mi></m:msub>
               <m:mo>+</m:mo>
               <m:mi>&#916;E</m:mi><m:mi>(T)</m:mi>
             </m:mrow>
