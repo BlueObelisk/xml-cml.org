@@ -1791,7 +1791,6 @@
       </definition>
     </entry>
 
-
     <entry id="Frequencies" term="Vibrational Frequencies"
       dataType="xsd:double" unitType="unitType:frequency">
       <definition>
@@ -1801,6 +1800,17 @@
         <h:p>TODO</h:p>
       </description>
     </entry>
+
+    <entry id="NImag" term="Number of Imaginary Vibrational Frequencies"
+      dataType="xsd:integer" unitType="unitType:unknown">
+      <definition>
+        <h:p>Number of imaginary vibrational frequencies.</h:p>
+      </definition>
+      <description>
+        <h:p>Some quantum chemistry codes give the number explicitly, Gaussian and Q-Chem, Gamess does not if the number of imaginary frequencies is zero but does otherwise.   </h:p>
+      </description>
+    </entry>
+
     <entry id="alphaocc" term="alpha occupied orbital energies"
       dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
       <definition>
