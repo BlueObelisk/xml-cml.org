@@ -72,8 +72,7 @@
             <h:p>
                 This information is not related to input and output of the model but is
                 supplementary to the software application to run properly and may vary 
-                from machine to machine. Therefore, the computing environment is OPTIONAL 
-                element in the CompChem convention.
+                from machine to machine. Therefore, the computing environment is OPTIONAL element in the CompChem convention.
             </h:p>
         </description>
     </entry>
@@ -583,26 +582,73 @@
 
 <entry id="nuclearDipoleMoment" term="nuclear dipole moment"
        dataType="xsd:double" unitType="unitType:electric_dipole_moment"  units="si:Coulomb-meter" >
-      <definition>
-        <h:p>The nuclear electric dipole moment</h:p>
-        <h:p> 
-            <m:math>
-              <m:mrow>
-              <m:mo> &#956;</m:mo>
-              <m:mo stretchy="false">=</m:mo>
-              <m:mrow>
-              <m:mi>Q</m:mi>
-              <m:mo stretchy="false">×</m:mo>
-              <m:mi>r</m:mi>
-              </m:mrow>
-              </m:mrow>
-            </m:math>
-        </h:p>
-        <h:p>Where &#956; is dipole moment, Q is the magnitude of the charge and r is the distance between the charges.</h:p>
+
+    <definition>
+
+        <h:p>The nuclear electric dipole moment is given by following equation:</h:p>
+        
+
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msub>
+                <mi>&#x003BC;</mi>
+                <mi>x</mi>
+            </msub>
+            <mo>=</mo>
+            <mo>-</mo>
+            <mstyle displaystyle="true">
+                <munder>
+                    <mo>&#x02211;</mo>
+                    <mrow>
+                        <mi>&#x003BC;</mi>
+                        <mi>&#x003BD;</mi>
+                    </mrow>
+                </munder>
+            </mstyle>
+            <msub>
+                <mi>P</mi>
+                <mrow>
+                    <mi>&#x003BC;</mi>
+                    <mi>&#x003BD;</mi>
+                </mrow>
+            </msub>
+            <mrow>
+                <mo form="prefix">(</mo>
+                <mi>&#x003BD;</mi>
+                <mrow>
+                    <mo form="prefix">&#x0007C;</mo>
+                    <mover accent="true">
+                        <mi>x</mi>
+                        <mo>^</mo>
+                    </mover>
+                    <mo form="postfix">&#x0007C;</mo>
+                </mrow>
+                <mi>&#x003BC;</mi>
+                <mo form="postfix">)</mo>
+            </mrow>
+            <mo>+</mo>
+            <mstyle displaystyle="true">
+                <munder>
+                    <mo>&#x02211;</mo>
+                    <mi>A</mi>
+                </munder>
+            </mstyle>
+            <msub>
+                <mi>Z</mi>
+                <mi>A</mi>
+            </msub>
+            <msub>
+                <mi>X</mi>
+                <mi>A</mi>
+            </msub>
+        
+ </math>
+       <!-- </h:p> -->
+        <h:p>Where &#956; is dipole moment, P is density matrix and 
+           Z<h:sub>A</h:sub> is nuclear charge. </h:p>
       </definition>
       
      <description class="description">
-        <h:p>The electric dipole moment arising from the nuclear charges. </h:p>
+        <h:p>The electric dipole moment arising from the nuclear charges. Some program defines the dipole moment with respect to the center of positive charge (e.g. Gaussian). In case of a neutral system, dipole moment is invariant to the origin. </h:p>
       </description>
       
     
@@ -1492,19 +1538,10 @@
 </m:mtable>
 </m:math>
 </h:p>
-   <h:p> where <m:math> <m:msub>
-              <m:mi>Z</m:mi>
-               <m:mi>A</m:mi>
-              </m:msub>
-              <m:msub>
-               <m:mi>Z</m:mi>
-               <m:mi>B</m:mi>
-               </m:msub> </m:math> are charges of atomic nuclei A and B and <m:math> <m:msub>
-               <m:mi>R</m:mi>
-               <m:mi mathvariant="italic">AB</m:mi>
-              </m:msub> </m:math> is a distance between the atomic nuclei, A and B </h:p>
+   <h:p> where Z<h:sub>A</h:sub>, Z<h:sub>B</h:sub> are charges of atomic nuclei A and B and R<h:i><h:sub>AB</h:sub></h:i> is a distance between the atomic nuclei, A and B.</h:p>
       <!-- DFT Terms  <h:p>
             <m:math><m:mrow><m:mo stretchy="true">&#8721;</m:mo><m:mfrac><m:mi>i</m:mi><m:mi>n</m:mi></m:mfrac></m:mrow></m:math>
+            <m:mi mathvariant="italic">AB</m:mi>
         </h:p>--> 
     </definition>
     <description>
@@ -1533,7 +1570,7 @@
       <definition>
         <h:p>The total energy for a system of electrons and nuclei.</h:p>
        <h:p> 
-  <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
     <mrow>
       <msub>
         <mi>E</mi>
@@ -1578,10 +1615,8 @@
   </math>
       </h:p>
 
-       <h:p> Where <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi><mi>e</mi> </msub> </math> is kinetic energy of electron, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub>
-        <mi>V</mi> <mrow> <mi>e</mi> <mi>e</mi> </mrow> </msub> </math> is potential energy of the couloumb repulsion between the electrons, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub>
-        <mi>V</mi> <mrow> <mi>e</mi><mi>n</mi> </mrow> </msub> </math> is potential energy of the coulomb attractions between electron and nucleus, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub>
-        <mi>V</mi> <mrow> <mi>e</mi><mi>n</mi> </mrow> </msub> </math> is potential energy of the coulomb repulsion between nucleus and nucleus. </h:p>
+       <h:p> Where T<h:sub>e</h:sub> is kinetic energy of electron, V<h:sub>ee</h:sub> is potential energy of the couloumb repulsion between the electrons, 
+        V<h:sub>en</h:sub> is potential energy of the coulomb attractions between electron and nucleus, V<h:sub>nn</h:sub> is potential energy of the coulomb repulsion between nucleus and nucleus. </h:p>
       </definition> 
       <description>
         <h:p>The total energy is formed from the sum of the nuclear, one- and two-electron energies for
@@ -1864,4 +1899,23 @@
       </description>
     </entry>    
 
+    <entry id="forceConstantMatrix" term="Force Constant Matrix"
+      dataType="xsd:double" unitType="unitType:none">
+      <definition>
+        <h:p>The force constant matrix -----.</h:p>
+      </definition>
+      <description>
+        <h:p>TODO</h:p>
+      </description>
+    </entry>
+
+    <entry id="molmass" term="molecular mass"
+      dataType="xsd:double" units="nonSi:dalton" unitType="unitType:mass">
+      <definition>
+        <h:p>The molmass is -----.</h:p>
+      </definition>
+      <description>
+        <h:p>TODO</h:p>
+      </description>
+    </entry>
 </dictionary>
