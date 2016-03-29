@@ -1726,32 +1726,48 @@ ium e.g. particulate matter within air.
         <definition>
           <h:p>
             1/12 of the mass of an atom of Carbon 12.
-        </h:p>
+          </h:p>
         </definition>
         <description>
           <h:p>
             A definition of mass where the mass of an atom of Carbon 12 is defined to be 12 Dalton. <h:a href="https://en.wikipedia.org/wiki/Atomic_mass_unit">wikipedia</h:a>
-            
-        </h:p>
+          </h:p>
         </description>
       </unit>
-<unit title="Debye" id="debye" symbol="D"
-        parentSI="siUnits:statcoulomb-centimetre" multiplierToSI="1E-18"
+      
+   <unit title="Debye" id="debye" symbol="D"
+      parentSI="siUnits:statcoulomb-centimetre" multiplierToSI="1E-18"
         unitType="unitType:electricCharge-length">
      <!--   <dc:creator>sf</dc:creator> -->
         <definition>
           <h:p>
             It is defined as 1*10<h:sup>-18</h:sup> statcoulomb-centimetre. Which is ≈ 3.33564*10<h:sup>−30</h:sup> C·m.
-        </h:p>
+          </h:p>
         </definition>
         <description>
           <h:p>
             Debye is preferred over SI unit because of the convenience.
-            The statcoulomb is also known as the franklin or electrostatic unit of charge (esu). <h:a href="https://en.wikipedia.org/wiki/Debye">wikipedia</h:a>
-            
-        </h:p>
+            The statcoulomb is also known as the franklin or electrostatic unit of charge (esu).
+            <h:a href="https://en.wikipedia.org/wiki/Debye">wikipedia</h:a>   
+          </h:p>
         </description>
-      </unit>
+   </unit>
+   
+      <unit title="elementaryCharge.bohr" id="elementaryCharge.bohr" symbol="e.a_0"
+        parentSI="siUnits:charge-length" multiplierToSI="todo"
+        unitType="unitType:length current time">
+<!--   <dc:creator>sf</dc:creator> -->
+        <definition>
+          <h:p>
+            TODO.
+          </h:p>
+        </definition>
+        <description>
+          <h:p>
+            TODO
+          </h:p>
+        </description>
+      </unit>   
 
 <!-- special units e.g. pH, RH?  -->
 
