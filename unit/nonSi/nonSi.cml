@@ -1730,7 +1730,8 @@ ium e.g. particulate matter within air.
         </definition>
         <description>
           <h:p>
-            A definition of mass where the mass of an atom of Carbon 12 is defined to be 1 Dalton.
+            A definition of mass where the mass of an atom of Carbon 12 is defined to be 12 Dalton. <h:a href="https://en.wikipedia.org/wiki/Atomic_mass_unit">wikipedia</h:a>
+            
         </h:p>
         </description>
       </unit>
