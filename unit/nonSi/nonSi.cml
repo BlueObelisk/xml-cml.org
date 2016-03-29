@@ -1735,6 +1735,23 @@ ium e.g. particulate matter within air.
         </h:p>
         </description>
       </unit>
+<unit title="Debye" id="debye" symbol="D"
+        parentSI="siUnits:statcoulomb-centimetre" multiplierToSI="1E-18"
+        unitType="unitType:electricCharge-length">
+     <!--   <dc:creator>sf</dc:creator> -->
+        <definition>
+          <h:p>
+            It is defined as 1*10<h:sup>-18</h:sup> statcoulomb-centimetre. Which is ≈ 3.33564*10<h:sup>−30</h:sup> C·m.
+        </h:p>
+        </definition>
+        <description>
+          <h:p>
+            Debye is preferred over SI unit because of the convenience.
+            The statcoulomb is also known as the franklin or electrostatic unit of charge (esu). <h:a href="https://en.wikipedia.org/wiki/Debye">wikipedia</h:a>
+            
+        </h:p>
+        </description>
+      </unit>
 
 <!-- special units e.g. pH, RH?  -->
 
