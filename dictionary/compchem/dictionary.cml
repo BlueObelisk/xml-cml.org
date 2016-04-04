@@ -581,7 +581,7 @@
     </entry>
 
 <entry id="dipoleMoment" term="Dipole Moment"
-       dataType="xsd:double" unitType="unitType:electric_dipole_moment"  units="si:Coulomb-meter" >
+       dataType="xsd:double" unitType="unitType:electric_dipole_moment"  units="nonsi:debye" >
 
     <definition>
 
@@ -641,7 +641,7 @@
         
  </math>
        <!-- </h:p> -->
-        <h:p>Where &#956; is dipole moment, P is density matrix, Z<h:sub>A</h:sub> is nuclear charge, <h:Hat>r</h:Hat> and R<h:sub>A</h:sub> vector positions for elctrons and nuclei respectively. </h:p>
+        <h:p>Where &#956; is dipole moment, P is density matrix, Z<h:sub>A</h:sub> is nuclear charge, r&#770; and R<h:sub>A</h:sub> vector positions for electrons and nuclei respectively. </h:p>
       </definition>
       
      <description class="description">
@@ -665,7 +665,7 @@
 
 
     <entry id="dipoleMomentVector" term="Dipole Moment Vector"
-           dataType="xsd:double" unitType="unitType:electric_dipole_moment"  units="si:Coulomb-meter">
+           dataType="xsd:double" unitType="unitType:electric_dipole_moment"  units="nonsi:debye">
            
            
       <definition>
