@@ -580,19 +580,17 @@
       </description>
     </entry>
 
-<entry id="nuclearDipoleMoment" term="nuclear dipole moment"
+<entry id="dipoleMoment" term="Dipole Moment"
        dataType="xsd:double" unitType="unitType:electric_dipole_moment"  units="si:Coulomb-meter" >
 
     <definition>
 
         <h:p>The nuclear electric dipole moment is given by following equation:</h:p>
-        
 
             <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <msub>
+            
                 <mi>&#x003BC;</mi>
-                <mi>x</mi>
-            </msub>
+            
             <mo>=</mo>
             <mo>-</mo>
             <mstyle displaystyle="true">
@@ -617,7 +615,7 @@
                 <mrow>
                     <mo form="prefix">&#x0007C;</mo>
                     <mover accent="true">
-                        <mi>x</mi>
+                        <mi>r</mi>
                         <mo>^</mo>
                     </mover>
                     <mo form="postfix">&#x0007C;</mo>
@@ -637,18 +635,17 @@
                 <mi>A</mi>
             </msub>
             <msub>
-                <mi>X</mi>
+                <mi>R</mi>
                 <mi>A</mi>
             </msub>
         
  </math>
        <!-- </h:p> -->
-        <h:p>Where &#956; is dipole moment, P is density matrix and 
-           Z<h:sub>A</h:sub> is nuclear charge. </h:p>
+        <h:p>Where &#956; is dipole moment, P is density matrix, Z<h:sub>A</h:sub> is nuclear charge, <h:Hat>r</h:Hat> and R<h:sub>A</h:sub> vector positions for elctrons and nuclei respectively. </h:p>
       </definition>
       
      <description class="description">
-        <h:p>The electric dipole moment arising from the nuclear charges. Some program defines the dipole moment with respect to the center of positive charge (e.g. Gaussian). In case of a neutral system, dipole moment is invariant to the origin. </h:p>
+        <h:p> This term is scalar and the magnitude of the electric dipole moment arising from the nuclear charges. Some program defines the dipole moment with respect to the center of positive charge (e.g. Gaussian). In case of a neutral system, dipole moment is invariant to the origin. The directed vectors (x, y, z) are given separately in <h:a href="#dipoleMomentVector" > dipole moment vector </h:a>.</h:p>
       </description>
       
     
@@ -666,6 +663,20 @@
        -->
 </entry>
 
+
+    <entry id="dipoleMomentVector" term="Dipole Moment Vector"
+           dataType="xsd:double" unitType="unitType:electric_dipole_moment"  units="si:Coulomb-meter">
+           
+           
+      <definition>
+        <h:p>The dipole moment is a vector quantity expressed in three dimensions (x,y and z). In quantum chemical codes these are equivalent to X, Y and Z values.
+</h:p>
+      </definition>
+      <description>
+        <h:p>Normally X, Y and Z quantities are reported along with the scalar value of dipole moment in the output.</h:p>
+    
+      </description>
+    </entry>
 
     <entry id="numAtoms" term="atom count"
            dataType="xsd:integer" unitType="unitType:dimensionless" units="si:none">
