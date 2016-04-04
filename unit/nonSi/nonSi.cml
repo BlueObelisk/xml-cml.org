@@ -1748,23 +1748,23 @@ ium e.g. particulate matter within air.
           <h:p>
             Debye is preferred over SI unit because of the convenience.
             The statcoulomb is also known as the franklin or electrostatic unit of charge (esu).
-            <h:a href="https://en.wikipedia.org/wiki/Debye">wikipedia</h:a>   
+            <h:a href="https://en.wikipedia.org/wiki/Debye">wikipedia.</h:a>  
           </h:p>
         </description>
    </unit>
    
       <unit title="elementaryCharge.bohr" id="elementaryCharge.bohr" symbol="e.a_0"
-        parentSI="siUnits:charge-length" multiplierToSI="todo"
-        unitType="unitType:length current time">
+        parentSI="siUnits:charge-length" multiplierToSI="8.4785E-30"
+        unitType="unitType:current time length">
 <!--   <dc:creator>sf</dc:creator> -->
         <definition>
           <h:p>
-            TODO.
+           Elementary charge is the unit of charge <h:a href="https://en.wikipedia.org/wiki/Elementary_charge">wikipedia</h:a> and bohr is the Bohr radius a<h:sub>0</h:sub> which is the atomic unit of length.
           </h:p>
         </definition>
         <description>
           <h:p>
-            TODO
+            Elementary charge (symbol 'e') is approximately equal to 1.60217E-19 C and bohr (a<h:sub>0</h:sub>) is equal to 5.2918E-11 m.
           </h:p>
         </description>
       </unit>   
