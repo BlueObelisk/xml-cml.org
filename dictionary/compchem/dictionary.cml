@@ -581,7 +581,7 @@
     </entry>
 
 <entry id="dipoleMoment" term="Dipole Moment"
-       dataType="xsd:double" unitType="unitType:electric_dipole_moment"  units="nonsi:debye" >
+       dataType="xsd:double" unitType="unitType:electric_dipole_moment"  units="nonSi:debye" >
 
     <definition>
 
@@ -1929,4 +1929,17 @@
         <h:p>TODO</h:p>
       </description>
     </entry>
+
+    <entry id="multipole" term="multipole"
+      dataType="xsd:double" units="nonSi:debye" unitType="unitType:electric_dipole_moment">
+      <definition>
+        <h:p>The multipole  -----.</h:p>
+      </definition>
+      <description>
+        <h:p>TODO</h:p>
+      </description>
+    </entry>
+
+
+
 </dictionary>
