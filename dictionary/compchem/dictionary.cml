@@ -1923,20 +1923,49 @@
     <entry id="molmass" term="molecular mass"
       dataType="xsd:double" units="nonSi:dalton" unitType="unitType:mass">
       <definition>
-        <h:p>The molmass is -----.</h:p>
+        <h:p>It is the sum of the mass of the most abundant isotope of each atom in the molecule. It is the mass of a molecule.</h:p>
       </definition>
       <description>
-        <h:p>TODO</h:p>
+        <h:p>It is usually obtained relative to one-twelfth the mass of an atom of carbon-12. Please refer to <h:a href="https://en.wikipedia.org/wiki/Molecular_mass" > molecular mass in wikipedia</h:a> for further detail. </h:p>
       </description>
     </entry>
 
     <entry id="multipole" term="multipole"
-      dataType="xsd:double" units="nonSi:debye" unitType="unitType:electric_dipole_moment">
+      dataType="xsd:double"  unitType="unitType:electric_dipole_moment">
       <definition>
-        <h:p>The multipole  -----.</h:p>
+        <h:p>All the multipole moments like dipole, quadrapole, octapole and hexadecapole are included in multipole.</h:p>
       </definition>
       <description>
-        <h:p>TODO</h:p>
+        <h:p> All moment properties like <h:a href="#dipoleMoment">dipole </h:a>, <h:a href="#quadrupoleMoment">quadrupole </h:a>, <h:a href="#octapoleMoment"> octapole </h:a> and <h:a href="#hexadecapoleMoment">hexadecapole </h:a>are put under one umbrella term i.e. multipole. It consist of lower (such as a dipole) and higher order moments (such as quadrupole, octapole and hexadecapole). For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
+      </description> </entry>
+
+    <entry id="quadrupoleMoment" term="Quadrupole Moment"
+      dataType="xsd:double" units="nonSi:debye.angstrom" unitType="unitType:electric_dipole_moment">
+      <definition>
+        <h:p>Quadrupole moment is second order symmetric tensor.</h:p>
+      </definition>
+      <description>
+        <h:p> For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
+      </description>
+    </entry>
+
+    <entry id="octapoleMoment" term="Octapole Moment"
+      dataType="xsd:double" units="nonSi:debye.angstrom2"  unitType="unitType:electric_dipole_moment">
+      <definition>
+        <h:p>Quadrupole moment is second order symmetric tensor.</h:p>
+      </definition>
+      <description>
+        <h:p> For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
+      </description>
+    </entry>
+
+    <entry id="hexadecapoleMoment" term="Hexadecapole Moment"
+      dataType="xsd:double" units="nonSi:debye.angstrom3"  unitType="unitType:electric_dipole_moment">
+      <definition>
+        <h:p>Quadrupole moment is second order symmetric tensor.</h:p>
+      </definition>
+      <description>
+        <h:p> For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
       </description>
     </entry>
 
