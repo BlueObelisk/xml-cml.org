@@ -555,19 +555,19 @@ ium e.g. particulate matter within air.
 
 <!-- density -->
 
-  <unit title="Megagrams per cubic &#x003BC" id="megagramsPerCubicMetre"
+  <unit title="Megagrams per cubic metre" id="megagramsPerCubicMetre"
     symbol="Mg.m-3" parentSI="siUnits:kg.m-3" multiplierToSI="1E3"
     unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Nick England</dc:creator>
     <definition>
       <h:p>
-        A density of 1E6 grams per cubic meter.
+        A density of 1E6 grams per cubic metre.
 	</h:p>
     </definition>
     <description>
       <h:p>
-        Density measured in mega grams per cubic meter.
+        Density measured in megagrams per cubic metre.
     </h:p>
     </description>
   </unit>
@@ -584,7 +584,7 @@ ium e.g. particulate matter within air.
     </definition>
     <description>
       <h:p>
-        Mass density measured in nanograms per cubic meter.
+        Mass density measured in nanograms per cubic metre.
       </h:p>
     </description>
   </unit>
@@ -596,7 +596,7 @@ ium e.g. particulate matter within air.
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
       <h:p>
-        1E-8 kg per cubic meter.
+        1E-8 kg per cubic metre.
       </h:p>
     </definition>
     <description>
