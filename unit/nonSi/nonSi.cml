@@ -26,7 +26,7 @@
     <description>
         <h:p>
             A dictionary of non SI Units. These will necessarily have a multiplier to SI which 
-            is not unity (except for degrees Celsius).
+            is not unity (except for degrees Celcius).
         </h:p>
           <h:p>
             Units which are of unitType dimensionless, for example mg/kg should have that specific unit defined in 
@@ -75,7 +75,7 @@
 
 <!-- velocity -->
 
-  <unit title="centimeter per second" id="cm.s-1" symbol="cm.s-1" parentSI="siUnits:m.s-1"
+  <unit title="centimetre per second" id="cm.s-1" symbol="cm.s-1" parentSI="siUnits:m.s-1"
     multiplierToSI="1E-2" unitType="unitType:velocity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
@@ -127,7 +127,7 @@
     <dc:creator>Andrew Walkingshaw</dc:creator>
     <definition>
       <h:p>
-        1E-10 meters.
+        1E-10 metres.
 	</h:p>
     </definition>
     <description>
@@ -136,58 +136,58 @@
         (1814-1874), one of the founders of spectroscopy, after his
         spectrum chart
         of solar radiation in the electromagnetic spectrum on the order
-        of multiples of one ten-millionth of a millimeter, or 1E-10 meters.
+        of multiples of one ten-millionth of a millimetre, or 1E-10 metres.
       </h:p>
     </description>
   </unit>
 
 
-  <unit title="decimeter" id="dm" symbol="dm" parentSI="siUnits:m"    
+  <unit title="decimetre" id="dm" symbol="dm" parentSI="siUnits:m"    
     multiplierToSI="1E-1" unitType="unitType:length">    
     <dc:source>Wikipedia</dc:source>    
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        One tenth of a meter.
+        One tenth of a metre.
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of length one tenth of a meter.
+        Unit of length one tenth of a metre.
       </h:p>
     </description>
   </unit>
 
 
-  <unit title="centimeter" id="cm" symbol="cm" parentSI="siUnits:m"    
+  <unit title="centimetre" id="cm" symbol="cm" parentSI="siUnits:m"    
     multiplierToSI="1E-2" unitType="unitType:length">    
     <dc:source>Wikipedia</dc:source>    
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        One hundredth of a meter.
+        One hundredth of a metre.
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of length one hundredth of a meter.
+        Unit of length one hundredth of a metre.
       </h:p>
     </description>
   </unit>
 
 
-  <unit title="Millimeters" id="millimeters" symbol="mm" parentSI="siUnits:m"
+  <unit title="Millimetres" id="millimeters" symbol="mm" parentSI="siUnits:m"
     multiplierToSI="1E-3" unitType="unitType:length">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Nick England</dc:creator>
     <definition>
       <h:p>
-        1E-3 meters.
+        1E-3 metres.
 	</h:p>
     </definition>
     <description>
       <h:p>
-        One thousandth of a meter.
+        One thousandth of a metre.
       </h:p>
     </description>
   </unit>
@@ -197,12 +197,12 @@
     <dc:creator>Sebastian Breuers</dc:creator>
     <definition>
       <h:p>
-        1E-6 meters.
+        1E-6 metres.
 	</h:p>
     </definition>
     <description>
       <h:p>
-        One 10<h:sup>-6</h:sup>th of a meter.
+        One 10<h:sup>-6</h:sup>th of a metre.
       </h:p>
     </description>
   </unit>
@@ -212,59 +212,59 @@
     <dc:creator>Sebastian Breuers</dc:creator>
     <definition>
       <h:p>
-        1E-9 meters.
+        1E-9 metres.
 	</h:p>
     </definition>
     <description>
       <h:p>
-        One 10<h:sup>-9</h:sup>th of a meter.
+        One 10<h:sup>-9</h:sup>th of a metre.
       </h:p>
     </description>
   </unit>
 
-  <unit title="Picometers" id="picometers" symbol="pm" parentSI="siUnits:m"
+  <unit title="Picometres" id="picometers" symbol="pm" parentSI="siUnits:m"
     multiplierToSI="1E-12" unitType="unitType:length">
     <dc:creator>Sebastian Breuers</dc:creator>
     <definition>
       <h:p>
-        1E-12 meters.
+        1E-12 metres.
 	</h:p>
     </definition>
     <description>
       <h:p>
-        One 10<h:sup>-12</h:sup>th of a meter.
+        One 10<h:sup>-12</h:sup>th of a metre.
       </h:p>
     </description>
   </unit>
 
-  <unit title="Femtometers" id="femtometers" symbol="fm" parentSI="siUnits:m"
+  <unit title="Femtometres" id="femtometers" symbol="fm" parentSI="siUnits:m"
     multiplierToSI="1E-15" unitType="unitType:length">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Nick England</dc:creator>
     <definition>
       <h:p>
-        1E-15 meters.
+        1E-15 metres.
 	</h:p>
     </definition>
     <description>
       <h:p>
-        One 10<h:sup>-15</h:sup>th of a meter.
+        One 10<h:sup>-15</h:sup>th of a metre.
       </h:p>
     </description>
   </unit>
 
-  <unit title="kilometer" id="km" symbol="km" parentSI="siUnits:m"    
+  <unit title="kilometre" id="km" symbol="km" parentSI="siUnits:m"    
     multiplierToSI="1E3" unitType="unitType:length">    
     <dc:source>Wikipedia</dc:source>    
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        1000 meters.
+        1000 metres.
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of length equal to one thousand meters.
+        Unit of length equal to one thousand metres.
       </h:p>
     </description>
   </unit>
@@ -286,75 +286,75 @@
         (1814-1874), one of the founders of spectroscopy, after his
         spectrum chart
         of solar radiation in the electromagnetic spectrum on the order
-        of multiples of one ten-millionth of a millimeter, or 1E-10 meters.
+        of multiples of one ten-millionth of a millimetre, or 1E-10 metres.
 
         An Angstrom sqaured is the area of a square of length one angstrom.
       </h:p>
     </description>
   </unit>
 
-  <unit title="micrometer squared" id="microm2" symbol="&#956;m2" parentSI="siUnits:m2"    
+  <unit title="micrometre squared" id="microm2" symbol="&#956;m2" parentSI="siUnits:m2"    
     multiplierToSI="1E-12" unitType="unitType:area">    
     <dc:source>Wikipedia</dc:source>    
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        Micrometer squared
+        Micrometre squared
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of area the square of one length of one micrometer.
+        Unit of area the square of one length of one micrometre.
       </h:p>
     </description>
   </unit>
 
 
-  <unit title="millimeter squared" id="mm2" symbol="mm2" parentSI="siUnits:m2"    
+  <unit title="millimetre squared" id="mm2" symbol="mm2" parentSI="siUnits:m2"    
     multiplierToSI="1E-6" unitType="unitType:area">    
     <dc:source>Wikipedia</dc:source>    
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        Millimeter squared
+        Millimetre squared
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of area the square of one length of one millimeter.
+        Unit of area the square of one length of one millimetre.
       </h:p>
     </description>
   </unit>
 
 
-  <unit title="centimeter squared" id="cm2" symbol="cm2" parentSI="siUnits:m2"    
+  <unit title="centimetre squared" id="cm2" symbol="cm2" parentSI="siUnits:m2"    
     multiplierToSI="1E-4" unitType="unitType:area">    
     <dc:source>Wikipedia</dc:source>    
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        Centimeter squared
+        Centimetre squared
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of area the square of one length of one centimeter.
+        Unit of area the square of one length of one centimetre.
       </h:p>
     </description>
   </unit>
 
-  <unit title="kilometer squared" id="km2" symbol="km2" parentSI="siUnits:m2"    
+  <unit title="kilometre squared" id="km2" symbol="km2" parentSI="siUnits:m2"    
     multiplierToSI="1E6" unitType="unitType:area">    
     <dc:source>Wikipedia</dc:source>    
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        Kilometer squared
+        Kilometre squared
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of area the square of one length of one kilometer.
+        Unit of area the square of one length of one kilometre.
       </h:p>
     </description>
   </unit>
@@ -365,12 +365,12 @@
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        10,000 square meters.
+        10,000 square metres.
       </h:p>
     </definition>
     <description>
       <h:p>
-        A unit of area equivalent to 10,000 square meters.
+        A unit of area equivalent to 10,000 square metres.
       </h:p>
     </description>
   </unit>
@@ -392,7 +392,7 @@
         (1814-1874), one of the founders of spectroscopy, after his
         spectrum chart
         of solar radiation in the electromagnetic spectrum on the order
-        of multiples of one ten-millionth of a millimeter, or 1E-10 meters.
+        of multiples of one ten-millionth of a millimetre, or 1E-10 metres.
 
         An Angstrom cubed is the volume of a cube of length one angstrom.
       </h:p>
@@ -407,60 +407,60 @@
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        Decimeter cubed (1/1000 of a cubic meter).
+        Decimetre cubed (1/1000 of a cubic metre).
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of volume the cube of one length of one decimeter, known most commonly as a litre (or liter) but may also be known as a cubic decimeter.
+        Unit of volume the cube of one length of one decimetre, known most commonly as a litre (or liter) but may also be known as a cubic decimetre.
       </h:p>
     </description>
   </unit>
 
-  <unit title="cubic centimeter" id="cm3" symbol="cm3" parentSI="siUnits:m3"    
+  <unit title="cubic centimetre" id="cm3" symbol="cm3" parentSI="siUnits:m3"    
     multiplierToSI="1E-6" unitType="unitType:volume">    
     <dc:source>Wikipedia</dc:source>    
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        Centimeter cubed.
+        Centimetre cubed.
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of volume the cube of one length of one centimeter. Also known as a milliliter 1 cm<h:sup>3</h:sup> = 1 mL. It is sometimes also known as a 'cc' (e.g. in the automobile industry).
+        Unit of volume the cube of one length of one centimetre. Also known as a millilitre 1 cm<h:sup>3</h:sup> = 1 mL. It is sometimes also known as a 'cc' (e.g. in the automobile industry).
       </h:p>
     </description>
   </unit>
 
-  <unit title="cubic millimeter" id="mm3" symbol="mm3" parentSI="siUnits:mm3"    
+  <unit title="cubic millimetre" id="mm3" symbol="mm3" parentSI="siUnits:mm3"    
     multiplierToSI="1E-9" unitType="unitType:volume">    
     <dc:source>Wikipedia</dc:source>    
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        Millimeter cubed.
+        Millimetre cubed.
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of volume the cube of one length of one millimeter.
+        Unit of volume the cube of one length of one millimetre.
       </h:p>
     </description>
   </unit>
  
- <unit title="cubic micrometer" id="microm3" symbol="&#956;m3" parentSI="siUnits:m3"    
+ <unit title="cubic micrometre" id="microm3" symbol="&#956;m3" parentSI="siUnits:m3"    
     multiplierToSI="1E-18" unitType="unitType:volume">    
     <dc:source>Wikipedia</dc:source>    
     <dc:creator>Hannah Barjat</dc:creator>    
     <definition>      
       <h:p>
-        Micrometer cubed (&#956;<h:sup>3</h:sup>).
+        Micrometre cubed (&#956;<h:sup>3</h:sup>).
       </h:p>
     </definition>
     <description>
       <h:p>
-        Unit of volume the cube of one length of one micrometer.
+        Unit of volume the cube of one length of one micrometre.
       </h:p>
     </description>
   </unit>
@@ -513,14 +513,14 @@
     </definition>
     <description>
      <h:p>
-       The parts-per notation is a set of pseudo units to describe small values of dimensionless quantities. Where "by volume" is stated, the unit refers to the volume fraction, which is defined as the volume of a constituent divided by the volume of all constituents of the mixture prior to mixing. Volume fraction is also called volume concentration in ideal mixtures where the volumes of the constituents are additive (their sum equals the volume of the mixtures). [This latter meaning is commonly used in atmospheric chemistry where trace gases are measured within air samples.].NB. It is not uncommon for the 'V' to be left out of the symbol (for example within the atmospheric chemistry community), leading to ambiguity.
+       The parts-per notation is a set of pseudo units to describe small values of dimensionless quantities. Where "by volume" is stated, the unit refers to the volume fraction, which is defined as the volume of a constituent divided by the volume of all consituents of the mixture prior to mixing. Volume fraction is also called volume concentration in ideal mixtures where the volumes of the constituents are additive (their sum equals the volume of the mixtures). [This latter meaning is commonly used in atmospheric chemistry where trace gases are measured within air samples.].NB. It is not uncommon for the 'V' to be left out of the symbol (for example within the atmospheric chemistry community), leading to ambiguity.
       </h:p>
     </description>
   </unit>
 
 <!-- units of volume fraction often used with condensed phase in gas phase -->
 
- <unit title="cubic centimeter per cubic meter" id="cm3.m3" symbol="cm3.m3"
+ <unit title="cubic centimeter per cubic metre" id="cm3.m3" symbol="cm3.m3"
   parentSI="siUnits:m3.m-3" multiplierToSI="1E-6"
   unitType="unitType:dimensionless">
     <dc:source>Schwarz and Warneck, 1995</dc:source>
@@ -536,7 +536,7 @@
     </description>
   </unit>
 
- <unit title="cubic micrometer per cubic meter" id="microm3.m3" symbol="&#956;m3.m3"
+ <unit title="cubic micrometer per cubic metre" id="microm3.m3" symbol="&#956;m3.m3"
   parentSI="siUnits:m3.m-3" multiplierToSI="1E-18"
   unitType="unitType:dimensionless">
     <dc:source>Schwarz and Warneck, 1995</dc:source>
@@ -555,7 +555,7 @@ ium e.g. particulate matter within air.
 
 <!-- density -->
 
-  <unit title="Megagrams per cubic meter" id="megagramsPerCubicmeter"
+  <unit title="Megagrams per cubic &#x003BC" id="megagramsPerCubicMetre"
     symbol="Mg.m-3" parentSI="siUnits:kg.m-3" multiplierToSI="1E3"
     unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
@@ -572,14 +572,14 @@ ium e.g. particulate matter within air.
     </description>
   </unit>
 
-  <unit title="nanogram per cubic meter" id="ng.m-3" symbol="ng.m-3"
+  <unit title="nanogram per cubic metre" id="ng.m-3" symbol="ng.m-3"
     parentSI="siUnits:kg.m-3" multiplierToSI="1E-12"
     unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
       <h:p>
-        1E-12 kg per cubic meter.
+        1E-12 kg per cubic metre.
       </h:p>
     </definition>
     <description>
@@ -589,7 +589,7 @@ ium e.g. particulate matter within air.
     </description>
   </unit>
 
-  <unit title="nanogram per cubic centimeter" id="ng.cm-3" symbol="ng.cm-3"
+  <unit title="nanogram per cubic centimetre" id="ng.cm-3" symbol="ng.cm-3"
     parentSI="siUnits:kg.m-3" multiplierToSI="1E-8"
     unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
@@ -601,41 +601,41 @@ ium e.g. particulate matter within air.
     </definition>
     <description>
       <h:p>
-        Mass density measured in nanograms per cubic centimeter.
+        Mass density measured in nanograms per cubic centimetre.
       </h:p>
     </description>
   </unit>
 
-  <unit title="gram per cubic centimeter" id="g.cm-3" symbol="g.cm-3"
+  <unit title="gram per cubic centimetre" id="g.cm-3" symbol="g.cm-3"
     parentSI="siUnits:kg.m-3" multiplierToSI="1E3"
     unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
       <h:p>
-        1E8 kg per cubic meter.
+        1E8 kg per cubic metre.
       </h:p>
     </definition>
     <description>
       <h:p>
-        Mass density measured in grams per cubic centimeter.
+        Mass density measured in grams per cubic centimetre.
       </h:p>
     </description>
   </unit>
 
-  <unit title="gram per cubic meter" id="g.m-3" symbol="g.m-3"
+  <unit title="gram per cubic metre" id="g.m-3" symbol="g.m-3"
     parentSI="siUnits:kg.m-3" multiplierToSI="1E-3"
     unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
       <h:p>
-        1E-3 kg per cubic meter.
+        1E-3 kg per cubic metre.
       </h:p>
     </definition>
     <description>
       <h:p>
-        Mass density measured in grams per cubic meter.
+        Mass density measured in grams per cubic metre.
       </h:p>
     </description>
   </unit>
@@ -672,7 +672,7 @@ ium e.g. particulate matter within air.
       </h:p>
     </definition>
     <description>
-      <h:p>One Dobson unit refers to a layer of ozone that would be 10 &#956;m thick under standard temperature and pressure. For example, 300 DU of ozone brought down to the surface of the Earth at 273.15K would occupy a layer only 3 mm thick. One DU is approximately equivalent to 2.69 x 10<h:sup>16</h:sup> ozone molecules per square centimeter, or 2.69 x 10<h:sup>20</h:sup> per square meter. This is 0.4462 millimoles of ozone per square meter.
+      <h:p>One Dobson unit refers to a layer of ozone that would be 10 &#956;m thick under standard temperature and pressure. For example, 300 DU of ozone brought down to the surface of the Earth at 273.15K would occupy a layer only 3 mm thick. One DU is approximately equivalent to 2.69 x 10<h:sup>16</h:sup> ozone molecules per square centimetre, or 2.69 x 10<h:sup>20</h:sup> per square metre. This is 0.4462 millimoles of ozone per square metre.
       </h:p>
     </description>
   </unit>
@@ -741,7 +741,7 @@ ium e.g. particulate matter within air.
     </definition>
     <description>
       <h:p>
-        Units used to describe the number of aerosols per cubic meter per length in microns (i.e. the number distribution of aerosols by their radius).
+        Units used to describe the number of aerosols per cubic metre per length in microns (i.e. the number distribution of aerosols by their radius).
       </h:p>    </description>
   </unit>
 
@@ -1056,7 +1056,7 @@ ium e.g. particulate matter within air.
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
-      <h:p>Rate of change in concentration expressed in units of molecules per cubic centimeter per second.</h:p>
+      <h:p>Rate of change in concentration expressed in units of molecules per cubic centimetre per second.</h:p>
     </definition>
     <description>
       <h:p>The rate of change in a molecular process e.g. in a first order chemical reaction.</h:p>
@@ -1070,7 +1070,7 @@ ium e.g. particulate matter within air.
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
-      <h:p>Rate of change in concentration expressed in units of molecules per cubic meter per second.</h:p>
+      <h:p>Rate of change in concentration expressed in units of molecules per cubic metre per second.</h:p>
     </definition>
     <description>
       <h:p>The rate of change in a molecular process e.g. in a first order chemical reaction.</h:p>
@@ -1084,7 +1084,7 @@ ium e.g. particulate matter within air.
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
-      <h:p>Rate of change in concentration expressed in units of nanomoles per cubic centimeter per second.</h:p>
+      <h:p>Rate of change in concentration expressed in units of nanomoles per cubic centimetre per second.</h:p>
     </definition>
     <description>
       <h:p>The rate of change in a molecular process.</h:p>
@@ -1549,13 +1549,13 @@ ium e.g. particulate matter within air.
     </description>
   </unit>
 
-  <unit title="Reciprocal Millimeters" id="reciprocalMillimeters" symbol="mm-1" parentSI="siUnits:m-1"
+  <unit title="Reciprocal Millimetres" id="reciprocalMillimeters" symbol="mm-1" parentSI="siUnits:m-1"
     multiplierToSI="1E3" unitType="unitType:reciprocal_length">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Nick England</dc:creator>
     <definition>
       <h:p>
-        A reciprocal millimeter.
+        A reciprocal millimetre.
 	</h:p>
     </definition>
     <description>
@@ -1565,18 +1565,18 @@ ium e.g. particulate matter within air.
     </description>
   </unit>
 
-  <unit title="Reciprocal centimeter" id="cm-1" symbol="cm-1" parentSI="siUnits:m-1"
+  <unit title="Reciprocal centimetre" id="cm-1" symbol="cm-1" parentSI="siUnits:m-1"
     multiplierToSI="1E2" unitType="unitType:reciprocal_length">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
       <h:p>
-        A reciprocal centimeter.
+        A reciprocal centimetre.
 	</h:p>
     </definition>
     <description>
       <h:p>
-       A factor of 100 greater than a reciprocal meter. It is used, for example, in the description of absorption coefficients or, in spectroscopy, as the units of wavenumber.
+       A factor of 100 greater than a reciprocal metre. It is used, for example, in the description of absorption coefficients or, in spectroscopy, as the units of wavenumber.
       </h:p>
     </description>
   </unit>
@@ -1736,12 +1736,12 @@ ium e.g. particulate matter within air.
       </unit>
       
    <unit title="Debye" id="debye" symbol="D"
-      parentSI="siUnits:statcoulomb-centimeter" multiplierToSI="1E-18"
+      parentSI="siUnits:statcoulomb-centimetre" multiplierToSI="1E-18"
         unitType="unitType:electricCharge-length">
      <!--   <dc:creator>sf</dc:creator> -->
         <definition>
           <h:p>
-            It is defined as 1*10<h:sup>-18</h:sup> statcoulomb-centimeter. Which is ≈ 3.33564*10<h:sup>−30</h:sup> C·m.
+            It is defined as 1*10<h:sup>-18</h:sup> statcoulomb-centimetre. Which is ≈ 3.33564*10<h:sup>−30</h:sup> C·m.
           </h:p>
         </definition>
         <description>
