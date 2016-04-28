@@ -1672,6 +1672,14 @@
         </h:p>
       </definition>
     </entry>
+
+    <entry id="thermochemistry" term="Thermochemistry module"
+      dataType="xsd:double" unitType="unitType:none">
+      <definition>
+        <h:p>Thermochemistry module contains Parameter <h:a href="#temp">temperature </h:a>, Parameter <h:a href="#press">pressure </h:a>, Property <h:a href="#thermalCorrectionToEnergy">thermalCorrectionToEnergy </h:a>, Property <h:a href="#thermalCorrectionToEnthalpy">thermalCorrectionToEnthalpy </h:a>, Property <h:a href="#thermalCorrectionToGibbsEnergy">thermalCorrectionToGibbsEnergy </h:a>, Property <h:a href="#Energy_0K"> Total Energy at 0 Kelvin</h:a>, Property <h:a href="#Energy_T"> Total Energy at temperature T </h:a>, Property <h:a href="#Enthalpy_T">Total Enthalpy at temperature T </h:a>, Property <h:a href="#GibbsEnergy_T"> Total Gibbs Energy at temperature T</h:a>
+        </h:p>
+      </definition>
+    </entry>
     
     <entry id="thermalCorrectionToEnergy" term="Thermal Correction to Energy"
       dataType="xsd:double" unitType="unitType:energy">
@@ -1913,10 +1921,10 @@
     <entry id="forceConstantMatrix" term="Force Constant Matrix"
       dataType="xsd:double" unitType="unitType:none">
       <definition>
-        <h:p>The force constant matrix -----.</h:p>
+        <h:p>The force constant matrix is ---</h:p>
       </definition>
       <description>
-        <h:p>TODO</h:p>
+        <h:p>The force constant matrix is a Hessian and second derivative of energy.</h:p>
       </description>
     </entry>
 
@@ -1930,14 +1938,6 @@
       </description>
     </entry>
 
-    <entry id="multipole" term="multipole"
-      dataType="xsd:double"  unitType="unitType:electric_dipole_moment">
-      <definition>
-        <h:p>All the multipole moments like dipole, quadrapole, octapole and hexadecapole are included in multipole.</h:p>
-      </definition>
-      <description>
-        <h:p> All moment properties like <h:a href="#dipoleMoment">dipole </h:a>, <h:a href="#quadrupoleMoment">quadrupole </h:a>, <h:a href="#octapoleMoment"> octapole </h:a> and <h:a href="#hexadecapoleMoment">hexadecapole </h:a>are put under one umbrella term i.e. multipole. It consist of lower (such as a dipole) and higher order moments (such as quadrupole, octapole and hexadecapole). For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
-      </description> </entry>
 
     <entry id="quadrupoleMoment" term="Quadrupole Moment"
       dataType="xsd:double" units="nonSi:debye.angstrom" unitType="unitType:electric_dipole_moment">
