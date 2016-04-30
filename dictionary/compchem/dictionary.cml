@@ -1184,36 +1184,6 @@
       </description>
     </entry>
 
-    <entry id="molecularOrbital" term="molecular orbital" 
-        dataType="cml:list" unitType="unitType:none" units="si:none">
-        <definition>
-            <h:p>A cml list container for all information related to an Orbital. This is currently being developed
-            so feel free to get involved.</h:p>
-        </definition>
-        <description>
-        <h:p>A sketch of the current thinking is below.</h:p>
-        <h:pre>
-&lt;!-- the number of the orbital --&gt;
-&lt;index dataType="xsd:integer"&gt;3&lt;/index&gt;
-
-&lt;!-- Energy/Eigenvalue? --&gt;
-&lt;energy dataType="xsd:double"&gt;-1.341678D+00&lt;/energy&gt;
-
-&lt;!-- the symmetry irrep this orbital belongs to --&gt;
-&lt;symmetry dataType="xsd:string"&gt;a2&lt;/symmetry&gt;
-
-&lt;!-- degeneracy --&gt;
-&lt;degeneracy dataType="xsd:integer"&gt;2&lt;/degeneracy&gt;
-
-&lt;!-- occupancy --&gt;
-&lt;occupancy dataType="xsd:double"&gt;2.0&lt;/occupancy&gt;
-
-&lt;eigenVectors&gt;
-&lt;!-- List of eigenVectors with links to the basis functions --&gt;
-&lt;/eigenVectors&gt;
-</h:pre>
-     </description>
-     </entry>
 
   <!-- DFT Terms -->
 
@@ -1865,25 +1835,178 @@
       </description>
     </entry>
 
-    <entry id="alphaocc" term="alpha occupied orbital energies"
-      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
+
+    <entry id="molecularOrbital" term="molecular orbital" 
+        dataType="cml:list" unitType="unitType:none" units="si:none">
+        <definition>
+            <h:p>A cml list container for all information related to an Orbital. This is currently being developed
+            so feel free to get involved.</h:p>
+        </definition>
+        <description>
+        <h:p>A sketch of the current thinking is below.</h:p>
+        <h:pre>
+&lt;!-- the number of the orbital --&gt;
+&lt;index dataType="xsd:integer"&gt;3&lt;/index&gt;
+
+&lt;!-- Energy/Eigenvalue? --&gt;
+&lt;energy dataType="xsd:double"&gt;-1.341678D+00&lt;/energy&gt;
+
+&lt;!-- the symmetry irrep this orbital belongs to --&gt;
+&lt;symmetry dataType="xsd:string"&gt;a2&lt;/symmetry&gt;
+
+&lt;!-- degeneracy --&gt;
+&lt;degeneracy dataType="xsd:integer"&gt;2&lt;/degeneracy&gt;
+
+&lt;!-- occupancy --&gt;
+&lt;occupancy dataType="xsd:double"&gt;2.0&lt;/occupancy&gt;
+
+&lt;eigenVectors&gt;
+&lt;!-- List of eigenVectors with links to the basis functions --&gt;
+&lt;/eigenVectors&gt;
+</h:pre>
+     </description>
+     </entry>
+
+    <entry id="occOrbitalSymmetry" term="occupied orbital symmetry"
+      dataType="xsd:string" units="none" unitType="unitType:none">
       <definition>
-        <h:p>Energies of the alpha occupied orbitals.</h:p>
+        <h:p>Symmetry of the occupied orbitals.</h:p>
       </definition>
       <description>
-        <h:p>The energies of the alpha occupied orbitals from the SCF calculation</h:p>
+        <h:p>The symmetry of the occupied orbitals from the SCF calculation</h:p>
       </description>
     </entry>
 
-    <entry id="alphavirt" term="alpha virtual orbital energies"
-      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
+    <entry id="virtOrbitalSymmetry" term="virtual orbital symmetry"
+      dataType="xsd:string" units="none" unitType="unitType:none">
       <definition>
-        <h:p>Energies of the alpha virtual orbitals.</h:p>
+        <h:p>Symmetry of the virtual orbitals.</h:p>
       </definition>
       <description>
-        <h:p>The energies of the alpha virtual orbitals from the SCF calculation</h:p>
+        <h:p>The symmetry of the virtual orbitals from the SCF calculation</h:p>
       </description>
     </entry>
+
+    <entry id="cc:electronicState" term="Electronic State"
+      dataType="xsd:string" units="none" unitType="unitType:none">
+      <definition>
+        <h:p>Electronic State of the virtual orbitals.</h:p>
+      </definition>
+      <description>
+        <h:p>The electronic state of the virtual orbitals from the SCF calculation</h:p>
+      </description>
+    </entry>
+
+    <entry id="occOrbitalEigenvalues" term="occupied orbital energies"
+      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
+      <definition>
+        <h:p>Energies of the occupied orbitals.</h:p>
+      </definition>
+      <description>
+        <h:p>The energies of the occupied orbitals from the SCF calculation</h:p>
+      </description>
+    </entry>
+
+    <entry id="virtOrbitalEigenvalues" term="virtual orbital energies"
+      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
+      <definition>
+        <h:p>Energies of the virtual orbitals.</h:p>
+      </definition>
+      <description>
+        <h:p>The energies of the virtual orbitals from the SCF calculation</h:p>
+      </description>
+    </entry>
+
+    <entry id="orbitalEigenvectors" term="Orbital Eigenvectors"
+      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
+      <definition>
+        <h:p>Orbital Eigenvectors ----.</h:p>
+      </definition>
+      <description>
+        <h:p>To DO </h:p>
+      </description>
+    </entry>
+
+
+    <entry id="atomicOverlapPopulation" term="Atomic Overlap Population"
+      dataType="xsd:double" units="nonSi:elementaryCharge" unitType="unitType:electric_charge">
+      <definition>
+        <h:p>Atomic overlap population of the virtual orbitals.</h:p>
+      </definition>
+      <description>
+        <h:p>The Atomic overlap population of the virtual orbitals from the SCF calculation</h:p>
+      </description>
+    </entry>
+
+    <entry id="netAtomicCharge" term="Net Atomic Charge"
+      dataType="xsd:double" units="nonSi:elementaryCharge" unitType="unitType:electric_charge">
+      <definition>
+        <h:p>Net Atomic Charge of the virtual orbitals.</h:p>
+      </definition>
+      <description>
+        <h:p>The net atomic charge of the virtual orbitals from the SCF calculation</h:p>
+      </description>
+    </entry>
+
+    <entry id="netChargeSummedToHeavyAtom" term="Mulliken charges with hydrogens summed into heavy atoms"
+      dataType="xsd:double" units="nonSi:elementaryCharge" unitType="unitType:electric_charge">
+      <definition>
+        <h:p>Mulliken charges with hydrogens summed into heavy atoms of the virtual orbitals.</h:p>
+      </definition>
+      <description>
+        <h:p>The Mulliken charges with hydrogens summed into heavy atoms of the virtual orbitals from the SCF calculation</h:p>
+      </description>
+    </entry>
+
+    <entry id="mulliken" term="Mulliken charges"
+      dataType="xsd:double" units="nonSi:elementaryCharge" unitType="unitType:electric_charge">
+      <definition>
+        <h:p>Mulliken charges are produced by Mulliken population analysis and is used to estimate the partial atomic charges from the SCF calculation.</h:p>
+      </definition>
+      <description>
+        <h:p>The Mulliken charges from the SCF calculation</h:p>
+      </description>
+    </entry>
+    <entry id="atomicPolarTensorDerivedCharge" term="Atomic Polar Tensor Derived Charge"
+      dataType="xsd:double" units="nonSi:elementaryCharge" unitType="unitType:electric_charge">
+      <definition>
+        <h:p>Atomic polar tensor derived charge are charges derived from atomic polar tensors and their sum is zero. <h:a href="https://en.wikipedia.org/wiki/Partial_charge#cite_note-8" > APT in wikipedia</h:a> and <h:a href="http://marcia.iqm.unicamp.br/Pub12.pdf">Ferreira's Article</h:a> for further detail.</h:p>
+      </definition>
+      <description>
+        <h:p>The atomic Polar Tensor Derived Charge (Qa) are correction to mulliken charges from the SCF calculation</h:p>
+      </description>
+    </entry>
+
+    <entry id="electronicExtent" term="Net Atomic Charge"
+      dataType="xsd:double" units="nonSi:bohr2" unitType="unitType:area">
+      <definition>
+        <h:p>Net Atomic Charge of the virtual orbitals.</h:p>
+      </definition>
+      <description>
+        <h:p>The net atomic charge of the virtual orbitals from the SCF calculation</h:p>
+      </description>
+    </entry>
+
+    <entry id="cc:potentialEnergy" term="Potential Energy"
+      dataType="xsd:string" units="nonSi:hartree" unitType="unitType:energy">
+      <definition>
+        <h:p>Potential energy to do .</h:p>
+      </definition>
+      <description>
+        <h:p>The potential energy to do </h:p>
+      </description>
+    </entry>
+
+    <entry id="cc:kineticEnergy" term="Kinetic Energy"
+      dataType="xsd:string" units="nonSi:hartree" unitType="unitType:energy">
+      <definition>
+        <h:p>Kinetic energy to do.</h:p>
+      </definition>
+      <description>
+        <h:p>The kinetic energy to do. </h:p>
+      </description>
+    </entry>
+
 
     <entry id="atomicmass" term="atomic masses of all constituent of the molecule calculated"
       dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
@@ -1898,7 +2021,7 @@
     <entry id="basis" term="The basis set used for the calculation"
       dataType="xsd:double" units="none" unitType="none">
       <definition>
-        <h:p>The basis set used for the calculation.  I see that basis set is described earlier in this dictionary;  should the name in retrievium-portal be consistent with the CML CompChem dictionary? </h:p>
+        <h:p>The basis set used for the calculation.  I see that basis set is described earlier in this dictionary; should the name in retrievium-portal be consistent with the CML CompChem dictionary? </h:p>
       </definition>
       <description>
         <h:p>TODO</h:p>
