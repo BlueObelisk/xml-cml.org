@@ -1815,7 +1815,7 @@
       </definition>
     </entry>
 
-    <entry id="Frequencies" term="Vibrational Frequencies"
+    <entry id="frequencies" term="Vibrational Frequencies"
       dataType="xsd:double" unitType="unitType:frequency">
       <definition>
         <h:p>The vibrational frequencies -----.</h:p>
@@ -2068,14 +2068,14 @@
         <h:p>Quadrupole moment is second order symmetric tensor.</h:p>
       </definition>
       <description>
-        <h:p> For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
+        <h:p> Quadrupole moment give a second order approximation of the total electron distribution and give rough idea of its shape. for example, equal value of XX, YY and ZZ components means a spherical distribution. For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
       </description>
     </entry>
 
     <entry id="octapoleMoment" term="Octapole Moment"
       dataType="xsd:double" units="nonSi:debye.angstrom2"  unitType="unitType:electric_dipole_moment">
       <definition>
-        <h:p>Quadrupole moment is second order symmetric tensor.</h:p>
+        <h:p>Octapole moment is second order symmetric tensor.</h:p>
       </definition>
       <description>
         <h:p> For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
@@ -2085,7 +2085,7 @@
     <entry id="hexadecapoleMoment" term="Hexadecapole Moment"
       dataType="xsd:double" units="nonSi:debye.angstrom3"  unitType="unitType:electric_dipole_moment">
       <definition>
-        <h:p>Quadrupole moment is second order symmetric tensor.</h:p>
+        <h:p>Hexadecapole moment is second order symmetric tensor.</h:p>
       </definition>
       <description>
         <h:p> For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
