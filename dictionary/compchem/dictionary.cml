@@ -2075,7 +2075,7 @@
     <entry id="octapoleMoment" term="Octapole Moment"
       dataType="xsd:double" units="nonSi:debye.angstrom2"  unitType="unitType:electric_dipole_moment">
       <definition>
-        <h:p>Octapole moment is second order symmetric tensor.</h:p>
+        <h:p>Octapole moment is fourth order symmetric tensor.</h:p>
       </definition>
       <description>
         <h:p> For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
@@ -2085,7 +2085,7 @@
     <entry id="hexadecapoleMoment" term="Hexadecapole Moment"
       dataType="xsd:double" units="nonSi:debye.angstrom3"  unitType="unitType:electric_dipole_moment">
       <definition>
-        <h:p>Hexadecapole moment is second order symmetric tensor.</h:p>
+        <h:p>Hexadecapole moment is sixth order symmetric tensor.</h:p>
       </definition>
       <description>
         <h:p> For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Multipole_expansion"> multipole moments in wikipedia </h:a> </h:p>
