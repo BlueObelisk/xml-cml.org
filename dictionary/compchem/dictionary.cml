@@ -2102,5 +2102,15 @@
       </description>
     </entry>
 
+    <entry id="densityMatrix" term="Density Matrix"
+      dataType="xsd:double" units="none"  unitType="unitType:none">
+      <definition>
+        <h:p>equation todo</h:p>
+      </definition>
+      <description>
+        <h:p> For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Density_matrix"> density matrix in wikipedia </h:a> </h:p>
+      </description>
+    </entry>
+
 
 </dictionary>
