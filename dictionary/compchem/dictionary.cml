@@ -1918,9 +1918,9 @@
     </entry>
 
     <entry id="orbitalEigenvectors" term="Orbital Eigenvectors"
-      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
+      dataType="xsd:double" units="none" unitType="none">
       <definition>
-        <h:p>Orbital Eigenvectors ----.</h:p>
+        <h:p>These are molecular orbital coefficients.</h:p>
       </definition>
       <description>
         <h:p>To DO </h:p>
