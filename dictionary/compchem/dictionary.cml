@@ -2092,6 +2092,15 @@
       </description>
     </entry>
 
+    <entry id="basisFunctions" term="Basis Functions"
+      dataType="xsd:double" units="none"  unitType="unitType:none">
+      <definition>
+        <h:p>Basis functions are one electron functions which combine in linear combination to generate molecular orbitals</h:p>
+      </definition>
+      <description>
+        <h:p> For detail explanation please check <h:a href="https://en.wikipedia.org/wiki/Basis_set_(chemistry)"> basis set in wikipedia </h:a> </h:p>
+      </description>
+    </entry>
 
 
 </dictionary>
