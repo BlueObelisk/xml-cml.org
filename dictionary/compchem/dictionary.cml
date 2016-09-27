@@ -2044,7 +2044,58 @@
     <entry id="forceConstantMatrix" term="Force Constant Matrix"
       dataType="xsd:double" unitType="unitType:none">
       <definition>
-        <h:p>The force constant matrix is ---</h:p>
+        <h:p>The force constant matrix is given as:
+         <m:math>
+<m:mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+    <m:mtr>
+        <m:mtd>
+            <m:mspace width="6.0em" />
+        </m:mtd>
+        <m:mtd columnalign="left">
+            <m:msub>
+                <m:mi>G</m:mi>
+                <m:mrow>
+                    <m:mi>i</m:mi>
+                    <m:mi>j</m:mi>
+                </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+                <m:mrow>
+                    <m:mo rspace="0.3em" lspace="0em" stretchy="true" fence="true" form="prefix">(</m:mo>
+                    <m:mfrac linethickness="1">
+                        <m:mrow>
+                            <m:msup>
+                                <m:mo>&part;</m:mo>
+                                <m:mn>2</m:mn>
+                            </m:msup>
+                            <m:mi>V</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                            <m:mo>&part;</m:mo>
+                            <m:msub>
+                                <m:mi>q</m:mi>
+                                <m:mi>i</m:mi>
+                            </m:msub>
+                            <m:mo>&part;</m:mo>
+                            <m:msub>
+                                <m:mi>q</m:mi>
+                                <m:mi>j</m:mi>
+                            </m:msub>
+                        </m:mrow>
+                    </m:mfrac>
+                    <m:mo rspace="0em" lspace="0.3em" stretchy="true" fence="true" form="postfix">)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                    <m:mi>e</m:mi>
+                    <m:mi>q</m:mi>
+                </m:mrow>
+            </m:msub>
+        </m:mtd>
+    </m:mtr>
+</m:mtable>
+</m:math>   
+        </h:p>
       </definition>
       <description>
         <h:p>The force constant matrix is a Hessian and second derivative of energy.</h:p>
