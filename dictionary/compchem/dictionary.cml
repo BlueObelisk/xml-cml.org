@@ -2071,12 +2071,12 @@
                             <m:mi>V</m:mi>
                         </m:mrow>
                         <m:mrow>
-                            <m:mo>U02202;</m:mo>
+                            <m:mo>&#x2202;</m:mo>
                             <m:msub>
                                 <m:mi>q</m:mi>
                                 <m:mi>i</m:mi>
                             </m:msub>
-                            <m:mo>U02202;</m:mo>
+                            <m:mo>&#x2202;</m:mo>
                             <m:msub>
                                 <m:mi>q</m:mi>
                                 <m:mi>j</m:mi>
@@ -2095,10 +2095,11 @@
 </m:mtable>
 </m:math>   
         </h:p>
+     <h:p>And where q<h:sub>i</h:sub> = M<h:sub>i</h:sub>(x<h:sub>i</h:sub> - x<h:sub>i</h:sub>,eq) are mass weighted Cartesian displacement coordinates.</h:p>   
       </definition>
-      <h:p>And where q<h:sub>i</h:sub> = M<h:sub>i</h:sub>(x<h:sub>i</h:sub> - x<h:sub>i</h:sub>,eq) are mass weighted Cartesian displacement coordinates.</h:p>
+      
       <description>
-        <h:p>The force constant matrix is a Hessian and second derivative of energy. Thia is a 3N X 3N matrix (N is the number of atoms).</h:p>
+        <h:p>The force constant matrix is a Hessian and second derivative of energy. This is a 3N X 3N matrix (N is the number of atoms).</h:p>
       </description>
     </entry>
 
