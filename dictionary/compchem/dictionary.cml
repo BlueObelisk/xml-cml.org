@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="http://www.xml-cml.org/common/style/dictionary.xsl" type="text/xsl"?>
 <dictionary
         convention="convention:dictionary"
@@ -1361,14 +1361,14 @@
 
       </definition>
       <description>
-        <h:p>The Coulomb compoment of the total energy in a Density Functional Calculation. </h:p>
+        <h:p>The Coulomb component of the total energy in a Density Functional Calculation. </h:p>
       </description>
     </entry>
 
    <entry id="Energy_x" term="exchange energy"
       dataType="xsd:double" unitType="unitType:energy">
       <definition>
-        <h:p>The Exchange energy arises from the antisymmetry of the total n-electron wavefunction. </h:p>
+        <h:p>The Exchange energy arises from the antisymmetry of the total n-electron wave-function. </h:p>
       </definition>
       <description>
         <h:p> More information can be found on <h:a href="https://en.wikipedia.org/wiki/Hartree%E2%80%93Fock_method">Wikipedia </h:a>  or on <h:a href="http://www.chm.bris.ac.uk/pt/harvey/elstruct/hf_method.html"> link</h:a> </h:p>
@@ -1441,7 +1441,7 @@
         <h:p>The one-electron energy.</h:p>
       </definition>
       <description>
-        <h:p>The one-electron kinetic energy compment of the Hamiltonian operator for a system 
+        <h:p>The one-electron kinetic energy component of the Hamiltonian operator for a system 
         of electrons and nuclei.</h:p>
       </description>
     </entry>
@@ -1537,7 +1537,7 @@
         <h:p>The Hartree-Fock Self-Consistent Field component of the energy.</h:p>
       </definition>
       <description>
-        <h:p>This is the SCF energy, where the SCF energy is a compment of another energy, such as the
+        <h:p>This is the SCF energy, where the SCF energy is a component of another energy, such as the
         MP2 energy. The Energy_SCF term should NOT be used for the total energy of an SCF calculation, for this
         the <h:a href="#Energy_total">total energy</h:a> term should be used, as the exact meaning of the SCF
         energy will be properly determined by the parameters in the <h:a href="#initialization">initialization</h:a> 
@@ -1671,7 +1671,7 @@
           </m:math>
         </h:p>
         <h:p><h:em class="warn">TODO: Consider moving this term to an application specific dictionary (Gaussian), 
-          as other codes might report a thermal corrrection excluding the Zero-point energy.</h:em></h:p>
+          as other codes might report a thermal correction excluding the Zero-point energy.</h:em></h:p>
       </definition>
     </entry>
     
@@ -1693,7 +1693,7 @@
           </m:math>
         </h:p>
         <h:p><h:em class="warn">TODO: Consider moving this term to an application specific dictionary (Gaussian), 
-          as other codes might report a thermal corrrection excluding the Zero-point energy.</h:em></h:p>
+          as other codes might report a thermal correction excluding the Zero-point energy.</h:em></h:p>
       </definition>
     </entry>
     
@@ -1715,7 +1715,7 @@
           </m:math>
         </h:p>
         <h:p><h:em class="warn">TODO: Consider moving this term to an application specific dictionary (Gaussian), 
-          as other codes might report a thermal corrrection excluding the Zero-point energy.</h:em></h:p>
+          as other codes might report a thermal correction excluding the Zero-point energy.</h:em></h:p>
       </definition>
     </entry>
 
@@ -2066,18 +2066,17 @@
                     <m:mfrac linethickness="1">
                         <m:mrow>
                             <m:msup>
-                                <m:mo>&part;</m:mo>
-                                <m:mn>2</m:mn>
+ b                                <m:mn>2</m:mn>
                             </m:msup>
                             <m:mi>V</m:mi>
                         </m:mrow>
                         <m:mrow>
-                            <m:mo>&part;</m:mo>
+                            <m:mo>U02202;</m:mo>
                             <m:msub>
                                 <m:mi>q</m:mi>
                                 <m:mi>i</m:mi>
                             </m:msub>
-                            <m:mo>&part;</m:mo>
+                            <m:mo>U02202;</m:mo>
                             <m:msub>
                                 <m:mi>q</m:mi>
                                 <m:mi>j</m:mi>
@@ -2097,8 +2096,9 @@
 </m:math>   
         </h:p>
       </definition>
+      <h:p>And where q<h:sub>i</h:sub> = M<h:sub>i</h:sub>(x<h:sub>i</h:sub> - x<h:sub>i</h:sub>,eq) are mass weighted Cartesian displacement coordinates.</h:p>
       <description>
-        <h:p>The force constant matrix is a Hessian and second derivative of energy.</h:p>
+        <h:p>The force constant matrix is a Hessian and second derivative of energy. Thia is a 3N X 3N matrix (N is the number of atoms).</h:p>
       </description>
     </entry>
 
