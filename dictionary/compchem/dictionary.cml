@@ -2066,7 +2066,8 @@
                     <m:mfrac linethickness="1">
                         <m:mrow>
                             <m:msup>
- b                                <m:mn>2</m:mn>
+                               <m:mo>&#x2202;</m:mo>
+                               <m:mn>2</m:mn>
                             </m:msup>
                             <m:mi>V</m:mi>
                         </m:mrow>
