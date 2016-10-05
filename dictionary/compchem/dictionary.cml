@@ -396,7 +396,7 @@
         </h:ul>
       </definition>
       <description>
-        <h:p>The describes what the job or calcualtion is aiming to do. For a single SCF calculation, the
+        <h:p>The describes what the job or calculation is aiming to do. For a single SCF calculation, the
         task is an energy, while the task for an individual SCF iteration calculation within the SCF is an iteration.</h:p>
         <h:p>Jobs and calculation both use the task term, although a job would only be expected to use the 
         more general terms (such as energy or geometry_optimization).</h:p>
@@ -1019,7 +1019,7 @@
          list, as this permits different named basis sets to be applied to different atoms.</h:p>
          <h:p> The basisSetLabel may be applied to the whole basis set (i.e. at the same level as the basisSetContrations)
          if the same basis set was applied to all atoms in the calculation. This is to permit logfiles to be converted to
-         valid CML where the basis set is not printed explictly on each atom.</h:p>
+         valid CML where the basis set is not printed explicitly on each atom.</h:p>
       </description>
     </entry>
  
@@ -1047,7 +1047,7 @@
       </description>
     </entry>
     
-     <entry id="basisSetHarmonicType" term="basis set type" 
+     <entry id="basisSetHarmonicType" term="basis set harmonic type" 
       dataType="xsd:string" units="si:none" unitType="unitType:none">
       <definition>
         <h:p>The type of the angular functions used in basis set.</h:p>
@@ -2096,11 +2096,11 @@
 </m:mtable>
 </m:math>   
         </h:p>
-     <h:p>And where q<h:sub>i</h:sub> = M<h:sub>i</h:sub>(x<h:sub>i</h:sub> - x<h:sub>i</h:sub>,eq) are mass weighted Cartesian displacement coordinates.</h:p>   
+     <h:p>And where <h:i>q<h:sub>i</h:sub> = M<h:sub>i</h:sub> <h:sup>1/2</h:sup>(x<h:sub>i</h:sub> - x<h:sub>i</h:sub>,eq) </h:i> are mass weighted Cartesian displacement coordinates and M<h:sub>i</h:sub> <h:sup>1/2</h:sup> is the diagonal matrix of square roots of the atomic masses. </h:p>   
       </definition>
       
       <description>
-        <h:p>The force constant matrix is a Hessian and second derivative of energy. This is a 3N X 3N matrix (N is the number of atoms).</h:p>
+        <h:p>The force constant matrix is a second derivative of energy and unfortunately often called Hessian. This is a 3N X 3N matrix (N is the number of atoms).</h:p>
       </description>
     </entry>
 
