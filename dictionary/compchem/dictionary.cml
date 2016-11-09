@@ -1596,7 +1596,7 @@
   </math>
       </h:p>
 
-       <h:p> Where T<h:sub>e</h:sub> is kinetic energy of electron, V<h:sub>ee</h:sub> is potential energy of the couloumb repulsion between the electrons, 
+       <h:p> Where T<h:sub>e</h:sub> is kinetic energy of electron, V<h:sub>ee</h:sub> is potential energy of the coulomb repulsion between the electrons, 
         V<h:sub>en</h:sub> is potential energy of the coulomb attractions between electron and nucleus, V<h:sub>nn</h:sub> is potential energy of the coulomb repulsion between nucleus and nucleus. </h:p>
       </definition> 
       <description>
@@ -1988,7 +1988,7 @@
     </entry>
 
     <entry id="cc:potentialEnergy" term="Potential Energy"
-      dataType="xsd:string" units="nonSi:hartree" unitType="unitType:energy">
+      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
       <definition>
         <h:p>Potential energy to do .</h:p>
       </definition>
@@ -1998,9 +1998,119 @@
     </entry>
 
     <entry id="cc:kineticEnergy" term="Kinetic Energy"
-      dataType="xsd:string" units="nonSi:hartree" unitType="unitType:energy">
+      dataType="xsd:double" units="nonSi:hartree" unitType="unitType:energy">
       <definition>
-        <h:p>Kinetic energy to do.</h:p>
+        <h:p>Kinetic energy is the energy of electrons. It is given as: 
+          <!-- (your LaTeX) \[KE = - \frac{1}{2} \sum\limits_{i=1}^{N} \nabla\limits_{i}^{2}\] -->
+<m:math>
+<m:mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+    <m:mtr>
+        <m:mtd>
+            <m:mspace width="6.0em" />
+        </m:mtd>
+        <m:mtd columnalign="left">
+            <m:mi>K</m:mi>
+            <m:mi>E</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>-</m:mo>
+            <m:mfrac linethickness="1">
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mstyle displaystyle="true">
+                <m:munderover>
+                    <m:mo>&#8721;</m:mo>
+                    <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>N</m:mi>
+                </m:munderover>
+            </m:mstyle>
+            <m:mstyle displaystyle="true">
+                <m:msubsup>
+                    <m:mo>&#8711;</m:mo>
+                    <m:mi>i</m:mi>
+                    <m:mn>2</m:mn>
+                </m:msubsup>
+            </m:mstyle>
+        </m:mtd>
+    </m:mtr>
+</m:mtable>
+</m:math> 
+        </h:p>
+        <h:p>And where 
+            <!-- (your LaTeX) \[\nabla = {\frac {\partial^2}{\partial x^2}} + {\frac {\partial^2}{\partial y^2}} + {\frac {\partial^2}{\partial z^2}}\] -->
+<m:math>
+<m:mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+    <m:mtr>
+        <m:mtd>
+            <m:mspace width="6.0em" />
+        </m:mtd>
+        <m:mtd columnalign="left">
+            <m:mo>&#8711;</m:mo>
+            <m:mo>=</m:mo>
+            <m:mrow>
+                <m:mfrac linethickness="1">
+                    <m:mrow>
+                        <m:msup>
+                            <m:mo>&#x2202;</m:mo>
+                            <m:mn>2</m:mn>
+                        </m:msup>
+                    </m:mrow>
+                    <m:mrow>
+                        <m:mo>&#x2202;</m:mo>
+                        <m:msup>
+                            <m:mi>x</m:mi>
+                            <m:mn>2</m:mn>
+                        </m:msup>
+                    </m:mrow>
+                </m:mfrac>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+                <m:mfrac linethickness="1">
+                    <m:mrow>
+                        <m:msup>
+                            <m:mo>&#x2202;</m:mo>
+                            <m:mn>2</m:mn>
+                        </m:msup>
+                    </m:mrow>
+                    <m:mrow>
+                        <m:mo>&#x2202;</m:mo>
+                        <m:msup>
+                            <m:mi>y</m:mi>
+                            <m:mn>2</m:mn>
+                        </m:msup>
+                    </m:mrow>
+                </m:mfrac>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+                <m:mfrac linethickness="1">
+                    <m:mrow>
+                        <m:msup>
+                            <m:mo>&#x2202;</m:mo>
+                            <m:mn>2</m:mn>
+                        </m:msup>
+                    </m:mrow>
+                    <m:mrow>
+                        <m:mo>&#x2202;</m:mo>
+                        <m:msup>
+                            <m:mi>z</m:mi>
+                            <m:mn>2</m:mn>
+                        </m:msup>
+                    </m:mrow>
+                </m:mfrac>
+            </m:mrow>
+        </m:mtd>
+    </m:mtr>
+</m:mtable>
+</m:math>
+
+        </h:p>
+
       </definition>
       <description>
         <h:p>The kinetic energy to do. </h:p>
@@ -2045,7 +2155,7 @@
       dataType="xsd:double" unitType="unitType:none">
       <definition>
         <h:p>The force constant matrix is given as:
-         <m:math>
+<m:math>
 <m:mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
     <m:mtr>
         <m:mtd>
