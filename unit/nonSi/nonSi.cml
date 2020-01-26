@@ -5,6 +5,7 @@
         title="non SI units dictionary"
         xmlns="http://www.xml-cml.org/schema"
         xmlns:h="http://www.w3.org/1999/xhtml"
+        xmlns:m="http://www.w3.org/1998/Math/MathML"
         xmlns:siUnits="http://www.xml-cml.org/unit/si/"
         xmlns:unitType="http://www.xml-cml.org/unit/unitType/"
         xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -19,6 +20,7 @@
     <dc:contributor>Nick England</dc:contributor>
     <dc:contributor>Sebastian Breuers</dc:contributor>
     <dc:contributor>Hannah Barjat</dc:contributor>
+    <dc:contributor>Jens Thomas</dc:contributor>
 
 
     <description>
@@ -55,7 +57,7 @@
 
 <!-- angle per time -->
 
-  <unit id="degree_per_min" title="degree per min" parentSI="siUnits:radians-1"
+  <unit id="degreePerMin" title="degree per min" parentSI="siUnits:radians-1"
     multiplierToSI="2.909E-4" symbol="deg min-1" unitType="unitType:angular_velocity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Nick England</dc:creator>
@@ -553,9 +555,9 @@ ium e.g. particulate matter within air.
 
 <!-- density -->
 
-  <unit title="Megagrams per cubic metre" id="megagrams_per_cubic_metre"
+  <unit title="Megagrams per cubic metre" id="megagramsPerCubicMetre"
     symbol="Mg.m-3" parentSI="siUnits:kg.m-3" multiplierToSI="1E3"
-    unitType="unitType:mass_density">
+    unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Nick England</dc:creator>
     <definition>
@@ -572,7 +574,7 @@ ium e.g. particulate matter within air.
 
   <unit title="nanogram per cubic metre" id="ng.m-3" symbol="ng.m-3"
     parentSI="siUnits:kg.m-3" multiplierToSI="1E-12"
-    unitType="unitType:mass_density">
+    unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
@@ -589,7 +591,7 @@ ium e.g. particulate matter within air.
 
   <unit title="nanogram per cubic centimetre" id="ng.cm-3" symbol="ng.cm-3"
     parentSI="siUnits:kg.m-3" multiplierToSI="1E-8"
-    unitType="unitType:mass_density">
+    unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
@@ -606,7 +608,7 @@ ium e.g. particulate matter within air.
 
   <unit title="gram per cubic centimetre" id="g.cm-3" symbol="g.cm-3"
     parentSI="siUnits:kg.m-3" multiplierToSI="1E3"
-    unitType="unitType:mass_density">
+    unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
@@ -623,7 +625,7 @@ ium e.g. particulate matter within air.
 
   <unit title="gram per cubic metre" id="g.m-3" symbol="g.m-3"
     parentSI="siUnits:kg.m-3" multiplierToSI="1E-3"
-    unitType="unitType:mass_density">
+    unitType="unitType:massDensity">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
@@ -640,9 +642,9 @@ ium e.g. particulate matter within air.
 
 <!-- concentration -->
 
-  <unit title="electrons per cubic angstrom" id="electrons_per_cubic_angstrom"
+  <unit title="electrons per cubic angstrom" id="electronsPerCubicAngstrom"
     symbol="eA-3" parentSI="siUnits:m-3" multiplierToSI="1E30"
-    unitType="unitType:amount_concentration">
+    unitType="unitType:amountConcentration">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Nick England</dc:creator>
     <definition>
@@ -661,7 +663,7 @@ ium e.g. particulate matter within air.
 
   <unit title="Dobson Unit" id="DU" symbol="DU"
     parentSI="siUnits:mol.m-2" multiplierToSI="4.462E-4"
-    unitType="unitType:amountperarea">
+    unitType="unitType:amountPerArea">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
@@ -792,9 +794,25 @@ ium e.g. particulate matter within air.
       </h:p>    </description>
   </unit>
 
+  <unit title="millimole" id="millimol" symbol="mmol"
+    parentSI="siUnits:mol" multiplierToSI="1E-3"    unitType="unitType:amount">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Hannah Barjat</dc:creator>
+    <definition>
+      <h:p>
+        10<h:sup>-3</h:sup> of a mole
+      </h:p>
+    </definition>
+    <description>
+      <h:p>
+        10<h:sup>-3</h:sup> of a mole.
+      </h:p>    
+	</description>
+  </unit>
+  
  <!-- time -->
  
-  <unit title="Julian Year" id="julian_year" symbol="a_j"
+  <unit title="Julian Year" id="julianYear" symbol="a_j"
     parentSI="siUnits:s" multiplierToSI="31557600"
     unitType="unitType:time">
       <dc:source>Wikipedia</dc:source>
@@ -808,7 +826,7 @@ ium e.g. particulate matter within air.
       </description>
   </unit>
 
-  <unit title="Tropical Year" id="tropical_year" symbol="a_t"
+  <unit title="Tropical Year" id="tropicalYear" symbol="a_t"
     parentSI="siUnits:s" multiplierToSI="31556925"
     unitType="unitType:time">
       <dc:source>Wikipedia</dc:source>
@@ -1034,7 +1052,7 @@ ium e.g. particulate matter within air.
 
   <unit title="molecule per cm3 per second" id="molec.cm-3.s-1" symbol="molecule.cm-3.s-1"
     parentSI="siUnits:m-3.s-1" multiplierToSI="1E6"
-    unitType="unitType:number_conc_rate">
+    unitType="unitType:numberConcRate">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
@@ -1048,7 +1066,7 @@ ium e.g. particulate matter within air.
 
   <unit title="molecule per m3 per second" id="molec.m-3.s-1" symbol="molecule.m-3.s-1"
     parentSI="siUnits:m-3.s-1" multiplierToSI="1"
-    unitType="unitType:number_conc_rate">
+    unitType="unitType:numberConcRate">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Hannah Barjat</dc:creator>
     <definition>
@@ -1289,8 +1307,25 @@ ium e.g. particulate matter within air.
 	</h:p>
     </definition>
     <description>
-      <h:p>TODO
+      <h:p>The kilovolt is a conveniently scaled measure for electric potential, electric potential difference, and electromotive force, equal to 1000 volts.
     </h:p>
+    </description>
+  </unit>
+
+<!--  charge -->
+
+  <unit title="elementary charge" id="elementaryCharge" symbol="e"
+    parentSI="siUnits:coulomb" multiplierToSI="1.602176565E-19" unitType="unitType:electric_charge">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Jens Thomas</dc:creator>
+    <definition>
+      <h:p>
+        The elementary charge, is the electric charge carried by a single proton, or equivalently, 
+        the negation (opposite) of the electric charge carried by a single electron.
+    </h:p>
+    </definition>
+    <description>
+    <h:a href="http://en.wikipedia.org/wiki/Elementary_charge">wikipedia entry</h:a>
     </description>
   </unit>
 
@@ -1353,6 +1388,45 @@ ium e.g. particulate matter within air.
       </h:p>
     </description>
   </unit>
+  
+  <unit title="Hartree" id="hartree" symbol="Eh" parentSI="siUnits:joule"
+    multiplierToSI="4.35974434E-18" unitType="unitType:energy">
+    <dc:source>Wikipedia</dc:source>
+    <dc:creator>Jens Thomas</dc:creator>
+    <definition>
+      <h:p>        
+        The Hartree is the atomic unit of energy, and is defined as:
+      </h:p>
+      <h:p>
+        <m:math>
+            <m:mrow>
+                <m:msub>
+                    <m:mi>E</m:mi>
+                    <m:mi>h</m:mi>  
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>2</m:mn>
+                <m:msub>
+                    <m:mi>R</m:mi>
+                    <m:mi>&#x221E;</m:mi>
+                </m:msub>
+                <m:mi>h</m:mi>
+                <m:mi>c</m:mi>
+            </m:mrow>
+        </m:math>
+      </h:p>
+      <h:p>where R is the Rydberg constant, h the Plank constant and c the speed of light.</h:p>
+    </definition>
+    <description>
+      <h:p>The Hartree is named after the British physicst Douglas Hartree, and is approximately 
+      the electric potential energy of the hydrogen atom in its ground state and, by the virial theorem, 
+      approximately twice its ionization energy; the relationships are not exact because of the finite mass 
+      of the nucleus of the hydrogen atom and relativistic corrections.</h:p>
+      <h:a href="http://en.wikipedia.org/wiki/Hartree">wikipedia entry</h:a>
+    </description>
+  </unit>
+  
+  
 
 <!-- power -->
 
@@ -1461,7 +1535,7 @@ ium e.g. particulate matter within air.
 
 <!--Reciprocal Length -->
 
-  <unit title="Reciprocal angstroms" id="reciprocal_angstrom"
+  <unit title="Reciprocal angstroms" id="reciprocalAngstrom"
     symbol="A-1" parentSI="siUnits:m-1" multiplierToSI="1E10"
     unitType="unitType:reciprocal_length">
     <dc:source>Wikipedia</dc:source>
@@ -1475,7 +1549,7 @@ ium e.g. particulate matter within air.
     </description>
   </unit>
 
-  <unit title="Reciprocal Millimetres" id="reciprocal_millimeters" symbol="mm-1" parentSI="siUnits:m-1"
+  <unit title="Reciprocal Millimetres" id="reciprocalMillimeters" symbol="mm-1" parentSI="siUnits:m-1"
     multiplierToSI="1E3" unitType="unitType:reciprocal_length">
     <dc:source>Wikipedia</dc:source>
     <dc:creator>Nick England</dc:creator>
@@ -1652,14 +1726,48 @@ ium e.g. particulate matter within air.
         <definition>
           <h:p>
             1/12 of the mass of an atom of Carbon 12.
-        </h:p>
+          </h:p>
         </definition>
         <description>
           <h:p>
-            A definition of mass where the mass of an atom of Carbon 12 is defined to be 1 Dalton.
-        </h:p>
+            A definition of mass where the mass of an atom of Carbon 12 is defined to be 12 Dalton. <h:a href="https://en.wikipedia.org/wiki/Atomic_mass_unit">wikipedia</h:a>
+          </h:p>
         </description>
       </unit>
+      
+   <unit title="Debye" id="debye" symbol="D"
+      parentSI="siUnits:statcoulomb-centimetre" multiplierToSI="1E-18"
+        unitType="unitType:electricCharge-length">
+     <!--   <dc:creator>sf</dc:creator> -->
+        <definition>
+          <h:p>
+            It is defined as 1*10<h:sup>-18</h:sup> statcoulomb-centimetre. Which is ≈ 3.33564*10<h:sup>−30</h:sup> C·m.
+          </h:p>
+        </definition>
+        <description>
+          <h:p>
+            Debye is preferred over SI unit because of the convenience.
+            The statcoulomb is also known as the franklin or electrostatic unit of charge (esu).
+            <h:a href="https://en.wikipedia.org/wiki/Debye">wikipedia.</h:a>  
+          </h:p>
+        </description>
+   </unit>
+   
+      <unit title="elementaryCharge.bohr" id="elementaryCharge.bohr" symbol="e.a_0"
+        parentSI="siUnits:charge-length" multiplierToSI="8.4785E-30"
+        unitType="unitType:current time length">
+<!--   <dc:creator>sf</dc:creator> -->
+        <definition>
+          <h:p>
+           Elementary charge is the unit of charge <h:a href="https://en.wikipedia.org/wiki/Elementary_charge">wikipedia</h:a> and bohr is the Bohr radius a<h:sub>0</h:sub> which is the atomic unit of length.
+          </h:p>
+        </definition>
+        <description>
+          <h:p>
+            Elementary charge (symbol 'e') is approximately equal to 1.60217E-19 C and Bohr (a<h:sub>0</h:sub>) is equal to 5.2918E-11 m.
+          </h:p>
+        </description>
+      </unit>   
 
 <!-- special units e.g. pH, RH?  -->
 

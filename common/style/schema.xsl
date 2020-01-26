@@ -97,6 +97,11 @@
                     </xsl:for-each>
                 </p>
 
+                <h1>
+                    <a name="introduction">1</a>
+                    Introduction
+                </h1>
+
                 <h2>
                     <a name="notational_conventions">1.1</a>
                     Notational Conventions
@@ -282,20 +287,23 @@
                     For more information about the <code>processContents</code> attribute see <a href="http://www.w3schools.com/schema/el_any.asp">w3c schools</a> page.
                 </p>
 
+                <hr/>
                 <h1>
-                    <a name="element-descriptions">Element descriptions</a>
+                    <a name="element-descriptions">2. Element descriptions</a>
                 </h1>
                 <hr/>
                 <xsl:apply-templates select="xsd:element"/>
 
+                <hr/>
                 <h1>
-                    <a name="attribute-descriptions">Attribute descriptions</a>
+                    <a name="attribute-descriptions">3. Attribute descriptions</a>
                 </h1>
                 <hr/>
                 <xsl:apply-templates select="xsd:attributeGroup"/>
 
+                <hr/>
                 <h1>
-                    <a name="simpleType-descriptions">Type descriptions</a>
+                    <a name="type-descriptions">4. Type descriptions</a>
                 </h1>
                 <hr/>
                 <xsl:apply-templates select="xsd:simpleType"/>
@@ -371,6 +379,7 @@
         </xsl:choose>
     </xsl:template>
 
+
     <xsl:template match="xsd:attributeGroup">
         <h2>
             <a name="{@name}">
@@ -380,6 +389,43 @@
                   (attribute name: <xsl:value-of select="./xsd:attribute/@name"/>)
             </xsl:if>
         </h2>
+
+        <div class="attributeGroup">
+             <xsl:if test="xsd:attribute/xsd:annotation/xsd:documentation/h:div[@class='summary']">
+                <h3>Summary</h3>
+                <p>
+                    <xsl:copy-of select="xsd:attribute/xsd:annotation/xsd:documentation/h:div[@class='summary']"/>
+                </p>
+            </xsl:if>
+            <xsl:if test="xsd:attribute/xsd:annotation/xsd:documentation/h:div[@class='description']">
+                <h3>Description</h3>
+                <p>
+                    <xsl:copy-of select="xsd:attribute/xsd:annotation/xsd:documentation/h:div[@class='description']"/>
+                </p>
+            </xsl:if>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="xsd:simpleType">
+        <div class="simpleType">
+            <h2>
+                <a name="{@name}">
+                    <xsl:value-of select="@name"/>
+                </a>
+            </h2>
+            <xsl:if test="xsd:annotation/xsd:documentation/h:div[@class='summary']">
+                <h3>Summary</h3>
+                <p>
+                    <xsl:copy-of select="xsd:annotation/xsd:documentation/h:div[@class='summary']"/>
+                </p>
+            </xsl:if>
+            <xsl:if test="xsd:annotation/xsd:documentation/h:div[@class='description']">
+                <h3>Description</h3>
+                <p>
+                    <xsl:copy-of select="xsd:annotation/xsd:documentation/h:div[@class='description']"/>
+                </p>
+            </xsl:if>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>
